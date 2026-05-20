@@ -1,0 +1,451 @@
+{
+  "title": "Spatial Report — 2026-05-15 (backfilled)",
+  "edition_number": "",
+  "date": "2026-05-15",
+  "spotlight": "The consumer AR glasses race enters a decisive stretch: Samsung is reportedly set to debut Galaxy Glasses at a London Unpacked event on July 22nd, Snap CEO Evan Spiegel will keynote AWE USA 2026 in June ahead of the company's commercial AR Specs launch later this year, and Meta has confirmed its annual Connect developer event for September 23–24 alongside a tease of new wearable hardware. Meta is also opening its display glasses platform to third-party apps and games, as major platform owners converge around AI-powered eyewear ahead of what is shaping up to be an unusually hardware-dense second half of 2026.",
+  "item_ids": [
+    "9fbdf5df619a2989",
+    "9081e5bf99690327",
+    "7e8886711bcb6683",
+    "1750e3f41e92b31c",
+    "eedfed56beaf9b3b",
+    "f93320230ee40acf",
+    "0d166439201e2779",
+    "f3131dfdc48d7c1e",
+    "a811ae0148df46d4",
+    "8dda3025675f0446",
+    "3898d6e626b2d134",
+    "8fedfcc4ca303088",
+    "12c77376921df746",
+    "8bb9dc3614bd5f7e",
+    "b84394de474826e5",
+    "966b524910e60e05",
+    "f10e839d9ed594e5",
+    "a95c227bcb331b6c",
+    "9f922542ac707eaa",
+    "d17f29e5133d0471",
+    "7a2deff40b449274",
+    "c07a0b239be824fc",
+    "1f655d49e18a9586",
+    "1b1ed0d04958bbd5",
+    "3d29b453e00538d5"
+  ],
+  "sections": {
+    "HARDWARE": [
+      {
+        "id": "9fbdf5df619a2989",
+        "title": "‘ROG XREAL R1’ Pre-orders Now Live – 240Hz MicroOLED Gaming Glasses Priced at $850",
+        "link": "https://www.roadtovr.com/rog-xreal-r1-pre-orders-now-live-240hz-microoled-gaming-glasses-priced-at-850/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "ASUS Republic of Gamers and XREAL have opened pre-orders for the ROG XREAL R1, a pair of MicroOLED AR glasses priced at $850 that feature a 240Hz refresh rate and are designed primarily for gaming via tethered USB-C connection to handhelds and mobile devices. First unveiled at CES 2026 in January, the glasses are positioned as a display-extension gaming peripheral rather than a standalone mixed reality headset."
+      },
+      {
+        "id": "0d166439201e2779",
+        "title": "TCL Shows Off New High PPI OLED and Micro-LED Displays for XR",
+        "link": "https://www.roadtovr.com/tcl-oled-micro-led-display-xr-sid-display-week-2026/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "TCL unveiled new OLED and micro-LED display panels for AR and VR headsets at SID Display Week 2026, including a 2.24-inch glass OLED panel the company claims is the highest pixel-density real RGB G-OLED display available, rated at 1,700 PPI, 2,600 × 2,784 resolution, and a 120Hz refresh rate. Road to VR reports the panels represent new benchmarks for pixel density in XR optics."
+      },
+      {
+        "id": "3898d6e626b2d134",
+        "title": "Will Meta&#x27;s New Prescription Ray-Bans Truly Accommodate the Bespectacled?",
+        "link": "https://www.uploadvr.com/will-metas-new-prescription-ray-bans-truly-accommodate-the-bespectacled/",
+        "source": "UploadVR",
+        "category": "HARDWARE",
+        "summary": "UploadVR examines whether Meta's new prescription-focused Ray-Ban smart glasses will meaningfully serve users who depend on corrective lenses, a longstanding practical barrier to mainstream adoption of wearable AI and smart glasses devices."
+      },
+      {
+        "id": "a95c227bcb331b6c",
+        "title": "Samsung Will Reportedly Unveil Galaxy Glasses in July in London",
+        "link": "https://www.cnet.com/tech/services-and-software/samsung-galaxy-glasses-unpacked-july/",
+        "source": "CNET",
+        "category": "HARDWARE",
+        "summary": "CNET reports that Samsung is expected to unveil its Galaxy Glasses at a London Unpacked event in July, entering the consumer smart glasses market in direct competition with Meta's Ray-Ban glasses and Google's Android XR platform. The reported launch would mark a significant moment in the consolidation of major platform owners around AI-powered eyewear."
+      }
+    ],
+    "GAMING MARKETPLACE": [
+      {
+        "id": "9081e5bf99690327",
+        "title": "‘The Boys: Trigger Warning’ Comes to PSVR 2 in June, Promising “community requested” Improvements",
+        "link": "https://www.roadtovr.com/the-boys-vr-psvr-2-release-improvements/",
+        "source": "Road to VR",
+        "category": "GAMING MARKETPLACE",
+        "summary": "ARVORE and Sony Pictures Virtual Reality announced that The Boys: Trigger Warning, a VR experience based on the Amazon streaming series that launched on Quest 3 in March, will arrive on PSVR 2 on June 9th with PS5 Pro enhancements and improvements described as community-requested. Road to VR reports the PSVR 2 version incorporates feedback gathered since the Quest 3 launch."
+      },
+      {
+        "id": "1750e3f41e92b31c",
+        "title": "‘Blade Runner’ Immersive Experience Coming to VR Destinations Next Year",
+        "link": "https://www.roadtovr.com/blade-runner-immersive-experience-coming-to-vr-destinations-next-year-developed-by-dead-by-daylight-studio/",
+        "source": "Road to VR",
+        "category": "GAMING MARKETPLACE",
+        "summary": "Behaviour Interactive, the studio behind asymmetric multiplayer title Dead by Daylight, announced it is developing a location-based VR experience set in the Blade Runner universe in partnership with IP holder Alcon Entertainment and Montreal-based PHI Studio, with plans to bring it to VR venue destinations in 2027. Road to VR notes that PHI Studio previously co-produced the location-based VR experience Space Explorers: THE INFINITE."
+      },
+      {
+        "id": "a811ae0148df46d4",
+        "title": "Myst &amp; Riven Remakes Coming To PlayStation VR2 This Month",
+        "link": "https://www.uploadvr.com/myst-riven-remakes-coming-to-playstation-vr2-this-month/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE",
+        "summary": "UploadVR reports that remakes of the classic adventure games Myst and Riven are coming to PlayStation 5 and PlayStation VR2 on May 19, bringing two of the most influential titles in gaming history to Sony's VR platform for the first time."
+      },
+      {
+        "id": "8dda3025675f0446",
+        "title": "Veteran VR Studio Survios Reportedly Sees Critical Layoffs",
+        "link": "https://www.uploadvr.com/survios-reportedly-sees-critical-layoffs/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE",
+        "summary": "According to UploadVR, veteran VR studio Survios — developer of nine VR titles over the past decade including Alien: Rogue Incursion — has reportedly laid off much of its staff, based on employee LinkedIn posts, raising questions about the studio's viability after more than ten years in the VR game market."
+      }
+    ],
+    "HIGHLIGHTS": [
+      {
+        "id": "7e8886711bcb6683",
+        "title": "Snap CEO Keynote Kicks off AWE 2026 Next Month on Lead-up to Consumer AR Glasses Launch",
+        "link": "https://www.roadtovr.com/snap-ceo-evan-spiegel-keynote-awe-usa-2026-specs-ar/",
+        "source": "Road to VR",
+        "category": "HIGHLIGHTS",
+        "summary": "Road to VR reports that Snap Inc. CEO Evan Spiegel will deliver the opening keynote at AWE USA 2026 next month, marking the second consecutive year Snap has headlined the augmented reality industry conference as the company prepares to launch its first consumer AR glasses. The keynote timing aligns with Snap's stated plans for a commercial AR Specs release later this year."
+      },
+      {
+        "id": "eedfed56beaf9b3b",
+        "title": "Meta Connect Event Set for September 23–24 Alongside New Glasses Tease",
+        "link": "https://www.roadtovr.com/meta-connect-2026-date-announcement/",
+        "source": "Road to VR",
+        "category": "HIGHLIGHTS",
+        "summary": "Meta has confirmed its annual Connect developer event will take place September 23–24, and teased what appears to be a new pair of smart glasses alongside a statement that the event will focus on VR, wearables, metaverse, and AI. Road to VR notes the XR industry will be watching closely as Meta is expected to reveal key details of its next-generation hardware roadmap."
+      },
+      {
+        "id": "b84394de474826e5",
+        "title": "Meta's AI spending spree is helping make its Quest headsets more expensive",
+        "link": "https://arstechnica.com/ai/2026/04/metas-ai-spending-spree-is-helping-make-its-quest-headsets-more-expensive/",
+        "source": "Ars Technica - Gaming/VR",
+        "category": "HIGHLIGHTS",
+        "summary": "Ars Technica reports that Meta's aggressive AI infrastructure spending is driving up the cost of critical components used in its Quest headsets, resulting in higher consumer prices. The development highlights the financial tension Meta faces as it pursues simultaneous buildouts in AI compute and XR hardware, with the cost ultimately passed to buyers."
+      }
+    ],
+    "SOFTWARE": [
+      {
+        "id": "f93320230ee40acf",
+        "title": "Meta’s New AI-Powered VR Toolkit Lets Anyone Build WebXR Experiences Without Coding",
+        "link": "https://www.roadtovr.com/meta-immersive-web-ai-agent-toolkit-2026/",
+        "source": "Road to VR",
+        "category": "SOFTWARE",
+        "summary": "Meta announced a major update to its open-source Immersive Web SDK, adding an AI-powered agentic workflow that enables developers and non-coders to build WebXR experiences using AI coding assistants. Road to VR reports the update extends the framework originally launched at Meta Connect last year, which targeted core VR development tasks including physics, hand-tracking, and locomotion."
+      },
+      {
+        "id": "f3131dfdc48d7c1e",
+        "title": "Quest’s Latest PTC Update Turns Web Photos Into 3D",
+        "link": "https://www.uploadvr.com/quests-latest-ptc-update-turns-web-photos-into-3d/",
+        "source": "UploadVR",
+        "category": "SOFTWARE",
+        "summary": "UploadVR reports that Meta's latest Quest Public Test Channel update introduces AI-powered 3D photo conversion directly in the headset's browser, alongside streamlined tools for uploading 3D photos from a mobile device, expanding the platform's spatial media capabilities."
+      },
+      {
+        "id": "8fedfcc4ca303088",
+        "title": "Pluto TV’s Immersive Quest App Gets The Atmosphere Right, But Leaves Questions",
+        "link": "https://www.uploadvr.com/pluto-tvs-immersive-quest-app-gets-the-atmosphere-right-but-leaves-questions/",
+        "source": "UploadVR",
+        "category": "SOFTWARE",
+        "summary": "UploadVR reviews Pluto TV's new immersive viewing app for Meta Quest, finding that while the app establishes a convincing atmosphere for virtual media consumption, it raises unresolved questions about content depth and utility relative to competing virtual theater experiences on the platform."
+      },
+      {
+        "id": "12c77376921df746",
+        "title": "Free DIRECTV Streaming App Now Live On Quest",
+        "link": "https://www.uploadvr.com/free-directv-streaming-app-now-live-on-quest/",
+        "source": "UploadVR",
+        "category": "SOFTWARE",
+        "summary": "UploadVR reports that a free DIRECTV streaming app is now available on Meta Quest headsets, expanding the platform's library of virtual viewing options as major media brands continue to establish presence on standalone VR devices."
+      },
+      {
+        "id": "8bb9dc3614bd5f7e",
+        "title": "Quest Update Fixes The Biggest Problem With Screenshots &amp; Recording",
+        "link": "https://www.uploadvr.com/meta-quest-capture-markers-feature-screenshots-video-recording/",
+        "source": "UploadVR",
+        "category": "SOFTWARE",
+        "summary": "UploadVR reports that a Quest software update has introduced Capture Markers, a feature that shows users exactly what will appear in frame before taking a screenshot or starting a screen recording, addressing a persistent usability gap in the headset's media capture tools."
+      },
+      {
+        "id": "f10e839d9ed594e5",
+        "title": "Meta is bringing third-party apps and games to its display glasses",
+        "link": "https://www.engadget.com/2173297/meta-is-bringing-third-party-apps-and-games-to-its-display-glasses/",
+        "source": "Engadget",
+        "category": "SOFTWARE",
+        "summary": "Engadget reports that Meta is opening its display glasses platform to third-party developers, enabling apps and games beyond the device's current first-party feature set. The move signals a broader ecosystem strategy for Meta's $800 smart glasses line as competition in the category grows from Samsung, Google, and others."
+      }
+    ],
+    "RESEARCH": [
+      {
+        "id": "966b524910e60e05",
+        "title": "Virtual flying experience changes neural responses to seeing wings",
+        "link": "https://www.cell.com/cell-reports/fulltext/S2211-1247(26)00398-0",
+        "source": "Hacker News (Spatial/XR)",
+        "category": "RESEARCH",
+        "summary": "A study published in Cell Reports found that a virtual reality flying experience measurably alters neural responses to the visual perception of wings, providing evidence that immersive VR can induce lasting changes in sensory processing. The findings contribute to a growing body of research showing XR environments can reshape perceptual and neurological responses in ways that persist beyond the virtual experience."
+      },
+      {
+        "id": "d17f29e5133d0471",
+        "title": "FaceParts: Segmentation and Editing of Gaussian Splatting",
+        "link": "https://arxiv.org/abs/2605.13853",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "A paper published on arXiv introduces FaceParts, an unsupervised framework for segmenting and editing 3D Gaussian Splatting avatars directly in 3D space rather than relying on 2D image-domain generative models, with direct applications in virtual reality and digital avatar production for entertainment."
+      },
+      {
+        "id": "7a2deff40b449274",
+        "title": "Seed3D 2.0: Advancing High-Fidelity Simulation-Ready 3D Content Generation",
+        "link": "https://arxiv.org/abs/2605.13862",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "Published on arXiv, Seed3D 2.0 advances simulation-ready 3D content generation with a coarse-to-fine geometry pipeline, a locality-aware VAE for efficient spatial compression, and enhanced texture and material generation, building on its predecessor with broader application coverage including games, film, and industrial simulation."
+      },
+      {
+        "id": "c07a0b239be824fc",
+        "title": "Fast and Robust Mesh Simplification for Generated and Real-World 3D Assets",
+        "link": "https://arxiv.org/abs/2605.14029",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "A paper on arXiv introduces a fast and robust mesh simplification method targeting the dense, noisy, and non-manifold meshes produced by neural rendering and large-scale generative 3D pipelines, with the authors explicitly citing AR/VR and simulation as downstream applications where efficient geometry is essential."
+      }
+    ],
+    "AI AND SIMULATED WORLDS": [
+      {
+        "id": "9f922542ac707eaa",
+        "title": "What Anthropic’s Mythos Means for the Future of Cybersecurity",
+        "link": "https://spectrum.ieee.org/ai-cybersecurity-mythos",
+        "source": "IEEE Spectrum",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "IEEE Spectrum reports that Anthropic's Claude Mythos Preview model can autonomously discover and weaponize software vulnerabilities in critical infrastructure — including operating systems and internet protocols — without expert guidance, a capability that eluded large teams of human developers. The development represents a meaningful escalation in AI-driven offensive security capabilities with broad implications for the devices and services the technology industry depends on."
+      },
+      {
+        "id": "1f655d49e18a9586",
+        "title": "Delta Forcing: Trust Region Steering for Interactive Autoregressive Video Generation",
+        "link": "https://arxiv.org/abs/2605.14382",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Researchers publishing on arXiv introduce Delta Forcing, a trust region-based steering method for interactive real-time autoregressive video generation that balances reactivity to new events with temporal coherence, with the authors positioning it as foundational infrastructure for world modeling and AI-driven content creation."
+      },
+      {
+        "id": "1b1ed0d04958bbd5",
+        "title": "SceneForge: Structured World Supervision from 3D Interventions",
+        "link": "https://arxiv.org/abs/2605.14399",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Published on arXiv, SceneForge is an intervention-driven framework that generates structured supervision from editable 3D world states, enabling multimodal models to learn representations that remain consistent across scene edits, viewpoints, and object-level changes — a capability the authors frame as essential for robust world model training."
+      },
+      {
+        "id": "3d29b453e00538d5",
+        "title": "Articraft: An Agentic System for Scalable Articulated 3D Asset Generation",
+        "link": "https://arxiv.org/abs/2605.15187",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Researchers have introduced Articraft, an agentic system that uses large language models to generate articulated 3D assets at scale by translating the asset-generation problem into program synthesis — the LLM writes code that procedurally builds the asset. The work targets a recognized data shortage in training models to understand articulated 3D objects, with implications for scalable content pipelines in spatial computing and simulation."
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "9fbdf5df619a2989",
+      "title": "‘ROG XREAL R1’ Pre-orders Now Live – 240Hz MicroOLED Gaming Glasses Priced at $850",
+      "link": "https://www.roadtovr.com/rog-xreal-r1-pre-orders-now-live-240hz-microoled-gaming-glasses-priced-at-850/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "ASUS Republic of Gamers and XREAL have opened pre-orders for the ROG XREAL R1, a pair of MicroOLED AR glasses priced at $850 that feature a 240Hz refresh rate and are designed primarily for gaming via tethered USB-C connection to handhelds and mobile devices. First unveiled at CES 2026 in January, the glasses are positioned as a display-extension gaming peripheral rather than a standalone mixed reality headset."
+    },
+    {
+      "id": "9081e5bf99690327",
+      "title": "‘The Boys: Trigger Warning’ Comes to PSVR 2 in June, Promising “community requested” Improvements",
+      "link": "https://www.roadtovr.com/the-boys-vr-psvr-2-release-improvements/",
+      "source": "Road to VR",
+      "category": "GAMING MARKETPLACE",
+      "summary": "ARVORE and Sony Pictures Virtual Reality announced that The Boys: Trigger Warning, a VR experience based on the Amazon streaming series that launched on Quest 3 in March, will arrive on PSVR 2 on June 9th with PS5 Pro enhancements and improvements described as community-requested. Road to VR reports the PSVR 2 version incorporates feedback gathered since the Quest 3 launch."
+    },
+    {
+      "id": "7e8886711bcb6683",
+      "title": "Snap CEO Keynote Kicks off AWE 2026 Next Month on Lead-up to Consumer AR Glasses Launch",
+      "link": "https://www.roadtovr.com/snap-ceo-evan-spiegel-keynote-awe-usa-2026-specs-ar/",
+      "source": "Road to VR",
+      "category": "HIGHLIGHTS",
+      "summary": "Road to VR reports that Snap Inc. CEO Evan Spiegel will deliver the opening keynote at AWE USA 2026 next month, marking the second consecutive year Snap has headlined the augmented reality industry conference as the company prepares to launch its first consumer AR glasses. The keynote timing aligns with Snap's stated plans for a commercial AR Specs release later this year."
+    },
+    {
+      "id": "1750e3f41e92b31c",
+      "title": "‘Blade Runner’ Immersive Experience Coming to VR Destinations Next Year",
+      "link": "https://www.roadtovr.com/blade-runner-immersive-experience-coming-to-vr-destinations-next-year-developed-by-dead-by-daylight-studio/",
+      "source": "Road to VR",
+      "category": "GAMING MARKETPLACE",
+      "summary": "Behaviour Interactive, the studio behind asymmetric multiplayer title Dead by Daylight, announced it is developing a location-based VR experience set in the Blade Runner universe in partnership with IP holder Alcon Entertainment and Montreal-based PHI Studio, with plans to bring it to VR venue destinations in 2027. Road to VR notes that PHI Studio previously co-produced the location-based VR experience Space Explorers: THE INFINITE."
+    },
+    {
+      "id": "eedfed56beaf9b3b",
+      "title": "Meta Connect Event Set for September 23–24 Alongside New Glasses Tease",
+      "link": "https://www.roadtovr.com/meta-connect-2026-date-announcement/",
+      "source": "Road to VR",
+      "category": "HIGHLIGHTS",
+      "summary": "Meta has confirmed its annual Connect developer event will take place September 23–24, and teased what appears to be a new pair of smart glasses alongside a statement that the event will focus on VR, wearables, metaverse, and AI. Road to VR notes the XR industry will be watching closely as Meta is expected to reveal key details of its next-generation hardware roadmap."
+    },
+    {
+      "id": "f93320230ee40acf",
+      "title": "Meta’s New AI-Powered VR Toolkit Lets Anyone Build WebXR Experiences Without Coding",
+      "link": "https://www.roadtovr.com/meta-immersive-web-ai-agent-toolkit-2026/",
+      "source": "Road to VR",
+      "category": "SOFTWARE",
+      "summary": "Meta announced a major update to its open-source Immersive Web SDK, adding an AI-powered agentic workflow that enables developers and non-coders to build WebXR experiences using AI coding assistants. Road to VR reports the update extends the framework originally launched at Meta Connect last year, which targeted core VR development tasks including physics, hand-tracking, and locomotion."
+    },
+    {
+      "id": "0d166439201e2779",
+      "title": "TCL Shows Off New High PPI OLED and Micro-LED Displays for XR",
+      "link": "https://www.roadtovr.com/tcl-oled-micro-led-display-xr-sid-display-week-2026/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "TCL unveiled new OLED and micro-LED display panels for AR and VR headsets at SID Display Week 2026, including a 2.24-inch glass OLED panel the company claims is the highest pixel-density real RGB G-OLED display available, rated at 1,700 PPI, 2,600 × 2,784 resolution, and a 120Hz refresh rate. Road to VR reports the panels represent new benchmarks for pixel density in XR optics."
+    },
+    {
+      "id": "f3131dfdc48d7c1e",
+      "title": "Quest’s Latest PTC Update Turns Web Photos Into 3D",
+      "link": "https://www.uploadvr.com/quests-latest-ptc-update-turns-web-photos-into-3d/",
+      "source": "UploadVR",
+      "category": "SOFTWARE",
+      "summary": "UploadVR reports that Meta's latest Quest Public Test Channel update introduces AI-powered 3D photo conversion directly in the headset's browser, alongside streamlined tools for uploading 3D photos from a mobile device, expanding the platform's spatial media capabilities."
+    },
+    {
+      "id": "a811ae0148df46d4",
+      "title": "Myst &amp; Riven Remakes Coming To PlayStation VR2 This Month",
+      "link": "https://www.uploadvr.com/myst-riven-remakes-coming-to-playstation-vr2-this-month/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE",
+      "summary": "UploadVR reports that remakes of the classic adventure games Myst and Riven are coming to PlayStation 5 and PlayStation VR2 on May 19, bringing two of the most influential titles in gaming history to Sony's VR platform for the first time."
+    },
+    {
+      "id": "8dda3025675f0446",
+      "title": "Veteran VR Studio Survios Reportedly Sees Critical Layoffs",
+      "link": "https://www.uploadvr.com/survios-reportedly-sees-critical-layoffs/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE",
+      "summary": "According to UploadVR, veteran VR studio Survios — developer of nine VR titles over the past decade including Alien: Rogue Incursion — has reportedly laid off much of its staff, based on employee LinkedIn posts, raising questions about the studio's viability after more than ten years in the VR game market."
+    },
+    {
+      "id": "3898d6e626b2d134",
+      "title": "Will Meta&#x27;s New Prescription Ray-Bans Truly Accommodate the Bespectacled?",
+      "link": "https://www.uploadvr.com/will-metas-new-prescription-ray-bans-truly-accommodate-the-bespectacled/",
+      "source": "UploadVR",
+      "category": "HARDWARE",
+      "summary": "UploadVR examines whether Meta's new prescription-focused Ray-Ban smart glasses will meaningfully serve users who depend on corrective lenses, a longstanding practical barrier to mainstream adoption of wearable AI and smart glasses devices."
+    },
+    {
+      "id": "8fedfcc4ca303088",
+      "title": "Pluto TV’s Immersive Quest App Gets The Atmosphere Right, But Leaves Questions",
+      "link": "https://www.uploadvr.com/pluto-tvs-immersive-quest-app-gets-the-atmosphere-right-but-leaves-questions/",
+      "source": "UploadVR",
+      "category": "SOFTWARE",
+      "summary": "UploadVR reviews Pluto TV's new immersive viewing app for Meta Quest, finding that while the app establishes a convincing atmosphere for virtual media consumption, it raises unresolved questions about content depth and utility relative to competing virtual theater experiences on the platform."
+    },
+    {
+      "id": "12c77376921df746",
+      "title": "Free DIRECTV Streaming App Now Live On Quest",
+      "link": "https://www.uploadvr.com/free-directv-streaming-app-now-live-on-quest/",
+      "source": "UploadVR",
+      "category": "SOFTWARE",
+      "summary": "UploadVR reports that a free DIRECTV streaming app is now available on Meta Quest headsets, expanding the platform's library of virtual viewing options as major media brands continue to establish presence on standalone VR devices."
+    },
+    {
+      "id": "8bb9dc3614bd5f7e",
+      "title": "Quest Update Fixes The Biggest Problem With Screenshots &amp; Recording",
+      "link": "https://www.uploadvr.com/meta-quest-capture-markers-feature-screenshots-video-recording/",
+      "source": "UploadVR",
+      "category": "SOFTWARE",
+      "summary": "UploadVR reports that a Quest software update has introduced Capture Markers, a feature that shows users exactly what will appear in frame before taking a screenshot or starting a screen recording, addressing a persistent usability gap in the headset's media capture tools."
+    },
+    {
+      "id": "b84394de474826e5",
+      "title": "Meta's AI spending spree is helping make its Quest headsets more expensive",
+      "link": "https://arstechnica.com/ai/2026/04/metas-ai-spending-spree-is-helping-make-its-quest-headsets-more-expensive/",
+      "source": "Ars Technica - Gaming/VR",
+      "category": "HIGHLIGHTS",
+      "summary": "Ars Technica reports that Meta's aggressive AI infrastructure spending is driving up the cost of critical components used in its Quest headsets, resulting in higher consumer prices. The development highlights the financial tension Meta faces as it pursues simultaneous buildouts in AI compute and XR hardware, with the cost ultimately passed to buyers."
+    },
+    {
+      "id": "966b524910e60e05",
+      "title": "Virtual flying experience changes neural responses to seeing wings",
+      "link": "https://www.cell.com/cell-reports/fulltext/S2211-1247(26)00398-0",
+      "source": "Hacker News (Spatial/XR)",
+      "category": "RESEARCH",
+      "summary": "A study published in Cell Reports found that a virtual reality flying experience measurably alters neural responses to the visual perception of wings, providing evidence that immersive VR can induce lasting changes in sensory processing. The findings contribute to a growing body of research showing XR environments can reshape perceptual and neurological responses in ways that persist beyond the virtual experience."
+    },
+    {
+      "id": "f10e839d9ed594e5",
+      "title": "Meta is bringing third-party apps and games to its display glasses",
+      "link": "https://www.engadget.com/2173297/meta-is-bringing-third-party-apps-and-games-to-its-display-glasses/",
+      "source": "Engadget",
+      "category": "SOFTWARE",
+      "summary": "Engadget reports that Meta is opening its display glasses platform to third-party developers, enabling apps and games beyond the device's current first-party feature set. The move signals a broader ecosystem strategy for Meta's $800 smart glasses line as competition in the category grows from Samsung, Google, and others."
+    },
+    {
+      "id": "a95c227bcb331b6c",
+      "title": "Samsung Will Reportedly Unveil Galaxy Glasses in July in London",
+      "link": "https://www.cnet.com/tech/services-and-software/samsung-galaxy-glasses-unpacked-july/",
+      "source": "CNET",
+      "category": "HARDWARE",
+      "summary": "CNET reports that Samsung is expected to unveil its Galaxy Glasses at a London Unpacked event in July, entering the consumer smart glasses market in direct competition with Meta's Ray-Ban glasses and Google's Android XR platform. The reported launch would mark a significant moment in the consolidation of major platform owners around AI-powered eyewear."
+    },
+    {
+      "id": "9f922542ac707eaa",
+      "title": "What Anthropic’s Mythos Means for the Future of Cybersecurity",
+      "link": "https://spectrum.ieee.org/ai-cybersecurity-mythos",
+      "source": "IEEE Spectrum",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "IEEE Spectrum reports that Anthropic's Claude Mythos Preview model can autonomously discover and weaponize software vulnerabilities in critical infrastructure — including operating systems and internet protocols — without expert guidance, a capability that eluded large teams of human developers. The development represents a meaningful escalation in AI-driven offensive security capabilities with broad implications for the devices and services the technology industry depends on."
+    },
+    {
+      "id": "d17f29e5133d0471",
+      "title": "FaceParts: Segmentation and Editing of Gaussian Splatting",
+      "link": "https://arxiv.org/abs/2605.13853",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "A paper published on arXiv introduces FaceParts, an unsupervised framework for segmenting and editing 3D Gaussian Splatting avatars directly in 3D space rather than relying on 2D image-domain generative models, with direct applications in virtual reality and digital avatar production for entertainment."
+    },
+    {
+      "id": "7a2deff40b449274",
+      "title": "Seed3D 2.0: Advancing High-Fidelity Simulation-Ready 3D Content Generation",
+      "link": "https://arxiv.org/abs/2605.13862",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "Published on arXiv, Seed3D 2.0 advances simulation-ready 3D content generation with a coarse-to-fine geometry pipeline, a locality-aware VAE for efficient spatial compression, and enhanced texture and material generation, building on its predecessor with broader application coverage including games, film, and industrial simulation."
+    },
+    {
+      "id": "c07a0b239be824fc",
+      "title": "Fast and Robust Mesh Simplification for Generated and Real-World 3D Assets",
+      "link": "https://arxiv.org/abs/2605.14029",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "A paper on arXiv introduces a fast and robust mesh simplification method targeting the dense, noisy, and non-manifold meshes produced by neural rendering and large-scale generative 3D pipelines, with the authors explicitly citing AR/VR and simulation as downstream applications where efficient geometry is essential."
+    },
+    {
+      "id": "1f655d49e18a9586",
+      "title": "Delta Forcing: Trust Region Steering for Interactive Autoregressive Video Generation",
+      "link": "https://arxiv.org/abs/2605.14382",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Researchers publishing on arXiv introduce Delta Forcing, a trust region-based steering method for interactive real-time autoregressive video generation that balances reactivity to new events with temporal coherence, with the authors positioning it as foundational infrastructure for world modeling and AI-driven content creation."
+    },
+    {
+      "id": "1b1ed0d04958bbd5",
+      "title": "SceneForge: Structured World Supervision from 3D Interventions",
+      "link": "https://arxiv.org/abs/2605.14399",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Published on arXiv, SceneForge is an intervention-driven framework that generates structured supervision from editable 3D world states, enabling multimodal models to learn representations that remain consistent across scene edits, viewpoints, and object-level changes — a capability the authors frame as essential for robust world model training."
+    },
+    {
+      "id": "3d29b453e00538d5",
+      "title": "Articraft: An Agentic System for Scalable Articulated 3D Asset Generation",
+      "link": "https://arxiv.org/abs/2605.15187",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Researchers have introduced Articraft, an agentic system that uses large language models to generate articulated 3D assets at scale by translating the asset-generation problem into program synthesis — the LLM writes code that procedurally builds the asset. The work targets a recognized data shortage in training models to understand articulated 3D objects, with implications for scalable content pipelines in spatial computing and simulation."
+    }
+  ],
+  "raw_content": "Spatial Report\nWeek of 2026-05-15\n\nSPOTLIGHT\n\nThe consumer AR glasses race enters a decisive stretch: Samsung is reportedly set to debut Galaxy Glasses at a London Unpacked event on July 22nd, Snap CEO Evan Spiegel will keynote AWE USA 2026 in June ahead of the company's commercial AR Specs launch later this year, and Meta has confirmed its annual Connect developer event for September 23–24 alongside a tease of new wearable hardware. Meta is also opening its display glasses platform to third-party apps and games, as major platform owners converge around AI-powered eyewear ahead of what is shaping up to be an unusually hardware-dense second half of 2026.\n\nHIGHLIGHTS\n\nMeta has confirmed its annual Connect developer event will take place September 23–24, and teased what appears to be a new pair of smart glasses alongside a statement that the event will focus on VR, wearables, metaverse, and AI. Road to VR notes the XR industry will be watching closely as Meta is expected to reveal key details of its next-generation hardware roadmap.\n\nRoad to VR reports that Snap Inc. CEO Evan Spiegel will deliver the opening keynote at AWE USA 2026 next month, marking the second consecutive year Snap has headlined the augmented reality industry conference as the company prepares to launch its first consumer AR glasses. The keynote timing aligns with Snap's stated plans for a commercial AR Specs release later this year.\n\nCNET reports that Samsung is expected to unveil its Galaxy Glasses at a London Unpacked event in July, entering the consumer smart glasses market in direct competition with Meta's Ray-Ban glasses and Google's Android XR platform. The reported launch would mark a significant moment in the consolidation of major platform owners around AI-powered eyewear.\n\nEngadget reports that Meta is opening its display glasses platform to third-party developers, enabling apps and games beyond the device's current first-party feature set. The move signals a broader ecosystem strategy for Meta's $800 smart glasses line as competition in the category grows from Samsung, Google, and others.\n\nArs Technica reports that Meta's aggressive AI infrastructure spending is driving up the cost of critical components used in its Quest headsets, resulting in higher consumer prices. The development highlights the financial tension Meta faces as it pursues simultaneous buildouts in AI compute and XR hardware, with the cost ultimately passed to buyers.\n\nTCL unveiled new OLED and micro-LED display panels for AR and VR headsets at SID Display Week 2026, including a 2.24-inch glass OLED panel the company claims is the highest pixel-density real RGB G-OLED display available, rated at 1,700 PPI, 2,600 × 2,784 resolution, and a 120Hz refresh rate. Road to VR reports the panels represent new benchmarks for pixel density in XR optics.\n\nGAMING MARKETPLACE\n\nUploadVR reports that remakes of the classic adventure games Myst and Riven are coming to PlayStation 5 and PlayStation VR2 on May 19, bringing two of the most influential titles in gaming history to Sony's VR platform for the first time.\n\nAccording to UploadVR, veteran VR studio Survios — developer of nine VR titles over the past decade including Alien: Rogue Incursion — has reportedly laid off much of its staff, based on employee LinkedIn posts, raising questions about the studio's viability after more than ten years in the VR game market.\n\nARVORE and Sony Pictures Virtual Reality announced that The Boys: Trigger Warning, a VR experience based on the Amazon streaming series that launched on Quest 3 in March, will arrive on PSVR 2 on June 9th with PS5 Pro enhancements and improvements described as community-requested. Road to VR reports the PSVR 2 version incorporates feedback gathered since the Quest 3 launch.\n\nBehaviour Interactive, the studio behind asymmetric multiplayer title Dead by Daylight, announced it is developing a location-based VR experience set in the Blade Runner universe in partnership with IP holder Alcon Entertainment and Montreal-based PHI Studio, with plans to bring it to VR venue destinations in 2027. Road to VR notes that PHI Studio previously co-produced the location-based VR experience Space Explorers: THE INFINITE.\n\nHARDWARE\n\nTCL unveiled new OLED and micro-LED display panels for AR and VR headsets at SID Display Week 2026, including a 2.24-inch glass OLED panel the company claims is the highest pixel-density real RGB G-OLED display available, rated at 1,700 PPI, 2,600 × 2,784 resolution, and a 120Hz refresh rate. Road to VR reports the panels represent new benchmarks for pixel density in XR optics.\n\nASUS Republic of Gamers and XREAL have opened pre-orders for the ROG XREAL R1, a pair of MicroOLED AR glasses priced at $850 that feature a 240Hz refresh rate and are designed primarily for gaming via tethered USB-C connection to handhelds and mobile devices. First unveiled at CES 2026 in January, the glasses are positioned as a display-extension gaming peripheral rather than a standalone mixed reality headset.\n\nCNET reports that Samsung is expected to unveil its Galaxy Glasses at a London Unpacked event in July, entering the consumer smart glasses market in direct competition with Meta's Ray-Ban glasses and Google's Android XR platform. The reported launch would mark a significant moment in the consolidation of major platform owners around AI-powered eyewear.\n\nUploadVR examines whether Meta's new prescription-focused Ray-Ban smart glasses will meaningfully serve users who depend on corrective lenses, a longstanding practical barrier to mainstream adoption of wearable AI and smart glasses devices.\n\nSOFTWARE\n\nEngadget reports that Meta is opening its display glasses platform to third-party developers, enabling apps and games beyond the device's current first-party feature set. The move signals a broader ecosystem strategy for Meta's $800 smart glasses line as competition in the category grows from Samsung, Google, and others.\n\nMeta announced a major update to its open-source Immersive Web SDK, adding an AI-powered agentic workflow that enables developers and non-coders to build WebXR experiences using AI coding assistants. Road to VR reports the update extends the framework originally launched at Meta Connect last year, which targeted core VR development tasks including physics, hand-tracking, and locomotion.\n\nUploadVR reports that Meta's latest Quest Public Test Channel update introduces AI-powered 3D photo conversion directly in the headset's browser, alongside streamlined tools for uploading 3D photos from a mobile device, expanding the platform's spatial media capabilities.\n\nUploadVR reviews Pluto TV's new immersive viewing app for Meta Quest, finding that while the app establishes a convincing atmosphere for virtual media consumption, it raises unresolved questions about content depth and utility relative to competing virtual theater experiences on the platform.\n\nUploadVR reports that a free DIRECTV streaming app is now available on Meta Quest headsets, expanding the platform's library of virtual viewing options as major media brands continue to establish presence on standalone VR devices.\n\nUploadVR reports that a Quest software update has introduced Capture Markers, a feature that shows users exactly what will appear in frame before taking a screenshot or starting a screen recording, addressing a persistent usability gap in the headset's media capture tools.\n\nAI AND SIMULATED WORLDS\n\nResearchers have introduced Articraft, an agentic system that uses large language models to generate articulated 3D assets at scale by translating the asset-generation problem into program synthesis — the LLM writes code that procedurally builds the asset. The work targets a recognized data shortage in training models to understand articulated 3D objects, with implications for scalable content pipelines in spatial computing and simulation.\n\nResearchers publishing on arXiv introduce Delta Forcing, a trust region-based steering method for interactive real-time autoregressive video generation that balances reactivity to new events with temporal coherence, with the authors positioning it as foundational infrastructure for world modeling and AI-driven content creation.\n\nPublished on arXiv, SceneForge is an intervention-driven framework that generates structured supervision from editable 3D world states, enabling multimodal models to learn representations that remain consistent across scene edits, viewpoints, and object-level changes — a capability the authors frame as essential for robust world model training.\n\nIEEE Spectrum reports that Anthropic's Claude Mythos Preview model can autonomously discover and weaponize software vulnerabilities in critical infrastructure — including operating systems and internet protocols — without expert guidance, a capability that eluded large teams of human developers. The development represents a meaningful escalation in AI-driven offensive security capabilities with broad implications for the devices and services the technology industry depends on.\n\nRESEARCH\n\nA study published in Cell Reports found that a virtual reality flying experience measurably alters neural responses to the visual perception of wings, providing evidence that immersive VR can induce lasting changes in sensory processing. The findings contribute to a growing body of research showing XR environments can reshape perceptual and neurological responses in ways that persist beyond the virtual experience.\n\nA paper published on arXiv introduces FaceParts, an unsupervised framework for segmenting and editing 3D Gaussian Splatting avatars directly in 3D space rather than relying on 2D image-domain generative models, with direct applications in virtual reality and digital avatar production for entertainment.\n\nPublished on arXiv, Seed3D 2.0 advances simulation-ready 3D content generation with a coarse-to-fine geometry pipeline, a locality-aware VAE for efficient spatial compression, and enhanced texture and material generation, building on its predecessor with broader application coverage including games, film, and industrial simulation.\n\nA paper on arXiv introduces a fast and robust mesh simplification method targeting the dense, noisy, and non-manifold meshes produced by neural rendering and large-scale generative 3D pipelines, with the authors explicitly citing AR/VR and simulation as downstream applications where efficient geometry is essential.\n",
+  "backfilled_at": "2026-05-20T00:37:30.154802+00:00"
+}

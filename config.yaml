@@ -1,0 +1,234 @@
+# Scout Configuration
+# Everything below defines your newsletter's identity, editorial behavior,
+# and sources. Change these to retarget Scout to a different topic area.
+
+# --- Newsletter Identity ---
+newsletter:
+  name: "Spatial Report"
+  slug: "spatial-report"
+  cadence: "weekly"
+  topics: "Spatial Computing, XR, and frontier AI"
+
+# --- Editorial Settings ---
+# Hide reasons are intentionally universal across all newsletters — these are
+# the three judgment calls every editor makes. The dashboard reads them from
+# here so the backend and the toast UI share one source of truth.
+editorial:
+  hide_reasons:
+    - id: "not_relevant"
+      label: "Not relevant"
+    - id: "weak"
+      label: "Weak"
+    - id: "already_covered"
+      label: "Already covered"
+
+# --- LLM Settings ---
+# Default applies to every agent unless overridden in the per-stage blocks below.
+# Per-stage routing lets you put the cheap/fast model on high-volume work (Scout)
+# and the quality model on editorial work (Editor, Curator).
+#
+# Supported providers:
+#   claude   — local `claude` CLI (Claude Pro/Max subscription, no API key)
+#   openai   — OpenAI, OR any OpenAI-compatible endpoint via `api_base`
+#              (Ollama, LM Studio, vLLM, Together, Groq, DeepSeek, etc.)
+#   gemini   — Google Gemini via `GEMINI_API_KEY`
+#
+# Examples:
+#   default:                          # current default — Claude CLI
+#     provider: "claude"
+#   scout:                            # cheap, fast model for high-volume filtering
+#     provider: "openai"
+#     model: "gpt-4o-mini"
+#   editor:                           # quality matters for editorial voice
+#     provider: "openai"
+#     model: "claude-opus-4-7"        # via OpenAI-compatible gateway
+#   curator:
+#     provider: "claude"
+#
+# Ollama (local Llama 3.1):
+#   default:
+#     provider: "openai"
+#     model: "llama3.1"
+#     api_base: "http://localhost:11434/v1"
+#     api_key: "ollama"
+#
+# Groq (extremely fast inference):
+#   default:
+#     provider: "openai"
+#     model: "llama-3.1-70b-versatile"
+#     api_base: "https://api.groq.com/openai/v1"
+#     api_key_env: "GROQ_API_KEY"
+llm:
+  default:
+    provider: "claude"
+    model: ""
+
+# --- Editorial Policy ---
+editorial_policy:
+  tone: "Neutral, authoritative — modeled after NYT, Bloomberg, Reuters, FT. Concise, factual, no hype. Active voice, precise language."
+  format: "Each item is a single paragraph (1-3 sentences). No bullet points, no bold titles. Attribution to source publication inline (e.g., 'according to CNET', 'Reuters reports'). No explicit links in body text."
+  rules:
+    - "NEVER include patent filings"
+    - "Vision Pro section covers usage, apps, workflows, and notable reports"
+    - "Always attribute source publication inline"
+    - "No editorializing in non-OPINION sections"
+    - "Prefer primary sources over aggregator rewrites"
+    - "Each item is self-contained — one paragraph, readable alone"
+
+# --- Newsletter Structure ---
+# SPOTLIGHT is NOT a category — it's a 2-3 sentence summary of the week's highlights,
+# written by the Curator as the intro paragraph. No items live in it.
+# The section order below defines the newsletter layout.
+newsletter_section_order:
+  - "HIGHLIGHTS"
+  - "APPLE VISION PRO"
+  - "APP STORE HIGHLIGHTS"
+  - "GAMING MARKETPLACE"
+  - "INVESTMENT"
+  - "HARDWARE"
+  - "SOFTWARE"
+  - "AI AND SIMULATED WORLDS"
+  - "HANDS ON REVIEW"
+  - "RESEARCH"
+  - "OPINION"
+
+# --- Categories (must match the names used in newsletter_section_order above) ---
+categories:
+  - name: "HIGHLIGHTS"
+    description: "The most important 4-6 stories of the week across all topics. Lead items. These get the most prominent placement after the spotlight intro."
+    keywords: ["major announcement", "launch", "strategy shift", "market move"]
+
+  - name: "APPLE VISION PRO"
+    description: "Apple Vision Pro coverage: usage, apps, workflows, developer stories, and notable reports."
+    keywords: ["Vision Pro", "visionOS", "spatial computing"]
+
+  - name: "APP STORE HIGHLIGHTS"
+    description: "Notable new or updated apps and games for Vision Pro on the App Store."
+    keywords: ["App Store", "visionOS app", "spatial app", "Vision Pro game"]
+
+  - name: "GAMING MARKETPLACE"
+    description: "VR/AR/XR gaming industry news — studios, releases, market shifts, hardware for gaming."
+    keywords: ["VR gaming", "Quest game", "PSVR", "VR studio", "gaming VR"]
+
+  - name: "INVESTMENT"
+    description: "Funding rounds, acquisitions, M&A, financial moves in XR/AI/spatial computing."
+    keywords: ["funding", "acquisition", "investment", "IPO", "raised", "acquired", "M&A"]
+
+  - name: "SOFTWARE"
+    description: "Platform updates, OS releases, SDKs, developer tools, runtime changes."
+    keywords: ["SDK", "OS update", "developer tools", "platform", "runtime", "API", "open source"]
+
+  - name: "HARDWARE"
+    description: "New devices, displays, optics, chips, sensors — anything physical."
+    keywords: ["headset", "glasses", "display", "chip", "sensor", "optics", "OLED", "micro-LED", "PPI"]
+
+  - name: "AI AND SIMULATED WORLDS"
+    description: "AI models, world models, simulation, generative AI, compute infrastructure — when relevant to spatial/XR or when seismic enough to matter."
+    keywords: ["AI model", "world model", "simulation", "compute", "LLM", "frontier model", "Claude", "GPT", "Gemini"]
+
+  - name: "HANDS ON REVIEW"
+    description: "First-hand reviews of headsets, glasses, apps, or experiences — journalists or creators sharing direct usage impressions."
+    keywords: ["review", "hands on", "first impressions", "I tried", "we tested", "tested"]
+
+  - name: "RESEARCH"
+    description: "Academic studies, clinical trials, published papers — XR/VR/AR used in research contexts."
+    keywords: ["study", "research", "university", "clinical trial", "found that", "published"]
+
+  - name: "OPINION"
+    description: "Analysis pieces, editorials, commentary from journalists or execs. Attributed to the author/publication."
+    keywords: ["argues", "questions whether", "opinion", "analysis", "commentary", "according to"]
+
+# --- RSS Sources ---
+sources:
+  - name: "Road to VR"
+    url: "https://www.roadtovr.com/feed/"
+    category_hint: "Spatial Computing (Hardware)"
+
+  - name: "UploadVR"
+    url: "https://www.uploadvr.com/feed/"
+    category_hint: "Spatial Computing (Hardware)"
+
+  - name: "VRScout"
+    url: "https://vrscout.com/feed/"
+    category_hint: "Spatial Computing (Software/Platform)"
+
+  - name: "XR Today"
+    url: "https://www.xrtoday.com/feed/"
+    category_hint: "Enterprise XR"
+
+  - name: "AR Post"
+    url: "https://arpost.co/feed/"
+    category_hint: "Spatial Computing (Software/Platform)"
+
+  - name: "Next Reality"
+    url: "https://next.reality.news/rss/all"
+    category_hint: "Spatial Computing (Software/Platform)"
+
+  - name: "The Verge - VR"
+    url: "https://www.theverge.com/rss/vr/index.xml"
+    category_hint: "Spatial Computing (Hardware)"
+
+  - name: "Ars Technica - Gaming/VR"
+    url: "https://feeds.arstechnica.com/arstechnica/gaming"
+    category_hint: "Spatial Computing (Software/Platform)"
+
+  - name: "TechCrunch - AR/VR"
+    url: "https://techcrunch.com/category/ar-vr/feed/"
+    category_hint: "Spatial Computing (Hardware)"
+
+  - name: "MIT Tech Review - AI"
+    url: "https://www.technologyreview.com/feed/"
+    category_hint: "Seismic AI"
+
+  - name: "VentureBeat - AI"
+    url: "https://venturebeat.com/category/ai/feed/"
+    category_hint: "AI / ML (Spatial-relevant)"
+
+  - name: "The Decoder"
+    url: "https://the-decoder.com/feed/"
+    category_hint: "AI / ML (Spatial-relevant)"
+
+  - name: "Hacker News (Spatial/XR)"
+    url: "https://hnrss.org/newest?q=spatial+computing+OR+augmented+reality+OR+virtual+reality+OR+mixed+reality"
+    category_hint: "Spatial Computing (Software/Platform)"
+
+  - name: "Engadget"
+    url: "https://www.engadget.com/rss.xml"
+    category_hint: "Spatial Computing (General Tech)"
+
+  - name: "CNET"
+    url: "https://www.cnet.com/rss/news/"
+    category_hint: "Spatial Computing (General Tech)"
+
+  - name: "Wired"
+    url: "https://www.wired.com/feed/rss"
+    category_hint: "Spatial Computing (General Tech)"
+
+  - name: "IEEE Spectrum"
+    url: "https://spectrum.ieee.org/feeds/feed.rss"
+    category_hint: "Research / Standards"
+
+  - name: "arXiv cs.HC (HCI)"
+    url: "https://rss.arxiv.org/rss/cs.HC"
+    category_hint: "Research (HCI)"
+
+  - name: "arXiv cs.GR (Graphics)"
+    url: "https://rss.arxiv.org/rss/cs.GR"
+    category_hint: "Research (Graphics/Rendering)"
+
+# --- Search Queries (for future non-RSS sources) ---
+search_queries:
+  - "spatial computing news"
+  - "augmented reality breakthrough"
+  - "mixed reality enterprise"
+  - "XR developer tools"
+  - "frontier AI model launch"
+  - "computer vision 3D"
+
+# --- Output Settings ---
+output:
+  daily_dir: "output/daily"
+  raw_file: "raw_items.json"
+  filtered_file: "filtered_items.json"
+  categorized_file: "categorized_items.json"
+  weekly_file: "weekly_draft.json"

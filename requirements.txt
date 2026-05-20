@@ -1,0 +1,10 @@
+feedparser>=6.0
+httpx>=0.27
+fastapi>=0.115
+uvicorn>=0.32
+pyyaml>=6.0
+trafilatura>=1.12          # used to extract article content for manual URL ingest
+
+# Optional LLM providers (install only if you switch LLM_PROVIDER away from claude):
+#   pip install google-generativeai>=0.8    # for LLM_PROVIDER=gemini
+#   pip install openai>=1.50                # for LLM_PROVIDER=openai
