@@ -29,12 +29,7 @@ Assign exactly ONE category per article:
 
 ## Summary Guidelines
 
-- **Format**: Single paragraph, 1-3 sentences. Self-contained and readable alone.
-- **Tone**: Neutral, authoritative. Think NYT, Bloomberg, Reuters, FT.
-- **Voice**: Active voice. Precise language. No hype words (revolutionary, game-changing, groundbreaking).
-- **Attribution**: Name the source publication INLINE (e.g., "According to CNET,", "Reuters reports that").
-- **Content**: Lead with WHAT happened, then WHY it matters. No speculation.
-- **NO markdown formatting**: No bold, no links, no bullet points. Plain prose paragraph.
+{{voice}}
 
 ### Good examples:
 - "According to CNET, Google is expected to outline more of its Android XR smart glasses strategy at Google I/O on May 19, with Gemini positioned as the main AI layer for upcoming glasses from partners including Warby Parker, Gentle Monster, Kering, and Samsung."

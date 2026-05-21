@@ -9,6 +9,12 @@ newsletter:
   cadence: "weekly"
   topics: "Spatial Computing, XR, and frontier AI"
 
+# --- Automation ---
+# When the daily pipeline runs. Local time, 24h format (HH:MM).
+# Editable from Settings → Automation in the dashboard.
+automation:
+  schedule_time: "08:00"
+
 # --- Editorial Settings ---
 # Hide reasons are intentionally universal across all newsletters — these are
 # the three judgment calls every editor makes. The dashboard reads them from
@@ -21,6 +27,37 @@ editorial:
       label: "Weak"
     - id: "already_covered"
       label: "Already covered"
+
+  # ─── Editorial voice ──────────────────────────────────────────────────
+  # The "soul" of Scout — universal journalism guidelines applied across
+  # every newsletter. Editable from Settings → Editorial. "Reset to default"
+  # restores Scout's shipped voice.
+  voice: |
+    - **Format**: Single paragraph, 1-3 sentences. Self-contained and readable alone.
+    - **Tone**: Neutral, authoritative. Think NYT, Bloomberg, Reuters, FT.
+    - **Voice**: Active voice. Precise language. No hype words (revolutionary, game-changing, groundbreaking).
+    - **Attribution**: Name the source publication INLINE (e.g., "According to CNET,", "Reuters reports that").
+    - **Content**: Lead with WHAT happened, then WHY it matters. No speculation.
+    - **NO markdown formatting**: No bold, no links, no bullet points. Plain prose paragraph.
+
+  # ─── Topic-specific overlay (additive on top of universal baseline) ───
+  # Scout's prompt has universal KEEP/DISCARD rules. These fields add
+  # YOUR newsletter's topic-specific rules. Editable from Settings →
+  # Editorial. "Restore your initial setup" reverts to the snapshot
+  # captured at first install.
+  extra_include_criteria: |
+    - Covers spatial computing, AR, VR, MR, XR hardware or software
+    - Announces new headsets, glasses, spatial displays, or haptic devices
+    - Covers spatial computing platforms, SDKs, or developer tools
+    - Discusses AI/ML applied to spatial contexts (computer vision, 3D generation, scene understanding, SLAM)
+    - Reports on enterprise XR adoption or deployment
+    - Announces a frontier AI model launch or paradigm shift (GPT, Claude, Gemini — major releases only)
+    - Published academic research relevant to spatial computing or spatial AI
+
+  extra_exclude_criteria: |
+    - General consumer tech news unrelated to spatial/XR
+    - Gaming news that isn't specifically about VR/AR/MR
+    - Incremental AI news (minor updates, funding rounds, hiring)
 
 # --- LLM Settings ---
 # Default applies to every agent unless overridden in the per-stage blocks below.

@@ -20,6 +20,11 @@ output/daily/*.log
 # Claude Code workspace (per-developer, not shared)
 .claude/settings.local.json
 
+# Per-install snapshot of the user's topics + include/exclude criteria,
+# captured on first dashboard load. Used by Settings → Editorial's
+# "Restore your initial setup" link. Local to each install.
+.scout_install_snapshot.yaml
+
 # OS
 .DS_Store
 Thumbs.db

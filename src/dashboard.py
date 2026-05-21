@@ -53,6 +53,7 @@ DAILY_SCRIPT = BASE_DIR / "src" / "daily.py"
 VENV_PY = BASE_DIR / ".venv" / "bin" / "python"
 PLIST_TEMPLATE = BASE_DIR / "com.scout.spatial-report.plist"
 LAUNCHD_DIR = Path.home() / "Library" / "LaunchAgents"
+INSTALL_SNAPSHOT = BASE_DIR / ".scout_install_snapshot.yaml"
 
 
 def load_config() -> dict:
@@ -426,6 +427,176 @@ async def trigger_refresh():
     return JSONResponse({"ok": True, "started_at": started}, status_code=202)
 
 
+# ─── Editorial settings (newsletter identity + voice + topic overlay) ────────
+
+
+# Scout's universal default editorial voice. The dashboard's "Reset to Scout
+# default" link restores this. Kept in code (not in config) so the user's
+# config.yaml is the canonical "what's in effect right now" — and the default
+# is the immutable fallback.
+_DEFAULT_VOICE = (
+    "- **Format**: Single paragraph, 1-3 sentences. Self-contained and readable alone.\n"
+    "- **Tone**: Neutral, authoritative. Think NYT, Bloomberg, Reuters, FT.\n"
+    "- **Voice**: Active voice. Precise language. No hype words (revolutionary, game-changing, groundbreaking).\n"
+    "- **Attribution**: Name the source publication INLINE (e.g., \"According to CNET,\", \"Reuters reports that\").\n"
+    "- **Content**: Lead with WHAT happened, then WHY it matters. No speculation.\n"
+    "- **NO markdown formatting**: No bold, no links, no bullet points. Plain prose paragraph."
+)
+
+
+def _ensure_install_snapshot() -> dict:
+    """Capture the user's per-newsletter setup the first time we see this
+    install — topics + include + exclude criteria. The dashboard's
+    'Restore your initial setup' affordance reads from here.
+
+    For brand-new installs run via install.sh, this fires on first dashboard
+    load. For repos cloned without running install.sh, same — first dashboard
+    load. Either way, the user gets a snapshot they can revert to."""
+    if INSTALL_SNAPSHOT.exists():
+        try:
+            with open(INSTALL_SNAPSHOT, "r") as f:
+                return yaml.safe_load(f) or {}
+        except (OSError, yaml.YAMLError):
+            pass
+
+    cfg = load_config()
+    editorial = cfg.get("editorial") or {}
+    newsletter = cfg.get("newsletter") or {}
+    snapshot = {
+        "topics": newsletter.get("topics", ""),
+        "extra_include_criteria": editorial.get("extra_include_criteria", ""),
+        "extra_exclude_criteria": editorial.get("extra_exclude_criteria", ""),
+    }
+    try:
+        with open(INSTALL_SNAPSHOT, "w") as f:
+            yaml.safe_dump(snapshot, f, default_flow_style=False, allow_unicode=True)
+    except OSError:
+        pass
+    return snapshot
+
+
+def _editorial_state() -> dict:
+    cfg = load_config()
+    editorial = cfg.get("editorial") or {}
+    newsletter = cfg.get("newsletter") or {}
+    snapshot = _ensure_install_snapshot()
+    return {
+        "topics": newsletter.get("topics", ""),
+        "voice": editorial.get("voice", ""),
+        "extra_include_criteria": editorial.get("extra_include_criteria", ""),
+        "extra_exclude_criteria": editorial.get("extra_exclude_criteria", ""),
+        "defaults": {
+            "voice": _DEFAULT_VOICE,
+        },
+        "snapshot": snapshot,
+    }
+
+
+@app.get("/api/editorial")
+async def get_editorial():
+    return JSONResponse(_editorial_state())
+
+
+def _write_editorial(updates: dict) -> None:
+    """Patch the `newsletter.topics` and `editorial.voice` /
+    `extra_*_criteria` values in config.yaml without disturbing comments
+    or other blocks. Each field is updated independently."""
+    text = CONFIG_PATH.read_text()
+
+    if "topics" in updates:
+        text = _replace_yaml_scalar(text, "newsletter", "topics", updates["topics"])
+    if "voice" in updates:
+        text = _replace_yaml_block(text, "editorial", "voice", updates["voice"])
+    if "extra_include_criteria" in updates:
+        text = _replace_yaml_block(
+            text, "editorial", "extra_include_criteria", updates["extra_include_criteria"]
+        )
+    if "extra_exclude_criteria" in updates:
+        text = _replace_yaml_block(
+            text, "editorial", "extra_exclude_criteria", updates["extra_exclude_criteria"]
+        )
+
+    CONFIG_PATH.write_text(text)
+
+
+def _yaml_escape_scalar(s: str) -> str:
+    return s.replace("\\", "\\\\").replace('"', '\\"')
+
+
+def _replace_yaml_scalar(text: str, section: str, key: str, value: str) -> str:
+    """Replace `<section>: { ... <key>: "..." ... }` style scalar value."""
+    pattern = re.compile(
+        rf"(?ms)^(?P<indent>[ \t]*){re.escape(key)}:[ \t]*\".*?\"[ \t]*$"
+    )
+    # Find within the named section block.
+    section_re = re.compile(rf"(?ms)^{re.escape(section)}:.*?(?=^[A-Za-z_])")
+    m = section_re.search(text)
+    if not m:
+        return text
+    section_text = m.group(0)
+    new_section = pattern.sub(
+        lambda mm: f'{mm.group("indent")}{key}: "{_yaml_escape_scalar(value)}"',
+        section_text,
+        count=1,
+    )
+    return text[: m.start()] + new_section + text[m.end():]
+
+
+def _replace_yaml_block(text: str, section: str, key: str, value: str) -> str:
+    """Replace a `<key>: |` block scalar within the named section. Preserves:
+    - surrounding comments and other keys in the section,
+    - the existing body indentation (inferred from the current block),
+    - any trailing blank lines that separated the block from the next item.
+    """
+    section_re = re.compile(rf"(?ms)^{re.escape(section)}:.*?(?=^[A-Za-z_]|\Z)")
+    m = section_re.search(text)
+    if not m:
+        return text
+    section_text = m.group(0)
+
+    # Match `key: |` plus only the indented content lines that follow (not
+    # the trailing blank lines — we want to preserve those literally).
+    block_re = re.compile(
+        rf"(?m)^(?P<indent>[ \t]*){re.escape(key)}:[ \t]*\|[ \t]*\n"
+        r"(?P<body>(?:[ \t]+[^\n]*\n)*)"
+    )
+    bm = block_re.search(section_text)
+    if not bm:
+        return text
+    indent = bm.group("indent")
+    body_match = bm.group("body")
+
+    # Infer body indent from the first non-empty body line. Falls back to
+    # `indent + "  "` (the YAML convention of +2) if the block was empty.
+    body_indent = indent + "  "
+    for line in body_match.splitlines():
+        if line.strip():
+            stripped_len = len(line) - len(line.lstrip(" \t"))
+            body_indent = line[:stripped_len]
+            break
+
+    value_lines = value.rstrip().splitlines() if value.strip() else [""]
+    new_body = "\n".join(f"{body_indent}{line}".rstrip() for line in value_lines)
+    new_block = f"{indent}{key}: |\n{new_body}\n"
+
+    new_section = section_text[: bm.start()] + new_block + section_text[bm.end():]
+    return text[: m.start()] + new_section + text[m.end():]
+
+
+@app.post("/api/editorial")
+async def save_editorial(request: Request):
+    body = await request.json()
+    allowed = {"topics", "voice", "extra_include_criteria", "extra_exclude_criteria"}
+    updates = {k: v for k, v in body.items() if k in allowed and isinstance(v, str)}
+    if not updates:
+        return JSONResponse({"error": "No editable fields supplied."}, status_code=400)
+    try:
+        _write_editorial(updates)
+    except OSError as e:
+        return JSONResponse({"error": str(e)}, status_code=500)
+    return JSONResponse({"ok": True, "updated": list(updates.keys())})
+
+
 # ─── Automation (launchd schedule management from Settings) ──────────────────
 
 
@@ -437,6 +608,68 @@ def _automation_label() -> str:
 
 def _automation_plist_path() -> Path:
     return LAUNCHD_DIR / f"{_automation_label()}.plist"
+
+
+DEFAULT_SCHEDULE_HOUR = 8
+DEFAULT_SCHEDULE_MINUTE = 0
+
+
+def _automation_schedule_time(cfg: dict | None = None) -> tuple[int, int]:
+    """(hour, minute) of the configured daily run time. Falls back to 08:00."""
+    cfg = cfg if cfg is not None else load_config()
+    raw = ((cfg.get("automation") or {}).get("schedule_time") or "").strip()
+    m = re.fullmatch(r"(\d{1,2}):(\d{2})", raw)
+    if not m:
+        return DEFAULT_SCHEDULE_HOUR, DEFAULT_SCHEDULE_MINUTE
+    hour, minute = int(m.group(1)), int(m.group(2))
+    if not (0 <= hour <= 23 and 0 <= minute <= 59):
+        return DEFAULT_SCHEDULE_HOUR, DEFAULT_SCHEDULE_MINUTE
+    return hour, minute
+
+
+def _format_schedule_time(hour: int, minute: int) -> str:
+    """8, 0 → '8:00 AM'. Used in the panel header."""
+    suffix = "AM" if hour < 12 else "PM"
+    h12 = hour % 12 or 12
+    return f"{h12}:{minute:02d} {suffix}"
+
+
+def _write_automation_schedule_time(hour: int, minute: int) -> None:
+    """Persist the schedule_time to config.yaml. Adds the `automation:` block
+    if it's missing so older configs still work."""
+    value = f"{hour:02d}:{minute:02d}"
+    path = BASE_DIR / "config.yaml"
+    text = path.read_text()
+    block_re = re.compile(
+        r"(?ms)^automation:[ \t]*\n(?:[ \t]+[^\n]*\n)*"
+    )
+    if block_re.search(text):
+        line_re = re.compile(
+            r"(?m)^(?P<indent>[ \t]+)schedule_time:[ \t]*\".*?\"[ \t]*$"
+        )
+
+        def replace_line(match: "re.Match[str]") -> str:
+            return f'{match.group("indent")}schedule_time: "{value}"'
+
+        new_text, n = line_re.subn(replace_line, text, count=1)
+        if n == 0:
+            # `automation:` exists but has no schedule_time key — append it.
+            new_text = block_re.sub(
+                lambda mm: mm.group(0) + f'  schedule_time: "{value}"\n', text, count=1
+            )
+        text = new_text
+    else:
+        # No automation block — append one at the end of the file.
+        if not text.endswith("\n"):
+            text += "\n"
+        text += (
+            "\n# --- Automation ---\n"
+            "# When the daily pipeline runs. Local time, 24h format (HH:MM).\n"
+            "# Editable from Settings → Automation in the dashboard.\n"
+            "automation:\n"
+            f'  schedule_time: "{value}"\n'
+        )
+    path.write_text(text)
 
 
 def _automation_supported() -> bool:
@@ -484,12 +717,16 @@ def _automation_last_run() -> dict:
 
 def _automation_status_dict() -> dict:
     label = _automation_label()
+    hour, minute = _automation_schedule_time()
     return {
         "platform_supported": _automation_supported(),
         "installed": _automation_plist_path().exists(),
         "loaded": _automation_loaded(label),
         "label": label,
-        "schedule": "Daily at 8:00 AM",
+        "hour": hour,
+        "minute": minute,
+        "schedule_time": f"{hour:02d}:{minute:02d}",
+        "schedule": f"Daily at {_format_schedule_time(hour, minute)}",
         **_automation_last_run(),
     }
 
@@ -499,31 +736,24 @@ async def automation_status():
     return JSONResponse(_automation_status_dict())
 
 
-@app.post("/api/automation/enable")
-async def automation_enable():
-    if not _automation_supported():
-        return JSONResponse(
-            {"error": "Automation requires macOS (launchd). On other systems, schedule src/daily.py with cron or systemd."},
-            status_code=400,
-        )
+def _install_and_load_plist() -> tuple[bool, str]:
+    """Render the plist from template using current config (slug + schedule_time)
+    and launchctl load it. Returns (ok, label_or_error_message)."""
     if not PLIST_TEMPLATE.exists():
-        return JSONResponse(
-            {"error": f"Plist template missing at {PLIST_TEMPLATE}"}, status_code=500
-        )
-
+        return False, f"Plist template missing at {PLIST_TEMPLATE}"
     label = _automation_label()
     plist_path = _automation_plist_path()
-
+    hour, minute = _automation_schedule_time()
     template = PLIST_TEMPLATE.read_text()
     rendered = (
         template.replace("__PROJECT_DIR__", str(BASE_DIR))
         .replace("__PLIST_LABEL__", label)
+        .replace("__HOUR__", str(hour))
+        .replace("__MINUTE__", str(minute))
     )
-
     LAUNCHD_DIR.mkdir(parents=True, exist_ok=True)
     if _automation_loaded(label):
         subprocess.run(["launchctl", "unload", str(plist_path)], capture_output=True)
-
     plist_path.write_text(rendered)
     result = subprocess.run(
         ["launchctl", "load", str(plist_path)],
@@ -532,11 +762,22 @@ async def automation_enable():
         timeout=5,
     )
     if result.returncode != 0:
+        return False, f"launchctl load failed: {result.stderr.strip() or 'unknown error'}"
+    return True, label
+
+
+@app.post("/api/automation/enable")
+async def automation_enable():
+    if not _automation_supported():
         return JSONResponse(
-            {"error": f"launchctl load failed: {result.stderr.strip() or 'unknown error'}"},
-            status_code=500,
+            {"error": "Automation requires macOS (launchd). On other systems, schedule src/daily.py with cron or systemd."},
+            status_code=400,
         )
-    return JSONResponse({"ok": True, "label": label})
+    ok, info = _install_and_load_plist()
+    if not ok:
+        status = 500 if "missing" in info or "failed" in info else 400
+        return JSONResponse({"error": info}, status_code=status)
+    return JSONResponse({"ok": True, "label": info})
 
 
 @app.post("/api/automation/disable")
@@ -548,6 +789,37 @@ async def automation_disable():
         subprocess.run(["launchctl", "unload", str(plist_path)], capture_output=True)
         plist_path.unlink()
     return JSONResponse({"ok": True})
+
+
+@app.post("/api/automation/schedule")
+async def automation_schedule(request: Request):
+    """Persist a new daily run time. If automation is currently loaded,
+    re-install the plist so the new time takes effect immediately."""
+    body = await request.json()
+    raw = (body.get("schedule_time") or "").strip()
+    m = re.fullmatch(r"(\d{1,2}):(\d{2})", raw)
+    if not m:
+        return JSONResponse(
+            {"error": "Expected schedule_time in HH:MM 24h format."}, status_code=400
+        )
+    hour, minute = int(m.group(1)), int(m.group(2))
+    if not (0 <= hour <= 23 and 0 <= minute <= 59):
+        return JSONResponse({"error": "Time out of range."}, status_code=400)
+    try:
+        _write_automation_schedule_time(hour, minute)
+    except OSError as e:
+        return JSONResponse({"error": str(e)}, status_code=500)
+
+    reloaded = False
+    if _automation_supported() and _automation_loaded(_automation_label()):
+        ok, info = _install_and_load_plist()
+        if not ok:
+            return JSONResponse({"error": info}, status_code=500)
+        reloaded = True
+
+    return JSONResponse(
+        {"ok": True, "schedule_time": f"{hour:02d}:{minute:02d}", "reloaded": reloaded}
+    )
 
 
 # ─── Manual URL ingest ────────────────────────────────────────────────────────
@@ -1399,11 +1671,100 @@ def _render_models_panel() -> str:
 </section>"""
 
 
+def _render_editorial_panel() -> str:
+    state = _editorial_state()
+    snapshot = state.get("snapshot") or {}
+
+    def reset_link(field_key: str, default_value: str, label: str) -> str:
+        """Render a 'reset' link if the current value differs from the default."""
+        current = (state.get(field_key) or "").strip()
+        default = (default_value or "").strip()
+        if not default or current == default:
+            return '<span class="reset-link reset-link--disabled" aria-hidden="true">'
+            f'{label}</span>'
+        return (
+            f'<button class="reset-link" '
+            f'onclick="resetEditorialField(\'{field_key}\', this)" '
+            f'data-default="{_html_attr(default)}" type="button">{label}</button>'
+        )
+
+    topics_reset = reset_link("topics", snapshot.get("topics", ""), "Restore your initial setup")
+    voice_reset = reset_link("voice", state["defaults"]["voice"], "Reset to Scout default")
+    include_reset = reset_link(
+        "extra_include_criteria", snapshot.get("extra_include_criteria", ""), "Restore your initial setup"
+    )
+    exclude_reset = reset_link(
+        "extra_exclude_criteria", snapshot.get("extra_exclude_criteria", ""), "Restore your initial setup"
+    )
+
+    return f"""
+<section class="settings-panel">
+    <div class="settings-panel-header">
+        <div>
+            <h2>Editorial</h2>
+            <p class="settings-panel-sub">The voice and judgment Scout applies on your behalf. Voice is universal across all newsletters; topic-specific rules are yours.</p>
+        </div>
+        <button onclick="saveEditorial()" class="btn-primary" id="editorial-save-btn">Save changes</button>
+    </div>
+
+    <div class="editorial-field">
+        <div class="editorial-field-header">
+            <label for="editorial-topics">Topics</label>
+            {topics_reset}
+        </div>
+        <input id="editorial-topics" class="editorial-input" type="text"
+               value="{_html_attr(state['topics'])}"
+               placeholder="What your newsletter covers — one line">
+        <p class="editorial-hint">Flows into every agent prompt. Change this to retarget Scout to a different beat.</p>
+    </div>
+
+    <div class="editorial-field">
+        <div class="editorial-field-header">
+            <label for="editorial-voice">Editorial voice</label>
+            {voice_reset}
+        </div>
+        <textarea id="editorial-voice" class="editorial-textarea" rows="7"
+                  placeholder="Universal journalism guidelines applied across every Scout newsletter.">{_html_text(state['voice'])}</textarea>
+        <p class="editorial-hint">Scout's editorial DNA — tone, format, attribution. Same defaults work for any topic.</p>
+    </div>
+
+    <div class="editorial-field">
+        <div class="editorial-field-header">
+            <label for="editorial-include">What to include</label>
+            {include_reset}
+        </div>
+        <textarea id="editorial-include" class="editorial-textarea" rows="7"
+                  placeholder="Additional KEEP rules specific to your beat. Optional — Scout's universal rules already handle topic relevance and primary sourcing.">{_html_text(state['extra_include_criteria'])}</textarea>
+        <p class="editorial-hint">Topic-specific KEEP criteria. Empty is fine — Scout's universal baseline does the basics.</p>
+    </div>
+
+    <div class="editorial-field">
+        <div class="editorial-field-header">
+            <label for="editorial-exclude">What to exclude</label>
+            {exclude_reset}
+        </div>
+        <textarea id="editorial-exclude" class="editorial-textarea" rows="6"
+                  placeholder="Additional DISCARD rules specific to your beat. Patents are already excluded universally — you don't need to list them.">{_html_text(state['extra_exclude_criteria'])}</textarea>
+        <p class="editorial-hint">Topic-specific DISCARD criteria. Universal exclusions (patents, opinion without anchor, etc.) are already enforced.</p>
+    </div>
+
+    <div id="editorial-banner" class="export-banner hidden"></div>
+</section>"""
+
+
+def _html_attr(s: str) -> str:
+    return (s or "").replace("&", "&amp;").replace('"', "&quot;").replace("<", "&lt;")
+
+
+def _html_text(s: str) -> str:
+    return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
 def _render_automation_panel() -> str:
     status = _automation_status_dict()
     supported = status["platform_supported"]
-    installed = status["installed"]
-    loaded = status["loaded"]
+    is_on = bool(status["installed"] and status["loaded"])
+    pretty_time = _format_schedule_time(status["hour"], status["minute"])
 
     if not supported:
         return """
@@ -1411,7 +1772,7 @@ def _render_automation_panel() -> str:
     <div class="settings-panel-header">
         <div>
             <h2>Automation</h2>
-            <p class="settings-panel-sub">Run the pipeline automatically each morning so Signals fills up overnight.</p>
+            <p class="settings-panel-sub">Run the pipeline automatically each morning.</p>
         </div>
     </div>
     <p class="automation-note">
@@ -1420,36 +1781,57 @@ def _render_automation_panel() -> str:
     </p>
 </section>"""
 
-    if installed and loaded:
-        last_run = status.get("last_run_at") or "Not yet — first run will happen at the next scheduled time."
+    toggle_html = (
+        f'<button class="toggle-switch" data-on="{str(is_on).lower()}" '
+        f'onclick="toggleAutomation(this)" aria-label="Toggle automation" role="switch" '
+        f'aria-checked="{str(is_on).lower()}">'
+        f'<span class="toggle-track"></span><span class="toggle-thumb"></span>'
+        f'</button>'
+    )
+
+    time_picker_html = f"""
+    <div class="automation-time-row">
+        <label for="automation-time">Run daily at</label>
+        <input id="automation-time" type="time" class="automation-time-input"
+               value="{status['schedule_time']}"
+               onchange="updateAutomationTime(this)">
+        <span id="automation-time-feedback" class="automation-time-feedback" aria-live="polite"></span>
+    </div>"""
+
+    if is_on:
+        last_run_at = status.get("last_run_at")
         added = status.get("last_run_added")
-        added_str = (
-            f" · {added} new {'story' if added == 1 else 'stories'} added"
-            if isinstance(added, int)
-            else ""
-        )
+        if last_run_at:
+            bits = [f"Last run {last_run_at}"]
+            if isinstance(added, int):
+                bits.append(f"{added} new {'story' if added == 1 else 'stories'}")
+            last_run_line = " · ".join(bits)
+        else:
+            last_run_line = "First run will happen at the next scheduled time."
+
         return f"""
 <section class="settings-panel">
     <div class="settings-panel-header">
         <div>
             <h2>Automation</h2>
-            <p class="settings-panel-sub">Scheduled daily at 8:00 AM · <code>{status['label']}</code></p>
+            <p class="settings-panel-sub">Scheduled daily at {pretty_time} · <code>{status['label']}</code></p>
         </div>
-        <button onclick="disableAutomation()" class="btn-secondary" id="automation-btn">Disable</button>
+        {toggle_html}
     </div>
-    <p class="automation-note"><span class="automation-dot automation-dot--on"></span> Last automatic run: {last_run}{added_str}</p>
+    {time_picker_html}
+    <p class="automation-note">{last_run_line}</p>
 </section>"""
 
-    return """
+    return f"""
 <section class="settings-panel">
     <div class="settings-panel-header">
         <div>
             <h2>Automation</h2>
-            <p class="settings-panel-sub">Run the pipeline automatically each morning so Signals fills up overnight. You can still click ✦ Refresh manually anytime.</p>
+            <p class="settings-panel-sub">Run the pipeline automatically each day at {pretty_time}. You can still click ✦ Refresh anytime.</p>
         </div>
-        <button onclick="enableAutomation()" class="btn-primary" id="automation-btn">Enable daily refresh</button>
+        {toggle_html}
     </div>
-    <p class="automation-note"><span class="automation-dot automation-dot--off"></span> Not scheduled — Scout only runs when you click ✦ Refresh.</p>
+    {time_picker_html}
 </section>"""
 
 
@@ -1493,16 +1875,19 @@ def _render_pipeline_table() -> str:
 
 def render_setup() -> str:
     feeds_editor = _render_feeds_editor()
+    editorial_panel = _render_editorial_panel()
     automation_panel = _render_automation_panel()
     models_panel = _render_models_panel()
     pipeline_table = _render_pipeline_table()
     return f"""
 <div class="page-header">
     <h1>Settings</h1>
-    <p class="subtitle">Manage feeds, automation, and editorial behavior.</p>
+    <p class="subtitle">Manage feeds, editorial behavior, and automation.</p>
 </div>
 
 {feeds_editor}
+
+{editorial_panel}
 
 {automation_panel}
 
@@ -2462,6 +2847,8 @@ h1 {
     border-radius: var(--radius-xl);
     font-size: 0.9375rem;
     font-weight: 500;
+    white-space: nowrap;
+    flex-shrink: 0;
     cursor: pointer;
     transition: all var(--transition);
 }
@@ -2906,9 +3293,6 @@ h1 {
 /* ─── Automation panel ─── */
 
 .automation-note {
-    display: flex;
-    align-items: center;
-    gap: 8px;
     margin: 12px 0 0;
     padding: 10px 12px;
     background: var(--color-bg);
@@ -2917,15 +3301,188 @@ h1 {
     color: var(--color-text-secondary);
 }
 
-.automation-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    flex-shrink: 0;
+.automation-time-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+    font-size: 0.875rem;
 }
 
-.automation-dot--on { background: #34c759; }
-.automation-dot--off { background: var(--color-text-tertiary, #999); }
+.automation-time-row label {
+    color: var(--color-text-secondary);
+}
+
+.automation-time-input {
+    appearance: none;
+    padding: 6px 10px;
+    font: inherit;
+    font-size: 0.875rem;
+    color: var(--color-text-primary);
+    background: var(--color-bg);
+    border: 0.5px solid var(--color-border-light);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.automation-time-input:focus {
+    outline: none;
+    border-color: var(--color-blue);
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.12);
+}
+
+.automation-time-feedback {
+    font-size: 0.75rem;
+    color: var(--color-text-tertiary, #999);
+    transition: color var(--transition);
+}
+
+.automation-time-feedback.saved {
+    color: var(--color-green, #16a34a);
+}
+
+.automation-time-feedback.error {
+    color: #dc2626;
+}
+
+/* ─── Editorial panel ─── */
+
+.editorial-field {
+    margin: 20px 0 0;
+}
+
+.editorial-field-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.editorial-field-header label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.editorial-input,
+.editorial-textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    font: inherit;
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: var(--color-text-primary);
+    background: var(--color-bg);
+    border: 0.5px solid var(--color-border-light);
+    border-radius: var(--radius-sm);
+}
+
+.editorial-textarea {
+    resize: vertical;
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+}
+
+.editorial-input:focus,
+.editorial-textarea:focus {
+    outline: none;
+    border-color: var(--color-blue);
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.12);
+}
+
+.editorial-hint {
+    margin: 6px 0 0;
+    font-size: 0.75rem;
+    color: var(--color-text-tertiary, #999);
+}
+
+.reset-link {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    font-size: 0.75rem;
+    color: var(--color-blue);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.reset-link:hover {
+    text-decoration: underline;
+}
+
+.reset-link--disabled {
+    color: var(--color-text-tertiary, #999);
+    cursor: default;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+/* ─── iOS-style toggle switch ─── */
+
+.toggle-switch {
+    position: relative;
+    appearance: none;
+    border: 0;
+    padding: 0;
+    width: 44px;
+    height: 26px;
+    background: transparent;
+    cursor: pointer;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.toggle-track {
+    position: absolute;
+    inset: 0;
+    background: rgba(120, 120, 128, 0.28);
+    border-radius: 13px;
+    transition: background var(--transition);
+}
+
+.toggle-thumb {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.06);
+    transition: transform var(--transition);
+}
+
+.toggle-switch[data-on="true"] .toggle-track {
+    background: #34c759;
+}
+
+.toggle-switch[data-on="true"] .toggle-thumb {
+    transform: translateX(18px);
+}
+
+.toggle-switch:hover .toggle-track {
+    background: rgba(120, 120, 128, 0.40);
+}
+
+.toggle-switch[data-on="true"]:hover .toggle-track {
+    background: #2ab64f;
+}
+
+.toggle-switch[data-busy="true"] {
+    opacity: 0.55;
+    cursor: progress;
+}
+
+.toggle-switch:focus-visible {
+    outline: 2px solid var(--color-blue);
+    outline-offset: 3px;
+    border-radius: 13px;
+}
 
 /* ─── Signals header — add-url row ─── */
 
@@ -4074,42 +4631,154 @@ document.addEventListener('DOMContentLoaded', () => {
     }).catch(() => {});
 });
 
-// ─── Automation toggle (Settings) ─────────────────────────────────────────────
+// ─── Editorial settings (Settings) ─────────────────────────────────────────────
 
-async function enableAutomation() {
-    const btn = document.getElementById('automation-btn');
-    if (btn) { btn.disabled = true; btn.textContent = 'Enabling…'; }
+async function saveEditorial() {
+    const btn = document.getElementById('editorial-save-btn');
+    const banner = document.getElementById('editorial-banner');
+    if (btn) { btn.disabled = true; btn.textContent = 'Saving…'; }
+
+    const payload = {
+        topics: document.getElementById('editorial-topics').value,
+        voice: document.getElementById('editorial-voice').value,
+        extra_include_criteria: document.getElementById('editorial-include').value,
+        extra_exclude_criteria: document.getElementById('editorial-exclude').value,
+    };
+
     try {
-        const res = await fetch('/api/automation/enable', {method: 'POST'});
+        const res = await fetch('/api/editorial', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(payload),
+        });
         const data = await res.json();
-        if (res.ok && data.ok) {
-            window.location.reload();
+        if (data.ok) {
+            if (banner) {
+                banner.textContent = 'Saved. Changes apply on the next refresh.';
+                banner.classList.remove('hidden');
+                setTimeout(() => banner.classList.add('hidden'), 3500);
+            }
         } else {
-            alert(data.error || 'Could not enable automation.');
-            if (btn) { btn.disabled = false; btn.textContent = 'Enable daily refresh'; }
+            if (banner) {
+                banner.textContent = `Save failed: ${data.error || 'unknown error'}`;
+                banner.classList.remove('hidden');
+            }
         }
     } catch (e) {
-        alert('Network error: ' + e.message);
-        if (btn) { btn.disabled = false; btn.textContent = 'Enable daily refresh'; }
+        if (banner) {
+            banner.textContent = `Network error: ${e.message}`;
+            banner.classList.remove('hidden');
+        }
+    } finally {
+        if (btn) { btn.disabled = false; btn.textContent = 'Save changes'; }
     }
 }
 
-async function disableAutomation() {
-    if (!confirm('Disable daily automatic refresh? You can still trigger refreshes manually with the ✦ Refresh button.')) return;
-    const btn = document.getElementById('automation-btn');
-    if (btn) { btn.disabled = true; btn.textContent = 'Disabling…'; }
+function resetEditorialField(field, btn) {
+    const value = btn.getAttribute('data-default') || '';
+    // Decode the HTML-attr encoding we used when rendering.
+    const decoded = (new DOMParser())
+        .parseFromString(value, 'text/html')
+        .documentElement.textContent;
+    const elMap = {
+        topics: 'editorial-topics',
+        voice: 'editorial-voice',
+        extra_include_criteria: 'editorial-include',
+        extra_exclude_criteria: 'editorial-exclude',
+    };
+    const el = document.getElementById(elMap[field]);
+    if (el) {
+        el.value = decoded;
+        el.focus();
+    }
+}
+
+// ─── Automation toggle (Settings) ─────────────────────────────────────────────
+
+let automationTimeDebounce = null;
+let automationTimeLastSaved = '';
+
+async function updateAutomationTime(input) {
+    const value = input.value;
+    const fb = document.getElementById('automation-time-feedback');
+    if (!value || !/^\\d{2}:\\d{2}$/.test(value)) {
+        if (fb) {
+            fb.textContent = 'Enter time as HH:MM';
+            fb.className = 'automation-time-feedback error';
+        }
+        return;
+    }
+    if (value === automationTimeLastSaved) return;
+
+    if (automationTimeDebounce) clearTimeout(automationTimeDebounce);
+    if (fb) {
+        fb.textContent = 'Saving…';
+        fb.className = 'automation-time-feedback';
+    }
+
+    automationTimeDebounce = setTimeout(async () => {
+        try {
+            const res = await fetch('/api/automation/schedule', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({schedule_time: value}),
+            });
+            const data = await res.json();
+            if (res.ok && data.ok) {
+                automationTimeLastSaved = value;
+                if (fb) {
+                    fb.textContent = data.reloaded ? 'Saved · schedule reloaded' : 'Saved';
+                    fb.className = 'automation-time-feedback saved';
+                    setTimeout(() => {
+                        if (fb.textContent.startsWith('Saved')) {
+                            fb.textContent = '';
+                            fb.className = 'automation-time-feedback';
+                        }
+                    }, 2000);
+                }
+            } else {
+                if (fb) {
+                    fb.textContent = data.error || 'Could not save time.';
+                    fb.className = 'automation-time-feedback error';
+                }
+            }
+        } catch (e) {
+            if (fb) {
+                fb.textContent = 'Network error: ' + e.message;
+                fb.className = 'automation-time-feedback error';
+            }
+        }
+    }, 250);
+}
+
+async function toggleAutomation(el) {
+    const wasOn = el.getAttribute('data-on') === 'true';
+    const willBeOn = !wasOn;
+
+    // Optimistic flip — the switch slides immediately so it feels native.
+    el.setAttribute('data-on', String(willBeOn));
+    el.setAttribute('aria-checked', String(willBeOn));
+    el.setAttribute('data-busy', 'true');
+
+    const endpoint = willBeOn ? '/api/automation/enable' : '/api/automation/disable';
     try {
-        const res = await fetch('/api/automation/disable', {method: 'POST'});
+        const res = await fetch(endpoint, {method: 'POST'});
         const data = await res.json();
         if (res.ok && data.ok) {
+            // Reload so the panel's last-run line + label re-render correctly.
             window.location.reload();
         } else {
-            alert(data.error || 'Could not disable automation.');
-            if (btn) { btn.disabled = false; btn.textContent = 'Disable'; }
+            // Roll back the switch position.
+            el.setAttribute('data-on', String(wasOn));
+            el.setAttribute('aria-checked', String(wasOn));
+            el.removeAttribute('data-busy');
+            alert(data.error || 'Could not change automation.');
         }
     } catch (e) {
+        el.setAttribute('data-on', String(wasOn));
+        el.setAttribute('aria-checked', String(wasOn));
+        el.removeAttribute('data-busy');
         alert('Network error: ' + e.message);
-        if (btn) { btn.disabled = false; btn.textContent = 'Disable'; }
     }
 }
 

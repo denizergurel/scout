@@ -86,7 +86,7 @@ When the editor clicks Publish Edition from the Lineup:
 - `output/daily/items.json` — The single store (gitignored)
 - `output/daily/` — Intermediate per-stage outputs for debugging (gitignored, regenerated)
 - `output/editions/` — Published editions (kept in git; training data + dedup source)
-- `com.scout.spatial-report.plist` — launchd template; the dashboard's Automation panel (Settings) substitutes `__PROJECT_DIR__` and `__PLIST_LABEL__` (derived from `newsletter.slug`) when the user clicks Enable
+- `com.scout.spatial-report.plist` — launchd template; the dashboard's Automation panel (Settings) substitutes `__PROJECT_DIR__`, `__PLIST_LABEL__` (derived from `newsletter.slug`), and `__HOUR__` / `__MINUTE__` (from `automation.schedule_time` in `config.yaml`) when the user clicks Enable or changes the run time
 
 ### LLM Providers
 The agents (Scout, Editor, Curator) call `llm.call_llm_json()`, which resolves settings from the `llm:` block in `config.yaml`. Each call passes a `stage` hint (`scout` / `editor` / `curator`) so different stages can use different models.
