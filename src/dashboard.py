@@ -2759,7 +2759,19 @@ STYLES = """<style>
     --color-success: #16a34a;
     --color-success-bg: #dcfce7;
     --color-success-bg-strong: #bbf7d0;
+    --color-success-text: #065f46;
+    --color-info-text: #2563eb;
+    --color-info-bg: #dbeafe;
     --color-info-bg-strong: #bfdbfe;
+    --color-warning: #92400e;
+    --color-warning-bg: #fef3c7;
+    --color-warning-border: #fcd34d;
+
+    --color-blue-hover: #0066d6;
+    --color-hover-overlay: rgba(0, 0, 0, 0.04);
+
+    --color-code-bg: #1d1d1f;
+    --color-code-border: transparent;
 
     --nav-bg: rgba(255, 255, 255, 0.72);
     --modal-backdrop: rgba(0, 0, 0, 0.35);
@@ -2805,7 +2817,19 @@ STYLES = """<style>
         --color-success: #4cd97a;
         --color-success-bg: rgba(48, 209, 88, 0.18);
         --color-success-bg-strong: rgba(48, 209, 88, 0.28);
+        --color-success-text: #34d399;
+        --color-info-text: #82b6ff;
+        --color-info-bg: rgba(10, 132, 255, 0.18);
         --color-info-bg-strong: rgba(10, 132, 255, 0.28);
+        --color-warning: #fbbf24;
+        --color-warning-bg: rgba(251, 191, 36, 0.16);
+        --color-warning-border: rgba(251, 191, 36, 0.4);
+
+        --color-blue-hover: #3395ff;
+        --color-hover-overlay: rgba(255, 255, 255, 0.06);
+
+        --color-code-bg: #000000;
+        --color-code-border: var(--color-border-light);
 
         --nav-bg: rgba(28, 28, 30, 0.72);
         --modal-backdrop: rgba(0, 0, 0, 0.65);
@@ -3133,7 +3157,7 @@ h1 {
 }
 
 .btn-primary:hover {
-    background: #0066d6;
+    background: var(--color-blue-hover);
     transform: scale(1.02);
 }
 
@@ -3149,7 +3173,7 @@ h1 {
     background: var(--color-green-bg);
     border-radius: var(--radius-md);
     font-size: 0.875rem;
-    color: #065f46;
+    color: var(--color-success-text);
     transition: all var(--transition);
 }
 
@@ -3160,7 +3184,7 @@ h1 {
 .editor-notes-accordion {
     margin-top: 12px;
     border-radius: var(--radius-md);
-    border: 0.5px solid #fcd34d;
+    border: 0.5px solid var(--color-warning-border);
     background: var(--color-orange-bg);
     overflow: hidden;
 }
@@ -3172,7 +3196,7 @@ h1 {
     padding: 10px 16px;
     font-size: 0.8125rem;
     font-weight: 600;
-    color: #92400e;
+    color: var(--color-warning);
     cursor: pointer;
     list-style: none;
     user-select: none;
@@ -3194,7 +3218,7 @@ h1 {
     margin: 0;
     padding: 4px 16px 12px 32px;
     font-size: 0.8125rem;
-    color: #92400e;
+    color: var(--color-warning);
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -3237,15 +3261,15 @@ h1 {
 .card {
     position: relative;
     display: flex;
-    background: #ffffff;
+    background: var(--color-surface);
     border-radius: var(--radius-md);
-    border: 1px solid #e8e8ed;
+    border: 1px solid var(--color-border-light);
     padding: 16px 20px;
     transition: background 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
 }
 
 .card:hover {
-    border-color: #c7c7cc;
+    border-color: var(--color-border);
 }
 
 .card--spotlight {
@@ -3253,20 +3277,20 @@ h1 {
 }
 
 .card--saved {
-    background: #f0faf3;
+    background: var(--color-green-bg);
     border-color: rgba(52, 199, 89, 0.35);
-    border-left: 3px solid #34c759;
+    border-left: 3px solid var(--color-green);
 }
 
 .card--saved.card--held {
-    background: #fafafa;
+    background: var(--color-bg);
     border-left-color: rgba(52, 199, 89, 0.35);
     opacity: 0.72;
 }
 
 .card--hidden {
-    background: #fafafa;
-    border-color: rgba(0, 0, 0, 0.06);
+    background: var(--color-bg);
+    border-color: var(--color-border-light);
     opacity: 0.72;
 }
 
@@ -3346,7 +3370,7 @@ h1 {
 }
 
 .badge--sig-high { background: var(--color-error-bg); color: var(--color-error-text-strong); }
-.badge--sig-medium { background: #fef3c7; color: #92400e; }
+.badge--sig-medium { background: var(--color-warning-bg); color: var(--color-warning); }
 .badge--sig-low { background: var(--color-border-light); color: var(--color-text-tertiary); }
 
 /* ─── Card Actions ─── */
@@ -3382,19 +3406,19 @@ h1 {
 .action-btn--approve:hover { background: var(--color-success-bg-strong); transform: scale(1.1); }
 .action-btn--reject { background: var(--color-error-bg); color: var(--color-error); }
 .action-btn--reject:hover { background: var(--color-error-bg-strong); transform: scale(1.1); }
-.action-btn--edit { background: #dbeafe; color: #2563eb; }
+.action-btn--edit { background: var(--color-info-bg); color: var(--color-info-text); }
 .action-btn--edit:hover { background: var(--color-info-bg-strong); transform: scale(1.1); }
 .action-btn--include { background: var(--color-success-bg); color: var(--color-success); }
 .action-btn--include:hover { background: var(--color-success-bg-strong); transform: scale(1.1); }
 .action-btn--held {
     background: transparent;
     color: var(--color-text-tertiary);
-    border: 1px dashed rgba(0, 0, 0, 0.18);
+    border: 1px dashed var(--color-border);
     font-size: 0.95rem;
     line-height: 1;
 }
-.action-btn--held:hover { background: rgba(0, 0, 0, 0.04); color: var(--color-text-primary); }
-.action-btn--restore { background: #dbeafe; color: #2563eb; }
+.action-btn--held:hover { background: var(--color-hover-overlay); color: var(--color-text-primary); }
+.action-btn--restore { background: var(--color-info-bg); color: var(--color-info-text); }
 .action-btn--restore:hover { background: var(--color-info-bg-strong); transform: scale(1.1); }
 /* Pause = "hold" action on an Including card. The card is green (saying
    "in the next edition"); the button must read as the *toggle*, not as a
@@ -4461,10 +4485,11 @@ h1 {
     font-family: var(--font-mono);
     font-size: 0.8125rem;
     line-height: 1.8;
-    background: #1d1d1f;
+    background: var(--color-code-bg);
     color: #f5f5f7;
     padding: 18px 22px;
     border-radius: var(--radius-md);
+    border: 0.5px solid var(--color-code-border);
     white-space: pre;
     overflow-x: auto;
     margin-bottom: 4px;
@@ -4480,7 +4505,7 @@ h1 {
     background: var(--color-blue-bg);
     border-radius: var(--radius-sm);
     font-size: 0.8125rem;
-    color: #1e40af;
+    color: var(--color-info-text);
     line-height: 1.5;
 }
 
@@ -4776,7 +4801,7 @@ h1 {
     background: var(--color-red-bg);
     border-radius: var(--radius-md);
     font-size: 0.875rem;
-    color: #991b1b;
+    color: var(--color-error-text-strong);
     margin-bottom: 16px;
 }
 
