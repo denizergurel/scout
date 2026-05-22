@@ -859,6 +859,13 @@ async def automation_status():
     return JSONResponse(_automation_status_dict())
 
 
+@app.get("/api/automation/panel", response_class=HTMLResponse)
+async def automation_panel_fragment():
+    """HTML fragment of the Automation panel. Used by the toggle handler
+    to avoid a full page reload when state changes."""
+    return HTMLResponse(_render_automation_panel())
+
+
 def _install_and_load_plist() -> tuple[bool, str]:
     """Render the plist from template using current config (slug + schedule_time)
     and launchctl load it. Returns (ok, label_or_error_message)."""
@@ -1708,7 +1715,7 @@ def _render_pipeline_panel() -> str:
         <button onclick="triggerRefresh()" class="btn-primary" id="refresh-btn"{btn_disabled}>{btn_label}</button>
     </div>
     <div class="pipeline-progress {'visible' if running else ''}" id="pipeline-progress">
-        <span class="pipeline-progress-dot"></span>
+        <span class="pipeline-progress-dot" aria-hidden="true"></span>
         <span id="pipeline-progress-msg">{progress_msg}</span>
     </div>
 </section>"""
@@ -1837,7 +1844,7 @@ def _render_editorial_panel() -> str:
     <div class="settings-panel-header">
         <div>
             <h2>Editorial</h2>
-            <p class="settings-panel-sub">The voice and judgment Scout applies on your behalf. Voice is universal across all newsletters; topic-specific rules are yours.</p>
+            <p class="settings-panel-sub">The voice and judgment Scout applies on your behalf. Voice and topic rules are yours; Scout's defaults live under Advanced if you ever need to override them.</p>
         </div>
         <button onclick="saveEditorial()" class="btn-primary" id="editorial-save-btn">Save changes</button>
     </div>
@@ -1880,13 +1887,13 @@ def _render_editorial_panel() -> str:
         </div>
         <textarea id="editorial-exclude" class="editorial-textarea" rows="6"
                   placeholder="Additional DISCARD rules specific to your beat. Patents are already excluded universally — you don't need to list them.">{_html_text(state['extra_exclude_criteria'])}</textarea>
-        <p class="editorial-hint">Topic-specific DISCARD criteria. Universal exclusions (patents, opinion without anchor, etc.) are already enforced.</p>
+        <p class="editorial-hint">Topic-specific DISCARD criteria. Scout's default exclusions are toggleable below under Advanced.</p>
     </div>
 
     <details class="editorial-advanced">
-        <summary>Advanced — Scout's default rules</summary>
+        <summary>Advanced — Scout's default exclusions</summary>
         <p class="editorial-advanced-hint">
-            Scout's editorial opinions, applied by default to every newsletter. Most beats never need to touch these; uncheck when retargeting Scout to one where a default doesn't apply (e.g. a patent-watch newsletter would disable "Discard patent filings"). With everything checked, Scout behaves exactly as today.
+            Scout's editorial opinions, applied by default to every newsletter. Most beats never need to touch these; uncheck when retargeting Scout to one where a default doesn't apply (e.g. a patent-watch newsletter would disable "Discard patent filings"). With everything checked, Scout behaves exactly as today. Toggles save automatically.
         </p>
         <div class="universal-discards-list">{discard_rows}
         </div>
@@ -1955,7 +1962,7 @@ def _render_sections_panel() -> str:
     <div class="sections-list" id="sections-list">{rows_html}
     </div>
     <button type="button" class="sections-add" onclick="addSection()">+ Add section</button>
-    <p class="settings-panel-sub sections-hint">Names render in caps in the prompt. Order is preserved.</p>
+    <p class="settings-panel-sub sections-hint">Convention: caps for section names — the Editor prompt expects them this way. Order here is the order in the published edition.</p>
     <div id="sections-banner" class="export-banner hidden"></div>
 </section>"""
 
@@ -1968,7 +1975,7 @@ def _render_automation_panel() -> str:
 
     if not supported:
         return """
-<section class="settings-panel">
+<section class="settings-panel" id="automation-panel">
     <div class="settings-panel-header">
         <div>
             <h2>Automation</h2>
@@ -2010,7 +2017,7 @@ def _render_automation_panel() -> str:
             last_run_line = "First run will happen at the next scheduled time."
 
         return f"""
-<section class="settings-panel">
+<section class="settings-panel" id="automation-panel">
     <div class="settings-panel-header">
         <div>
             <h2>Automation</h2>
@@ -2023,7 +2030,7 @@ def _render_automation_panel() -> str:
 </section>"""
 
     return f"""
-<section class="settings-panel">
+<section class="settings-panel" id="automation-panel">
     <div class="settings-panel-header">
         <div>
             <h2>Automation</h2>
@@ -2038,9 +2045,9 @@ def _render_automation_panel() -> str:
 def _render_pipeline_table() -> str:
     rows = [
         ("Collector", "📡", "Pulls RSS feeds and dedups against your store.", "RSS Feeds — above"),
-        ("Scout", "🔍", "Filters incoming items for relevance to your newsletter.", "Topics, focus, exclusions (config.yaml — UI coming soon)"),
-        ("Editor", "✏️", "Categorizes each item into a section and writes the summary paragraph.", "Section list, tone (config.yaml — UI coming soon)"),
-        ("Curator", "📋", "Drafts the SPOTLIGHT when invoked from the Lineup.", "Section order, voice (config.yaml — UI coming soon)"),
+        ("Scout", "🔍", "Filters incoming items for relevance to your newsletter.", "Editorial — topics, KEEP / DISCARD criteria, Scout's default exclusions"),
+        ("Editor", "✏️", "Categorizes each item into a section and writes the summary paragraph.", "Sections (above), Editorial voice"),
+        ("Curator", "📋", "Drafts the SPOTLIGHT when invoked from the Lineup.", "Editorial voice, Sections order"),
         ("Dashboard", "👁️", "Where you triage, compose, and publish.", "Newsletter name (config.yaml)"),
     ]
     body = ""
@@ -2745,6 +2752,18 @@ STYLES = """<style>
     --color-blue-bg: #edf4ff;
     --color-orange-bg: #fff6e8;
 
+    --color-error: #dc2626;
+    --color-error-text-strong: #b91c1c;
+    --color-error-bg: #fee2e2;
+    --color-error-bg-strong: #fecaca;
+    --color-success: #16a34a;
+    --color-success-bg: #dcfce7;
+    --color-success-bg-strong: #bbf7d0;
+    --color-info-bg-strong: #bfdbfe;
+
+    --nav-bg: rgba(255, 255, 255, 0.72);
+    --modal-backdrop: rgba(0, 0, 0, 0.35);
+
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 16px;
@@ -2755,6 +2774,63 @@ STYLES = """<style>
     --shadow-lg: 0 4px 16px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
 
     --transition: 200ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #1c1c1e;
+        --color-surface: #2c2c2e;
+        --color-text-primary: #f5f5f7;
+        --color-text-secondary: #98989d;
+        --color-text-tertiary: #6c6c70;
+        --color-border: #48484a;
+        --color-border-light: #38383a;
+
+        --color-blue: #0a84ff;
+        --color-green: #30d158;
+        --color-red: #ff453a;
+        --color-orange: #ff9f0a;
+        --color-purple: #bf5af2;
+        --color-teal: #64d2ff;
+
+        --color-green-bg: rgba(48, 209, 88, 0.16);
+        --color-red-bg: rgba(255, 69, 58, 0.16);
+        --color-blue-bg: rgba(10, 132, 255, 0.18);
+        --color-orange-bg: rgba(255, 159, 10, 0.18);
+
+        --color-error: #ff6961;
+        --color-error-text-strong: #ff8a82;
+        --color-error-bg: rgba(255, 69, 58, 0.18);
+        --color-error-bg-strong: rgba(255, 69, 58, 0.28);
+        --color-success: #4cd97a;
+        --color-success-bg: rgba(48, 209, 88, 0.18);
+        --color-success-bg-strong: rgba(48, 209, 88, 0.28);
+        --color-info-bg-strong: rgba(10, 132, 255, 0.28);
+
+        --nav-bg: rgba(28, 28, 30, 0.72);
+        --modal-backdrop: rgba(0, 0, 0, 0.65);
+
+        --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.32);
+        --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.42), 0 1px 2px rgba(0, 0, 0, 0.24);
+        --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.28);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    .btn-primary:hover,
+    .action-btn--approve:hover,
+    .action-btn--reject:hover,
+    .action-btn--edit:hover,
+    .action-btn--include:hover,
+    .action-btn--restore:hover {
+        transform: none;
+    }
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -2782,7 +2858,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 12px 24px;
-    background: rgba(255, 255, 255, 0.72);
+    background: var(--nav-bg);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     border-bottom: 0.5px solid var(--color-border-light);
@@ -2839,7 +2915,7 @@ body {
 .nav-tab-count {
     font-size: 0.75rem;
     font-weight: 500;
-    color: var(--color-text-tertiary, #999);
+    color: var(--color-text-tertiary);
     font-variant-numeric: tabular-nums;
 }
 
@@ -2935,7 +3011,7 @@ h1 {
     box-sizing: border-box;
 }
 
-.spotlight-textarea:focus {
+.spotlight-textarea:focus-visible {
     outline: none;
     border-color: var(--color-blue);
 }
@@ -3269,7 +3345,7 @@ h1 {
     color: var(--color-text-secondary);
 }
 
-.badge--sig-high { background: #fee2e2; color: #b91c1c; }
+.badge--sig-high { background: var(--color-error-bg); color: var(--color-error-text-strong); }
 .badge--sig-medium { background: #fef3c7; color: #92400e; }
 .badge--sig-low { background: var(--color-border-light); color: var(--color-text-tertiary); }
 
@@ -3302,24 +3378,24 @@ h1 {
     transition: all var(--transition);
 }
 
-.action-btn--approve { background: #dcfce7; color: #16a34a; }
-.action-btn--approve:hover { background: #bbf7d0; transform: scale(1.1); }
-.action-btn--reject { background: #fee2e2; color: #dc2626; }
-.action-btn--reject:hover { background: #fecaca; transform: scale(1.1); }
+.action-btn--approve { background: var(--color-success-bg); color: var(--color-success); }
+.action-btn--approve:hover { background: var(--color-success-bg-strong); transform: scale(1.1); }
+.action-btn--reject { background: var(--color-error-bg); color: var(--color-error); }
+.action-btn--reject:hover { background: var(--color-error-bg-strong); transform: scale(1.1); }
 .action-btn--edit { background: #dbeafe; color: #2563eb; }
-.action-btn--edit:hover { background: #bfdbfe; transform: scale(1.1); }
-.action-btn--include { background: #dcfce7; color: #16a34a; }
-.action-btn--include:hover { background: #bbf7d0; transform: scale(1.1); }
+.action-btn--edit:hover { background: var(--color-info-bg-strong); transform: scale(1.1); }
+.action-btn--include { background: var(--color-success-bg); color: var(--color-success); }
+.action-btn--include:hover { background: var(--color-success-bg-strong); transform: scale(1.1); }
 .action-btn--held {
     background: transparent;
-    color: var(--color-text-tertiary, #999);
+    color: var(--color-text-tertiary);
     border: 1px dashed rgba(0, 0, 0, 0.18);
     font-size: 0.95rem;
     line-height: 1;
 }
 .action-btn--held:hover { background: rgba(0, 0, 0, 0.04); color: var(--color-text-primary); }
 .action-btn--restore { background: #dbeafe; color: #2563eb; }
-.action-btn--restore:hover { background: #bfdbfe; transform: scale(1.1); }
+.action-btn--restore:hover { background: var(--color-info-bg-strong); transform: scale(1.1); }
 /* Pause = "hold" action on an Including card. The card is green (saying
    "in the next edition"); the button must read as the *toggle*, not as a
    match for the card. Neutral white + gray icon for calm intent. */
@@ -3329,18 +3405,18 @@ h1 {
     border: 0.5px solid rgba(0, 0, 0, 0.12);
 }
 .action-btn--toggle-include:hover {
-    background: #ffffff;
+    background: var(--color-surface);
     color: var(--color-text-primary);
     transform: scale(1.1);
 }
 /* Play = "include" action on a Held (muted) card. Bringing the item back
    to active is a positive move, so the brand green carries here. */
 .action-btn--toggle-held {
-    background: #dcfce7;
-    color: #15803d;
+    background: var(--color-success-bg);
+    color: var(--color-success);
     border: 0.5px solid rgba(52, 199, 89, 0.4);
 }
-.action-btn--toggle-held:hover { background: #bbf7d0; transform: scale(1.1); }
+.action-btn--toggle-held:hover { background: var(--color-success-bg-strong); transform: scale(1.1); }
 
 .card-status-badge {
     position: absolute;
@@ -3362,7 +3438,7 @@ h1 {
     font-weight: 500;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(--color-text-tertiary, #999);
+    color: var(--color-text-tertiary);
     pointer-events: none;
 }
 
@@ -3466,21 +3542,21 @@ h1 {
     min-width: 0;
 }
 
-.feed-input:focus {
+.feed-input:focus-visible {
     outline: none;
     background: var(--color-bg);
     border-color: var(--color-blue);
 }
 
 .feed-input::placeholder {
-    color: var(--color-text-tertiary, #999);
+    color: var(--color-text-tertiary);
 }
 
 .feed-remove {
     appearance: none;
     background: transparent;
     border: none;
-    color: var(--color-text-tertiary, #999);
+    color: var(--color-text-tertiary);
     cursor: pointer;
     padding: 4px 8px;
     border-radius: 999px;
@@ -3489,8 +3565,8 @@ h1 {
 }
 
 .feed-remove:hover {
-    color: #dc2626;
-    background: #fee2e2;
+    color: var(--color-error);
+    background: var(--color-error-bg);
 }
 
 /* ─── Automation panel ─── */
@@ -3529,7 +3605,7 @@ h1 {
     transition: border-color var(--transition), box-shadow var(--transition);
 }
 
-.automation-time-input:focus {
+.automation-time-input:focus-visible {
     outline: none;
     border-color: var(--color-blue);
     box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.12);
@@ -3537,16 +3613,16 @@ h1 {
 
 .automation-time-feedback {
     font-size: 0.75rem;
-    color: var(--color-text-tertiary, #999);
+    color: var(--color-text-tertiary);
     transition: color var(--transition);
 }
 
 .automation-time-feedback.saved {
-    color: var(--color-green, #16a34a);
+    color: var(--color-success);
 }
 
 .automation-time-feedback.error {
-    color: #dc2626;
+    color: var(--color-error);
 }
 
 /* ─── Editorial panel ─── */
@@ -3589,8 +3665,8 @@ h1 {
     font-size: 0.8125rem;
 }
 
-.editorial-input:focus,
-.editorial-textarea:focus {
+.editorial-input:focus-visible,
+.editorial-textarea:focus-visible {
     outline: none;
     border-color: var(--color-blue);
     box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.12);
@@ -3599,7 +3675,7 @@ h1 {
 .editorial-hint {
     margin: 6px 0 0;
     font-size: 0.75rem;
-    color: var(--color-text-tertiary, #999);
+    color: var(--color-text-tertiary);
 }
 
 .reset-link {
@@ -3619,7 +3695,7 @@ h1 {
 }
 
 .reset-link--disabled {
-    color: var(--color-text-tertiary, #999);
+    color: var(--color-text-tertiary);
     cursor: default;
     text-decoration: none;
     pointer-events: none;
@@ -3652,7 +3728,7 @@ h1 {
     display: inline-block;
     margin-right: 8px;
     font-size: 0.7rem;
-    color: var(--color-text-tertiary, #999);
+    color: var(--color-text-tertiary);
     transition: transform var(--transition);
 }
 
@@ -3702,7 +3778,7 @@ h1 {
 .universal-discard-feedback {
     margin-left: auto;
     font-size: 0.75rem;
-    color: var(--color-text-tertiary, #999);
+    color: var(--color-text-tertiary);
     opacity: 0;
     transition: opacity var(--transition);
 }
@@ -3712,11 +3788,11 @@ h1 {
 }
 
 .universal-discard-feedback.saved {
-    color: var(--color-green, #16a34a);
+    color: var(--color-success);
 }
 
 .universal-discard-feedback.error {
-    color: #dc2626;
+    color: var(--color-error);
 }
 
 .editorial-advanced-mech {
@@ -3729,7 +3805,7 @@ h1 {
 .editorial-advanced-mech > summary {
     cursor: pointer;
     font-size: 0.8125rem;
-    color: var(--color-text-tertiary, #999);
+    color: var(--color-text-tertiary);
     list-style: none;
     user-select: none;
 }
@@ -3791,8 +3867,8 @@ h1 {
     letter-spacing: 0.01em;
 }
 
-.section-name:focus,
-.section-desc:focus {
+.section-name:focus-visible,
+.section-desc:focus-visible {
     outline: none;
     background: var(--color-bg);
     border-color: var(--color-blue);
@@ -3808,7 +3884,7 @@ h1 {
     appearance: none;
     background: transparent;
     border: none;
-    color: var(--color-text-tertiary, #999);
+    color: var(--color-text-tertiary);
     cursor: pointer;
     padding: 4px 8px;
     border-radius: 999px;
@@ -3823,8 +3899,16 @@ h1 {
 }
 
 .section-remove:hover {
-    color: #dc2626;
-    background: #fee2e2;
+    color: var(--color-error);
+    background: var(--color-error-bg);
+}
+
+.section-action:disabled,
+.section-action:disabled:hover {
+    opacity: 0.3;
+    cursor: not-allowed;
+    color: var(--color-text-tertiary);
+    background: transparent;
 }
 
 .sections-add {
@@ -3843,6 +3927,12 @@ h1 {
 .sections-add:hover {
     border-color: var(--color-blue);
     color: var(--color-blue);
+}
+
+.sections-add:focus-visible,
+.section-action:focus-visible {
+    outline: 2px solid var(--color-blue);
+    outline-offset: 2px;
 }
 
 .sections-hint {
@@ -3940,7 +4030,7 @@ h1 {
     border-radius: var(--radius-sm);
 }
 
-.add-url-input:focus {
+.add-url-input:focus-visible {
     outline: none;
     border-color: var(--color-blue);
     box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.12);
@@ -3961,8 +4051,8 @@ h1 {
 }
 
 .add-url-feedback.error {
-    background: #fee2e2;
-    color: #dc2626;
+    background: var(--color-error-bg);
+    color: var(--color-error);
     border-color: rgba(220, 38, 38, 0.22);
 }
 
@@ -4037,7 +4127,7 @@ h1 {
     display: block;
     font-family: var(--font-mono);
     font-size: 0.6875rem;
-    color: var(--color-text-tertiary, #999);
+    color: var(--color-text-tertiary);
     margin-top: 2px;
 }
 
@@ -4154,7 +4244,7 @@ h1 {
 .modal-backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(28, 28, 30, 0.32);
+    background: var(--modal-backdrop);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     display: flex;
@@ -4219,7 +4309,7 @@ h1 {
     box-sizing: border-box;
 }
 
-.modal-textarea:focus {
+.modal-textarea:focus-visible {
     outline: none;
     border-color: var(--color-blue);
     box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.12);
@@ -4235,7 +4325,7 @@ h1 {
 .modal-keyboard-hint {
     flex: 1;
     font-size: 0.75rem;
-    color: var(--color-text-tertiary, #999);
+    color: var(--color-text-tertiary);
     font-variant-numeric: tabular-nums;
 }
 
@@ -4451,6 +4541,16 @@ h1 {
     .pipeline-arrow { transform: rotate(90deg); }
     .form-row { flex-direction: column; }
     .archive-grid { grid-template-columns: 1fr; }
+    .section-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+    .section-row-actions {
+        justify-content: flex-end;
+    }
+    .feed-row {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ─── Archive Styles ─── */
@@ -4621,7 +4721,7 @@ h1 {
     transition: border-color var(--transition);
 }
 
-.form-input:focus {
+.form-input:focus-visible {
     border-color: var(--color-blue);
     box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
 }
@@ -4640,7 +4740,7 @@ h1 {
     transition: border-color var(--transition);
 }
 
-.form-textarea:focus {
+.form-textarea:focus-visible {
     border-color: var(--color-blue);
     box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
 }
@@ -4823,6 +4923,44 @@ function editItem(id) {
     openEditModal(id);
 }
 
+// ─── Modal focus management ──────────────────────────────────────────────────
+
+const FOCUSABLE_SELECTOR = 'a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
+function installModalFocusTrap(wrap) {
+    wrap.addEventListener('keydown', (e) => {
+        if (e.key !== 'Tab' || !wrap.classList.contains('visible')) return;
+        const card = wrap.querySelector('.modal-card') || wrap;
+        const focusable = Array.from(card.querySelectorAll(FOCUSABLE_SELECTOR))
+            .filter(el => el.offsetParent !== null);
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        const active = document.activeElement;
+        if (e.shiftKey && (active === first || !card.contains(active))) {
+            e.preventDefault();
+            last.focus();
+        } else if (!e.shiftKey && (active === last || !card.contains(active))) {
+            e.preventDefault();
+            first.focus();
+        }
+    });
+}
+
+let _modalReturnFocus = null;
+
+function captureReturnFocus() {
+    _modalReturnFocus = document.activeElement;
+}
+
+function restoreReturnFocus() {
+    const target = _modalReturnFocus;
+    _modalReturnFocus = null;
+    if (target && typeof target.focus === 'function') {
+        setTimeout(() => target.focus(), 0);
+    }
+}
+
 // ─── Edit modal ──────────────────────────────────────────────────────────────
 
 let _editModalEl = null;
@@ -4855,6 +4993,7 @@ function ensureEditModal() {
         if (e.key === 'Escape') closeEditModal();
         if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) saveEditModal();
     });
+    installModalFocusTrap(wrap);
     _editModalEl = wrap;
     return wrap;
 }
@@ -4863,6 +5002,7 @@ function openEditModal(id) {
     const modal = ensureEditModal();
     const el = document.getElementById(`summary-${id}`);
     if (!el) return;
+    captureReturnFocus();
     _editingId = id;
     const ta = document.getElementById('edit-modal-textarea');
     ta.value = el.textContent.trim();
@@ -4873,6 +5013,7 @@ function openEditModal(id) {
 function closeEditModal() {
     if (_editModalEl) _editModalEl.classList.remove('visible');
     _editingId = null;
+    restoreReturnFocus();
 }
 
 async function saveEditModal() {
@@ -5056,6 +5197,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('/api/refresh/status').then(r => r.json()).then(s => {
         if (s.state === 'running') startRefreshPolling();
     }).catch(() => {});
+    if (typeof updateSectionsState === 'function') updateSectionsState();
 });
 
 // ─── Editorial settings (Settings) ─────────────────────────────────────────────
@@ -5162,6 +5304,33 @@ async function updateUniversalDiscard(checkbox) {
 
 // ─── Sections editor (Settings → Sections) ──────────────────────────────────
 
+function updateSectionsState() {
+    const list = document.getElementById('sections-list');
+    if (!list) return;
+    const rows = Array.from(list.children);
+    const last = rows.length === 1;
+    rows.forEach((row, idx) => {
+        const removeBtn = row.querySelector('.section-remove');
+        if (removeBtn) {
+            removeBtn.disabled = last;
+            removeBtn.setAttribute('aria-disabled', last ? 'true' : 'false');
+            removeBtn.title = last ? 'At least one section is required' : 'Remove';
+        }
+        const upBtn = row.querySelector('.section-action[aria-label="Move up"]');
+        if (upBtn) {
+            const disabled = idx === 0;
+            upBtn.disabled = disabled;
+            upBtn.setAttribute('aria-disabled', disabled ? 'true' : 'false');
+        }
+        const downBtn = row.querySelector('.section-action[aria-label="Move down"]');
+        if (downBtn) {
+            const disabled = idx === rows.length - 1;
+            downBtn.disabled = disabled;
+            downBtn.setAttribute('aria-disabled', disabled ? 'true' : 'false');
+        }
+    });
+}
+
 function addSection() {
     const list = document.getElementById('sections-list');
     if (!list) return;
@@ -5178,6 +5347,7 @@ function addSection() {
     list.appendChild(row);
     const nameInput = row.querySelector('.section-name');
     if (nameInput) nameInput.focus();
+    updateSectionsState();
 }
 
 function moveSection(btn, delta) {
@@ -5193,17 +5363,16 @@ function moveSection(btn, delta) {
     } else {
         list.insertBefore(row, rows[target].nextSibling);
     }
+    updateSectionsState();
 }
 
 function removeSection(btn) {
     const row = btn.closest('.section-row');
     if (!row) return;
     const list = row.parentElement;
-    if (list.children.length <= 1) {
-        alert('At least one section is required.');
-        return;
-    }
+    if (list.children.length <= 1) return;
     row.remove();
+    updateSectionsState();
 }
 
 async function saveSections() {
@@ -5306,6 +5475,20 @@ async function updateAutomationTime(input) {
     }, 250);
 }
 
+async function refreshAutomationPanel() {
+    try {
+        const res = await fetch('/api/automation/panel');
+        if (!res.ok) return false;
+        const html = await res.text();
+        const panel = document.getElementById('automation-panel');
+        if (!panel) return false;
+        panel.outerHTML = html;
+        return true;
+    } catch (_e) {
+        return false;
+    }
+}
+
 async function toggleAutomation(el) {
     const wasOn = el.getAttribute('data-on') === 'true';
     const willBeOn = !wasOn;
@@ -5320,8 +5503,12 @@ async function toggleAutomation(el) {
         const res = await fetch(endpoint, {method: 'POST'});
         const data = await res.json();
         if (res.ok && data.ok) {
-            // Reload so the panel's last-run line + label re-render correctly.
-            window.location.reload();
+            // Soft re-render — fetch the new panel HTML and swap it in,
+            // so the subtitle / last-run line / label all update without
+            // discarding the rest of the page state (scroll, open details,
+            // unsaved textareas).
+            const ok = await refreshAutomationPanel();
+            if (!ok) window.location.reload();
         } else {
             // Roll back the switch position.
             el.setAttribute('data-on', String(wasOn));
@@ -5437,6 +5624,7 @@ function ensureManualModal() {
         if (e.key === 'Escape') closeManualModal();
         if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) submitManualAdd();
     });
+    installModalFocusTrap(wrap);
     _manualModalEl = wrap;
     return wrap;
 }
@@ -5444,6 +5632,7 @@ function ensureManualModal() {
 let _manualUrl = null;
 function openManualAddModal(url, reason) {
     const modal = ensureManualModal();
+    captureReturnFocus();
     _manualUrl = url;
     const hint = document.getElementById('manual-modal-hint');
     if (hint && reason) {
@@ -5458,6 +5647,7 @@ function openManualAddModal(url, reason) {
 function closeManualModal() {
     if (_manualModalEl) _manualModalEl.classList.remove('visible');
     _manualUrl = null;
+    restoreReturnFocus();
 }
 
 async function submitManualAdd() {
