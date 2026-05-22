@@ -13,13 +13,7 @@ You receive a list of articles (title, description, source, date) and determine 
 - Primary sources from authoritative publications
 - Academic research or industry reports advancing the topic
 
-## Universal DISCARD rules (always apply)
-
-- **Patent filings** (ALWAYS discard)
-- Opinion or commentary without a news anchor
-- Older than 7 days
-- General news unrelated to {{topics}}
-- Duplicate of another article already marked YES (keep the better source)
+{{universal_discard_block}}
 
 {{include_criteria_block}}
 

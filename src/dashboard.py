@@ -475,16 +475,48 @@ def _ensure_install_snapshot() -> dict:
     return snapshot
 
 
+_FALLBACK_UNIVERSAL_DISCARDS = [
+    {"id": "patents", "label": "Discard patent filings"},
+    {"id": "opinion_unanchored", "label": "Discard opinion / commentary without a news anchor"},
+    {"id": "stale_7d", "label": "Discard items older than 7 days"},
+    {"id": "off_topic", "label": "Discard general news unrelated to your topics"},
+    {"id": "duplicates", "label": "Discard duplicates (keep the better source)"},
+]
+
+
 def _editorial_state() -> dict:
     cfg = load_config()
     editorial = cfg.get("editorial") or {}
     newsletter = cfg.get("newsletter") or {}
     snapshot = _ensure_install_snapshot()
+
+    raw_discards = editorial.get("universal_discards") or []
+    discards: list[dict] = []
+    seen_ids = set()
+    if isinstance(raw_discards, list):
+        for item in raw_discards:
+            if not isinstance(item, dict):
+                continue
+            item_id = (item.get("id") or "").strip()
+            if not item_id or item_id in seen_ids:
+                continue
+            seen_ids.add(item_id)
+            discards.append({
+                "id": item_id,
+                "label": (item.get("label") or item_id).strip(),
+                "enabled": bool(item.get("enabled", True)),
+            })
+    if not discards:
+        discards = [
+            {**d, "enabled": True} for d in _FALLBACK_UNIVERSAL_DISCARDS
+        ]
+
     return {
         "topics": newsletter.get("topics", ""),
         "voice": editorial.get("voice", ""),
         "extra_include_criteria": editorial.get("extra_include_criteria", ""),
         "extra_exclude_criteria": editorial.get("extra_exclude_criteria", ""),
+        "universal_discards": discards,
         "defaults": {
             "voice": _DEFAULT_VOICE,
         },
@@ -583,18 +615,109 @@ def _replace_yaml_block(text: str, section: str, key: str, value: str) -> str:
     return text[: m.start()] + new_section + text[m.end():]
 
 
+def _set_universal_discard_enabled(text: str, item_id: str, enabled: bool) -> str:
+    """Flip the `enabled:` flag for a single item in the `universal_discards`
+    list, matched by `id`. Comments and surrounding YAML are untouched."""
+    pattern = re.compile(
+        rf'(- id:[ \t]*"{re.escape(item_id)}".*?enabled:[ \t]*)(true|false)\b',
+        re.DOTALL,
+    )
+    return pattern.sub(
+        lambda mm: f"{mm.group(1)}{'true' if enabled else 'false'}",
+        text,
+        count=1,
+    )
+
+
+def _write_sections(items: list[dict]) -> None:
+    """Replace the `editorial.sections` list with `items`. The whole block
+    is rewritten as a unit; surrounding keys and comments stay in place."""
+    text = CONFIG_PATH.read_text()
+    lines = ["  sections:"]
+    for s in items:
+        name = (s.get("name") or "").strip()
+        desc = (s.get("description") or "").strip()
+        if not name:
+            continue
+        lines.append(f'    - name: "{_yaml_escape_scalar(name)}"')
+        lines.append(f'      description: "{_yaml_escape_scalar(desc)}"')
+    new_block = "\n".join(lines) + "\n"
+
+    block_re = re.compile(r"(?m)^  sections:[ \t]*\n(?:    [^\n]*\n)*")
+    m = block_re.search(text)
+    if m:
+        text = text[: m.start()] + new_block + text[m.end():]
+    else:
+        # editorial.sections missing — append it at the end of the editorial
+        # block (just before the next top-level key). Defensive fallback;
+        # the canonical config.yaml always ships with this block.
+        section_re = re.compile(r"(?ms)^editorial:.*?(?=^[A-Za-z_]|\Z)")
+        em = section_re.search(text)
+        if em:
+            insert_at = em.end()
+            text = text[:insert_at] + "\n" + new_block + text[insert_at:]
+        else:
+            text = text.rstrip() + "\n\n" + new_block
+    CONFIG_PATH.write_text(text)
+
+
 @app.post("/api/editorial")
 async def save_editorial(request: Request):
     body = await request.json()
     allowed = {"topics", "voice", "extra_include_criteria", "extra_exclude_criteria"}
     updates = {k: v for k, v in body.items() if k in allowed and isinstance(v, str)}
-    if not updates:
+    discards = body.get("universal_discards")
+    if not updates and not isinstance(discards, list):
         return JSONResponse({"error": "No editable fields supplied."}, status_code=400)
     try:
-        _write_editorial(updates)
+        if updates:
+            _write_editorial(updates)
+        if isinstance(discards, list) and discards:
+            text = CONFIG_PATH.read_text()
+            applied = 0
+            for d in discards:
+                if not isinstance(d, dict):
+                    continue
+                item_id = (d.get("id") or "").strip()
+                enabled = d.get("enabled")
+                if not item_id or not isinstance(enabled, bool):
+                    continue
+                text = _set_universal_discard_enabled(text, item_id, enabled)
+                applied += 1
+            if applied:
+                CONFIG_PATH.write_text(text)
     except OSError as e:
         return JSONResponse({"error": str(e)}, status_code=500)
-    return JSONResponse({"ok": True, "updated": list(updates.keys())})
+    updated = list(updates.keys())
+    if isinstance(discards, list) and discards:
+        updated.append("universal_discards")
+    return JSONResponse({"ok": True, "updated": updated})
+
+
+@app.post("/api/editorial/sections")
+async def save_sections(request: Request):
+    body = await request.json()
+    items = body.get("sections")
+    if not isinstance(items, list):
+        return JSONResponse({"error": "Expected `sections` as a list."}, status_code=400)
+    cleaned: list[dict] = []
+    for s in items:
+        if not isinstance(s, dict):
+            continue
+        name = (s.get("name") or "").strip()
+        desc = (s.get("description") or "").strip()
+        if not name:
+            continue
+        cleaned.append({"name": name, "description": desc})
+    if not cleaned:
+        return JSONResponse(
+            {"error": "At least one section is required."}, status_code=400
+        )
+    try:
+        _write_sections(cleaned)
+    except OSError as e:
+        return JSONResponse({"error": str(e)}, status_code=500)
+    return JSONResponse({"ok": True, "count": len(cleaned)})
 
 
 # ─── Automation (launchd schedule management from Settings) ──────────────────
@@ -1697,6 +1820,18 @@ def _render_editorial_panel() -> str:
         "extra_exclude_criteria", snapshot.get("extra_exclude_criteria", ""), "Restore your initial setup"
     )
 
+    discard_rows = "".join(
+        f"""
+        <label class="universal-discard-row">
+            <input type="checkbox" data-discard-id="{_html_attr(d['id'])}"
+                   {'checked' if d['enabled'] else ''}
+                   onchange="updateUniversalDiscard(this)">
+            <span>{_html_text(d['label'])}</span>
+            <span class="universal-discard-feedback" aria-live="polite"></span>
+        </label>"""
+        for d in state.get("universal_discards", [])
+    )
+
     return f"""
 <section class="settings-panel">
     <div class="settings-panel-header">
@@ -1748,6 +1883,23 @@ def _render_editorial_panel() -> str:
         <p class="editorial-hint">Topic-specific DISCARD criteria. Universal exclusions (patents, opinion without anchor, etc.) are already enforced.</p>
     </div>
 
+    <details class="editorial-advanced">
+        <summary>Advanced — Scout's default rules</summary>
+        <p class="editorial-advanced-hint">
+            Scout's editorial opinions, applied by default to every newsletter. Most beats never need to touch these; uncheck when retargeting Scout to one where a default doesn't apply (e.g. a patent-watch newsletter would disable "Discard patent filings"). With everything checked, Scout behaves exactly as today.
+        </p>
+        <div class="universal-discards-list">{discard_rows}
+        </div>
+        <details class="editorial-advanced-mech">
+            <summary>Always on (mechanical, not editable)</summary>
+            <ul>
+                <li>Role: relevance filter for "{_html_text(state['topics'] or 'your newsletter')}"</li>
+                <li>One decision per article (YES / NO)</li>
+                <li>Structured JSON output for each item</li>
+            </ul>
+        </details>
+    </details>
+
     <div id="editorial-banner" class="export-banner hidden"></div>
 </section>"""
 
@@ -1758,6 +1910,54 @@ def _html_attr(s: str) -> str:
 
 def _html_text(s: str) -> str:
     return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def _render_sections_panel() -> str:
+    """Render the Sections editor — the category buckets the Editor assigns
+    items to. Seeded from `editorial.sections` in config.yaml; defaults
+    match Scout's shipped Categories table verbatim."""
+    cfg = load_config()
+    raw = (cfg.get("editorial") or {}).get("sections") or []
+    sections: list[dict] = []
+    if isinstance(raw, list):
+        for s in raw:
+            if not isinstance(s, dict):
+                continue
+            name = (s.get("name") or "").strip()
+            desc = (s.get("description") or "").strip()
+            if not name:
+                continue
+            sections.append({"name": name, "description": desc})
+
+    rows_html = "".join(
+        f"""
+        <div class="section-row">
+            <input class="section-name" type="text" value="{_html_attr(s['name'])}" placeholder="SECTION NAME">
+            <input class="section-desc" type="text" value="{_html_attr(s['description'])}" placeholder="What goes in this section…">
+            <div class="section-row-actions">
+                <button type="button" class="section-action" onclick="moveSection(this, -1)" title="Move up" aria-label="Move up">↑</button>
+                <button type="button" class="section-action" onclick="moveSection(this, 1)" title="Move down" aria-label="Move down">↓</button>
+                <button type="button" class="section-action section-remove" onclick="removeSection(this)" title="Remove" aria-label="Remove">×</button>
+            </div>
+        </div>"""
+        for s in sections
+    )
+
+    return f"""
+<section class="settings-panel">
+    <div class="settings-panel-header">
+        <div>
+            <h2>Sections</h2>
+            <p class="settings-panel-sub">The category buckets the Editor assigns each item to. These render as the Categories table in the Editor prompt and as headings in the published edition.</p>
+        </div>
+        <button onclick="saveSections()" class="btn-primary" id="sections-save-btn">Save changes</button>
+    </div>
+    <div class="sections-list" id="sections-list">{rows_html}
+    </div>
+    <button type="button" class="sections-add" onclick="addSection()">+ Add section</button>
+    <p class="settings-panel-sub sections-hint">Names render in caps in the prompt. Order is preserved.</p>
+    <div id="sections-banner" class="export-banner hidden"></div>
+</section>"""
 
 
 def _render_automation_panel() -> str:
@@ -1876,6 +2076,7 @@ def _render_pipeline_table() -> str:
 def render_setup() -> str:
     feeds_editor = _render_feeds_editor()
     editorial_panel = _render_editorial_panel()
+    sections_panel = _render_sections_panel()
     automation_panel = _render_automation_panel()
     models_panel = _render_models_panel()
     pipeline_table = _render_pipeline_table()
@@ -1888,6 +2089,8 @@ def render_setup() -> str:
 {feeds_editor}
 
 {editorial_panel}
+
+{sections_panel}
 
 {automation_panel}
 
@@ -3422,6 +3625,230 @@ h1 {
     pointer-events: none;
 }
 
+/* ─── Editorial Advanced disclosure ─── */
+
+.editorial-advanced {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 0.5px solid var(--color-border-light);
+}
+
+.editorial-advanced > summary {
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    list-style: none;
+    padding: 4px 0;
+    user-select: none;
+}
+
+.editorial-advanced > summary::-webkit-details-marker {
+    display: none;
+}
+
+.editorial-advanced > summary::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 0.7rem;
+    color: var(--color-text-tertiary, #999);
+    transition: transform var(--transition);
+}
+
+.editorial-advanced[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+.editorial-advanced-hint {
+    margin: 10px 0 14px;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: var(--color-text-secondary);
+}
+
+.universal-discards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.universal-discard-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 8px;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: background var(--transition);
+}
+
+.universal-discard-row:hover {
+    background: var(--color-bg);
+}
+
+.universal-discard-row input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    cursor: pointer;
+    accent-color: var(--color-blue);
+    flex-shrink: 0;
+}
+
+.universal-discard-feedback {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: var(--color-text-tertiary, #999);
+    opacity: 0;
+    transition: opacity var(--transition);
+}
+
+.universal-discard-feedback.visible {
+    opacity: 1;
+}
+
+.universal-discard-feedback.saved {
+    color: var(--color-green, #16a34a);
+}
+
+.universal-discard-feedback.error {
+    color: #dc2626;
+}
+
+.editorial-advanced-mech {
+    margin-top: 4px;
+    padding: 10px 12px;
+    background: var(--color-bg);
+    border-radius: var(--radius-sm);
+}
+
+.editorial-advanced-mech > summary {
+    cursor: pointer;
+    font-size: 0.8125rem;
+    color: var(--color-text-tertiary, #999);
+    list-style: none;
+    user-select: none;
+}
+
+.editorial-advanced-mech > summary::-webkit-details-marker {
+    display: none;
+}
+
+.editorial-advanced-mech ul {
+    margin: 10px 0 0;
+    padding-left: 20px;
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+}
+
+.editorial-advanced-mech li {
+    margin-bottom: 4px;
+}
+
+/* ─── Sections panel ─── */
+
+.sections-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 12px 0;
+}
+
+.section-row {
+    display: grid;
+    grid-template-columns: 1.3fr 2.4fr auto;
+    gap: 8px;
+    align-items: center;
+    padding: 6px;
+    border-radius: var(--radius-sm);
+    border: 0.5px solid transparent;
+}
+
+.section-row:hover {
+    border-color: var(--color-border-light);
+    background: var(--color-bg);
+}
+
+.section-name,
+.section-desc {
+    appearance: none;
+    background: transparent;
+    border: 0.5px solid transparent;
+    border-radius: 6px;
+    padding: 6px 8px;
+    font: inherit;
+    font-size: 0.8125rem;
+    color: var(--color-text-primary);
+    min-width: 0;
+}
+
+.section-name {
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.section-name:focus,
+.section-desc:focus {
+    outline: none;
+    background: var(--color-bg);
+    border-color: var(--color-blue);
+}
+
+.section-row-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.section-action {
+    appearance: none;
+    background: transparent;
+    border: none;
+    color: var(--color-text-tertiary, #999);
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    line-height: 1;
+    transition: color var(--transition), background var(--transition);
+}
+
+.section-action:hover {
+    color: var(--color-text-primary);
+    background: var(--color-bg);
+}
+
+.section-remove:hover {
+    color: #dc2626;
+    background: #fee2e2;
+}
+
+.sections-add {
+    appearance: none;
+    background: transparent;
+    border: 0.5px dashed var(--color-border-light);
+    color: var(--color-text-secondary);
+    padding: 8px 14px;
+    border-radius: var(--radius-sm);
+    font: inherit;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.sections-add:hover {
+    border-color: var(--color-blue);
+    color: var(--color-blue);
+}
+
+.sections-hint {
+    margin-top: 10px;
+}
+
 /* ─── iOS-style toggle switch ─── */
 
 .toggle-switch {
@@ -4690,6 +5117,134 @@ function resetEditorialField(field, btn) {
     if (el) {
         el.value = decoded;
         el.focus();
+    }
+}
+
+// ─── Universal DISCARD toggles (Settings → Editorial → Advanced) ────────────
+
+async function updateUniversalDiscard(checkbox) {
+    const id = checkbox.getAttribute('data-discard-id');
+    const enabled = checkbox.checked;
+    const row = checkbox.closest('.universal-discard-row');
+    const fb = row ? row.querySelector('.universal-discard-feedback') : null;
+    if (fb) {
+        fb.textContent = 'Saving…';
+        fb.className = 'universal-discard-feedback visible';
+    }
+    try {
+        const res = await fetch('/api/editorial', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({universal_discards: [{id, enabled}]}),
+        });
+        const data = await res.json();
+        if (res.ok && data.ok) {
+            if (fb) {
+                fb.textContent = 'Saved';
+                fb.className = 'universal-discard-feedback visible saved';
+                setTimeout(() => { fb.className = 'universal-discard-feedback'; }, 1500);
+            }
+        } else {
+            checkbox.checked = !enabled;
+            if (fb) {
+                fb.textContent = data.error || 'Could not save.';
+                fb.className = 'universal-discard-feedback visible error';
+            }
+        }
+    } catch (e) {
+        checkbox.checked = !enabled;
+        if (fb) {
+            fb.textContent = 'Network error.';
+            fb.className = 'universal-discard-feedback visible error';
+        }
+    }
+}
+
+// ─── Sections editor (Settings → Sections) ──────────────────────────────────
+
+function addSection() {
+    const list = document.getElementById('sections-list');
+    if (!list) return;
+    const row = document.createElement('div');
+    row.className = 'section-row';
+    row.innerHTML = `
+        <input class="section-name" type="text" value="" placeholder="SECTION NAME">
+        <input class="section-desc" type="text" value="" placeholder="What goes in this section…">
+        <div class="section-row-actions">
+            <button type="button" class="section-action" onclick="moveSection(this, -1)" title="Move up" aria-label="Move up">↑</button>
+            <button type="button" class="section-action" onclick="moveSection(this, 1)" title="Move down" aria-label="Move down">↓</button>
+            <button type="button" class="section-action section-remove" onclick="removeSection(this)" title="Remove" aria-label="Remove">×</button>
+        </div>`;
+    list.appendChild(row);
+    const nameInput = row.querySelector('.section-name');
+    if (nameInput) nameInput.focus();
+}
+
+function moveSection(btn, delta) {
+    const row = btn.closest('.section-row');
+    if (!row) return;
+    const list = row.parentElement;
+    const rows = Array.from(list.children);
+    const idx = rows.indexOf(row);
+    const target = idx + delta;
+    if (target < 0 || target >= rows.length) return;
+    if (delta < 0) {
+        list.insertBefore(row, rows[target]);
+    } else {
+        list.insertBefore(row, rows[target].nextSibling);
+    }
+}
+
+function removeSection(btn) {
+    const row = btn.closest('.section-row');
+    if (!row) return;
+    const list = row.parentElement;
+    if (list.children.length <= 1) {
+        alert('At least one section is required.');
+        return;
+    }
+    row.remove();
+}
+
+async function saveSections() {
+    const list = document.getElementById('sections-list');
+    if (!list) return;
+    const rows = Array.from(list.querySelectorAll('.section-row'));
+    const sections = rows.map(r => ({
+        name: (r.querySelector('.section-name').value || '').trim(),
+        description: (r.querySelector('.section-desc').value || '').trim(),
+    })).filter(s => s.name);
+    if (sections.length === 0) {
+        alert('At least one section is required.');
+        return;
+    }
+    const btn = document.getElementById('sections-save-btn');
+    const banner = document.getElementById('sections-banner');
+    if (btn) { btn.disabled = true; btn.textContent = 'Saving…'; }
+    try {
+        const res = await fetch('/api/editorial/sections', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({sections}),
+        });
+        const data = await res.json();
+        if (res.ok && data.ok) {
+            if (btn) { btn.textContent = 'Saved'; }
+            if (banner) {
+                banner.textContent = `Saved ${data.count} section${data.count === 1 ? '' : 's'}.`;
+                banner.classList.remove('hidden');
+            }
+            setTimeout(() => {
+                if (btn) { btn.textContent = 'Save changes'; btn.disabled = false; }
+                if (banner) { banner.classList.add('hidden'); }
+            }, 1800);
+        } else {
+            if (btn) { btn.textContent = 'Save changes'; btn.disabled = false; }
+            alert(data.error || 'Could not save sections.');
+        }
+    } catch (e) {
+        if (btn) { btn.textContent = 'Save changes'; btn.disabled = false; }
+        alert('Network error: ' + e.message);
     }
 }
 

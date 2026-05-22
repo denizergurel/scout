@@ -13,19 +13,7 @@ You receive articles that passed the Scout's relevance filter. For each article,
 
 Assign exactly ONE category per article:
 
-| Category | Description |
-|----------|-------------|
-| HIGHLIGHTS | Major stories of the week — significant announcements, strategy shifts, market moves |
-| APPLE VISION PRO | Apple Vision Pro coverage: usage, apps, workflows, and notable reports. |
-| APP STORE HIGHLIGHTS | Notable new or updated apps/games for Apple Vision Pro |
-| GAMING MARKETPLACE | VR/AR/XR gaming industry — studios, releases, market shifts |
-| INVESTMENT | Funding rounds, acquisitions, M&A in XR/AI/spatial |
-| HARDWARE | New devices, displays, optics, chips, sensors — anything physical |
-| SOFTWARE | Platform updates, OS releases, SDKs, developer tools, runtime changes |
-| AI AND SIMULATED WORLDS | AI models, world models, simulation, compute — when relevant to spatial/XR or seismic |
-| HANDS ON REVIEW | First-hand reviews of headsets, glasses, apps, or experiences |
-| RESEARCH | Academic studies, clinical trials, published papers using XR/VR/AR |
-| OPINION | Analysis pieces, editorials, commentary — attributed to author/publication |
+{{categories_table}}
 
 ## Summary Guidelines
 

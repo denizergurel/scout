@@ -59,6 +59,62 @@ editorial:
     - Gaming news that isn't specifically about VR/AR/MR
     - Incremental AI news (minor updates, funding rounds, hiring)
 
+  # ─── Universal DISCARD rules ──────────────────────────────────────────
+  # Scout's default discard rules — applied to every newsletter. The `rule`
+  # is the literal line that appears in the Scout prompt; flip `enabled`
+  # to false to drop a rule for a beat where it doesn't apply (e.g. a
+  # patent-watch newsletter would disable the patents rule). Editable
+  # toggles live under Settings → Editorial → Advanced.
+  universal_discards:
+    - id: "patents"
+      label: "Discard patent filings"
+      rule: "**Patent filings** (ALWAYS discard)"
+      enabled: true
+    - id: "opinion_unanchored"
+      label: "Discard opinion / commentary without a news anchor"
+      rule: "Opinion or commentary without a news anchor"
+      enabled: true
+    - id: "stale_7d"
+      label: "Discard items older than 7 days"
+      rule: "Older than 7 days"
+      enabled: true
+    - id: "off_topic"
+      label: "Discard general news unrelated to your topics"
+      rule: "General news unrelated to {{topics}}"
+      enabled: true
+    - id: "duplicates"
+      label: "Discard duplicates (keep the better source)"
+      rule: "Duplicate of another article already marked YES (keep the better source)"
+      enabled: true
+
+  # ─── Sections ─────────────────────────────────────────────────────────
+  # The category buckets the Editor assigns each item to. Rendered as the
+  # Categories table in the Editor prompt, in this order. Editable from
+  # Settings → Sections.
+  sections:
+    - name: "HIGHLIGHTS"
+      description: "Major stories of the week — significant announcements, strategy shifts, market moves"
+    - name: "APPLE VISION PRO"
+      description: "Apple Vision Pro coverage: usage, apps, workflows, and notable reports."
+    - name: "APP STORE HIGHLIGHTS"
+      description: "Notable new or updated apps/games for Apple Vision Pro"
+    - name: "GAMING MARKETPLACE"
+      description: "VR/AR/XR gaming industry — studios, releases, market shifts"
+    - name: "INVESTMENT"
+      description: "Funding rounds, acquisitions, M&A in XR/AI/spatial"
+    - name: "HARDWARE"
+      description: "New devices, displays, optics, chips, sensors — anything physical"
+    - name: "SOFTWARE"
+      description: "Platform updates, OS releases, SDKs, developer tools, runtime changes"
+    - name: "AI AND SIMULATED WORLDS"
+      description: "AI models, world models, simulation, compute — when relevant to spatial/XR or seismic"
+    - name: "HANDS ON REVIEW"
+      description: "First-hand reviews of headsets, glasses, apps, or experiences"
+    - name: "RESEARCH"
+      description: "Academic studies, clinical trials, published papers using XR/VR/AR"
+    - name: "OPINION"
+      description: "Analysis pieces, editorials, commentary — attributed to author/publication"
+
 # --- LLM Settings ---
 # Default applies to every agent unless overridden in the per-stage blocks below.
 # Per-stage routing lets you put the cheap/fast model on high-volume work (Scout)
