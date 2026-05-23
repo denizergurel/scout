@@ -1184,6 +1184,63 @@ async def save_feeds(request: Request):
     return JSONResponse({"ok": True, "feeds": cleaned, "count": len(cleaned)})
 
 
+def _build_edition_text(
+    included: list[dict],
+    spotlight: str,
+    config: dict,
+    *,
+    include_header: bool = True,
+) -> str:
+    """Render the Lineup as paste-ready newsletter text.
+
+    Format per section: `SECTION HEADER` / blank / paragraph / blank / url / blank.
+    `include_header` controls whether the leading newsletter name + date go on top;
+    Publish keeps the header for the saved .md, Copy-text turns it off so the user
+    can paste straight into their composer.
+    """
+    groups = group_by_category(included, _section_order(config))
+    newsletter_name = _newsletter_name(config)
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    lines: list[str] = []
+    if include_header:
+        lines.extend([newsletter_name, f"Week of {today}", ""])
+    if spotlight:
+        lines.extend(["SPOTLIGHT", "", spotlight, ""])
+
+    for category, items in groups.items():
+        lines.extend([category.upper(), ""])
+        for it in items:
+            summary = (it.get("summary") or "").strip()
+            if not summary:
+                continue
+            lines.extend([summary, ""])
+            link = (it.get("link") or "").strip()
+            if link:
+                lines.extend([link, ""])
+
+    return "\n".join(lines).rstrip() + "\n"
+
+
+@app.get("/api/export/preview")
+async def export_preview():
+    """Return the Lineup as paste-ready text without publishing.
+
+    Used by the "Copy Text" action on the Lineup so the editor can grab the
+    edition body and paste it into the newsletter composer.
+    """
+    config = load_config()
+    included = by_status_for_publish()
+    if not included:
+        return JSONResponse(
+            {"error": "Nothing is Including right now — save and include some items first."},
+            status_code=400,
+        )
+    spotlight = (load_bucket_state().get("spotlight") or "").strip()
+    text = _build_edition_text(included, spotlight, config, include_header=False)
+    return JSONResponse({"ok": True, "text": text, "item_count": len(included)})
+
+
 @app.post("/api/export")
 async def export_newsletter():
     """Publish the next edition.
@@ -1210,19 +1267,7 @@ async def export_newsletter():
     groups = group_by_category(included, _section_order(config))
 
     newsletter_name = _newsletter_name(config)
-    # Markdown body in paragraph style — same shape regardless of which newsletter.
-    lines = [newsletter_name, f"Week of {today}", "", "SPOTLIGHT", ""]
-    if spotlight:
-        lines.extend([spotlight, ""])
-
-    for category, items in groups.items():
-        lines.extend([category.upper(), ""])
-        for it in items:
-            summary = (it.get("summary") or "").strip()
-            if summary:
-                lines.extend([summary, ""])
-
-    markdown = "\n".join(lines).rstrip() + "\n"
+    markdown = _build_edition_text(included, spotlight, config, include_header=True)
 
     def slim(it: dict) -> dict:
         return {
@@ -2500,7 +2545,10 @@ def render_lineup(groups: "OrderedDict[str, list[dict]]", bucket_state: dict) ->
             <h1>Lineup</h1>
             <p class="subtitle">Items you've selected for the next edition. Hold any you'd rather keep for later.</p>
         </div>
-        <button onclick="exportNewsletter()" class="btn-primary" id="export-btn">Publish Edition</button>
+        <div class="header-actions">
+            <button onclick="openExportPreview()" class="btn-secondary" id="copy-text-btn" title="Preview the edition as plain text and copy to clipboard">Copy Text</button>
+            <button onclick="exportNewsletter()" class="btn-primary" id="export-btn">Publish Edition</button>
+        </div>
     </div>
     <div class="spotlight-block">
         <div class="spotlight-header">
@@ -4353,6 +4401,36 @@ h1 {
     font-variant-numeric: tabular-nums;
 }
 
+/* ─── Export preview modal ─── */
+
+.modal-card--wide {
+    width: min(820px, 94vw);
+}
+
+.modal-textarea--preview {
+    min-height: 420px;
+    max-height: 60vh;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    overflow: auto;
+}
+
+.copy-feedback {
+    flex: 1;
+    font-size: 0.75rem;
+    color: var(--color-text-tertiary);
+    font-variant-numeric: tabular-nums;
+    transition: color var(--transition);
+}
+
+.copy-feedback--ok {
+    color: var(--color-blue, #007AFF);
+}
+
 /* ─── Status Page ─── */
 
 .status-container {
@@ -5116,6 +5194,134 @@ function bumpNavCount(key, delta) {
             countEl.textContent = Math.max(0, cur + delta);
         }
     });
+}
+
+// ─── Export preview modal ───────────────────────────────────────────────────
+// Plain-text preview of the Lineup so the editor can paste straight into their
+// newsletter composer without dragging UI chrome along.
+
+let _exportModalEl = null;
+
+function _el(tag, attrs, children) {
+    const node = document.createElement(tag);
+    if (attrs) {
+        for (const k in attrs) {
+            if (k === 'class') node.className = attrs[k];
+            else if (k === 'text') node.textContent = attrs[k];
+            else node.setAttribute(k, attrs[k]);
+        }
+    }
+    if (children) children.forEach(c => node.appendChild(c));
+    return node;
+}
+
+function ensureExportModal() {
+    if (_exportModalEl) return _exportModalEl;
+    const wrap = document.createElement('div');
+    wrap.className = 'modal-backdrop';
+    wrap.id = 'export-preview-modal';
+
+    const card = _el('div', {'class': 'modal-card modal-card--wide', role: 'dialog', 'aria-modal': 'true', 'aria-labelledby': 'export-modal-title'});
+
+    const header = _el('div', {'class': 'modal-header'});
+    header.appendChild(_el('h2', {id: 'export-modal-title', text: 'Edition text'}));
+    header.appendChild(_el('p', {'class': 'modal-hint', text: "Paste-ready format — each item is a paragraph followed by its source URL. Editing here is just for the clipboard; it won't change the items."}));
+    card.appendChild(header);
+
+    const ta = _el('textarea', {id: 'export-modal-textarea', 'class': 'modal-textarea modal-textarea--preview', spellcheck: 'false'});
+    card.appendChild(ta);
+
+    const actions = _el('div', {'class': 'modal-actions'});
+    actions.appendChild(_el('span', {id: 'export-copy-feedback', 'class': 'copy-feedback'}));
+    const closeBtn = _el('button', {'class': 'btn-secondary', text: 'Close'});
+    closeBtn.addEventListener('click', closeExportPreview);
+    actions.appendChild(closeBtn);
+    const copyBtn = _el('button', {'class': 'btn-primary', id: 'export-copy-btn', text: 'Copy to clipboard'});
+    copyBtn.addEventListener('click', copyExportText);
+    actions.appendChild(copyBtn);
+    card.appendChild(actions);
+
+    wrap.appendChild(card);
+    document.body.appendChild(wrap);
+    wrap.addEventListener('click', (e) => {
+        if (e.target === wrap) closeExportPreview();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (!wrap.classList.contains('visible')) return;
+        if (e.key === 'Escape') closeExportPreview();
+        if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) copyExportText();
+    });
+    installModalFocusTrap(wrap);
+    _exportModalEl = wrap;
+    return wrap;
+}
+
+async function openExportPreview() {
+    const btn = document.getElementById('copy-text-btn');
+    if (btn) { btn.disabled = true; btn.textContent = 'Loading…'; }
+    let data;
+    try {
+        const res = await fetch('/api/export/preview');
+        data = await res.json();
+        if (!res.ok || !data.ok) {
+            const banner = document.getElementById('export-banner');
+            if (banner) {
+                banner.textContent = data.error || 'Could not build edition text.';
+                banner.classList.remove('hidden');
+            }
+            return;
+        }
+    } catch (err) {
+        const banner = document.getElementById('export-banner');
+        if (banner) {
+            banner.textContent = 'Could not build edition text: ' + err.message;
+            banner.classList.remove('hidden');
+        }
+        return;
+    } finally {
+        if (btn) { btn.disabled = false; btn.textContent = 'Copy Text'; }
+    }
+
+    const modal = ensureExportModal();
+    captureReturnFocus();
+    const ta = document.getElementById('export-modal-textarea');
+    ta.value = data.text || '';
+    const feedback = document.getElementById('export-copy-feedback');
+    if (feedback) {
+        feedback.textContent = `${data.item_count} item${data.item_count === 1 ? '' : 's'} · ⌘ + Enter to copy`;
+        feedback.classList.remove('copy-feedback--ok');
+    }
+    modal.classList.add('visible');
+    setTimeout(() => { ta.focus(); ta.select(); }, 50);
+}
+
+function closeExportPreview() {
+    if (_exportModalEl) _exportModalEl.classList.remove('visible');
+    restoreReturnFocus();
+}
+
+async function copyExportText() {
+    const ta = document.getElementById('export-modal-textarea');
+    const feedback = document.getElementById('export-copy-feedback');
+    if (!ta) return;
+    const text = ta.value;
+    let ok = false;
+    try {
+        if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(text);
+            ok = true;
+        } else {
+            ta.focus();
+            ta.select();
+            ok = document.execCommand('copy');
+        }
+    } catch (err) {
+        ok = false;
+    }
+    if (feedback) {
+        feedback.textContent = ok ? 'Copied to clipboard.' : 'Copy failed — select the text and use ⌘C.';
+        feedback.classList.toggle('copy-feedback--ok', ok);
+    }
 }
 
 async function exportNewsletter() {
