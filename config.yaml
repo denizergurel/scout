@@ -174,15 +174,16 @@ editorial_policy:
 # The section order below defines the newsletter layout.
 newsletter_section_order:
   - "HIGHLIGHTS"
-  - "APPLE VISION PRO"
+  - "APPLE VISION PRO IN THE NEWS"
   - "APP STORE HIGHLIGHTS"
-  - "GAMING MARKETPLACE"
+  - "GAMING MARKETPLACE WATCH"
   - "INVESTMENT"
-  - "HARDWARE"
   - "SOFTWARE"
+  - "HARDWARE"
   - "AI AND SIMULATED WORLDS"
-  - "HANDS ON REVIEW"
   - "RESEARCH"
+  - "NEW EXPERIENCES"
+  - "HANDS-ON REVIEW"
   - "OPINION"
 
 # --- Categories (must match the names used in newsletter_section_order above) ---
@@ -191,7 +192,7 @@ categories:
     description: "The most important 4-6 stories of the week across all topics. Lead items. These get the most prominent placement after the spotlight intro."
     keywords: ["major announcement", "launch", "strategy shift", "market move"]
 
-  - name: "APPLE VISION PRO"
+  - name: "APPLE VISION PRO IN THE NEWS"
     description: "Apple Vision Pro coverage: usage, apps, workflows, developer stories, and notable reports."
     keywords: ["Vision Pro", "visionOS", "spatial computing"]
 
@@ -199,7 +200,7 @@ categories:
     description: "Notable new or updated apps and games for Vision Pro on the App Store."
     keywords: ["App Store", "visionOS app", "spatial app", "Vision Pro game"]
 
-  - name: "GAMING MARKETPLACE"
+  - name: "GAMING MARKETPLACE WATCH"
     description: "VR/AR/XR gaming industry news — studios, releases, market shifts, hardware for gaming."
     keywords: ["VR gaming", "Quest game", "PSVR", "VR studio", "gaming VR"]
 
@@ -219,13 +220,17 @@ categories:
     description: "AI models, world models, simulation, generative AI, compute infrastructure — when relevant to spatial/XR or when seismic enough to matter."
     keywords: ["AI model", "world model", "simulation", "compute", "LLM", "frontier model", "Claude", "GPT", "Gemini"]
 
-  - name: "HANDS ON REVIEW"
-    description: "First-hand reviews of headsets, glasses, apps, or experiences — journalists or creators sharing direct usage impressions."
-    keywords: ["review", "hands on", "first impressions", "I tried", "we tested", "tested"]
-
   - name: "RESEARCH"
     description: "Academic studies, clinical trials, published papers — XR/VR/AR used in research contexts."
     keywords: ["study", "research", "university", "clinical trial", "found that", "published"]
+
+  - name: "NEW EXPERIENCES"
+    description: "Real-world XR/VR deployments and experiences — location-based entertainment, immersive installations, enterprise/military/government training programs, simulation-for-training, and education use cases."
+    keywords: ["experience", "training", "simulation", "deployment", "installation", "location-based", "immersive", "exhibit"]
+
+  - name: "HANDS-ON REVIEW"
+    description: "First-hand reviews of headsets, glasses, apps, or experiences — journalists or creators sharing direct usage impressions."
+    keywords: ["review", "hands on", "first impressions", "I tried", "we tested", "tested"]
 
   - name: "OPINION"
     description: "Analysis pieces, editorials, commentary from journalists or execs. Attributed to the author/publication."

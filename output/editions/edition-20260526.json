@@ -1,0 +1,1108 @@
+{
+  "title": "Spatial Report — 2026-05-26",
+  "edition_number": "",
+  "date": "2026-05-26",
+  "spotlight": "Google I/O 2026 takes center stage as Wired, Engadget, and CNET track expected Gemini AI updates and new details on the company's Android XR smart glasses ambitions. MIT Technology Review details Anduril and Meta's prototype augmented-reality headset for the U.S. military, including a vision for ordering drone strikes via eye-tracking and voice commands under former Army Special Operations officer Quay Barnett. Apple, meanwhile, previewed Apple Intelligence-powered accessibility updates spanning iPhone, Mac, and Vision Pro, including a feature that lets Vision Pro users control a wheelchair with their eyes.",
+  "item_ids": [
+    "c605593f8a742a13",
+    "3c5cc11c1b90d47a",
+    "f5319237949d8e64",
+    "bbaa8499640cc7a8",
+    "e7283798c89f778a",
+    "def740e7d79421b5",
+    "fd12658985810b45",
+    "ff26a27e3a0369c7",
+    "f7030279e053eb70",
+    "52aded053aec0ec4",
+    "3abce8fde1f439fa",
+    "2642d2834aec4f90",
+    "ead417ec7945af91",
+    "cc0b9d36f3e3989f",
+    "981e2ce3b8c47834",
+    "f31901b0cd85b217",
+    "4ababcc110b749d2",
+    "585718b9b212b5c7",
+    "38edbd098fd4727b",
+    "29e4b4bff216c2f3",
+    "befc9fdcac3dd811",
+    "335f3380d0b5c81d",
+    "b935890a748f5263",
+    "f9da652cfeba6481",
+    "24b86ce909753a78",
+    "12e70a956d75b4dc",
+    "398d646b30fdb09a",
+    "055f6668bcc53e32",
+    "1b298854527269db",
+    "5eb76d371072c65a",
+    "cc6a73a04b1336c1",
+    "13af806c8ee3662f",
+    "60257070f76c64a4",
+    "6a15ade41fd90ea1",
+    "41a17e3ffb19fcb4",
+    "545a113741b2eba5",
+    "198f1b41a32bc4e5",
+    "66e34aca3e876ba0",
+    "2ce67b7187fef738",
+    "bfe93e97883ad42e",
+    "3caf0fa3d7fc7360",
+    "eac49c768206708d",
+    "5d46eaaf77bef8d2",
+    "6c520ecf46acd731",
+    "c706b467f253694f",
+    "1953d2369a3598fa",
+    "98c2782c42d1f062",
+    "984ab86ec85d431f",
+    "f897b01f80bd5cd6",
+    "cd49c72f1a5ea4f2",
+    "a10cf91f893f3068",
+    "3b760cbf17a16141",
+    "91ce6f1b6aebf5d2",
+    "e639d3ace6604759",
+    "bf40a95dd6a6174b",
+    "2d3fcd6d3c934c34",
+    "7fc26d4cc4a4a761",
+    "e3dba206c333e5f9",
+    "e0cee187ca4201df",
+    "574afb889952f67a",
+    "62ad25987e2b870a",
+    "25e01f4d78823850",
+    "f34b9a19df550c6d"
+  ],
+  "sections": {
+    "HIGHLIGHTS": [
+      {
+        "id": "981e2ce3b8c47834",
+        "title": "Inside Anduril and Meta’s quest to make smart glasses for warfare",
+        "link": "https://www.technologyreview.com/2026/05/18/1137412/inside-anduril-and-metas-quest-to-make-smart-glasses-for-warfare/",
+        "source": "MIT Tech Review - AI",
+        "category": "HIGHLIGHTS",
+        "summary": "MIT Technology Review reports that defense-tech company Anduril has shared new details about the augmented-reality headset it is prototyping with Meta for the U.S. military, including a vision for ordering drone strikes via eye-tracking and voice commands. The effort is led by Quay Barnett, a former Army Special Operations Command officer now serving as a vice president at Anduril."
+      },
+      {
+        "id": "585718b9b212b5c7",
+        "title": "Google I/O 2026: Live updates as the company announces new features for Gemini, AI, Search and more",
+        "link": "https://www.engadget.com/2176173/google-io-live-blog-gemini-ai/",
+        "source": "Engadget",
+        "category": "HIGHLIGHTS",
+        "summary": "Engadget is live-blogging Google I/O 2026, where the company is expected to unveil new features across Gemini, AI, Search, and Android XR, including additional details on its smart glasses partnerships."
+      },
+      {
+        "id": "29e4b4bff216c2f3",
+        "title": "Google I/O 2026 Live Blog: All the Gemini and Smart Glasses Updates as They Happen",
+        "link": "https://www.wired.com/live/google-io-2026-live-blog-gemini-android-xr-search/",
+        "source": "Wired",
+        "category": "HIGHLIGHTS",
+        "summary": "Wired is live-blogging Google I/O 2026, tracking updates to Google's Gemini AI suite and new details on Android XR smart glasses as they are announced at the company's developer keynote."
+      },
+      {
+        "id": "6a15ade41fd90ea1",
+        "title": "Android XR is finally starting to feel real",
+        "link": "https://www.engadget.com/2177283/android-xr-is-finally-starting-to-feel-real/",
+        "source": "Engadget",
+        "category": "HIGHLIGHTS",
+        "summary": "Engadget reports that Google's Android XR platform is beginning to take concrete shape, with smart glasses partnerships and software demonstrations at I/O suggesting the company has tangible products in market view. The piece notes Google still has much to prove but argues its glasses will carry meaningful advantages tied to Gemini integration and partner hardware."
+      },
+      {
+        "id": "2ce67b7187fef738",
+        "title": "Everything Announced at Google I/O 2026: Gemini, Search, Smart Glasses",
+        "link": "https://www.wired.com/story/everything-google-announced-at-google-io-2026/",
+        "source": "Wired",
+        "category": "HIGHLIGHTS",
+        "summary": "Wired's roundup of Google I/O 2026 covers updates across Gemini models, an AI-driven Search overhaul, agentic tools throughout Google's products, and new Android XR smart glasses from partners shipping this fall, marking one of the company's most spatial- and AI-heavy I/O keynotes to date."
+      }
+    ],
+    "VISION PRO": [
+      {
+        "id": "38edbd098fd4727b",
+        "title": "Apple's new accessibility feature lets Vision Pro users control a wheelchair with their eyes",
+        "link": "https://www.engadget.com/2176236/apple-accessibility-features-vision-pro-wheelchair-control/",
+        "source": "Engadget",
+        "category": "VISION PRO",
+        "summary": "According to Engadget, Apple is previewing a new accessibility feature that allows Vision Pro users to control a wheelchair with their eyes, part of a broader update that includes Apple Intelligence-powered natural language voice input."
+      }
+    ],
+    "APP STORE HIGHLIGHTS": [
+      {
+        "id": "cc0b9d36f3e3989f",
+        "title": "WorldLens VR’s New AI Depth Feature Enables 3D Street View",
+        "link": "https://www.uploadvr.com/worldlens-vrs-new-ai-depth-feature-enables-3d-street-view/",
+        "source": "UploadVR",
+        "category": "APP STORE HIGHLIGHTS",
+        "summary": "UploadVR reports that WorldLens VR has introduced a new AI-powered depth feature on Meta Quest that adds subtle 3D depth to Google Street View environments, expanding how users can explore real-world locations inside the headset."
+      },
+      {
+        "id": "eac49c768206708d",
+        "title": "Immersive for Autodesk VRED brings spatial design review to Apple Vision Pro",
+        "link": "https://blogs.autodesk.com/design-studio/2026/05/20/immersive-for-autodesk-vred-is-now-available-on-apple-vision-pro/",
+        "source": "Autodesk Blogs",
+        "category": "APP STORE HIGHLIGHTS",
+        "summary": "Autodesk Blogs reports that Immersive for Autodesk VRED is now available on the App Store for Apple Vision Pro, the result of a collaboration between Autodesk, Apple, NVIDIA, and Innoactive first announced at NVIDIA GTC in March. The app brings VRED's high-fidelity automotive visualization into spatial computing, allowing design teams to step inside full-scale, photoreal vehicle scenes for design review without altering existing desktop preparation workflows."
+      },
+      {
+        "id": "1953d2369a3598fa",
+        "title": "Meta’s Goo Goo Dolls Concert Reminds Us Why Live Music Fits VR So Well",
+        "link": "https://www.uploadvr.com/metas-goo-goo-dolls-concert-reminds-us-why-live-music-fits-vr-so-well/",
+        "source": "UploadVR",
+        "category": "APP STORE HIGHLIGHTS",
+        "summary": "UploadVR reports that Meta has added a new immersive concert to Horizon TV featuring the Goo Goo Dolls performing at New York City's Beacon Theatre, the latest in a string of live music experiences for Quest owners."
+      }
+    ],
+    "GAMING MARKETPLACE": [
+      {
+        "id": "c605593f8a742a13",
+        "title": "FNaF: Secret of the Mimic Went Flatscreen Before VR Due To Poor Help Wanted 2 Sales",
+        "link": "https://www.uploadvr.com/fnaf-secret-of-the-mimic-went-flatscreen-before-vr-due-to-poor-help-wanted-2-sales/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE",
+        "summary": "UploadVR reports that VR support for Five Nights at Freddy's: Secret of the Mimic was initially shelved in favor of a flatscreen-first release due to underperforming sales of its predecessor Help Wanted 2, offering a candid signal of the ongoing commercial challenges facing VR-exclusive titles."
+      },
+      {
+        "id": "3c5cc11c1b90d47a",
+        "title": "One More Delve Impressions: A Promising Start For This VR Dungeon Crawler",
+        "link": "https://www.uploadvr.com/one-more-delve-impressions-a-promising-start-for-this-vr-dungeon-crawler/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE",
+        "summary": "UploadVR previewed One More Delve, a VR dungeon crawler supporting up to three players with physics-based combat, calling it a promising early entry in the co-op VR RPG genre."
+      },
+      {
+        "id": "5d46eaaf77bef8d2",
+        "title": "VR Platformer ‘Moss’ is Getting a Flatscreen Port Following Cancellation of “major project”",
+        "link": "https://www.roadtovr.com/moss-vr-flatscreen-port-project-cancellation/",
+        "source": "Road to VR",
+        "category": "GAMING MARKETPLACE",
+        "summary": "Road to VR reports that Polyarc Games is releasing Moss: The Forgotten Relic, a flatscreen adaptation of its VR puzzle-platformer series, for console and PC later this year. The move follows the cancellation of an unspecified major project at the studio last month."
+      },
+      {
+        "id": "6c520ecf46acd731",
+        "title": "Myst &amp; Riven Remakes Out Now On PlayStation VR2",
+        "link": "https://www.uploadvr.com/myst-riven-remakes-out-now-on-playstation-vr2/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE",
+        "summary": "UploadVR reports that the remakes of classic adventure games Myst and its sequel Riven arrived on PlayStation VR2 today, bringing two landmark puzzle titles to Sony's headset."
+      },
+      {
+        "id": "91ce6f1b6aebf5d2",
+        "title": "As Horizon &amp; Rec Room Fold, VRChat Is Hitting Usage Records &amp; &quot;Not Going Anywhere&quot;",
+        "link": "https://www.uploadvr.com/vrchat-statement-after-rec-room-and-horizon-worlds-fold/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE",
+        "summary": "UploadVR reports that VRChat says it is setting new usage records and is \"not going anywhere\" following the withdrawal of Meta's Horizon Worlds and Rec Room from VR, leaving the long-running social platform as one of the few remaining large-scale VR social spaces."
+      },
+      {
+        "id": "25e01f4d78823850",
+        "title": "Highlights from the Ruff Talk VR Gaming Showcase – New Games, Trailers & More",
+        "link": "https://www.roadtovr.com/ruff-talk-vr-gaming-showcase-may-2026-quest-pc-vr-psvr-2/",
+        "source": "Road to VR",
+        "category": "GAMING MARKETPLACE",
+        "summary": "Road to VR rounds up the latest Ruff Talk VR Gaming Showcase, the recurring father-and-son-hosted event that aggregates new VR game reveals, trailers, and updates across Quest, PC VR, and PSVR 2."
+      }
+    ],
+    "INVESTMENT": [
+      {
+        "id": "2642d2834aec4f90",
+        "title": "LG-Backed AR Lens Startup LetinAR Raises $18.5M Ahead of Planned IPO Next Year",
+        "link": "https://www.roadtovr.com/lg-backed-ar-lens-startup-letinar-raises-18-5m-ahead-of-planned-ipo-next-year/",
+        "source": "Road to VR",
+        "category": "INVESTMENT",
+        "summary": "Road to VR reports that South Korean AR optics startup LetinAR has raised $18.5 million ahead of a planned IPO next year, in a round led by Korea Development Bank with participation from Lotte Ventures and others. The LG-backed company says the funding will support production scaling and commercialization of its AR lens technology."
+      }
+    ],
+    "SOFTWARE": [
+      {
+        "id": "4ababcc110b749d2",
+        "title": "CATE – an open-source spatial workspace for terminals, browsers and dev tools",
+        "link": "https://github.com/0-AI-UG/cate",
+        "source": "Hacker News (Spatial/XR)",
+        "category": "SOFTWARE",
+        "summary": "An open-source project called CATE, posted to GitHub and surfaced on Hacker News, presents a spatial workspace that integrates terminals, browsers, and developer tools into a unified spatial environment for developers."
+      },
+      {
+        "id": "1b298854527269db",
+        "title": "Google Announces New Android XR Developer Program with AR Glasses Dev Kits",
+        "link": "https://www.roadtovr.com/google-android-xr-developer-program-free-ar-glasses/",
+        "source": "Road to VR",
+        "category": "SOFTWARE",
+        "summary": "Google announced the Android XR Developer Catalyst Program at its I/O conference, seeding approved applicants with XREAL Project Aura dev kits along with tools and resources to build for the new AR glasses platform, Road to VR reports."
+      },
+      {
+        "id": "5eb76d371072c65a",
+        "title": "Gracia&#x27;s Moving Volumetric Captures Are Now Streamable, A World-First",
+        "link": "https://www.uploadvr.com/gracia-moving-volumetric-captures-now-streamable/",
+        "source": "UploadVR",
+        "category": "SOFTWARE",
+        "summary": "UploadVR reports that Gracia's fully volumetric moving captures can now be streamed directly to mixed reality on Quest 3 without requiring an app or content download, marking a world-first for streamable volumetric video, with an Apple Vision Pro app said to be coming soon."
+      },
+      {
+        "id": "3b760cbf17a16141",
+        "title": "Android XR Got Auto-Spatialization, Window Wall Pinning &amp; Hand Occlusion",
+        "link": "https://www.uploadvr.com/google-android-xr-2026-update-samsung-galaxy-xr/",
+        "source": "UploadVR",
+        "category": "SOFTWARE",
+        "summary": "UploadVR reports that Google's latest Android XR update for Samsung Galaxy XR adds AI-driven auto-spatialization that converts windowed content into 3D, hand occlusion in the home space, and the ability to pin application windows to physical walls."
+      },
+      {
+        "id": "e639d3ace6604759",
+        "title": "Quest&#x27;s Latest PTC Update Brings Hand Tracking Home Locomotion &amp; Custom App Sorting",
+        "link": "https://www.uploadvr.com/quest-ptc-update-adds-hand-movement-and-custom-app-sorting/",
+        "source": "UploadVR",
+        "category": "SOFTWARE",
+        "summary": "According to UploadVR, Meta's latest Quest Public Test Channel update introduces hand gesture locomotion in Horizon Home, custom app sorting and folders in the Library, and automatic app crash recovery, expanding hand-tracking utility across the system shell."
+      },
+      {
+        "id": "2d3fcd6d3c934c34",
+        "title": "Show HN: Real-time virtual try-on using hand gestures and live video diffusion",
+        "link": "https://github.com/manas15/try-on",
+        "source": "Hacker News (Spatial/XR)",
+        "category": "SOFTWARE",
+        "summary": "A Show HN post on Hacker News introduces an open-source project demonstrating real-time virtual try-on driven by hand gestures and live video diffusion, pointing to growing experimentation with diffusion-based interactive computer vision for spatial commerce use cases."
+      }
+    ],
+    "HARDWARE": [
+      {
+        "id": "e7283798c89f778a",
+        "title": "The ROG Xreal R1 AR gaming glasses are now available to pre-order for $849",
+        "link": "https://www.engadget.com/2173261/the-rog-xreal-r1-ar-gaming-glasses-are-now-available-to-pre-order-for-dollar849/",
+        "source": "Engadget",
+        "category": "HARDWARE",
+        "summary": "Engadget reports that the ROG Xreal R1 AR gaming glasses, developed in partnership between Asus and Xreal, are now available for pre-order at $849, featuring a 240Hz refresh rate and a bundled connectivity dock. The device targets PC gamers seeking a high-refresh-rate wearable display alternative, positioning itself at the premium end of the emerging AR glasses market."
+      },
+      {
+        "id": "ead417ec7945af91",
+        "title": "Pimax Starts Sending Out ‘Dream Air SE’ PC VR Headsets, But Fulfillment Could Take Weeks",
+        "link": "https://www.roadtovr.com/pimax-dream-air-se-release-date-shipping/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "Pimax has begun shipping the first batches of its Dream Air SE, a lighter-weight sibling to its thin and light PC VR flagship, though Road to VR notes that most customers—including those who pre-ordered a year ago—will still face weeks of additional wait time as the company works through its fulfillment backlog."
+      },
+      {
+        "id": "398d646b30fdb09a",
+        "title": "Google & Samsung Reveal Smart Glasses for Fall Launch, Aiming to go Head-to-head with Meta",
+        "link": "https://www.roadtovr.com/google-samsung-smart-glasses-intelligent-eyewear-announcement-release-date/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "Google and Samsung offered the first official look at a jointly developed pair of AI-powered smart glasses at Google I/O, positioning the unnamed 'intelligent eyewear' as a direct competitor to Meta's Ray-Ban smart glasses ahead of a planned fall launch, according to Road to VR."
+      },
+      {
+        "id": "055f6668bcc53e32",
+        "title": "First AR Glasses Running Android XR Confirmed for 2026 Launch",
+        "link": "https://www.roadtovr.com/first-android-xr-glasses-2026-launch/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "Road to VR reports that XREAL confirmed its wired Project Aura AR glasses will launch globally in 2026 as the first AR glasses to run Google's Android XR operating system, with the device demonstrated on stage at Google I/O."
+      },
+      {
+        "id": "198f1b41a32bc4e5",
+        "title": "Google and Samsung's Warby Parker and Gentle Monster Glasses Are Coming This Fall",
+        "link": "https://www.cnet.com/tech/computing/google-and-samsungs-warby-parker-and-gentle-monster-glasses-are-coming-this-fall/",
+        "source": "CNET",
+        "category": "HARDWARE",
+        "summary": "According to CNET, Google and Samsung's Android XR smart glasses built with Warby Parker and Gentle Monster will arrive this fall, with the companies revealing the designs at Google I/O 2026 while withholding final pricing and product names."
+      },
+      {
+        "id": "bfe93e97883ad42e",
+        "title": "Hands-On With All of Google’s New Upcoming Android XR Smart Glasses",
+        "link": "https://www.wired.com/story/hands-on-with-all-of-google-new-upcoming-android-xr-smart-glasses/",
+        "source": "Wired",
+        "category": "HARDWARE",
+        "summary": "Wired offers a first hands-on look at the upcoming lineup of Android XR smart glasses from Warby Parker and Gentle Monster, all powered by Google and Samsung's XR platform, signaling the broader rollout of partner-built eyewear running Google's Gemini-driven AI layer."
+      },
+      {
+        "id": "c706b467f253694f",
+        "title": "Consumer 360° Camera Drones With Impressive Goggles Are A Thing Now",
+        "link": "https://www.uploadvr.com/consumer-360-camera-drones-are-a-thing-now/",
+        "source": "UploadVR",
+        "category": "HARDWARE",
+        "summary": "According to UploadVR, relatively affordable consumer drones with built-in 360-degree cameras are now widely available, with offerings from DJI and an Insta360 subsidiary that pair the drones with immersive viewing goggles."
+      },
+      {
+        "id": "a10cf91f893f3068",
+        "title": "Snap Specs AR Glasses Reportedly Launch This Fall For Around $2500",
+        "link": "https://www.uploadvr.com/snap-specs-ar-glasses-reportedly-launch-this-fall-for-2500/",
+        "source": "UploadVR",
+        "category": "HARDWARE",
+        "summary": "According to UploadVR, citing veteran tech journalist Alex Heath, Snap's standalone Specs AR glasses will launch this fall priced around $2,500, marking the company's first commercial consumer AR product after years of developer-only iterations."
+      },
+      {
+        "id": "574afb889952f67a",
+        "title": "Anduril Shows a Glimpse of EagleEye’s Wide Field-of-view Night Vision Imaging",
+        "link": "https://www.roadtovr.com/anduril-eagleeyes-wide-fov-ar-night-vision/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "Road to VR reports that Anduril, the defense startup founded by Palmer Luckey, has revealed new details about the wide field-of-view night vision capabilities of its EagleEye XR glasses, which the company is developing for U.S. soldiers. The disclosure builds on Anduril's late-2025 unveiling of the augmented reality headset and underscores the growing convergence of consumer XR optics and military-grade imaging."
+      }
+    ],
+    "AI AND SIMULATED WORLDS": [
+      {
+        "id": "f31901b0cd85b217",
+        "title": "Agora-1 turns the N64 classic GoldenEye into a playable AI simulation for four players",
+        "link": "https://the-decoder.com/agora-1-turns-the-n64-classic-goldeneye-into-a-playable-ai-simulation-for-four-players/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Decoder reports that Odyssey has released Agora-1, a world model that allows up to four players to act simultaneously in an AI-generated environment, tested on the Nintendo 64 classic GoldenEye. The system uses two separate models to handle game state simulation and rendering in real time, with the team eyeing applications in collaborative robotics and AI agent training."
+      },
+      {
+        "id": "13af806c8ee3662f",
+        "title": "Google's I/O announcements: new models, a cloud agent that never sleeps, and a redesigned Gemini app",
+        "link": "https://the-decoder.com/googles-i-o-announcements-new-models-a-cloud-agent-that-never-sleeps-and-a-redesigned-gemini-app/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to The Decoder, Google used its I/O developer conference to unveil Gemini 3.5 Flash, a multimodal model called Gemini Omni, and a personal agent named Gemini Spark that runs continuously in the cloud, alongside a major refresh of the Gemini app. The announcements consolidate Google's push to position Gemini as an always-on assistant layer across its products."
+      },
+      {
+        "id": "41a17e3ffb19fcb4",
+        "title": "Google's Gemini Omni can generate 'anything from any input,' starting with video",
+        "link": "https://www.engadget.com/2176590/googles-gemini-omni-can-generate-anything-from-any-input-starting-with-video/",
+        "source": "Engadget",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to Engadget, Google introduced Gemini Omni, a multimodal generation system designed to produce 'anything from any input,' beginning with video output and signaling a push toward unified any-to-any generative models."
+      },
+      {
+        "id": "545a113741b2eba5",
+        "title": "Project Genie adds Google Street View integration and goes live for global AI Ultra users",
+        "link": "https://www.engadget.com/2176797/project-genie-adds-google-street-view-integration-and-goes-live-for-global-ai-ultra-users/",
+        "source": "Engadget",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Engadget reports that Google's Project Genie, the company's generative world model, now integrates with Google Street View and is available globally to AI Ultra subscribers, letting users anchor generated 3D environments to real-world locations from Google Maps."
+      },
+      {
+        "id": "66e34aca3e876ba0",
+        "title": "Google's Project Genie: You Can Now Base Imaginary Worlds on Real Places",
+        "link": "https://www.cnet.com/tech/services-and-software/google-io-2026-project-genie-and-street-view/",
+        "source": "CNET",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "CNET reports that Google's Project Genie can now base its generated worlds on real locations via a new Street View integration, combining the system's generative 3D capabilities with Google Maps imagery to ground imaginary environments in real-world geography."
+      },
+      {
+        "id": "984ab86ec85d431f",
+        "title": "Will Robotics Have a ChatGPT Moment?",
+        "link": "https://spectrum.ieee.org/robotics-ai-breakthrough",
+        "source": "IEEE Spectrum",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "IEEE Spectrum examines whether robotics is approaching a ChatGPT-style inflection point, noting that 2025 saw record investment in robotics companies as AI-powered autonomous systems move toward deployment in factories, warehouses, elder care, disaster response, and eventually homes."
+      },
+      {
+        "id": "bf40a95dd6a6174b",
+        "title": "Roundtables: Can AI Learn to Understand the World?",
+        "link": "https://www.technologyreview.com/2026/05/21/1137756/roundtables-can-ai-learn-to-understand-the-world/",
+        "source": "MIT Tech Review - AI",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "MIT Technology Review hosted a roundtable with editor in chief Mat Honan, senior AI editor Will Douglas Heaven, and AI reporter colleagues on whether AI systems can learn to understand the external world, framing recent world-model research as a path beyond the limitations of large language models."
+      },
+      {
+        "id": "e3dba206c333e5f9",
+        "title": "I Cloned Myself With Gemini’s AI Avatar Tool. The Result Was Unnervingly Me",
+        "link": "https://www.wired.com/story/i-cloned-myself-with-geminis-ai-avatar-tool-the-result-was-unnervingly-me/",
+        "source": "Wired",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Wired reports on a first-person test of Google's Gemini AI avatar tool, in which the reporter generated lifelike videos featuring a digital clone of themselves, raising questions about identity, consent, and the trajectory of generative video as Google positions the technology as the future of creation."
+      }
+    ],
+    "RESEARCH": [
+      {
+        "id": "def740e7d79421b5",
+        "title": "Realiz3D: 3D Generation Made Photorealistic via Domain-Aware Learning",
+        "link": "https://arxiv.org/abs/2605.13852",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "Researchers publishing on arXiv present Realiz3D, a domain-aware learning approach to 3D-consistent image generation that addresses the realism gap between synthetic training renders and real-world photography, using targeted fine-tuning to preserve the photorealistic quality of image generators while maintaining geometry, material, and viewpoint controls."
+      },
+      {
+        "id": "fd12658985810b45",
+        "title": "UMo: Unified Sparse Motion Modeling for Real-Time Co-Speech Avatars",
+        "link": "https://arxiv.org/abs/2605.14731",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "Published on arXiv, UMo is a real-time co-speech avatar system that unifies gesture and facial animation generation under a single sparse motion model, targeting high-quality expressive digital avatars for games, virtual production, and interactive media applications."
+      },
+      {
+        "id": "ff26a27e3a0369c7",
+        "title": "Denoising-GS: Gaussian Splatting with Spatial-aware Denoising",
+        "link": "https://arxiv.org/abs/2605.14880",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "A new arXiv preprint introduces Denoising-GS, a method that improves 3D Gaussian Splatting by addressing noisy Gaussian primitives introduced during optimization from sparse Structure-from-Motion point clouds. Unlike prior approaches that only adjust primitive positions, the method incorporates spatial structure awareness, with potential implications for higher-quality novel view synthesis in XR and immersive content pipelines."
+      },
+      {
+        "id": "f7030279e053eb70",
+        "title": "Hierarchical Transformer Preconditioning for Interactive Physics Simulation",
+        "link": "https://arxiv.org/abs/2605.13343",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "An arXiv preprint presents the Hierarchical Transformer Preconditioner, a neural approach to accelerating real-time physics simulation by anchoring a transformer to a multiscale H-matrix partition to capture long-range physical couplings more efficiently than prior local message-passing methods. Faster and more accurate real-time physics simulation is a foundational requirement for interactive XR environments and spatial computing applications."
+      },
+      {
+        "id": "52aded053aec0ec4",
+        "title": "SyncLight: Single-Edit Multi-View Relighting",
+        "link": "https://arxiv.org/abs/2601.16981",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "Researchers have proposed SyncLight, a method enabling consistent, parametric relighting across multiple uncalibrated camera views of a static scene based on a single edited view, targeting use cases including multi-camera broadcast, stereoscopic cinema, and virtual production. The work addresses a gap in existing generative relighting tools, which struggle to maintain lighting coherence across the multiple viewpoints required for immersive and spatial content."
+      },
+      {
+        "id": "3abce8fde1f439fa",
+        "title": "R-DMesh: Video-Guided 3D Animation via Rectified Dynamic Mesh Flow",
+        "link": "https://arxiv.org/abs/2605.13838",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "A new arXiv preprint introduces R-DMesh, a method for video-guided 3D animation that resolves the pose misalignment problem — where a user-provided static mesh rarely matches the starting pose of a reference video — using a rectified dynamic mesh flow approach. The technique aims to make video-driven 3D animation more practical for content creation workflows in film, games, and spatial computing."
+      },
+      {
+        "id": "befc9fdcac3dd811",
+        "title": "Low Latency Gaze Tracking via Latent Optical Sensing",
+        "link": "https://arxiv.org/abs/2605.17990",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "Researchers on arXiv describe a real-time gaze tracking system that uses a microlens array with a co-designed binary chromium mask to perform passive optical encoding, capturing compact task-relevant features for gaze estimation without forming full-resolution images, with potential implications for low-latency eye tracking in XR headsets."
+      },
+      {
+        "id": "335f3380d0b5c81d",
+        "title": "JARVIS: A Just-in-Time Augmented Reality VLM-Powered Instruction System for Cross-Reality Task Guidance",
+        "link": "https://arxiv.org/abs/2604.10108",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "An arXiv paper from cs.HC titled JARVIS proposes a just-in-time augmented reality instruction system powered by vision-language models, designed to deliver in-situ task guidance across reality contexts and reduce the cognitive load of switching between tutorials and hands-on actions. The authors argue that combining AR with LLMs and VLMs can automate the generation of step-by-step guidance that adapts to what the user is doing in the moment."
+      },
+      {
+        "id": "b935890a748f5263",
+        "title": "Generative 3D Gaussians with Learned Density Control",
+        "link": "https://arxiv.org/abs/2605.16355",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "An arXiv paper in cs.GR presents Density-Sampled Gaussians, a 3D representation that models Gaussian centers as samples from a learnable probability density function over an octree rather than fixed voxel grids or arrays. The authors say the formulation provides a rigorous framework for adaptive density control, bridging adaptive rendering primitives and scalable generative modeling for 3D scenes."
+      },
+      {
+        "id": "f9da652cfeba6481",
+        "title": "A Single Atlas is All You Need: Decoder-Side Gaussian Splatting for Immersive Video",
+        "link": "https://arxiv.org/abs/2605.17002",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "An arXiv paper in cs.GR proposes a decoder-side Gaussian splatting approach for immersive video that aims to ease pixel-rate bottlenecks by avoiding the transmission of high-resolution depth maps or explicit 3D volumetric data. The authors argue the method addresses limitations of decoder-side depth estimation with complex geometries, inter-view flickering, and non-Lambertian reflections while retaining the view-synthesis quality of 3D Gaussian Splatting."
+      },
+      {
+        "id": "24b86ce909753a78",
+        "title": "Accelerating 3D Gaussian Splatting using Tensor Cores",
+        "link": "https://arxiv.org/abs/2605.17855",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "An arXiv paper in cs.GR proposes accelerating 3D Gaussian Splatting by mapping its compute-bound rasterization stage onto modern GPU tensor cores, targeting the per-pixel Gaussian contribution evaluations that dominate end-to-end rendering time. The authors frame the work as addressing latency-sensitive uses of 3DGS for real-time neural rendering and 3D scene reconstruction."
+      },
+      {
+        "id": "12e70a956d75b4dc",
+        "title": "3D Skew Gaussian Splatting with Any Camera Trajectory Visualization Engine",
+        "link": "https://arxiv.org/abs/2605.18334",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "Researchers on arXiv present 3D Skew Gaussian Splatting, an extension of 3D Gaussian Splatting that replaces symmetric Gaussian kernels with skewed distributions to better capture shape and color discontinuities, reducing blurriness and primitive redundancy during real-time photorealistic view synthesis."
+      },
+      {
+        "id": "60257070f76c64a4",
+        "title": "ICRA: We Turned iPhones into Spatial Data Capture Rigs",
+        "link": "https://arxiv.org/abs/2605.05945",
+        "source": "Hacker News (Spatial/XR)",
+        "category": "RESEARCH",
+        "summary": "A paper presented at ICRA and posted to arXiv describes a method for turning standard iPhones into spatial data capture rigs, leveraging the device's sensors to gather 3D scene data for robotics and computer vision applications. The work suggests consumer hardware can serve as a low-cost platform for spatial dataset collection traditionally requiring specialized equipment."
+      },
+      {
+        "id": "3caf0fa3d7fc7360",
+        "title": "MMGS: 10$\\times$ Compressed 3DGS through Optimal Transport Aggregation based on Multi-view Ranking",
+        "link": "https://arxiv.org/abs/2605.19304",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "Researchers on arXiv present MMGS, a compression framework for 3D Gaussian Splatting that uses optimal transport aggregation based on multi-view ranking to achieve roughly tenfold compression while preserving rendering fidelity, addressing a key bottleneck for deploying 3DGS scenes on bandwidth- and memory-constrained XR devices."
+      },
+      {
+        "id": "f897b01f80bd5cd6",
+        "title": "Decentralized Direct Volume Rendering: A Browser-Native GPU Architecture for MRI Digital Twins in Resource-Constrained Settings",
+        "link": "https://arxiv.org/abs/2605.19737",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "A new arXiv paper proposes a decentralized, browser-native WebGPU architecture for direct volume rendering of MRI-based digital twins, aiming to replace server-side rendering and expensive local workstations to make interactive, patient-specific anatomical models viable for surgical planning in resource-constrained settings."
+      },
+      {
+        "id": "7fc26d4cc4a4a761",
+        "title": "WiFi Spatial Sensing",
+        "link": "https://github.com/ruvnet/RuView",
+        "source": "Hacker News (Spatial/XR)",
+        "category": "RESEARCH",
+        "summary": "A Hacker News submission highlights RuView, an open-source project exploring WiFi-based spatial sensing, part of a broader research thread investigating how ambient wireless signals can be used to infer presence, motion, and room geometry without dedicated cameras or depth sensors."
+      }
+    ],
+    "OPINION": [
+      {
+        "id": "f5319237949d8e64",
+        "title": "Age Of Dinosaurs Is An Immersive Expedition Done Right",
+        "link": "https://www.uploadvr.com/age-of-dinosaurs-is-an-immersive-expedition-done-right/",
+        "source": "UploadVR",
+        "category": "OPINION",
+        "summary": "UploadVR reviews Age of Dinosaurs, a location-based VR experience, describing it as a compelling example of venue-based immersive entertainment that holds value even for users who already own home VR hardware — a meaningful distinction for the out-of-home XR sector."
+      },
+      {
+        "id": "bbaa8499640cc7a8",
+        "title": "Can Apple Immersive Video Convey The Spirit of New York?",
+        "link": "https://www.uploadvr.com/can-apple-immersive-video-convey-the-spirit-of-new-york/",
+        "source": "UploadVR",
+        "category": "OPINION",
+        "summary": "UploadVR reviewed the New York City episode of Apple Vision Pro's Elevated immersive video series, arguing that overstimulated creative choices leave little room for viewers to connect with the city's authentic spirit. The critique raises broader questions about the editorial restraint required to make spatial video a compelling storytelling medium rather than a showcase of technical novelty."
+      },
+      {
+        "id": "98c2782c42d1f062",
+        "title": "Google's New AI Plans Are Bleak, at Least for Everyone in the Real World",
+        "link": "https://www.cnet.com/tech/services-and-software/google-io-2026-bleak-new-ai-plans-commentary/",
+        "source": "CNET",
+        "category": "OPINION",
+        "summary": "In commentary for CNET, the publication argues that Google I/O 2026 felt insular and exhausting, with the company focused on AI agents talking to other AI agents rather than delivering tangible value to users in the real world."
+      },
+      {
+        "id": "e0cee187ca4201df",
+        "title": "The Future of Physical AI Isn’t Smarter Robots, It’s Smarter Interfaces",
+        "link": "https://spectrum.ieee.org/wetour-robotics-physical-ai-human-interfaces",
+        "source": "IEEE Spectrum",
+        "category": "OPINION",
+        "summary": "In a sponsored piece in IEEE Spectrum, Wetour Robotics argues that the next frontier of physical AI lies not in smarter robots but in smarter human-machine interfaces, citing scenarios such as field technicians, logistics workers, and assistive mobility users who need hands-free, voice-free ways to issue commands to connected devices."
+      }
+    ],
+    "HANDS ON REVIEW": [
+      {
+        "id": "cc6a73a04b1336c1",
+        "title": "Excurio&#x27;s Immersive VR Locations Are Some of the Most Ambitious to Date",
+        "link": "https://www.uploadvr.com/excurios-immersive-vr-locations-are-some-of-the-most-ambitious-to-date/",
+        "source": "UploadVR",
+        "category": "HANDS ON REVIEW",
+        "summary": "UploadVR visited Japan's Immersive Journey venue to try two of Excurio's free-roaming location-based VR experiences, Horizon of Khufu and Tonight With the Impressionists, describing them as among the most ambitious immersive installations to date."
+      },
+      {
+        "id": "f34b9a19df550c6d",
+        "title": "Wingsuit: Romsdalen Impressions - Feel The Rush In This VR Gliding Sim",
+        "link": "https://www.uploadvr.com/wingsuit-romsdalen-impressions-feel-the-rush-in-this-vr-gliding-sim/",
+        "source": "UploadVR",
+        "category": "HANDS ON REVIEW",
+        "summary": "UploadVR's hands-on impressions of Wingsuit: Romsdalen describe a VR gliding simulator set against the cliffs and valleys of Norway, aimed at recreating the sensation of wingsuit flight in virtual reality."
+      }
+    ],
+    "APPLE VISION PRO": [
+      {
+        "id": "cd49c72f1a5ea4f2",
+        "title": "‘Avatar: Fire and Ash’ and ‘Super Mario Galaxy Movie’ Head to Vision Pro in 3D",
+        "link": "https://www.roadtovr.com/avatar-fire-ash-super-mario-galaxy-movie-3d-release-vision-pro/",
+        "source": "Road to VR",
+        "category": "APPLE VISION PRO",
+        "summary": "Road to VR reports that Apple has confirmed two new 3D theatrical releases for Vision Pro, with The Super Mario Galaxy Movie (2026) and Avatar: Fire and Ash (2025) joining a growing catalog that is positioning the headset as a premier destination for 3D home viewing."
+      },
+      {
+        "id": "62ad25987e2b870a",
+        "title": "Real Madrid Turns Club Atmosphere Into One of Apple Immersive&#x27;s Biggest Wins",
+        "link": "https://www.uploadvr.com/real-madrid-apple-immersive-documentary/",
+        "source": "UploadVR",
+        "category": "APPLE VISION PRO",
+        "summary": "UploadVR reports that 'Real Madrid: The Weight of Greatness,' a behind-the-scenes documentary on the storied Spanish football club, has launched as one of Apple's largest immersive productions to date on Vision Pro. The release marks a notable expansion of Apple Immersive's sports content slate as the company continues to court premium documentary partners."
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "c605593f8a742a13",
+      "title": "FNaF: Secret of the Mimic Went Flatscreen Before VR Due To Poor Help Wanted 2 Sales",
+      "link": "https://www.uploadvr.com/fnaf-secret-of-the-mimic-went-flatscreen-before-vr-due-to-poor-help-wanted-2-sales/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE",
+      "summary": "UploadVR reports that VR support for Five Nights at Freddy's: Secret of the Mimic was initially shelved in favor of a flatscreen-first release due to underperforming sales of its predecessor Help Wanted 2, offering a candid signal of the ongoing commercial challenges facing VR-exclusive titles."
+    },
+    {
+      "id": "3c5cc11c1b90d47a",
+      "title": "One More Delve Impressions: A Promising Start For This VR Dungeon Crawler",
+      "link": "https://www.uploadvr.com/one-more-delve-impressions-a-promising-start-for-this-vr-dungeon-crawler/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE",
+      "summary": "UploadVR previewed One More Delve, a VR dungeon crawler supporting up to three players with physics-based combat, calling it a promising early entry in the co-op VR RPG genre."
+    },
+    {
+      "id": "f5319237949d8e64",
+      "title": "Age Of Dinosaurs Is An Immersive Expedition Done Right",
+      "link": "https://www.uploadvr.com/age-of-dinosaurs-is-an-immersive-expedition-done-right/",
+      "source": "UploadVR",
+      "category": "OPINION",
+      "summary": "UploadVR reviews Age of Dinosaurs, a location-based VR experience, describing it as a compelling example of venue-based immersive entertainment that holds value even for users who already own home VR hardware — a meaningful distinction for the out-of-home XR sector."
+    },
+    {
+      "id": "bbaa8499640cc7a8",
+      "title": "Can Apple Immersive Video Convey The Spirit of New York?",
+      "link": "https://www.uploadvr.com/can-apple-immersive-video-convey-the-spirit-of-new-york/",
+      "source": "UploadVR",
+      "category": "OPINION",
+      "summary": "UploadVR reviewed the New York City episode of Apple Vision Pro's Elevated immersive video series, arguing that overstimulated creative choices leave little room for viewers to connect with the city's authentic spirit. The critique raises broader questions about the editorial restraint required to make spatial video a compelling storytelling medium rather than a showcase of technical novelty."
+    },
+    {
+      "id": "e7283798c89f778a",
+      "title": "The ROG Xreal R1 AR gaming glasses are now available to pre-order for $849",
+      "link": "https://www.engadget.com/2173261/the-rog-xreal-r1-ar-gaming-glasses-are-now-available-to-pre-order-for-dollar849/",
+      "source": "Engadget",
+      "category": "HARDWARE",
+      "summary": "Engadget reports that the ROG Xreal R1 AR gaming glasses, developed in partnership between Asus and Xreal, are now available for pre-order at $849, featuring a 240Hz refresh rate and a bundled connectivity dock. The device targets PC gamers seeking a high-refresh-rate wearable display alternative, positioning itself at the premium end of the emerging AR glasses market."
+    },
+    {
+      "id": "def740e7d79421b5",
+      "title": "Realiz3D: 3D Generation Made Photorealistic via Domain-Aware Learning",
+      "link": "https://arxiv.org/abs/2605.13852",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "Researchers publishing on arXiv present Realiz3D, a domain-aware learning approach to 3D-consistent image generation that addresses the realism gap between synthetic training renders and real-world photography, using targeted fine-tuning to preserve the photorealistic quality of image generators while maintaining geometry, material, and viewpoint controls."
+    },
+    {
+      "id": "fd12658985810b45",
+      "title": "UMo: Unified Sparse Motion Modeling for Real-Time Co-Speech Avatars",
+      "link": "https://arxiv.org/abs/2605.14731",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "Published on arXiv, UMo is a real-time co-speech avatar system that unifies gesture and facial animation generation under a single sparse motion model, targeting high-quality expressive digital avatars for games, virtual production, and interactive media applications."
+    },
+    {
+      "id": "ff26a27e3a0369c7",
+      "title": "Denoising-GS: Gaussian Splatting with Spatial-aware Denoising",
+      "link": "https://arxiv.org/abs/2605.14880",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "A new arXiv preprint introduces Denoising-GS, a method that improves 3D Gaussian Splatting by addressing noisy Gaussian primitives introduced during optimization from sparse Structure-from-Motion point clouds. Unlike prior approaches that only adjust primitive positions, the method incorporates spatial structure awareness, with potential implications for higher-quality novel view synthesis in XR and immersive content pipelines."
+    },
+    {
+      "id": "f7030279e053eb70",
+      "title": "Hierarchical Transformer Preconditioning for Interactive Physics Simulation",
+      "link": "https://arxiv.org/abs/2605.13343",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "An arXiv preprint presents the Hierarchical Transformer Preconditioner, a neural approach to accelerating real-time physics simulation by anchoring a transformer to a multiscale H-matrix partition to capture long-range physical couplings more efficiently than prior local message-passing methods. Faster and more accurate real-time physics simulation is a foundational requirement for interactive XR environments and spatial computing applications."
+    },
+    {
+      "id": "52aded053aec0ec4",
+      "title": "SyncLight: Single-Edit Multi-View Relighting",
+      "link": "https://arxiv.org/abs/2601.16981",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "Researchers have proposed SyncLight, a method enabling consistent, parametric relighting across multiple uncalibrated camera views of a static scene based on a single edited view, targeting use cases including multi-camera broadcast, stereoscopic cinema, and virtual production. The work addresses a gap in existing generative relighting tools, which struggle to maintain lighting coherence across the multiple viewpoints required for immersive and spatial content."
+    },
+    {
+      "id": "3abce8fde1f439fa",
+      "title": "R-DMesh: Video-Guided 3D Animation via Rectified Dynamic Mesh Flow",
+      "link": "https://arxiv.org/abs/2605.13838",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "A new arXiv preprint introduces R-DMesh, a method for video-guided 3D animation that resolves the pose misalignment problem — where a user-provided static mesh rarely matches the starting pose of a reference video — using a rectified dynamic mesh flow approach. The technique aims to make video-driven 3D animation more practical for content creation workflows in film, games, and spatial computing."
+    },
+    {
+      "id": "2642d2834aec4f90",
+      "title": "LG-Backed AR Lens Startup LetinAR Raises $18.5M Ahead of Planned IPO Next Year",
+      "link": "https://www.roadtovr.com/lg-backed-ar-lens-startup-letinar-raises-18-5m-ahead-of-planned-ipo-next-year/",
+      "source": "Road to VR",
+      "category": "INVESTMENT",
+      "summary": "Road to VR reports that South Korean AR optics startup LetinAR has raised $18.5 million ahead of a planned IPO next year, in a round led by Korea Development Bank with participation from Lotte Ventures and others. The LG-backed company says the funding will support production scaling and commercialization of its AR lens technology."
+    },
+    {
+      "id": "ead417ec7945af91",
+      "title": "Pimax Starts Sending Out ‘Dream Air SE’ PC VR Headsets, But Fulfillment Could Take Weeks",
+      "link": "https://www.roadtovr.com/pimax-dream-air-se-release-date-shipping/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "Pimax has begun shipping the first batches of its Dream Air SE, a lighter-weight sibling to its thin and light PC VR flagship, though Road to VR notes that most customers—including those who pre-ordered a year ago—will still face weeks of additional wait time as the company works through its fulfillment backlog."
+    },
+    {
+      "id": "cc0b9d36f3e3989f",
+      "title": "WorldLens VR’s New AI Depth Feature Enables 3D Street View",
+      "link": "https://www.uploadvr.com/worldlens-vrs-new-ai-depth-feature-enables-3d-street-view/",
+      "source": "UploadVR",
+      "category": "APP STORE HIGHLIGHTS",
+      "summary": "UploadVR reports that WorldLens VR has introduced a new AI-powered depth feature on Meta Quest that adds subtle 3D depth to Google Street View environments, expanding how users can explore real-world locations inside the headset."
+    },
+    {
+      "id": "981e2ce3b8c47834",
+      "title": "Inside Anduril and Meta’s quest to make smart glasses for warfare",
+      "link": "https://www.technologyreview.com/2026/05/18/1137412/inside-anduril-and-metas-quest-to-make-smart-glasses-for-warfare/",
+      "source": "MIT Tech Review - AI",
+      "category": "HIGHLIGHTS",
+      "summary": "MIT Technology Review reports that defense-tech company Anduril has shared new details about the augmented-reality headset it is prototyping with Meta for the U.S. military, including a vision for ordering drone strikes via eye-tracking and voice commands. The effort is led by Quay Barnett, a former Army Special Operations Command officer now serving as a vice president at Anduril."
+    },
+    {
+      "id": "f31901b0cd85b217",
+      "title": "Agora-1 turns the N64 classic GoldenEye into a playable AI simulation for four players",
+      "link": "https://the-decoder.com/agora-1-turns-the-n64-classic-goldeneye-into-a-playable-ai-simulation-for-four-players/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Decoder reports that Odyssey has released Agora-1, a world model that allows up to four players to act simultaneously in an AI-generated environment, tested on the Nintendo 64 classic GoldenEye. The system uses two separate models to handle game state simulation and rendering in real time, with the team eyeing applications in collaborative robotics and AI agent training."
+    },
+    {
+      "id": "4ababcc110b749d2",
+      "title": "CATE – an open-source spatial workspace for terminals, browsers and dev tools",
+      "link": "https://github.com/0-AI-UG/cate",
+      "source": "Hacker News (Spatial/XR)",
+      "category": "SOFTWARE",
+      "summary": "An open-source project called CATE, posted to GitHub and surfaced on Hacker News, presents a spatial workspace that integrates terminals, browsers, and developer tools into a unified spatial environment for developers."
+    },
+    {
+      "id": "585718b9b212b5c7",
+      "title": "Google I/O 2026: Live updates as the company announces new features for Gemini, AI, Search and more",
+      "link": "https://www.engadget.com/2176173/google-io-live-blog-gemini-ai/",
+      "source": "Engadget",
+      "category": "HIGHLIGHTS",
+      "summary": "Engadget is live-blogging Google I/O 2026, where the company is expected to unveil new features across Gemini, AI, Search, and Android XR, including additional details on its smart glasses partnerships."
+    },
+    {
+      "id": "38edbd098fd4727b",
+      "title": "Apple's new accessibility feature lets Vision Pro users control a wheelchair with their eyes",
+      "link": "https://www.engadget.com/2176236/apple-accessibility-features-vision-pro-wheelchair-control/",
+      "source": "Engadget",
+      "category": "VISION PRO",
+      "summary": "According to Engadget, Apple is previewing a new accessibility feature that allows Vision Pro users to control a wheelchair with their eyes, part of a broader update that includes Apple Intelligence-powered natural language voice input."
+    },
+    {
+      "id": "29e4b4bff216c2f3",
+      "title": "Google I/O 2026 Live Blog: All the Gemini and Smart Glasses Updates as They Happen",
+      "link": "https://www.wired.com/live/google-io-2026-live-blog-gemini-android-xr-search/",
+      "source": "Wired",
+      "category": "HIGHLIGHTS",
+      "summary": "Wired is live-blogging Google I/O 2026, tracking updates to Google's Gemini AI suite and new details on Android XR smart glasses as they are announced at the company's developer keynote."
+    },
+    {
+      "id": "befc9fdcac3dd811",
+      "title": "Low Latency Gaze Tracking via Latent Optical Sensing",
+      "link": "https://arxiv.org/abs/2605.17990",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "Researchers on arXiv describe a real-time gaze tracking system that uses a microlens array with a co-designed binary chromium mask to perform passive optical encoding, capturing compact task-relevant features for gaze estimation without forming full-resolution images, with potential implications for low-latency eye tracking in XR headsets."
+    },
+    {
+      "id": "335f3380d0b5c81d",
+      "title": "JARVIS: A Just-in-Time Augmented Reality VLM-Powered Instruction System for Cross-Reality Task Guidance",
+      "link": "https://arxiv.org/abs/2604.10108",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "An arXiv paper from cs.HC titled JARVIS proposes a just-in-time augmented reality instruction system powered by vision-language models, designed to deliver in-situ task guidance across reality contexts and reduce the cognitive load of switching between tutorials and hands-on actions. The authors argue that combining AR with LLMs and VLMs can automate the generation of step-by-step guidance that adapts to what the user is doing in the moment."
+    },
+    {
+      "id": "b935890a748f5263",
+      "title": "Generative 3D Gaussians with Learned Density Control",
+      "link": "https://arxiv.org/abs/2605.16355",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "An arXiv paper in cs.GR presents Density-Sampled Gaussians, a 3D representation that models Gaussian centers as samples from a learnable probability density function over an octree rather than fixed voxel grids or arrays. The authors say the formulation provides a rigorous framework for adaptive density control, bridging adaptive rendering primitives and scalable generative modeling for 3D scenes."
+    },
+    {
+      "id": "f9da652cfeba6481",
+      "title": "A Single Atlas is All You Need: Decoder-Side Gaussian Splatting for Immersive Video",
+      "link": "https://arxiv.org/abs/2605.17002",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "An arXiv paper in cs.GR proposes a decoder-side Gaussian splatting approach for immersive video that aims to ease pixel-rate bottlenecks by avoiding the transmission of high-resolution depth maps or explicit 3D volumetric data. The authors argue the method addresses limitations of decoder-side depth estimation with complex geometries, inter-view flickering, and non-Lambertian reflections while retaining the view-synthesis quality of 3D Gaussian Splatting."
+    },
+    {
+      "id": "24b86ce909753a78",
+      "title": "Accelerating 3D Gaussian Splatting using Tensor Cores",
+      "link": "https://arxiv.org/abs/2605.17855",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "An arXiv paper in cs.GR proposes accelerating 3D Gaussian Splatting by mapping its compute-bound rasterization stage onto modern GPU tensor cores, targeting the per-pixel Gaussian contribution evaluations that dominate end-to-end rendering time. The authors frame the work as addressing latency-sensitive uses of 3DGS for real-time neural rendering and 3D scene reconstruction."
+    },
+    {
+      "id": "12e70a956d75b4dc",
+      "title": "3D Skew Gaussian Splatting with Any Camera Trajectory Visualization Engine",
+      "link": "https://arxiv.org/abs/2605.18334",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "Researchers on arXiv present 3D Skew Gaussian Splatting, an extension of 3D Gaussian Splatting that replaces symmetric Gaussian kernels with skewed distributions to better capture shape and color discontinuities, reducing blurriness and primitive redundancy during real-time photorealistic view synthesis."
+    },
+    {
+      "id": "398d646b30fdb09a",
+      "title": "Google & Samsung Reveal Smart Glasses for Fall Launch, Aiming to go Head-to-head with Meta",
+      "link": "https://www.roadtovr.com/google-samsung-smart-glasses-intelligent-eyewear-announcement-release-date/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "Google and Samsung offered the first official look at a jointly developed pair of AI-powered smart glasses at Google I/O, positioning the unnamed 'intelligent eyewear' as a direct competitor to Meta's Ray-Ban smart glasses ahead of a planned fall launch, according to Road to VR."
+    },
+    {
+      "id": "055f6668bcc53e32",
+      "title": "First AR Glasses Running Android XR Confirmed for 2026 Launch",
+      "link": "https://www.roadtovr.com/first-android-xr-glasses-2026-launch/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "Road to VR reports that XREAL confirmed its wired Project Aura AR glasses will launch globally in 2026 as the first AR glasses to run Google's Android XR operating system, with the device demonstrated on stage at Google I/O."
+    },
+    {
+      "id": "1b298854527269db",
+      "title": "Google Announces New Android XR Developer Program with AR Glasses Dev Kits",
+      "link": "https://www.roadtovr.com/google-android-xr-developer-program-free-ar-glasses/",
+      "source": "Road to VR",
+      "category": "SOFTWARE",
+      "summary": "Google announced the Android XR Developer Catalyst Program at its I/O conference, seeding approved applicants with XREAL Project Aura dev kits along with tools and resources to build for the new AR glasses platform, Road to VR reports."
+    },
+    {
+      "id": "5eb76d371072c65a",
+      "title": "Gracia&#x27;s Moving Volumetric Captures Are Now Streamable, A World-First",
+      "link": "https://www.uploadvr.com/gracia-moving-volumetric-captures-now-streamable/",
+      "source": "UploadVR",
+      "category": "SOFTWARE",
+      "summary": "UploadVR reports that Gracia's fully volumetric moving captures can now be streamed directly to mixed reality on Quest 3 without requiring an app or content download, marking a world-first for streamable volumetric video, with an Apple Vision Pro app said to be coming soon."
+    },
+    {
+      "id": "cc6a73a04b1336c1",
+      "title": "Excurio&#x27;s Immersive VR Locations Are Some of the Most Ambitious to Date",
+      "link": "https://www.uploadvr.com/excurios-immersive-vr-locations-are-some-of-the-most-ambitious-to-date/",
+      "source": "UploadVR",
+      "category": "HANDS ON REVIEW",
+      "summary": "UploadVR visited Japan's Immersive Journey venue to try two of Excurio's free-roaming location-based VR experiences, Horizon of Khufu and Tonight With the Impressionists, describing them as among the most ambitious immersive installations to date."
+    },
+    {
+      "id": "13af806c8ee3662f",
+      "title": "Google's I/O announcements: new models, a cloud agent that never sleeps, and a redesigned Gemini app",
+      "link": "https://the-decoder.com/googles-i-o-announcements-new-models-a-cloud-agent-that-never-sleeps-and-a-redesigned-gemini-app/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to The Decoder, Google used its I/O developer conference to unveil Gemini 3.5 Flash, a multimodal model called Gemini Omni, and a personal agent named Gemini Spark that runs continuously in the cloud, alongside a major refresh of the Gemini app. The announcements consolidate Google's push to position Gemini as an always-on assistant layer across its products."
+    },
+    {
+      "id": "60257070f76c64a4",
+      "title": "ICRA: We Turned iPhones into Spatial Data Capture Rigs",
+      "link": "https://arxiv.org/abs/2605.05945",
+      "source": "Hacker News (Spatial/XR)",
+      "category": "RESEARCH",
+      "summary": "A paper presented at ICRA and posted to arXiv describes a method for turning standard iPhones into spatial data capture rigs, leveraging the device's sensors to gather 3D scene data for robotics and computer vision applications. The work suggests consumer hardware can serve as a low-cost platform for spatial dataset collection traditionally requiring specialized equipment."
+    },
+    {
+      "id": "6a15ade41fd90ea1",
+      "title": "Android XR is finally starting to feel real",
+      "link": "https://www.engadget.com/2177283/android-xr-is-finally-starting-to-feel-real/",
+      "source": "Engadget",
+      "category": "HIGHLIGHTS",
+      "summary": "Engadget reports that Google's Android XR platform is beginning to take concrete shape, with smart glasses partnerships and software demonstrations at I/O suggesting the company has tangible products in market view. The piece notes Google still has much to prove but argues its glasses will carry meaningful advantages tied to Gemini integration and partner hardware."
+    },
+    {
+      "id": "41a17e3ffb19fcb4",
+      "title": "Google's Gemini Omni can generate 'anything from any input,' starting with video",
+      "link": "https://www.engadget.com/2176590/googles-gemini-omni-can-generate-anything-from-any-input-starting-with-video/",
+      "source": "Engadget",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to Engadget, Google introduced Gemini Omni, a multimodal generation system designed to produce 'anything from any input,' beginning with video output and signaling a push toward unified any-to-any generative models."
+    },
+    {
+      "id": "545a113741b2eba5",
+      "title": "Project Genie adds Google Street View integration and goes live for global AI Ultra users",
+      "link": "https://www.engadget.com/2176797/project-genie-adds-google-street-view-integration-and-goes-live-for-global-ai-ultra-users/",
+      "source": "Engadget",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Engadget reports that Google's Project Genie, the company's generative world model, now integrates with Google Street View and is available globally to AI Ultra subscribers, letting users anchor generated 3D environments to real-world locations from Google Maps."
+    },
+    {
+      "id": "198f1b41a32bc4e5",
+      "title": "Google and Samsung's Warby Parker and Gentle Monster Glasses Are Coming This Fall",
+      "link": "https://www.cnet.com/tech/computing/google-and-samsungs-warby-parker-and-gentle-monster-glasses-are-coming-this-fall/",
+      "source": "CNET",
+      "category": "HARDWARE",
+      "summary": "According to CNET, Google and Samsung's Android XR smart glasses built with Warby Parker and Gentle Monster will arrive this fall, with the companies revealing the designs at Google I/O 2026 while withholding final pricing and product names."
+    },
+    {
+      "id": "66e34aca3e876ba0",
+      "title": "Google's Project Genie: You Can Now Base Imaginary Worlds on Real Places",
+      "link": "https://www.cnet.com/tech/services-and-software/google-io-2026-project-genie-and-street-view/",
+      "source": "CNET",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "CNET reports that Google's Project Genie can now base its generated worlds on real locations via a new Street View integration, combining the system's generative 3D capabilities with Google Maps imagery to ground imaginary environments in real-world geography."
+    },
+    {
+      "id": "2ce67b7187fef738",
+      "title": "Everything Announced at Google I/O 2026: Gemini, Search, Smart Glasses",
+      "link": "https://www.wired.com/story/everything-google-announced-at-google-io-2026/",
+      "source": "Wired",
+      "category": "HIGHLIGHTS",
+      "summary": "Wired's roundup of Google I/O 2026 covers updates across Gemini models, an AI-driven Search overhaul, agentic tools throughout Google's products, and new Android XR smart glasses from partners shipping this fall, marking one of the company's most spatial- and AI-heavy I/O keynotes to date."
+    },
+    {
+      "id": "bfe93e97883ad42e",
+      "title": "Hands-On With All of Google’s New Upcoming Android XR Smart Glasses",
+      "link": "https://www.wired.com/story/hands-on-with-all-of-google-new-upcoming-android-xr-smart-glasses/",
+      "source": "Wired",
+      "category": "HARDWARE",
+      "summary": "Wired offers a first hands-on look at the upcoming lineup of Android XR smart glasses from Warby Parker and Gentle Monster, all powered by Google and Samsung's XR platform, signaling the broader rollout of partner-built eyewear running Google's Gemini-driven AI layer."
+    },
+    {
+      "id": "3caf0fa3d7fc7360",
+      "title": "MMGS: 10$\\times$ Compressed 3DGS through Optimal Transport Aggregation based on Multi-view Ranking",
+      "link": "https://arxiv.org/abs/2605.19304",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "Researchers on arXiv present MMGS, a compression framework for 3D Gaussian Splatting that uses optimal transport aggregation based on multi-view ranking to achieve roughly tenfold compression while preserving rendering fidelity, addressing a key bottleneck for deploying 3DGS scenes on bandwidth- and memory-constrained XR devices."
+    },
+    {
+      "id": "eac49c768206708d",
+      "title": "Immersive for Autodesk VRED brings spatial design review to Apple Vision Pro",
+      "link": "https://blogs.autodesk.com/design-studio/2026/05/20/immersive-for-autodesk-vred-is-now-available-on-apple-vision-pro/",
+      "source": "Autodesk Blogs",
+      "category": "APP STORE HIGHLIGHTS",
+      "summary": "Autodesk Blogs reports that Immersive for Autodesk VRED is now available on the App Store for Apple Vision Pro, the result of a collaboration between Autodesk, Apple, NVIDIA, and Innoactive first announced at NVIDIA GTC in March. The app brings VRED's high-fidelity automotive visualization into spatial computing, allowing design teams to step inside full-scale, photoreal vehicle scenes for design review without altering existing desktop preparation workflows."
+    },
+    {
+      "id": "5d46eaaf77bef8d2",
+      "title": "VR Platformer ‘Moss’ is Getting a Flatscreen Port Following Cancellation of “major project”",
+      "link": "https://www.roadtovr.com/moss-vr-flatscreen-port-project-cancellation/",
+      "source": "Road to VR",
+      "category": "GAMING MARKETPLACE",
+      "summary": "Road to VR reports that Polyarc Games is releasing Moss: The Forgotten Relic, a flatscreen adaptation of its VR puzzle-platformer series, for console and PC later this year. The move follows the cancellation of an unspecified major project at the studio last month."
+    },
+    {
+      "id": "6c520ecf46acd731",
+      "title": "Myst &amp; Riven Remakes Out Now On PlayStation VR2",
+      "link": "https://www.uploadvr.com/myst-riven-remakes-out-now-on-playstation-vr2/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE",
+      "summary": "UploadVR reports that the remakes of classic adventure games Myst and its sequel Riven arrived on PlayStation VR2 today, bringing two landmark puzzle titles to Sony's headset."
+    },
+    {
+      "id": "c706b467f253694f",
+      "title": "Consumer 360° Camera Drones With Impressive Goggles Are A Thing Now",
+      "link": "https://www.uploadvr.com/consumer-360-camera-drones-are-a-thing-now/",
+      "source": "UploadVR",
+      "category": "HARDWARE",
+      "summary": "According to UploadVR, relatively affordable consumer drones with built-in 360-degree cameras are now widely available, with offerings from DJI and an Insta360 subsidiary that pair the drones with immersive viewing goggles."
+    },
+    {
+      "id": "1953d2369a3598fa",
+      "title": "Meta’s Goo Goo Dolls Concert Reminds Us Why Live Music Fits VR So Well",
+      "link": "https://www.uploadvr.com/metas-goo-goo-dolls-concert-reminds-us-why-live-music-fits-vr-so-well/",
+      "source": "UploadVR",
+      "category": "APP STORE HIGHLIGHTS",
+      "summary": "UploadVR reports that Meta has added a new immersive concert to Horizon TV featuring the Goo Goo Dolls performing at New York City's Beacon Theatre, the latest in a string of live music experiences for Quest owners."
+    },
+    {
+      "id": "98c2782c42d1f062",
+      "title": "Google's New AI Plans Are Bleak, at Least for Everyone in the Real World",
+      "link": "https://www.cnet.com/tech/services-and-software/google-io-2026-bleak-new-ai-plans-commentary/",
+      "source": "CNET",
+      "category": "OPINION",
+      "summary": "In commentary for CNET, the publication argues that Google I/O 2026 felt insular and exhausting, with the company focused on AI agents talking to other AI agents rather than delivering tangible value to users in the real world."
+    },
+    {
+      "id": "984ab86ec85d431f",
+      "title": "Will Robotics Have a ChatGPT Moment?",
+      "link": "https://spectrum.ieee.org/robotics-ai-breakthrough",
+      "source": "IEEE Spectrum",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "IEEE Spectrum examines whether robotics is approaching a ChatGPT-style inflection point, noting that 2025 saw record investment in robotics companies as AI-powered autonomous systems move toward deployment in factories, warehouses, elder care, disaster response, and eventually homes."
+    },
+    {
+      "id": "f897b01f80bd5cd6",
+      "title": "Decentralized Direct Volume Rendering: A Browser-Native GPU Architecture for MRI Digital Twins in Resource-Constrained Settings",
+      "link": "https://arxiv.org/abs/2605.19737",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "A new arXiv paper proposes a decentralized, browser-native WebGPU architecture for direct volume rendering of MRI-based digital twins, aiming to replace server-side rendering and expensive local workstations to make interactive, patient-specific anatomical models viable for surgical planning in resource-constrained settings."
+    },
+    {
+      "id": "cd49c72f1a5ea4f2",
+      "title": "‘Avatar: Fire and Ash’ and ‘Super Mario Galaxy Movie’ Head to Vision Pro in 3D",
+      "link": "https://www.roadtovr.com/avatar-fire-ash-super-mario-galaxy-movie-3d-release-vision-pro/",
+      "source": "Road to VR",
+      "category": "APPLE VISION PRO",
+      "summary": "Road to VR reports that Apple has confirmed two new 3D theatrical releases for Vision Pro, with The Super Mario Galaxy Movie (2026) and Avatar: Fire and Ash (2025) joining a growing catalog that is positioning the headset as a premier destination for 3D home viewing."
+    },
+    {
+      "id": "a10cf91f893f3068",
+      "title": "Snap Specs AR Glasses Reportedly Launch This Fall For Around $2500",
+      "link": "https://www.uploadvr.com/snap-specs-ar-glasses-reportedly-launch-this-fall-for-2500/",
+      "source": "UploadVR",
+      "category": "HARDWARE",
+      "summary": "According to UploadVR, citing veteran tech journalist Alex Heath, Snap's standalone Specs AR glasses will launch this fall priced around $2,500, marking the company's first commercial consumer AR product after years of developer-only iterations."
+    },
+    {
+      "id": "3b760cbf17a16141",
+      "title": "Android XR Got Auto-Spatialization, Window Wall Pinning &amp; Hand Occlusion",
+      "link": "https://www.uploadvr.com/google-android-xr-2026-update-samsung-galaxy-xr/",
+      "source": "UploadVR",
+      "category": "SOFTWARE",
+      "summary": "UploadVR reports that Google's latest Android XR update for Samsung Galaxy XR adds AI-driven auto-spatialization that converts windowed content into 3D, hand occlusion in the home space, and the ability to pin application windows to physical walls."
+    },
+    {
+      "id": "91ce6f1b6aebf5d2",
+      "title": "As Horizon &amp; Rec Room Fold, VRChat Is Hitting Usage Records &amp; &quot;Not Going Anywhere&quot;",
+      "link": "https://www.uploadvr.com/vrchat-statement-after-rec-room-and-horizon-worlds-fold/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE",
+      "summary": "UploadVR reports that VRChat says it is setting new usage records and is \"not going anywhere\" following the withdrawal of Meta's Horizon Worlds and Rec Room from VR, leaving the long-running social platform as one of the few remaining large-scale VR social spaces."
+    },
+    {
+      "id": "e639d3ace6604759",
+      "title": "Quest&#x27;s Latest PTC Update Brings Hand Tracking Home Locomotion &amp; Custom App Sorting",
+      "link": "https://www.uploadvr.com/quest-ptc-update-adds-hand-movement-and-custom-app-sorting/",
+      "source": "UploadVR",
+      "category": "SOFTWARE",
+      "summary": "According to UploadVR, Meta's latest Quest Public Test Channel update introduces hand gesture locomotion in Horizon Home, custom app sorting and folders in the Library, and automatic app crash recovery, expanding hand-tracking utility across the system shell."
+    },
+    {
+      "id": "bf40a95dd6a6174b",
+      "title": "Roundtables: Can AI Learn to Understand the World?",
+      "link": "https://www.technologyreview.com/2026/05/21/1137756/roundtables-can-ai-learn-to-understand-the-world/",
+      "source": "MIT Tech Review - AI",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "MIT Technology Review hosted a roundtable with editor in chief Mat Honan, senior AI editor Will Douglas Heaven, and AI reporter colleagues on whether AI systems can learn to understand the external world, framing recent world-model research as a path beyond the limitations of large language models."
+    },
+    {
+      "id": "2d3fcd6d3c934c34",
+      "title": "Show HN: Real-time virtual try-on using hand gestures and live video diffusion",
+      "link": "https://github.com/manas15/try-on",
+      "source": "Hacker News (Spatial/XR)",
+      "category": "SOFTWARE",
+      "summary": "A Show HN post on Hacker News introduces an open-source project demonstrating real-time virtual try-on driven by hand gestures and live video diffusion, pointing to growing experimentation with diffusion-based interactive computer vision for spatial commerce use cases."
+    },
+    {
+      "id": "7fc26d4cc4a4a761",
+      "title": "WiFi Spatial Sensing",
+      "link": "https://github.com/ruvnet/RuView",
+      "source": "Hacker News (Spatial/XR)",
+      "category": "RESEARCH",
+      "summary": "A Hacker News submission highlights RuView, an open-source project exploring WiFi-based spatial sensing, part of a broader research thread investigating how ambient wireless signals can be used to infer presence, motion, and room geometry without dedicated cameras or depth sensors."
+    },
+    {
+      "id": "e3dba206c333e5f9",
+      "title": "I Cloned Myself With Gemini’s AI Avatar Tool. The Result Was Unnervingly Me",
+      "link": "https://www.wired.com/story/i-cloned-myself-with-geminis-ai-avatar-tool-the-result-was-unnervingly-me/",
+      "source": "Wired",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Wired reports on a first-person test of Google's Gemini AI avatar tool, in which the reporter generated lifelike videos featuring a digital clone of themselves, raising questions about identity, consent, and the trajectory of generative video as Google positions the technology as the future of creation."
+    },
+    {
+      "id": "e0cee187ca4201df",
+      "title": "The Future of Physical AI Isn’t Smarter Robots, It’s Smarter Interfaces",
+      "link": "https://spectrum.ieee.org/wetour-robotics-physical-ai-human-interfaces",
+      "source": "IEEE Spectrum",
+      "category": "OPINION",
+      "summary": "In a sponsored piece in IEEE Spectrum, Wetour Robotics argues that the next frontier of physical AI lies not in smarter robots but in smarter human-machine interfaces, citing scenarios such as field technicians, logistics workers, and assistive mobility users who need hands-free, voice-free ways to issue commands to connected devices."
+    },
+    {
+      "id": "574afb889952f67a",
+      "title": "Anduril Shows a Glimpse of EagleEye’s Wide Field-of-view Night Vision Imaging",
+      "link": "https://www.roadtovr.com/anduril-eagleeyes-wide-fov-ar-night-vision/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "Road to VR reports that Anduril, the defense startup founded by Palmer Luckey, has revealed new details about the wide field-of-view night vision capabilities of its EagleEye XR glasses, which the company is developing for U.S. soldiers. The disclosure builds on Anduril's late-2025 unveiling of the augmented reality headset and underscores the growing convergence of consumer XR optics and military-grade imaging."
+    },
+    {
+      "id": "62ad25987e2b870a",
+      "title": "Real Madrid Turns Club Atmosphere Into One of Apple Immersive&#x27;s Biggest Wins",
+      "link": "https://www.uploadvr.com/real-madrid-apple-immersive-documentary/",
+      "source": "UploadVR",
+      "category": "APPLE VISION PRO",
+      "summary": "UploadVR reports that 'Real Madrid: The Weight of Greatness,' a behind-the-scenes documentary on the storied Spanish football club, has launched as one of Apple's largest immersive productions to date on Vision Pro. The release marks a notable expansion of Apple Immersive's sports content slate as the company continues to court premium documentary partners."
+    },
+    {
+      "id": "25e01f4d78823850",
+      "title": "Highlights from the Ruff Talk VR Gaming Showcase – New Games, Trailers & More",
+      "link": "https://www.roadtovr.com/ruff-talk-vr-gaming-showcase-may-2026-quest-pc-vr-psvr-2/",
+      "source": "Road to VR",
+      "category": "GAMING MARKETPLACE",
+      "summary": "Road to VR rounds up the latest Ruff Talk VR Gaming Showcase, the recurring father-and-son-hosted event that aggregates new VR game reveals, trailers, and updates across Quest, PC VR, and PSVR 2."
+    },
+    {
+      "id": "f34b9a19df550c6d",
+      "title": "Wingsuit: Romsdalen Impressions - Feel The Rush In This VR Gliding Sim",
+      "link": "https://www.uploadvr.com/wingsuit-romsdalen-impressions-feel-the-rush-in-this-vr-gliding-sim/",
+      "source": "UploadVR",
+      "category": "HANDS ON REVIEW",
+      "summary": "UploadVR's hands-on impressions of Wingsuit: Romsdalen describe a VR gliding simulator set against the cliffs and valleys of Norway, aimed at recreating the sensation of wingsuit flight in virtual reality."
+    }
+  ],
+  "raw_content": "Spatial Report\nWeek of 2026-05-26\n\nSPOTLIGHT\n\nGoogle I/O 2026 takes center stage as Wired, Engadget, and CNET track expected Gemini AI updates and new details on the company's Android XR smart glasses ambitions. MIT Technology Review details Anduril and Meta's prototype augmented-reality headset for the U.S. military, including a vision for ordering drone strikes via eye-tracking and voice commands under former Army Special Operations officer Quay Barnett. Apple, meanwhile, previewed Apple Intelligence-powered accessibility updates spanning iPhone, Mac, and Vision Pro, including a feature that lets Vision Pro users control a wheelchair with their eyes.\n\nHIGHLIGHTS\n\nMIT Technology Review reports that defense-tech company Anduril has shared new details about the augmented-reality headset it is prototyping with Meta for the U.S. military, including a vision for ordering drone strikes via eye-tracking and voice commands. The effort is led by Quay Barnett, a former Army Special Operations Command officer now serving as a vice president at Anduril.\n\nhttps://www.technologyreview.com/2026/05/18/1137412/inside-anduril-and-metas-quest-to-make-smart-glasses-for-warfare/\n\nEngadget is live-blogging Google I/O 2026, where the company is expected to unveil new features across Gemini, AI, Search, and Android XR, including additional details on its smart glasses partnerships.\n\nhttps://www.engadget.com/2176173/google-io-live-blog-gemini-ai/\n\nWired is live-blogging Google I/O 2026, tracking updates to Google's Gemini AI suite and new details on Android XR smart glasses as they are announced at the company's developer keynote.\n\nhttps://www.wired.com/live/google-io-2026-live-blog-gemini-android-xr-search/\n\nEngadget reports that Google's Android XR platform is beginning to take concrete shape, with smart glasses partnerships and software demonstrations at I/O suggesting the company has tangible products in market view. The piece notes Google still has much to prove but argues its glasses will carry meaningful advantages tied to Gemini integration and partner hardware.\n\nhttps://www.engadget.com/2177283/android-xr-is-finally-starting-to-feel-real/\n\nWired's roundup of Google I/O 2026 covers updates across Gemini models, an AI-driven Search overhaul, agentic tools throughout Google's products, and new Android XR smart glasses from partners shipping this fall, marking one of the company's most spatial- and AI-heavy I/O keynotes to date.\n\nhttps://www.wired.com/story/everything-google-announced-at-google-io-2026/\n\nVISION PRO\n\nAccording to Engadget, Apple is previewing a new accessibility feature that allows Vision Pro users to control a wheelchair with their eyes, part of a broader update that includes Apple Intelligence-powered natural language voice input.\n\nhttps://www.engadget.com/2176236/apple-accessibility-features-vision-pro-wheelchair-control/\n\nAPP STORE HIGHLIGHTS\n\nUploadVR reports that WorldLens VR has introduced a new AI-powered depth feature on Meta Quest that adds subtle 3D depth to Google Street View environments, expanding how users can explore real-world locations inside the headset.\n\nhttps://www.uploadvr.com/worldlens-vrs-new-ai-depth-feature-enables-3d-street-view/\n\nAutodesk Blogs reports that Immersive for Autodesk VRED is now available on the App Store for Apple Vision Pro, the result of a collaboration between Autodesk, Apple, NVIDIA, and Innoactive first announced at NVIDIA GTC in March. The app brings VRED's high-fidelity automotive visualization into spatial computing, allowing design teams to step inside full-scale, photoreal vehicle scenes for design review without altering existing desktop preparation workflows.\n\nhttps://blogs.autodesk.com/design-studio/2026/05/20/immersive-for-autodesk-vred-is-now-available-on-apple-vision-pro/\n\nUploadVR reports that Meta has added a new immersive concert to Horizon TV featuring the Goo Goo Dolls performing at New York City's Beacon Theatre, the latest in a string of live music experiences for Quest owners.\n\nhttps://www.uploadvr.com/metas-goo-goo-dolls-concert-reminds-us-why-live-music-fits-vr-so-well/\n\nGAMING MARKETPLACE\n\nUploadVR reports that VR support for Five Nights at Freddy's: Secret of the Mimic was initially shelved in favor of a flatscreen-first release due to underperforming sales of its predecessor Help Wanted 2, offering a candid signal of the ongoing commercial challenges facing VR-exclusive titles.\n\nhttps://www.uploadvr.com/fnaf-secret-of-the-mimic-went-flatscreen-before-vr-due-to-poor-help-wanted-2-sales/\n\nUploadVR previewed One More Delve, a VR dungeon crawler supporting up to three players with physics-based combat, calling it a promising early entry in the co-op VR RPG genre.\n\nhttps://www.uploadvr.com/one-more-delve-impressions-a-promising-start-for-this-vr-dungeon-crawler/\n\nRoad to VR reports that Polyarc Games is releasing Moss: The Forgotten Relic, a flatscreen adaptation of its VR puzzle-platformer series, for console and PC later this year. The move follows the cancellation of an unspecified major project at the studio last month.\n\nhttps://www.roadtovr.com/moss-vr-flatscreen-port-project-cancellation/\n\nUploadVR reports that the remakes of classic adventure games Myst and its sequel Riven arrived on PlayStation VR2 today, bringing two landmark puzzle titles to Sony's headset.\n\nhttps://www.uploadvr.com/myst-riven-remakes-out-now-on-playstation-vr2/\n\nUploadVR reports that VRChat says it is setting new usage records and is \"not going anywhere\" following the withdrawal of Meta's Horizon Worlds and Rec Room from VR, leaving the long-running social platform as one of the few remaining large-scale VR social spaces.\n\nhttps://www.uploadvr.com/vrchat-statement-after-rec-room-and-horizon-worlds-fold/\n\nRoad to VR rounds up the latest Ruff Talk VR Gaming Showcase, the recurring father-and-son-hosted event that aggregates new VR game reveals, trailers, and updates across Quest, PC VR, and PSVR 2.\n\nhttps://www.roadtovr.com/ruff-talk-vr-gaming-showcase-may-2026-quest-pc-vr-psvr-2/\n\nINVESTMENT\n\nRoad to VR reports that South Korean AR optics startup LetinAR has raised $18.5 million ahead of a planned IPO next year, in a round led by Korea Development Bank with participation from Lotte Ventures and others. The LG-backed company says the funding will support production scaling and commercialization of its AR lens technology.\n\nhttps://www.roadtovr.com/lg-backed-ar-lens-startup-letinar-raises-18-5m-ahead-of-planned-ipo-next-year/\n\nSOFTWARE\n\nAn open-source project called CATE, posted to GitHub and surfaced on Hacker News, presents a spatial workspace that integrates terminals, browsers, and developer tools into a unified spatial environment for developers.\n\nhttps://github.com/0-AI-UG/cate\n\nGoogle announced the Android XR Developer Catalyst Program at its I/O conference, seeding approved applicants with XREAL Project Aura dev kits along with tools and resources to build for the new AR glasses platform, Road to VR reports.\n\nhttps://www.roadtovr.com/google-android-xr-developer-program-free-ar-glasses/\n\nUploadVR reports that Gracia's fully volumetric moving captures can now be streamed directly to mixed reality on Quest 3 without requiring an app or content download, marking a world-first for streamable volumetric video, with an Apple Vision Pro app said to be coming soon.\n\nhttps://www.uploadvr.com/gracia-moving-volumetric-captures-now-streamable/\n\nUploadVR reports that Google's latest Android XR update for Samsung Galaxy XR adds AI-driven auto-spatialization that converts windowed content into 3D, hand occlusion in the home space, and the ability to pin application windows to physical walls.\n\nhttps://www.uploadvr.com/google-android-xr-2026-update-samsung-galaxy-xr/\n\nAccording to UploadVR, Meta's latest Quest Public Test Channel update introduces hand gesture locomotion in Horizon Home, custom app sorting and folders in the Library, and automatic app crash recovery, expanding hand-tracking utility across the system shell.\n\nhttps://www.uploadvr.com/quest-ptc-update-adds-hand-movement-and-custom-app-sorting/\n\nA Show HN post on Hacker News introduces an open-source project demonstrating real-time virtual try-on driven by hand gestures and live video diffusion, pointing to growing experimentation with diffusion-based interactive computer vision for spatial commerce use cases.\n\nhttps://github.com/manas15/try-on\n\nHARDWARE\n\nEngadget reports that the ROG Xreal R1 AR gaming glasses, developed in partnership between Asus and Xreal, are now available for pre-order at $849, featuring a 240Hz refresh rate and a bundled connectivity dock. The device targets PC gamers seeking a high-refresh-rate wearable display alternative, positioning itself at the premium end of the emerging AR glasses market.\n\nhttps://www.engadget.com/2173261/the-rog-xreal-r1-ar-gaming-glasses-are-now-available-to-pre-order-for-dollar849/\n\nPimax has begun shipping the first batches of its Dream Air SE, a lighter-weight sibling to its thin and light PC VR flagship, though Road to VR notes that most customers—including those who pre-ordered a year ago—will still face weeks of additional wait time as the company works through its fulfillment backlog.\n\nhttps://www.roadtovr.com/pimax-dream-air-se-release-date-shipping/\n\nGoogle and Samsung offered the first official look at a jointly developed pair of AI-powered smart glasses at Google I/O, positioning the unnamed 'intelligent eyewear' as a direct competitor to Meta's Ray-Ban smart glasses ahead of a planned fall launch, according to Road to VR.\n\nhttps://www.roadtovr.com/google-samsung-smart-glasses-intelligent-eyewear-announcement-release-date/\n\nRoad to VR reports that XREAL confirmed its wired Project Aura AR glasses will launch globally in 2026 as the first AR glasses to run Google's Android XR operating system, with the device demonstrated on stage at Google I/O.\n\nhttps://www.roadtovr.com/first-android-xr-glasses-2026-launch/\n\nAccording to CNET, Google and Samsung's Android XR smart glasses built with Warby Parker and Gentle Monster will arrive this fall, with the companies revealing the designs at Google I/O 2026 while withholding final pricing and product names.\n\nhttps://www.cnet.com/tech/computing/google-and-samsungs-warby-parker-and-gentle-monster-glasses-are-coming-this-fall/\n\nWired offers a first hands-on look at the upcoming lineup of Android XR smart glasses from Warby Parker and Gentle Monster, all powered by Google and Samsung's XR platform, signaling the broader rollout of partner-built eyewear running Google's Gemini-driven AI layer.\n\nhttps://www.wired.com/story/hands-on-with-all-of-google-new-upcoming-android-xr-smart-glasses/\n\nAccording to UploadVR, relatively affordable consumer drones with built-in 360-degree cameras are now widely available, with offerings from DJI and an Insta360 subsidiary that pair the drones with immersive viewing goggles.\n\nhttps://www.uploadvr.com/consumer-360-camera-drones-are-a-thing-now/\n\nAccording to UploadVR, citing veteran tech journalist Alex Heath, Snap's standalone Specs AR glasses will launch this fall priced around $2,500, marking the company's first commercial consumer AR product after years of developer-only iterations.\n\nhttps://www.uploadvr.com/snap-specs-ar-glasses-reportedly-launch-this-fall-for-2500/\n\nRoad to VR reports that Anduril, the defense startup founded by Palmer Luckey, has revealed new details about the wide field-of-view night vision capabilities of its EagleEye XR glasses, which the company is developing for U.S. soldiers. The disclosure builds on Anduril's late-2025 unveiling of the augmented reality headset and underscores the growing convergence of consumer XR optics and military-grade imaging.\n\nhttps://www.roadtovr.com/anduril-eagleeyes-wide-fov-ar-night-vision/\n\nAI AND SIMULATED WORLDS\n\nThe Decoder reports that Odyssey has released Agora-1, a world model that allows up to four players to act simultaneously in an AI-generated environment, tested on the Nintendo 64 classic GoldenEye. The system uses two separate models to handle game state simulation and rendering in real time, with the team eyeing applications in collaborative robotics and AI agent training.\n\nhttps://the-decoder.com/agora-1-turns-the-n64-classic-goldeneye-into-a-playable-ai-simulation-for-four-players/\n\nAccording to The Decoder, Google used its I/O developer conference to unveil Gemini 3.5 Flash, a multimodal model called Gemini Omni, and a personal agent named Gemini Spark that runs continuously in the cloud, alongside a major refresh of the Gemini app. The announcements consolidate Google's push to position Gemini as an always-on assistant layer across its products.\n\nhttps://the-decoder.com/googles-i-o-announcements-new-models-a-cloud-agent-that-never-sleeps-and-a-redesigned-gemini-app/\n\nAccording to Engadget, Google introduced Gemini Omni, a multimodal generation system designed to produce 'anything from any input,' beginning with video output and signaling a push toward unified any-to-any generative models.\n\nhttps://www.engadget.com/2176590/googles-gemini-omni-can-generate-anything-from-any-input-starting-with-video/\n\nEngadget reports that Google's Project Genie, the company's generative world model, now integrates with Google Street View and is available globally to AI Ultra subscribers, letting users anchor generated 3D environments to real-world locations from Google Maps.\n\nhttps://www.engadget.com/2176797/project-genie-adds-google-street-view-integration-and-goes-live-for-global-ai-ultra-users/\n\nCNET reports that Google's Project Genie can now base its generated worlds on real locations via a new Street View integration, combining the system's generative 3D capabilities with Google Maps imagery to ground imaginary environments in real-world geography.\n\nhttps://www.cnet.com/tech/services-and-software/google-io-2026-project-genie-and-street-view/\n\nIEEE Spectrum examines whether robotics is approaching a ChatGPT-style inflection point, noting that 2025 saw record investment in robotics companies as AI-powered autonomous systems move toward deployment in factories, warehouses, elder care, disaster response, and eventually homes.\n\nhttps://spectrum.ieee.org/robotics-ai-breakthrough\n\nMIT Technology Review hosted a roundtable with editor in chief Mat Honan, senior AI editor Will Douglas Heaven, and AI reporter colleagues on whether AI systems can learn to understand the external world, framing recent world-model research as a path beyond the limitations of large language models.\n\nhttps://www.technologyreview.com/2026/05/21/1137756/roundtables-can-ai-learn-to-understand-the-world/\n\nWired reports on a first-person test of Google's Gemini AI avatar tool, in which the reporter generated lifelike videos featuring a digital clone of themselves, raising questions about identity, consent, and the trajectory of generative video as Google positions the technology as the future of creation.\n\nhttps://www.wired.com/story/i-cloned-myself-with-geminis-ai-avatar-tool-the-result-was-unnervingly-me/\n\nRESEARCH\n\nResearchers publishing on arXiv present Realiz3D, a domain-aware learning approach to 3D-consistent image generation that addresses the realism gap between synthetic training renders and real-world photography, using targeted fine-tuning to preserve the photorealistic quality of image generators while maintaining geometry, material, and viewpoint controls.\n\nhttps://arxiv.org/abs/2605.13852\n\nPublished on arXiv, UMo is a real-time co-speech avatar system that unifies gesture and facial animation generation under a single sparse motion model, targeting high-quality expressive digital avatars for games, virtual production, and interactive media applications.\n\nhttps://arxiv.org/abs/2605.14731\n\nA new arXiv preprint introduces Denoising-GS, a method that improves 3D Gaussian Splatting by addressing noisy Gaussian primitives introduced during optimization from sparse Structure-from-Motion point clouds. Unlike prior approaches that only adjust primitive positions, the method incorporates spatial structure awareness, with potential implications for higher-quality novel view synthesis in XR and immersive content pipelines.\n\nhttps://arxiv.org/abs/2605.14880\n\nAn arXiv preprint presents the Hierarchical Transformer Preconditioner, a neural approach to accelerating real-time physics simulation by anchoring a transformer to a multiscale H-matrix partition to capture long-range physical couplings more efficiently than prior local message-passing methods. Faster and more accurate real-time physics simulation is a foundational requirement for interactive XR environments and spatial computing applications.\n\nhttps://arxiv.org/abs/2605.13343\n\nResearchers have proposed SyncLight, a method enabling consistent, parametric relighting across multiple uncalibrated camera views of a static scene based on a single edited view, targeting use cases including multi-camera broadcast, stereoscopic cinema, and virtual production. The work addresses a gap in existing generative relighting tools, which struggle to maintain lighting coherence across the multiple viewpoints required for immersive and spatial content.\n\nhttps://arxiv.org/abs/2601.16981\n\nA new arXiv preprint introduces R-DMesh, a method for video-guided 3D animation that resolves the pose misalignment problem — where a user-provided static mesh rarely matches the starting pose of a reference video — using a rectified dynamic mesh flow approach. The technique aims to make video-driven 3D animation more practical for content creation workflows in film, games, and spatial computing.\n\nhttps://arxiv.org/abs/2605.13838\n\nResearchers on arXiv describe a real-time gaze tracking system that uses a microlens array with a co-designed binary chromium mask to perform passive optical encoding, capturing compact task-relevant features for gaze estimation without forming full-resolution images, with potential implications for low-latency eye tracking in XR headsets.\n\nhttps://arxiv.org/abs/2605.17990\n\nAn arXiv paper from cs.HC titled JARVIS proposes a just-in-time augmented reality instruction system powered by vision-language models, designed to deliver in-situ task guidance across reality contexts and reduce the cognitive load of switching between tutorials and hands-on actions. The authors argue that combining AR with LLMs and VLMs can automate the generation of step-by-step guidance that adapts to what the user is doing in the moment.\n\nhttps://arxiv.org/abs/2604.10108\n\nAn arXiv paper in cs.GR presents Density-Sampled Gaussians, a 3D representation that models Gaussian centers as samples from a learnable probability density function over an octree rather than fixed voxel grids or arrays. The authors say the formulation provides a rigorous framework for adaptive density control, bridging adaptive rendering primitives and scalable generative modeling for 3D scenes.\n\nhttps://arxiv.org/abs/2605.16355\n\nAn arXiv paper in cs.GR proposes a decoder-side Gaussian splatting approach for immersive video that aims to ease pixel-rate bottlenecks by avoiding the transmission of high-resolution depth maps or explicit 3D volumetric data. The authors argue the method addresses limitations of decoder-side depth estimation with complex geometries, inter-view flickering, and non-Lambertian reflections while retaining the view-synthesis quality of 3D Gaussian Splatting.\n\nhttps://arxiv.org/abs/2605.17002\n\nAn arXiv paper in cs.GR proposes accelerating 3D Gaussian Splatting by mapping its compute-bound rasterization stage onto modern GPU tensor cores, targeting the per-pixel Gaussian contribution evaluations that dominate end-to-end rendering time. The authors frame the work as addressing latency-sensitive uses of 3DGS for real-time neural rendering and 3D scene reconstruction.\n\nhttps://arxiv.org/abs/2605.17855\n\nResearchers on arXiv present 3D Skew Gaussian Splatting, an extension of 3D Gaussian Splatting that replaces symmetric Gaussian kernels with skewed distributions to better capture shape and color discontinuities, reducing blurriness and primitive redundancy during real-time photorealistic view synthesis.\n\nhttps://arxiv.org/abs/2605.18334\n\nA paper presented at ICRA and posted to arXiv describes a method for turning standard iPhones into spatial data capture rigs, leveraging the device's sensors to gather 3D scene data for robotics and computer vision applications. The work suggests consumer hardware can serve as a low-cost platform for spatial dataset collection traditionally requiring specialized equipment.\n\nhttps://arxiv.org/abs/2605.05945\n\nResearchers on arXiv present MMGS, a compression framework for 3D Gaussian Splatting that uses optimal transport aggregation based on multi-view ranking to achieve roughly tenfold compression while preserving rendering fidelity, addressing a key bottleneck for deploying 3DGS scenes on bandwidth- and memory-constrained XR devices.\n\nhttps://arxiv.org/abs/2605.19304\n\nA new arXiv paper proposes a decentralized, browser-native WebGPU architecture for direct volume rendering of MRI-based digital twins, aiming to replace server-side rendering and expensive local workstations to make interactive, patient-specific anatomical models viable for surgical planning in resource-constrained settings.\n\nhttps://arxiv.org/abs/2605.19737\n\nA Hacker News submission highlights RuView, an open-source project exploring WiFi-based spatial sensing, part of a broader research thread investigating how ambient wireless signals can be used to infer presence, motion, and room geometry without dedicated cameras or depth sensors.\n\nhttps://github.com/ruvnet/RuView\n\nOPINION\n\nUploadVR reviews Age of Dinosaurs, a location-based VR experience, describing it as a compelling example of venue-based immersive entertainment that holds value even for users who already own home VR hardware — a meaningful distinction for the out-of-home XR sector.\n\nhttps://www.uploadvr.com/age-of-dinosaurs-is-an-immersive-expedition-done-right/\n\nUploadVR reviewed the New York City episode of Apple Vision Pro's Elevated immersive video series, arguing that overstimulated creative choices leave little room for viewers to connect with the city's authentic spirit. The critique raises broader questions about the editorial restraint required to make spatial video a compelling storytelling medium rather than a showcase of technical novelty.\n\nhttps://www.uploadvr.com/can-apple-immersive-video-convey-the-spirit-of-new-york/\n\nIn commentary for CNET, the publication argues that Google I/O 2026 felt insular and exhausting, with the company focused on AI agents talking to other AI agents rather than delivering tangible value to users in the real world.\n\nhttps://www.cnet.com/tech/services-and-software/google-io-2026-bleak-new-ai-plans-commentary/\n\nIn a sponsored piece in IEEE Spectrum, Wetour Robotics argues that the next frontier of physical AI lies not in smarter robots but in smarter human-machine interfaces, citing scenarios such as field technicians, logistics workers, and assistive mobility users who need hands-free, voice-free ways to issue commands to connected devices.\n\nhttps://spectrum.ieee.org/wetour-robotics-physical-ai-human-interfaces\n\nHANDS ON REVIEW\n\nUploadVR visited Japan's Immersive Journey venue to try two of Excurio's free-roaming location-based VR experiences, Horizon of Khufu and Tonight With the Impressionists, describing them as among the most ambitious immersive installations to date.\n\nhttps://www.uploadvr.com/excurios-immersive-vr-locations-are-some-of-the-most-ambitious-to-date/\n\nUploadVR's hands-on impressions of Wingsuit: Romsdalen describe a VR gliding simulator set against the cliffs and valleys of Norway, aimed at recreating the sensation of wingsuit flight in virtual reality.\n\nhttps://www.uploadvr.com/wingsuit-romsdalen-impressions-feel-the-rush-in-this-vr-gliding-sim/\n\nAPPLE VISION PRO\n\nRoad to VR reports that Apple has confirmed two new 3D theatrical releases for Vision Pro, with The Super Mario Galaxy Movie (2026) and Avatar: Fire and Ash (2025) joining a growing catalog that is positioning the headset as a premier destination for 3D home viewing.\n\nhttps://www.roadtovr.com/avatar-fire-ash-super-mario-galaxy-movie-3d-release-vision-pro/\n\nUploadVR reports that 'Real Madrid: The Weight of Greatness,' a behind-the-scenes documentary on the storied Spanish football club, has launched as one of Apple's largest immersive productions to date on Vision Pro. The release marks a notable expansion of Apple Immersive's sports content slate as the company continues to court premium documentary partners.\n\nhttps://www.uploadvr.com/real-madrid-apple-immersive-documentary/\n"
+}

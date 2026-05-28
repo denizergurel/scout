@@ -129,24 +129,62 @@ def _render_universal_discards(editorial: dict, topics: str) -> str:
     return "## Universal DISCARD rules (always apply)\n\n" + "\n".join(bullets)
 
 
-def _render_categories_table(editorial: dict) -> str:
-    """Render the Editor's Categories markdown table. Output is byte-
-    identical to Scout's shipped editor.md when sections match the default
-    list."""
-    sections = editorial.get("sections")
-    pairs: list[tuple[str, str]]
-    if isinstance(sections, list) and sections:
-        pairs = []
-        for s in sections:
+def _render_categories_table(cfg: dict) -> str:
+    """Render the Editor's Categories markdown table.
+
+    Three sources, in priority order:
+      1. Top-level `categories:` block in config.yaml — canonical, since
+         categories live there alongside their keywords.
+      2. Legacy `editorial.sections` (kept for compatibility).
+      3. Hardcoded `_DEFAULT_SECTIONS` so an empty config never produces
+         an empty prompt.
+
+    When `newsletter_section_order` is present, rows are emitted in that
+    order so the LLM sees the same section sequence the dashboard does.
+    Categories not named in section_order are appended at the end.
+    """
+    editorial = cfg.get("editorial") or {}
+
+    def _coerce(entries: list) -> list[tuple[str, str]]:
+        out: list[tuple[str, str]] = []
+        for s in entries:
             if not isinstance(s, dict):
                 continue
             name = (s.get("name") or "").strip()
             desc = (s.get("description") or "").strip()
             if not name:
                 continue
-            pairs.append((name, desc))
+            out.append((name, desc))
+        return out
+
+    pairs: list[tuple[str, str]] = []
+    categories = cfg.get("categories")
+    if isinstance(categories, list) and categories:
+        pairs = _coerce(categories)
     else:
+        sections = editorial.get("sections")
+        if isinstance(sections, list) and sections:
+            pairs = _coerce(sections)
+
+    if not pairs:
         pairs = list(_DEFAULT_SECTIONS)
+
+    order = cfg.get("newsletter_section_order")
+    if isinstance(order, list) and order:
+        by_name = {name.upper(): (name, desc) for name, desc in pairs}
+        ordered: list[tuple[str, str]] = []
+        seen: set[str] = set()
+        for s in order:
+            if not isinstance(s, str):
+                continue
+            key = s.strip().upper()
+            if key in by_name and key not in seen:
+                ordered.append(by_name[key])
+                seen.add(key)
+        for name, desc in pairs:
+            if name.upper() not in seen:
+                ordered.append((name, desc))
+        pairs = ordered
 
     if not pairs:
         return ""
@@ -185,7 +223,7 @@ def render_prompt(name: str) -> str:
             editorial.get("extra_exclude_criteria"),
         ),
         "universal_discard_block": _render_universal_discards(editorial, topics),
-        "categories_table": _render_categories_table(editorial),
+        "categories_table": _render_categories_table(cfg),
     }
 
     def replace(match: re.Match) -> str:

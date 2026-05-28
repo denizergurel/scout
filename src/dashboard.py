@@ -8,9 +8,11 @@ approve/reject/edit, and exports final newsletter format.
 
 from __future__ import annotations
 
+import base64
 import json
 import os
 import re
+import secrets
 import shutil
 import subprocess
 import sys
@@ -21,7 +23,7 @@ from typing import Optional
 
 import yaml
 from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
+from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse, Response
 
 sys.path.insert(0, str(Path(__file__).parent))
 
@@ -41,6 +43,43 @@ from llm import call_llm_json
 from store import add_pending, make_id
 
 app = FastAPI(title="Scout")
+
+
+# ─── HTTP Basic auth (opt-in) ────────────────────────────────────────────────
+# Off by default so local dev is unchanged. When SCOUT_AUTH_USER and
+# SCOUT_AUTH_PASS are both set in the environment, every request must carry
+# matching Basic credentials. Use this when exposing the dashboard beyond
+# localhost (LAN, Tailscale, etc.). It is *not* a replacement for putting
+# the dashboard behind a real reverse proxy — it is belt-and-suspenders for
+# the no-auth-by-default UI.
+
+_AUTH_USER = os.environ.get("SCOUT_AUTH_USER") or ""
+_AUTH_PASS = os.environ.get("SCOUT_AUTH_PASS") or ""
+_AUTH_ENABLED = bool(_AUTH_USER and _AUTH_PASS)
+
+
+@app.middleware("http")
+async def _basic_auth_middleware(request: Request, call_next):
+    if not _AUTH_ENABLED:
+        return await call_next(request)
+
+    header = request.headers.get("Authorization", "")
+    if header.startswith("Basic "):
+        try:
+            decoded = base64.b64decode(header[6:], validate=True).decode("utf-8")
+        except (ValueError, UnicodeDecodeError):
+            decoded = ""
+        user, sep, password = decoded.partition(":")
+        if sep and secrets.compare_digest(user, _AUTH_USER) and secrets.compare_digest(password, _AUTH_PASS):
+            return await call_next(request)
+
+    return Response(
+        status_code=401,
+        headers={"WWW-Authenticate": 'Basic realm="Scout"'},
+        content="Authentication required.",
+        media_type="text/plain",
+    )
+
 
 BASE_DIR = Path(__file__).parent.parent
 OUTPUT_DIR = BASE_DIR / "output" / "daily"
@@ -301,6 +340,29 @@ async def edit_item(item_id: str, request: Request):
     if not it:
         return JSONResponse({"error": "Item not found"}, status_code=404)
     return JSONResponse({"ok": True})
+
+
+@app.post("/api/items/{item_id}/promote")
+async def promote_item(item_id: str):
+    """Toggle an item between HIGHLIGHTS and its previous topical category.
+
+    The Editor can't pick HIGHLIGHTS reliably from a single-batch view, so this
+    is the editorial backstop. First call: stash current category in
+    `prev_category` and set category to HIGHLIGHTS. Second call: restore
+    prev_category and clear it.
+    """
+    it = find_by_id(item_id)
+    if not it:
+        return JSONResponse({"error": "Item not found"}, status_code=404)
+
+    current = (it.get("category") or "").upper()
+    if current == "HIGHLIGHTS":
+        prev = it.get("prev_category") or "HIGHLIGHTS"
+        update_fields(item_id, category=prev, prev_category=None)
+        return JSONResponse({"ok": True, "category": prev, "highlighted": False})
+
+    update_fields(item_id, category="HIGHLIGHTS", prev_category=it.get("category"))
+    return JSONResponse({"ok": True, "category": "HIGHLIGHTS", "highlighted": True})
 
 
 @app.post("/api/bucket/spotlight")
@@ -2416,6 +2478,7 @@ _EDIT_ICON = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path 
 _RESTORE_ICON = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8a5 5 0 1 0 1.5-3.5M3 3v3.5h3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 _PAUSE_ICON = '<svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><rect x="4" y="3" width="3" height="10" rx="1"/><rect x="9" y="3" width="3" height="10" rx="1"/></svg>'
 _PLAY_ICON = '<svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M5 3.5v9a.5.5 0 0 0 .77.42l7-4.5a.5.5 0 0 0 0-.84l-7-4.5A.5.5 0 0 0 5 3.5z"/></svg>'
+_STAR_ICON = '<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1.5l1.9 4.05 4.35.46-3.27 2.97.93 4.32L8 11.1l-3.91 2.2.93-4.32L1.75 6l4.35-.46L8 1.5z"/></svg>'
 
 
 def render_card(item: dict, view: str = "signals") -> str:
@@ -2424,13 +2487,24 @@ def render_card(item: dict, view: str = "signals") -> str:
     included = item.get("included_in_next", True)
     sig = item.get("significance", "medium")
     date_str = item.get("published", "")[:10] if item.get("published") else ""
+    category = (item.get("category") or "").upper()
+    is_highlight = category == "HIGHLIGHTS"
 
     edit_btn = (
         f'<button onclick="editItem(\'{item_id}\')" class="action-btn action-btn--edit" '
         f'title="Edit summary">{_EDIT_ICON}</button>'
     )
+    promote_title = "Remove from Highlights" if is_highlight else "Promote to Highlights"
+    promote_class = "action-btn action-btn--promote" + (" is-highlight" if is_highlight else "")
+    promote_btn = (
+        f'<button onclick="promoteItem(\'{item_id}\')" class="{promote_class}" '
+        f'data-highlighted="{str(is_highlight).lower()}" '
+        f'title="{promote_title}">{_STAR_ICON}</button>'
+    )
 
     state_classes = [f"card--{status}"]
+    if is_highlight:
+        state_classes.append("card--highlight")
 
     if view == "lineup":
         # Including is the default for everything in the Lineup, so we don't
@@ -2448,6 +2522,7 @@ def render_card(item: dict, view: str = "signals") -> str:
                 f'title="Include in next edition">{_PLAY_ICON}</button>'
             )
         actions = (
+            f'{promote_btn}'
             f'{edit_btn}'
             f'{toggle_btn}'
             f'<button onclick="removeFromSaved(\'{item_id}\')" class="action-btn action-btn--reject" '
@@ -2464,6 +2539,7 @@ def render_card(item: dict, view: str = "signals") -> str:
             f'title="Save → Lineup">{_CHECK_ICON}</button>'
             f'<button onclick="hideItem(\'{item_id}\')" class="action-btn action-btn--reject" '
             f'title="Send to Archive">{_X_ICON}</button>'
+            f'{promote_btn}'
             f'{edit_btn}'
         )
 
@@ -3456,6 +3532,29 @@ h1 {
 .action-btn--reject:hover { background: var(--color-error-bg-strong); transform: scale(1.1); }
 .action-btn--edit { background: var(--color-info-bg); color: var(--color-info-text); }
 .action-btn--edit:hover { background: var(--color-info-bg-strong); transform: scale(1.1); }
+/* Promote ⇄ HIGHLIGHTS. Outline when neutral, gold-filled when item is
+   already in HIGHLIGHTS so the editor sees state at a glance. */
+.action-btn--promote {
+    background: transparent;
+    color: var(--color-text-tertiary);
+    border: 0.5px solid var(--color-border);
+}
+.action-btn--promote:hover {
+    background: rgba(255, 196, 0, 0.12);
+    color: #c79100;
+    transform: scale(1.1);
+}
+.action-btn--promote.is-highlight {
+    background: rgba(255, 196, 0, 0.18);
+    color: #b8860b;
+    border-color: rgba(255, 196, 0, 0.45);
+}
+.action-btn--promote.is-highlight:hover {
+    background: rgba(255, 196, 0, 0.28);
+    color: #8a6500;
+}
+/* Subtle left accent on HIGHLIGHTS cards so they stand out without yelling. */
+.card--highlight { box-shadow: inset 3px 0 0 0 rgba(255, 196, 0, 0.55); }
 .action-btn--include { background: var(--color-success-bg); color: var(--color-success); }
 .action-btn--include:hover { background: var(--color-success-bg-strong); transform: scale(1.1); }
 .action-btn--held {
@@ -4936,6 +5035,20 @@ async function hideItem(id) {
     removeCard(id);
     bumpNavCount('signals', -1);
     showHideToast(id);
+}
+
+async function promoteItem(id) {
+    // Toggle an item between HIGHLIGHTS and its previous topical category.
+    // The backend remembers the previous category so a second click restores it.
+    const res = await fetch(`/api/items/${id}/promote`, {method: 'POST'});
+    const data = await res.json();
+    if (!res.ok || !data.ok) {
+        console.warn('promote failed', data);
+        return;
+    }
+    // Visual change involves moving the card between sections — easiest is a
+    // reload. Preserves filters and scroll naturally for short pages.
+    window.location.reload();
 }
 
 // ─── Toast for tag-on-hide (no-friction reason capture) ──────────────────────
