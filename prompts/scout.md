@@ -19,6 +19,8 @@ You receive a list of articles (title, description, source, date) and determine 
 
 {{exclude_criteria_block}}
 
+{{learning_hides_block}}
+
 ## Output Format
 
 For each article, respond with a JSON object:

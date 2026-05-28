@@ -208,6 +208,18 @@ def render_prompt(name: str) -> str:
     identity = cfg.get("newsletter") or {}
     editorial = cfg.get("editorial") or {}
 
+    # Adaptive learning blocks. Imported lazily so the rest of the loader
+    # still works if learning.py is somehow unavailable. Both return ""
+    # when `learning.enabled: false`, so the rendered prompt is byte-
+    # equivalent to the prior version with learning off.
+    try:
+        from learning import scout_hides_block, editor_highlights_block
+        learning_hides_block = scout_hides_block(cfg)
+        learning_highlights_block = editor_highlights_block(cfg)
+    except Exception:
+        learning_hides_block = ""
+        learning_highlights_block = ""
+
     topics = identity.get("topics") or _DEFAULTS["topics"]
     values = {
         "newsletter_name": identity.get("name") or _DEFAULTS["newsletter_name"],
@@ -224,6 +236,8 @@ def render_prompt(name: str) -> str:
         ),
         "universal_discard_block": _render_universal_discards(editorial, topics),
         "categories_table": _render_categories_table(cfg),
+        "learning_hides_block": learning_hides_block,
+        "learning_highlights_block": learning_highlights_block,
     }
 
     def replace(match: re.Match) -> str:

@@ -36,6 +36,8 @@ Assign exactly ONE category per article:
 - APPLE VISION PRO section covers usage, apps, workflows, and notable reports
 - **Source quality**: Prefer primary sources; flag if only aggregator coverage exists
 
+{{learning_highlights_block}}
+
 ## Output Format
 
 ```json

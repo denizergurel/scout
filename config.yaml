@@ -156,6 +156,24 @@ llm:
     provider: "claude"
     model: ""
 
+# --- Adaptive learning ---
+# When enabled, each pipeline run injects recent user decisions into the
+# agent prompts as few-shot examples — Scout sees recently rejected items
+# (with the hide reason), Editor sees items recently promoted to HIGHLIGHTS.
+# Learning is bounded by a sliding window + a hard cap on examples, and
+# consumes only user-authored signals (hide_reason tags, manual promotes,
+# saves). It augments the criteria above; it does not replace them.
+# Flip `enabled: false` to make the prompt byte-equivalent to the prior
+# (non-learning) version.
+learning:
+  enabled: true
+  scout:
+    window_days: 30
+    max_examples: 15
+  editor:
+    window_days: 30
+    max_highlights_examples: 6
+
 # --- Editorial Policy ---
 editorial_policy:
   tone: "Neutral, authoritative — modeled after NYT, Bloomberg, Reuters, FT. Concise, factual, no hype. Active voice, precise language."

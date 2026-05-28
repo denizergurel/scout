@@ -166,6 +166,16 @@ Past editions feed back as training data — Scout's collector dedups against th
 
 ---
 
+## Your taste stays yours
+
+Hide a story, save one, or promote it to HIGHLIGHTS — Scout quietly remembers. On the next run, it shows the LLM a handful of your most recent decisions as soft hints for what you do and don't like. The more you triage, the better it gets at matching your judgment.
+
+All of that memory lives in `output/daily/items.json`, which never gets committed to git. So if someone else clones this repo, they start with a blank notebook. Their own hides and saves train their own Scout — completely separate from yours. Nothing leaks either way.
+
+If you'd rather Scout not learn at all, flip `learning.enabled: false` in `config.yaml` and it goes back to running purely on the rules you wrote.
+
+---
+
 ## Practical notes when running multiple newsletters
 
 **LLM rate limits.** Two newsletters means roughly 2× the daily LLM calls. If both hit Claude Pro at the same 8am cron firing, you may hit subscription limits. Easy fix: stagger the cron in each newsletter's plist (one at 8:00, the other at 8:30), or route the higher-volume newsletter's Scout stage to `gpt-4o-mini`.
