@@ -97,7 +97,7 @@ editorial:
     - name: "APPLE VISION PRO"
       description: "Apple Vision Pro coverage: usage, apps, workflows, and notable reports."
     - name: "APP STORE HIGHLIGHTS"
-      description: "Notable new or updated apps/games for Apple Vision Pro"
+      description: "Newly launched or significantly updated visionOS apps and experiences on the Apple App Store. Excludes Quest, PSVR, Pico, and other VR platform releases — those belong in GAMING MARKETPLACE."
     - name: "GAMING MARKETPLACE"
       description: "VR/AR/XR gaming industry — studios, releases, market shifts"
     - name: "INVESTMENT"
@@ -215,8 +215,8 @@ categories:
     keywords: ["Vision Pro", "visionOS", "spatial computing"]
 
   - name: "APP STORE HIGHLIGHTS"
-    description: "Notable new or updated apps and games for Vision Pro on the App Store."
-    keywords: ["App Store", "visionOS app", "spatial app", "Vision Pro game"]
+    description: "Newly launched or significantly updated visionOS apps and experiences on the Apple App Store. Excludes Quest, PSVR, Pico, and other VR platform releases — those belong in GAMING MARKETPLACE WATCH."
+    keywords: ["App Store", "visionOS app", "spatial app", "Vision Pro game", "iRacing Vision Pro", "Apple Vision Pro app"]
 
   - name: "GAMING MARKETPLACE WATCH"
     description: "VR/AR/XR gaming industry news — studios, releases, market shifts, hardware for gaming."
@@ -274,6 +274,26 @@ sources:
     source_type: "Trade Press"
     category_hint: "Enterprise XR"
 
+  - name: "The Decoder"
+    url: "https://the-decoder.com/feed/"
+    source_type: "Trade Press"
+    category_hint: "AI / ML (Spatial-relevant)"
+
+  - name: "Auganix"
+    url: "https://www.auganix.org/feed/"
+    source_type: "Trade Press"
+    category_hint: "Core XR News"
+
+  - name: "AR Insider"
+    url: "https://arinsider.co/feed/"
+    source_type: "Trade Press"
+    category_hint: "Core XR News"
+
+  - name: "Immersive Wire"
+    url: "https://www.immersivewire.com/feed"
+    source_type: "Trade Press"
+    category_hint: "Core XR News"
+
   - name: "The Verge - VR"
     url: "https://www.theverge.com/rss/vr/index.xml"
     source_type: "Mainstream Press"
@@ -299,16 +319,6 @@ sources:
     source_type: "Mainstream Press"
     category_hint: "AI / ML (Spatial-relevant)"
 
-  - name: "The Decoder"
-    url: "https://the-decoder.com/feed/"
-    source_type: "Trade Press"
-    category_hint: "AI / ML (Spatial-relevant)"
-
-  - name: "Hacker News (Spatial/XR)"
-    url: "https://hnrss.org/newest?q=spatial+computing+OR+augmented+reality+OR+virtual+reality+OR+mixed+reality"
-    source_type: "Community"
-    category_hint: "Spatial Computing (Software/Platform)"
-
   - name: "Engadget"
     url: "https://www.engadget.com/rss.xml"
     source_type: "Mainstream Press"
@@ -323,6 +333,11 @@ sources:
     url: "https://www.wired.com/feed/rss"
     source_type: "Mainstream Press"
     category_hint: "Spatial Computing (General Tech)"
+
+  - name: "Hacker News (Spatial/XR)"
+    url: "https://hnrss.org/newest?q=spatial+computing+OR+augmented+reality+OR+virtual+reality+OR+mixed+reality"
+    source_type: "Community"
+    category_hint: "Spatial Computing (Software/Platform)"
 
   - name: "IEEE Spectrum"
     url: "https://spectrum.ieee.org/feeds/feed.rss"
@@ -344,11 +359,6 @@ sources:
     source_type: "Research"
     category_hint: "Research (Graphics/Rendering)"
 
-  - name: "Auganix"
-    url: "https://www.auganix.org/feed/"
-    source_type: "Trade Press"
-    category_hint: "Core XR News"
-
   - name: "Skarred Ghost"
     url: "https://skarredghost.com/feed/"
     source_type: "Independent Voices"
@@ -358,16 +368,6 @@ sources:
     url: "https://kguttag.com/feed/"
     source_type: "Independent Voices"
     category_hint: "Spatial Computing (Hardware)"
-
-  - name: "AR Insider"
-    url: "https://arinsider.co/feed/"
-    source_type: "Trade Press"
-    category_hint: "Core XR News"
-
-  - name: "Immersive Wire"
-    url: "https://www.immersivewire.com/feed"
-    source_type: "Trade Press"
-    category_hint: "Core XR News"
 
   - name: "Meta"
     url: "https://about.fb.com/news/feed/"
@@ -383,6 +383,16 @@ sources:
     url: "https://www.apple.com/newsroom/rss-feed.rss"
     source_type: "Platform Owners"
     category_hint: "Apple Vision Pro"
+
+  - name: "9to5Mac Vision Pro"
+    url: "https://9to5mac.com/guides/apple-vision-pro/feed/"
+    source_type: "Trade Press"
+    category_hint: "App Store Highlights"
+
+  - name: "MacStories Vision Pro"
+    url: "https://www.macstories.net/tag/vision-pro/feed/"
+    source_type: "Independent Voices"
+    category_hint: "App Store Highlights"
 
 # --- Search Queries (for future non-RSS sources) ---
 search_queries:
