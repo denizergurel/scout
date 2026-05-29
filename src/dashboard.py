@@ -1218,11 +1218,14 @@ def _write_sources(sources: list[dict]) -> None:
     for s in sources:
         name = (s.get("name") or "").strip()
         url = (s.get("url") or "").strip()
+        group = (s.get("source_type") or "").strip()
         hint = (s.get("category_hint") or "").strip()
         if not url:
             continue
         block.append(f'  - name: "{_yaml_escape(name or url)}"\n')
         block.append(f'    url: "{_yaml_escape(url)}"\n')
+        if group:
+            block.append(f'    source_type: "{_yaml_escape(group)}"\n')
         if hint:
             block.append(f'    category_hint: "{_yaml_escape(hint)}"\n')
         block.append("\n")
@@ -1253,6 +1256,7 @@ async def save_feeds(request: Request):
             continue
         url = (f.get("url") or "").strip()
         name = (f.get("name") or "").strip()
+        group = (f.get("source_type") or "").strip()
         hint = (f.get("category_hint") or "").strip()
         if not url:
             continue
@@ -1260,7 +1264,12 @@ async def save_feeds(request: Request):
             return JSONResponse(
                 {"error": f"URL must start with http(s)://: {url}"}, status_code=400
             )
-        cleaned.append({"name": name or url, "url": url, "category_hint": hint})
+        cleaned.append({
+            "name": name or url,
+            "url": url,
+            "source_type": group,
+            "category_hint": hint,
+        })
 
     try:
         _write_sources(cleaned)
@@ -1853,15 +1862,49 @@ def _render_pipeline_panel() -> str:
 
 
 def _render_feeds_editor() -> str:
+    """Render the RSS Feeds panel grouped by source_type.
+
+    The group is a free-form string per feed — whatever the user types in the
+    Group input becomes a subheader on save. Feeds with an empty source_type
+    fall into an "Ungrouped" bucket rendered at the bottom. Browser autocomplete
+    (HTML <datalist>) makes "type to reuse an existing group" the fast path,
+    while still permitting any new label.
+    """
     sources = _read_sources()
-    rows = ""
+
+    # Preserve first-appearance order so the user's curation choices in
+    # config.yaml drive the on-screen ordering, instead of alphabetizing.
+    group_order: list[str] = []
+    grouped: dict[str, list[tuple[int, dict]]] = {}
     for i, s in enumerate(sources):
-        rows += f"""
-<div class="feed-row" data-idx="{i}">
-    <input class="feed-input feed-name" placeholder="Name" value="{(s.get('name') or '').replace('"','&quot;')}">
-    <input class="feed-input feed-url" placeholder="https://…" value="{(s.get('url') or '').replace('"','&quot;')}">
-    <input class="feed-input feed-hint" placeholder="Category hint (optional)" value="{(s.get('category_hint') or '').replace('"','&quot;')}">
-    <button class="feed-remove" onclick="removeFeedRow(this)" title="Remove">✕</button>
+        g = (s.get("source_type") or "").strip()
+        key = g or "Ungrouped"
+        if key not in grouped:
+            grouped[key] = []
+            group_order.append(key)
+        grouped[key].append((i, s))
+    # If Ungrouped exists, render it last regardless of where it first appeared.
+    if "Ungrouped" in group_order:
+        group_order.remove("Ungrouped")
+        group_order.append("Ungrouped")
+
+    # Datalist of distinct, non-empty group names — autocomplete for the
+    # Group input. Lets the user reuse an existing group with one keystroke
+    # while still typing a brand-new one if they want.
+    distinct_groups = sorted({(s.get("source_type") or "").strip() for s in sources if (s.get("source_type") or "").strip()})
+    datalist_options = "".join(
+        f'<option value="{_html_attr(g)}"></option>' for g in distinct_groups
+    )
+
+    sections_html = ""
+    for key in group_order:
+        rows_html = ""
+        for i, s in grouped[key]:
+            rows_html += _render_feed_row(i, s)
+        sections_html += f"""
+<div class="feed-group" data-group="{_html_attr(key)}">
+    <div class="feed-group-header">{_html_text(key)}<span class="feed-group-count">{len(grouped[key])}</span></div>
+    <div class="feed-group-rows">{rows_html}</div>
 </div>"""
 
     return f"""
@@ -1869,14 +1912,47 @@ def _render_feeds_editor() -> str:
     <div class="settings-panel-header">
         <div>
             <h2>RSS Feeds</h2>
-            <p class="settings-panel-sub"><span id="feeds-count">{len(sources)}</span> feeds — edit, add, or remove. Changes apply on next refresh.</p>
+            <p class="settings-panel-sub"><span id="feeds-count">{len(sources)}</span> feeds across <span id="feeds-group-count">{len(group_order)}</span> groups — edit, add, or remove. Changes apply on next refresh.</p>
         </div>
         <button onclick="saveFeeds()" class="btn-primary" id="feeds-save-btn">Save changes</button>
     </div>
-    <div id="feeds-list" class="feeds-list">{rows}</div>
+    <datalist id="feeds-groups-datalist">{datalist_options}</datalist>
+    <div id="feeds-list" class="feeds-list">{sections_html}</div>
     <button onclick="addFeedRow()" class="btn-ghost" id="feeds-add-btn">+ Add feed</button>
     <div id="feeds-banner" class="export-banner hidden"></div>
 </section>"""
+
+
+def _html_attr(s: str) -> str:
+    """Escape for an HTML attribute value. Used for inputs we populate from
+    config.yaml — feed names, URLs, and group labels may contain quotes or
+    angle brackets that would break out of attribute context."""
+    return (
+        (s or "")
+        .replace("&", "&amp;")
+        .replace('"', "&quot;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+    )
+
+
+def _html_text(s: str) -> str:
+    return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def _render_feed_row(idx: int, s: dict) -> str:
+    name = _html_attr(s.get("name"))
+    url = _html_attr(s.get("url"))
+    group = _html_attr(s.get("source_type"))
+    hint = _html_attr(s.get("category_hint"))
+    return f"""
+<div class="feed-row" data-idx="{idx}">
+    <input class="feed-input feed-name" placeholder="Name" value="{name}">
+    <input class="feed-input feed-url" placeholder="https://…" value="{url}">
+    <input class="feed-input feed-group" placeholder="Group" list="feeds-groups-datalist" value="{group}">
+    <input class="feed-input feed-hint" placeholder="Category hint (optional)" value="{hint}">
+    <button class="feed-remove" onclick="removeFeedRow(this)" title="Remove">✕</button>
+</div>"""
 
 
 def _render_models_panel() -> str:
@@ -3779,13 +3855,58 @@ h1 {
 .feeds-list {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 16px;
     margin: 12px 0;
+}
+
+/* Group container: subheader + rows. Visually groups feeds by source_type
+   without claiming the user has to use the same labels we ship — those are
+   editable free-form strings. The "Ungrouped" bucket gets a muted header. */
+.feed-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.feed-group-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px 4px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+    border-bottom: 0.5px solid var(--color-border-light);
+    margin-bottom: 4px;
+}
+
+.feed-group[data-group="Ungrouped"] .feed-group-header {
+    color: var(--color-text-tertiary);
+}
+
+.feed-group-count {
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--color-text-tertiary);
+    padding: 1px 7px;
+    background: var(--color-bg);
+    border-radius: 999px;
+}
+
+.feed-group-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .feed-row {
     display: grid;
-    grid-template-columns: 1.2fr 2fr 1.6fr auto;
+    /* name · url · group · hint · remove */
+    grid-template-columns: 1.1fr 1.8fr 0.9fr 1.2fr auto;
     gap: 8px;
     align-items: center;
     padding: 6px;
@@ -6192,23 +6313,73 @@ async function submitManualAdd() {
 function addFeedRow() {
     const list = document.getElementById('feeds-list');
     if (!list) return;
-    const div = document.createElement('div');
-    div.className = 'feed-row';
-    div.innerHTML = `
-        <input class="feed-input feed-name" placeholder="Name" value="">
-        <input class="feed-input feed-url" placeholder="https://…" value="">
-        <input class="feed-input feed-hint" placeholder="Category hint (optional)" value="">
-        <button class="feed-remove" onclick="removeFeedRow(this)" title="Remove">✕</button>`;
-    list.appendChild(div);
-    div.querySelector('.feed-name').focus();
+    // New rows land in an "Ungrouped" section at the bottom — the user types
+    // a Group name to sort them, then Save snaps the layout into place on
+    // next render. Built via DOM to avoid an HTML-injection lint warning.
+    let bucket = list.querySelector('.feed-group[data-group="Ungrouped"] .feed-group-rows');
+    if (!bucket) {
+        const section = document.createElement('div');
+        section.className = 'feed-group';
+        section.setAttribute('data-group', 'Ungrouped');
+
+        const header = document.createElement('div');
+        header.className = 'feed-group-header';
+        header.textContent = 'Ungrouped';
+        const count = document.createElement('span');
+        count.className = 'feed-group-count';
+        count.textContent = '0';
+        header.appendChild(count);
+
+        bucket = document.createElement('div');
+        bucket.className = 'feed-group-rows';
+        section.appendChild(header);
+        section.appendChild(bucket);
+        list.appendChild(section);
+    }
+
+    const row = document.createElement('div');
+    row.className = 'feed-row';
+    const inputs = [
+        {cls: 'feed-name', placeholder: 'Name'},
+        {cls: 'feed-url', placeholder: 'https://…'},
+        {cls: 'feed-group', placeholder: 'Group', list: 'feeds-groups-datalist'},
+        {cls: 'feed-hint', placeholder: 'Category hint (optional)'},
+    ];
+    inputs.forEach(spec => {
+        const inp = document.createElement('input');
+        inp.className = 'feed-input ' + spec.cls;
+        inp.placeholder = spec.placeholder;
+        if (spec.list) inp.setAttribute('list', spec.list);
+        row.appendChild(inp);
+    });
+    const remove = document.createElement('button');
+    remove.className = 'feed-remove';
+    remove.title = 'Remove';
+    remove.textContent = '✕';
+    remove.addEventListener('click', () => removeFeedRow(remove));
+    row.appendChild(remove);
+
+    bucket.appendChild(row);
+    _updateFeedsCount();
+    row.querySelector('.feed-name').focus();
+}
+
+function _updateFeedsCount() {
+    const count = document.querySelectorAll('.feed-row').length;
+    const countEl = document.getElementById('feeds-count');
+    if (countEl) countEl.textContent = count;
+    // Refresh per-group counts so the header stays honest after add/remove.
+    document.querySelectorAll('.feed-group').forEach(g => {
+        const n = g.querySelectorAll('.feed-row').length;
+        const el = g.querySelector('.feed-group-count');
+        if (el) el.textContent = n;
+    });
 }
 
 function removeFeedRow(btn) {
     const row = btn.closest('.feed-row');
     if (row) row.remove();
-    const count = document.querySelectorAll('.feed-row').length;
-    const countEl = document.getElementById('feeds-count');
-    if (countEl) countEl.textContent = count;
+    _updateFeedsCount();
 }
 
 async function saveFeeds() {
@@ -6217,8 +6388,10 @@ async function saveFeeds() {
     rows.forEach(r => {
         const name = r.querySelector('.feed-name').value.trim();
         const url = r.querySelector('.feed-url').value.trim();
+        const groupEl = r.querySelector('.feed-group');
+        const group = groupEl ? groupEl.value.trim() : '';
         const hint = r.querySelector('.feed-hint').value.trim();
-        if (url) feeds.push({name, url, category_hint: hint});
+        if (url) feeds.push({name, url, source_type: group, category_hint: hint});
     });
 
     const btn = document.getElementById('feeds-save-btn');

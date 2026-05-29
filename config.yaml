@@ -255,94 +255,134 @@ categories:
     keywords: ["argues", "questions whether", "opinion", "analysis", "commentary", "according to"]
 
 # --- RSS Sources ---
+# `source_type` is a free-form group label rendered in Settings → RSS Feeds.
+# Use whatever group names make sense for your beat — the dashboard subheaders
+# follow whatever you type. See NEW_NEWSLETTER.md for patterns.
 sources:
   - name: "Road to VR"
     url: "https://www.roadtovr.com/feed/"
+    source_type: "Trade Press"
     category_hint: "Spatial Computing (Hardware)"
 
   - name: "UploadVR"
     url: "https://www.uploadvr.com/feed/"
+    source_type: "Trade Press"
     category_hint: "Spatial Computing (Hardware)"
 
   - name: "XR Today"
     url: "https://www.xrtoday.com/feed/"
+    source_type: "Trade Press"
     category_hint: "Enterprise XR"
 
   - name: "The Verge - VR"
     url: "https://www.theverge.com/rss/vr/index.xml"
+    source_type: "Mainstream Press"
     category_hint: "Spatial Computing (Hardware)"
 
   - name: "Ars Technica - Gaming/VR"
     url: "https://feeds.arstechnica.com/arstechnica/gaming"
+    source_type: "Mainstream Press"
     category_hint: "Spatial Computing (Software/Platform)"
 
   - name: "TechCrunch - AR/VR"
     url: "https://techcrunch.com/category/ar-vr/feed/"
+    source_type: "Mainstream Press"
     category_hint: "Spatial Computing (Hardware)"
 
   - name: "MIT Tech Review - AI"
     url: "https://www.technologyreview.com/feed/"
+    source_type: "Mainstream Press"
     category_hint: "Seismic AI"
 
   - name: "VentureBeat - AI"
     url: "https://venturebeat.com/category/ai/feed/"
+    source_type: "Mainstream Press"
     category_hint: "AI / ML (Spatial-relevant)"
 
   - name: "The Decoder"
     url: "https://the-decoder.com/feed/"
+    source_type: "Trade Press"
     category_hint: "AI / ML (Spatial-relevant)"
 
   - name: "Hacker News (Spatial/XR)"
     url: "https://hnrss.org/newest?q=spatial+computing+OR+augmented+reality+OR+virtual+reality+OR+mixed+reality"
+    source_type: "Community"
     category_hint: "Spatial Computing (Software/Platform)"
 
   - name: "Engadget"
     url: "https://www.engadget.com/rss.xml"
+    source_type: "Mainstream Press"
     category_hint: "Spatial Computing (General Tech)"
 
   - name: "CNET"
     url: "https://www.cnet.com/rss/news/"
+    source_type: "Mainstream Press"
     category_hint: "Spatial Computing (General Tech)"
 
   - name: "Wired"
     url: "https://www.wired.com/feed/rss"
+    source_type: "Mainstream Press"
     category_hint: "Spatial Computing (General Tech)"
 
   - name: "IEEE Spectrum"
     url: "https://spectrum.ieee.org/feeds/feed.rss"
+    source_type: "Research"
     category_hint: "Research / Standards"
 
   - name: "arXiv cs.HC (HCI)"
     url: "https://rss.arxiv.org/rss/cs.HC"
+    source_type: "Research"
     category_hint: "Research (HCI)"
 
   - name: "arXiv cs.GR (Graphics)"
     url: "https://rss.arxiv.org/rss/cs.GR"
+    source_type: "Research"
+    category_hint: "Research (Graphics/Rendering)"
+
+  - name: "IEEE TVCG"
+    url: "https://ieeexplore.ieee.org/rss/TOC2945.XML"
+    source_type: "Research"
     category_hint: "Research (Graphics/Rendering)"
 
   - name: "Auganix"
     url: "https://www.auganix.org/feed/"
+    source_type: "Trade Press"
     category_hint: "Core XR News"
 
   - name: "Skarred Ghost"
     url: "https://skarredghost.com/feed/"
+    source_type: "Independent Voices"
     category_hint: "Core XR News"
+
+  - name: "Karl Guttag"
+    url: "https://kguttag.com/feed/"
+    source_type: "Independent Voices"
+    category_hint: "Spatial Computing (Hardware)"
 
   - name: "AR Insider"
     url: "https://arinsider.co/feed/"
+    source_type: "Trade Press"
     category_hint: "Core XR News"
 
   - name: "Immersive Wire"
     url: "https://www.immersivewire.com/feed"
+    source_type: "Trade Press"
     category_hint: "Core XR News"
 
   - name: "Meta"
     url: "https://about.fb.com/news/feed/"
+    source_type: "Platform Owners"
     category_hint: "Platform Owners"
 
   - name: "Meta"
     url: "https://www.meta.com/blog/rss/"
+    source_type: "Platform Owners"
     category_hint: "Platform Owners"
+
+  - name: "Apple Newsroom"
+    url: "https://www.apple.com/newsroom/rss-feed.rss"
+    source_type: "Platform Owners"
+    category_hint: "Apple Vision Pro"
 
 # --- Search Queries (for future non-RSS sources) ---
 search_queries:

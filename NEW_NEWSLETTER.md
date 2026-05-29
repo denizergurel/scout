@@ -74,20 +74,40 @@ Replace `sources:` with feeds for your beat:
 sources:
   - name: "MIT Tech Review - AI"
     url: "https://www.technologyreview.com/feed/"
+    source_type: "Mainstream Press"
     category_hint: "Applied AI"
 
   - name: "The Decoder"
     url: "https://the-decoder.com/feed/"
+    source_type: "Trade Press"
     category_hint: "Frontier models"
 
   - name: "arXiv cs.AI"
     url: "https://rss.arxiv.org/rss/cs.AI"
+    source_type: "Research"
     category_hint: "Research"
 
   # …add more
 ```
 
 You can also edit feeds from the dashboard's **Settings** page after installing — the editor writes back to `config.yaml` preserving comments.
+
+### A note on `source_type` (the group label)
+
+`source_type` is a free-form string. Whatever you type becomes a subheader in the Settings → RSS Feeds panel — there's no fixed taxonomy, no enum, nothing in the code that requires specific words. Same way you pick your own RSS feeds, you pick your own group names.
+
+The defaults shipped with Scout (Platform Owners, Trade Press, Mainstream Press, Independent Voices, Research, Community) make sense for a tech/XR newsletter. For a different beat, your groups will look different:
+
+| Beat | Groups that might make sense |
+|---|---|
+| **Music** | Streaming Platforms · Labels · Trade Press · Mainstream · Critics · Academic Journals · Forums |
+| **Medicine** | Regulators (FDA, EMA) · Pharma · Trade Press · Mainstream · Practitioner Voices · Journals · Communities |
+| **Climate policy** | Government Agencies · NGOs · Trade Press · Mainstream · Scientist Voices · Journals · Activism |
+| **Finance** | Exchanges · Banks/Firms · Trade Press · Mainstream · Indie Analysts · Academic · Subreddits |
+
+The pattern is the same — **what kind of source is this?** — even though the labels change. Group by source *type*, not topic. Topic routing happens via `category_hint` (which feeds into the editor's section assignment).
+
+Practical tip: when in doubt, three buckets cover most of what you'll start with — **first-party** (the people/orgs being covered), **press** (anyone writing news about the beat), and **research** (papers, journals). You can split further as your feed list grows.
 
 ## 5. (Optional) Tune the relevance filter
 
