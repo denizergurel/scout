@@ -51,10 +51,23 @@ def _write_status(**fields) -> None:
         json.dump(fields, f, indent=2)
 
 
+# Human-readable labels surfaced in the dashboard pill. The stage keys here
+# match what `_set_progress` and `progress.update` write — keep them in sync.
+_STAGE_LABELS = {
+    "starting": "Getting ready",
+    "collecting": "Reading your feeds",
+    "scouting": "Picking what's worth reading",
+    "editing": "Writing summaries",
+    "done": "Done",
+    "error": "Something went wrong",
+}
+
+
 def _set_progress(stage: str, message: str, started_at: str, **extra) -> None:
     _write_status(
         state="running",
         stage=stage,
+        stage_label=_STAGE_LABELS.get(stage, stage.title()),
         message=message,
         started_at=started_at,
         updated_at=datetime.now(timezone.utc).isoformat(),

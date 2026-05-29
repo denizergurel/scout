@@ -14,6 +14,7 @@ from pathlib import Path
 import yaml
 
 from llm import call_llm_json
+from progress import update as progress_update
 
 BASE_DIR = Path(__file__).parent.parent
 
@@ -39,6 +40,10 @@ def filter_items(items: list[dict], system_prompt: str) -> list[dict]:
     """Send items to the LLM for relevance filtering."""
     batch_size = 20
     filtered = []
+    # Report against items reviewed so the front-end can show "47/300" and a
+    # percent rather than abstract batch numbers, which read better to a
+    # non-engineer.
+    total = len(items)
 
     for i in range(0, len(items), batch_size):
         batch = items[i : i + batch_size]
@@ -78,6 +83,13 @@ Respond with ONLY a JSON array of objects, one per article, in order:
         except (json.JSONDecodeError, KeyError, IndexError, ValueError, RuntimeError) as e:
             print(f"  ⚠ Batch {i // batch_size + 1} error: {e}, keeping all items")
             filtered.extend(batch)
+
+        progress_update(
+            stage="scouting",
+            current=min(i + batch_size, total),
+            total=total,
+            last_done=f"{len(filtered)} kept so far",
+        )
 
     return filtered
 

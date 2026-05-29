@@ -13,7 +13,18 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import feedparser
+import httpx
 import yaml
+
+sys.path.insert(0, str(Path(__file__).parent))
+from progress import update as progress_update  # noqa: E402
+
+# Per-feed network timeout. Long enough for slow but live servers; short
+# enough that a dead host can't wedge the whole collection stage. (We hit
+# this when arpost.co and vrscout.com went offline — without a timeout,
+# feedparser.parse(url) hung the pipeline for >4 minutes on a single feed.)
+_FEED_TIMEOUT_SECONDS = 15.0
+_FEED_USER_AGENT = "Scout/1.0 (+https://github.com/denizergurel/scout)"
 
 
 def load_config(config_path: str = None) -> dict:
@@ -25,13 +36,34 @@ def load_config(config_path: str = None) -> dict:
 
 
 def fetch_feed(source: dict) -> list[dict]:
-    """Fetch and parse a single RSS feed, returning extracted items."""
+    """Fetch and parse a single RSS feed, returning extracted items.
+
+    Fetches bytes with httpx (timeout-bounded) before handing them to
+    feedparser. feedparser.parse(url) does its own network I/O with no
+    timeout, so a dead host hangs the pipeline. By fetching first we
+    keep failure cost bounded to _FEED_TIMEOUT_SECONDS per feed.
+    """
     url = source["url"]
     name = source["name"]
     items = []
 
     try:
-        feed = feedparser.parse(url)
+        try:
+            response = httpx.get(
+                url,
+                timeout=_FEED_TIMEOUT_SECONDS,
+                follow_redirects=True,
+                headers={"User-Agent": _FEED_USER_AGENT},
+            )
+            response.raise_for_status()
+        except httpx.TimeoutException:
+            print(f"  ⚠ {name}: timed out after {_FEED_TIMEOUT_SECONDS:.0f}s")
+            return items
+        except httpx.HTTPError as e:
+            print(f"  ⚠ {name}: {e}")
+            return items
+
+        feed = feedparser.parse(response.content)
         if feed.bozo and not feed.entries:
             print(f"  ⚠ {name}: Feed error — {feed.bozo_exception}")
             return items
@@ -85,12 +117,21 @@ def collect(config: dict) -> list[dict]:
     """Collect articles from all RSS sources."""
     all_items = []
     sources = config.get("sources", [])
+    total = len(sources)
 
-    print(f"Collecting from {len(sources)} sources...\n")
+    print(f"Collecting from {total} sources...\n")
 
-    for source in sources:
+    for idx, source in enumerate(sources, start=1):
         items = fetch_feed(source)
         all_items.extend(items)
+        # Update the dashboard progress pill — per feed, since each feed is
+        # the natural unit of "something just happened."
+        progress_update(
+            stage="collecting",
+            current=idx,
+            total=total,
+            last_done=f"{source.get('name', '?')} ({len(items)} new)",
+        )
 
     return all_items
 

@@ -14,6 +14,7 @@ from pathlib import Path
 import yaml
 
 from llm import call_llm_json
+from progress import update as progress_update
 
 BASE_DIR = Path(__file__).parent.parent
 
@@ -39,6 +40,7 @@ def categorize_items(items: list[dict], system_prompt: str) -> list[dict]:
     """Send items to the LLM for categorization and summarization."""
     batch_size = 10
     categorized = []
+    total = len(items)
 
     for i in range(0, len(items), batch_size):
         batch = items[i : i + batch_size]
@@ -87,6 +89,13 @@ Respond with ONLY a JSON array of objects, one per article, in order:
                 categorized.append(item)
 
         print(f"  Batch {i // batch_size + 1}: {len(batch)} items categorized")
+
+        progress_update(
+            stage="editing",
+            current=min(i + batch_size, total),
+            total=total,
+            last_done=f"{len(categorized)} written so far",
+        )
 
     return categorized
 

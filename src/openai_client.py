@@ -61,6 +61,10 @@ def call_openai(
     last_error: Exception | None = None
     for attempt in range(2):
         try:
+            # Bound the per-request wait. The SDK default is many minutes
+            # plus its own retries — long enough that a hung endpoint can
+            # wedge the whole Scout/Editor stage. 120s comfortably covers
+            # normal long-completion latency while keeping failures bounded.
             response = client.chat.completions.create(
                 model=model_name,
                 messages=[
@@ -68,6 +72,7 @@ def call_openai(
                     {"role": "user", "content": user_message},
                 ],
                 max_tokens=max_tokens,
+                timeout=120,
             )
             return (response.choices[0].message.content or "").strip()
         except Exception as e:

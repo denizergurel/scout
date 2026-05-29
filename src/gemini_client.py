@@ -43,9 +43,14 @@ def call_gemini(
     last_error: Exception | None = None
     for attempt in range(2):
         try:
+            # Bound the per-request wait — the SDK has no default timeout,
+            # so a hung endpoint can stall Scout/Editor stages indefinitely.
+            # 120s covers normal long completions while keeping failures
+            # bounded.
             response = model.generate_content(
                 user_message,
                 generation_config={"max_output_tokens": max_tokens},
+                request_options={"timeout": 120},
             )
             return (response.text or "").strip()
         except Exception as e:

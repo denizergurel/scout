@@ -430,14 +430,38 @@ async def draft_spotlight():
 # ─── Refresh (run the daily pipeline from the UI) ─────────────────────────────
 
 
+# A `running` status without an update in this long is treated as stale.
+# Comfortably greater than the dashboard's 2.5s poll, any worst-case stage
+# transition, and any single LLM/feed call (which themselves are bounded
+# to ~2 minutes). If we're past this with no fresh write, the subprocess
+# almost certainly died (SIGKILL, OOM, Mac sleep), and leaving the status
+# at "running" forever would lock the user out of starting a new refresh.
+_STALE_REFRESH_SECONDS = 10 * 60
+
+
 def _load_refresh_status() -> dict:
     if not REFRESH_STATUS_FILE.exists():
         return {"state": "idle"}
     try:
         with open(REFRESH_STATUS_FILE, "r") as f:
-            return json.load(f)
+            status = json.load(f)
     except (json.JSONDecodeError, OSError):
         return {"state": "idle"}
+
+    if status.get("state") == "running":
+        last = status.get("updated_at") or status.get("started_at")
+        if last:
+            try:
+                ts = datetime.fromisoformat(last.replace("Z", "+00:00"))
+                age = (datetime.now(timezone.utc) - ts).total_seconds()
+                if age > _STALE_REFRESH_SECONDS:
+                    status["state"] = "stale"
+                    status["message"] = (
+                        f"Refresh looks stalled — no update in {int(age // 60)} min."
+                    )
+            except ValueError:
+                pass
+    return status
 
 
 @app.get("/api/refresh/status")
@@ -2597,7 +2621,7 @@ def render_signals(groups: "OrderedDict[str, list[dict]]") -> str:
     </div>
     <div id="add-url-feedback" class="add-url-feedback hidden"></div>
 </div>
-<div id="refresh-banner" class="export-banner hidden"></div>
+<div id="refresh-banner" class="refresh-pill hidden" role="status" aria-live="polite"></div>
 <div id="export-banner" class="export-banner hidden"></div>"""
 
     if not groups:
@@ -3289,6 +3313,24 @@ h1 {
     transform: scale(0.98);
 }
 
+/* Transient success/error states for inline confirmation right at the button.
+   Used by saveFeeds (and any other action where the result banner sits below
+   the fold). Reverts back to the regular primary style after ~1.5s. */
+.btn-primary.is-success {
+    background: var(--color-success, #34c759);
+}
+.btn-primary.is-success:hover {
+    background: var(--color-success, #34c759);
+    transform: none;
+}
+.btn-primary.is-error {
+    background: var(--color-error, #ff3b30);
+}
+.btn-primary.is-error:hover {
+    background: var(--color-error, #ff3b30);
+    transform: none;
+}
+
 /* ─── Export Banner ─── */
 
 .export-banner {
@@ -3302,6 +3344,61 @@ h1 {
 }
 
 .export-banner.hidden { display: none; }
+
+/* ─── Refresh progress pill ─── */
+/* Compact alternative to .export-banner for the in-flight refresh state.
+   Tighter visual footprint than the old full-width green banner, with
+   stage label + count + percent + last-done + elapsed packed onto one
+   line. Switches to a calmer "done" style when the run completes. */
+.refresh-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    padding: 7px 14px;
+    background: var(--color-blue-bg);
+    border: 0.5px solid color-mix(in srgb, var(--color-blue) 35%, transparent);
+    border-radius: 999px;
+    color: var(--color-blue);
+    font-size: 0.8125rem;
+    font-variant-numeric: tabular-nums;
+    transition: background var(--transition), color var(--transition);
+    max-width: 100%;
+}
+.refresh-pill.hidden { display: none; }
+.refresh-pill__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    animation: pulse 1.4s ease-in-out infinite;
+    flex-shrink: 0;
+}
+.refresh-pill__label { font-weight: 500; }
+.refresh-pill__sep    { opacity: 0.35; }
+.refresh-pill__sub {
+    opacity: 0.72;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 40ch;
+}
+.refresh-pill__elapsed { opacity: 0.55; margin-left: 4px; }
+.refresh-pill--done {
+    background: var(--color-green-bg);
+    border-color: color-mix(in srgb, var(--color-success) 35%, transparent);
+    color: var(--color-success-text);
+}
+.refresh-pill--done .refresh-pill__dot {
+    animation: none;
+    opacity: 0.55;
+}
+.refresh-pill--error {
+    background: var(--color-error-bg);
+    border-color: color-mix(in srgb, var(--color-error) 35%, transparent);
+    color: var(--color-error);
+}
+.refresh-pill--error .refresh-pill__dot { animation: none; opacity: 0.65; }
 
 /* ─── Editor Notes Accordion ─── */
 
@@ -5463,16 +5560,14 @@ async function triggerRefresh() {
     const settingsBtn = document.getElementById('refresh-btn');
     [storyBtn, settingsBtn].forEach(b => { if (b) b.disabled = true; });
 
-    const banner = document.getElementById('refresh-banner');
-    if (banner) {
-        banner.textContent = 'Starting refresh…';
-        banner.classList.remove('hidden');
-    }
+    // Initial pill in the just-starting state. Real progress overwrites it
+    // on the first poll, so this is only visible for ~250ms.
+    renderRefreshPill({state: 'running', stage_label: 'Getting ready', started_at: new Date().toISOString()});
 
     const res = await fetch('/api/refresh', {method: 'POST'});
     const data = await res.json();
     if (!res.ok && res.status !== 202) {
-        if (banner) banner.textContent = data.error || 'Could not start refresh.';
+        renderRefreshPill({state: 'error', message: data.error || 'Could not start refresh.'});
         [storyBtn, settingsBtn].forEach(b => { if (b) b.disabled = false; });
         return;
     }
@@ -5489,29 +5584,19 @@ async function pollRefreshOnce() {
     const res = await fetch('/api/refresh/status');
     const s = await res.json();
     updateRefreshUI(s);
-    if (s.state === 'done' || s.state === 'error' || s.state === 'idle') {
+    if (s.state === 'done' || s.state === 'error' || s.state === 'idle' || s.state === 'stale') {
         clearInterval(refreshPollTimer);
         refreshPollTimer = null;
-        // Re-enable buttons
         const storyBtn = document.getElementById('refresh-stories-btn');
         const settingsBtn = document.getElementById('refresh-btn');
         if (storyBtn) { storyBtn.disabled = false; storyBtn.textContent = '✦ Refresh'; }
         if (settingsBtn) { settingsBtn.disabled = false; settingsBtn.textContent = '✦ Refresh now'; }
         if (s.state === 'done') {
             const added = s.added || 0;
-            const banner = document.getElementById('refresh-banner');
-            if (banner) {
-                banner.textContent = s.message || `Refresh complete — ${added} new stories.`;
-                banner.classList.remove('hidden');
-            }
-            // Reload to surface the newly added Stories
+            renderRefreshPill(s);
             if (added > 0) setTimeout(() => window.location.reload(), 1200);
-        } else if (s.state === 'error') {
-            const banner = document.getElementById('refresh-banner');
-            if (banner) {
-                banner.textContent = 'Refresh failed: ' + (s.error || s.message || 'unknown error');
-                banner.classList.remove('hidden');
-            }
+        } else if (s.state === 'error' || s.state === 'stale') {
+            renderRefreshPill(s);
         }
     }
 }
@@ -5523,17 +5608,98 @@ function updateRefreshUI(s) {
         if (storyBtn) { storyBtn.disabled = true; storyBtn.textContent = '✦ Refreshing…'; }
         if (settingsBtn) { settingsBtn.disabled = true; settingsBtn.textContent = 'Refreshing…'; }
     }
-    const banner = document.getElementById('refresh-banner');
-    if (banner && s.state === 'running') {
-        banner.textContent = s.message || 'Refreshing…';
-        banner.classList.remove('hidden');
-    }
+    renderRefreshPill(s);
+    // Keep the legacy Settings → Status progress strip in sync.
     const progress = document.getElementById('pipeline-progress');
     const progressMsg = document.getElementById('pipeline-progress-msg');
-    if (progress) {
-        progress.classList.toggle('visible', s.state === 'running');
+    if (progress) progress.classList.toggle('visible', s.state === 'running');
+    if (progressMsg) {
+        const label = s.stage_label || s.message || '';
+        const cur = (s.current != null && s.total != null) ? ` (${s.current}/${s.total})` : '';
+        progressMsg.textContent = label + cur;
     }
-    if (progressMsg) progressMsg.textContent = s.message || '';
+}
+
+// ─── Refresh pill rendering ─────────────────────────────────────────────────
+// Compact one-line status with stage label, count/percent, last-finished
+// hint, and elapsed time. Built via DOM to avoid innerHTML — feed names
+// flow into `last_done` so we never want to inject HTML.
+
+function _refreshPill_setSegments(pill, segments) {
+    while (pill.firstChild) pill.removeChild(pill.firstChild);
+    segments.forEach((seg, i) => {
+        if (i > 0 && seg.sep !== false) {
+            const sep = document.createElement('span');
+            sep.className = 'refresh-pill__sep';
+            sep.textContent = '·';
+            pill.appendChild(sep);
+        }
+        const span = document.createElement('span');
+        if (seg.cls) span.className = seg.cls;
+        span.textContent = seg.text;
+        pill.appendChild(span);
+    });
+}
+
+function _formatElapsed(startedAt) {
+    if (!startedAt) return '';
+    const start = new Date(startedAt).getTime();
+    if (Number.isNaN(start)) return '';
+    const sec = Math.max(0, Math.floor((Date.now() - start) / 1000));
+    if (sec < 60) return `${sec}s`;
+    const m = Math.floor(sec / 60), s = sec % 60;
+    return s === 0 ? `${m}m` : `${m}m ${s}s`;
+}
+
+function renderRefreshPill(s) {
+    const pill = document.getElementById('refresh-banner');
+    if (!pill) return;
+    pill.classList.remove('refresh-pill--done', 'refresh-pill--error');
+
+    if (!s || s.state === 'idle') {
+        pill.classList.add('hidden');
+        return;
+    }
+
+    // Always start with the heartbeat dot — for done/error states CSS turns
+    // off the pulse animation, so it reads as a static state indicator.
+    const segments = [{cls: 'refresh-pill__dot', text: '', sep: false}];
+
+    if (s.state === 'done') {
+        pill.classList.add('refresh-pill--done');
+        const added = s.added || 0;
+        const noun = added === 1 ? 'story' : 'stories';
+        segments.push({cls: 'refresh-pill__label', text: s.message || `Added ${added} new ${noun}`, sep: false});
+    } else if (s.state === 'error') {
+        pill.classList.add('refresh-pill--error');
+        segments.push({cls: 'refresh-pill__label', text: 'Refresh failed', sep: false});
+        const err = s.error || s.message;
+        if (err) segments.push({cls: 'refresh-pill__sub', text: err});
+    } else if (s.state === 'stale') {
+        // A `running` status with no recent updates — the subprocess almost
+        // certainly died silently. Surface it so the editor knows to retry,
+        // and the existing trigger_refresh check will let them through.
+        pill.classList.add('refresh-pill--error');
+        segments.push({cls: 'refresh-pill__label', text: 'Refresh stalled', sep: false});
+        segments.push({cls: 'refresh-pill__sub', text: s.message || 'Try ✦ Refresh again.'});
+    } else {
+        // running
+        const label = s.stage_label || 'Refreshing';
+        segments.push({cls: 'refresh-pill__label', text: label, sep: false});
+        if (s.total != null && s.total > 0 && s.current != null) {
+            const pct = Math.round((s.current / s.total) * 100);
+            segments.push({cls: 'refresh-pill__count', text: `${s.current}/${s.total}`});
+            segments.push({cls: 'refresh-pill__count', text: `${pct}%`});
+        }
+        if (s.last_done) {
+            segments.push({cls: 'refresh-pill__sub', text: s.last_done});
+        }
+        const el = _formatElapsed(s.started_at);
+        if (el) segments.push({cls: 'refresh-pill__elapsed', text: el});
+    }
+
+    _refreshPill_setSegments(pill, segments);
+    pill.classList.remove('hidden');
 }
 
 // If we land on a page while a refresh is in flight, start polling so the UI stays in sync.
@@ -6057,7 +6223,7 @@ async function saveFeeds() {
 
     const btn = document.getElementById('feeds-save-btn');
     const banner = document.getElementById('feeds-banner');
-    if (btn) { btn.disabled = true; btn.textContent = 'Saving…'; }
+    if (btn) { btn.disabled = true; btn.textContent = 'Saving…'; btn.classList.remove('is-success', 'is-error'); }
 
     const res = await fetch('/api/feeds', {
         method: 'POST',
@@ -6072,7 +6238,28 @@ async function saveFeeds() {
         banner.classList.remove('hidden');
         setTimeout(() => banner.classList.add('hidden'), 3500);
     }
-    if (btn) { btn.disabled = false; btn.textContent = 'Save changes'; }
+
+    // The banner sits below the feed list — off-screen when the user is
+    // looking at the button up in the header. Show inline confirmation on
+    // the button itself so the feedback lands where the eye already is.
+    if (btn) {
+        btn.disabled = false;
+        if (data.ok) {
+            btn.textContent = '✓ Saved';
+            btn.classList.add('is-success');
+            setTimeout(() => {
+                btn.textContent = 'Save changes';
+                btn.classList.remove('is-success');
+            }, 1600);
+        } else {
+            btn.textContent = 'Save failed';
+            btn.classList.add('is-error');
+            setTimeout(() => {
+                btn.textContent = 'Save changes';
+                btn.classList.remove('is-error');
+            }, 2400);
+        }
+    }
 
     if (data.ok) {
         const countEl = document.getElementById('feeds-count');

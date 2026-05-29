@@ -264,21 +264,9 @@ sources:
     url: "https://www.uploadvr.com/feed/"
     category_hint: "Spatial Computing (Hardware)"
 
-  - name: "VRScout"
-    url: "https://vrscout.com/feed/"
-    category_hint: "Spatial Computing (Software/Platform)"
-
   - name: "XR Today"
     url: "https://www.xrtoday.com/feed/"
     category_hint: "Enterprise XR"
-
-  - name: "AR Post"
-    url: "https://arpost.co/feed/"
-    category_hint: "Spatial Computing (Software/Platform)"
-
-  - name: "Next Reality"
-    url: "https://next.reality.news/rss/all"
-    category_hint: "Spatial Computing (Software/Platform)"
 
   - name: "The Verge - VR"
     url: "https://www.theverge.com/rss/vr/index.xml"
@@ -331,6 +319,30 @@ sources:
   - name: "arXiv cs.GR (Graphics)"
     url: "https://rss.arxiv.org/rss/cs.GR"
     category_hint: "Research (Graphics/Rendering)"
+
+  - name: "Auganix"
+    url: "https://www.auganix.org/feed/"
+    category_hint: "Core XR News"
+
+  - name: "Skarred Ghost"
+    url: "https://skarredghost.com/feed/"
+    category_hint: "Core XR News"
+
+  - name: "AR Insider"
+    url: "https://arinsider.co/feed/"
+    category_hint: "Core XR News"
+
+  - name: "Immersive Wire"
+    url: "https://www.immersivewire.com/feed"
+    category_hint: "Core XR News"
+
+  - name: "Meta"
+    url: "https://about.fb.com/news/feed/"
+    category_hint: "Platform Owners"
+
+  - name: "Meta"
+    url: "https://www.meta.com/blog/rss/"
+    category_hint: "Platform Owners"
 
 # --- Search Queries (for future non-RSS sources) ---
 search_queries:
