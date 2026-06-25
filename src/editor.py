@@ -14,6 +14,7 @@ from pathlib import Path
 import yaml
 
 from llm import call_llm_json
+from pipeline_log import log
 from progress import update as progress_update
 
 BASE_DIR = Path(__file__).parent.parent
@@ -37,13 +38,28 @@ def load_filtered_items(config: dict) -> dict:
 
 
 def categorize_items(items: list[dict], system_prompt: str) -> list[dict]:
-    """Send items to the LLM for categorization and summarization."""
+    """Send items to the LLM for categorization and summarization.
+
+    Fail-closed semantics: a batch that errors out is DROPPED, not stamped
+    with placeholder values. The previous behavior copied `category_hint`
+    from the RSS source as the category and the raw RSS description as
+    the summary — which (a) leaked invented sections like "Spatial
+    Computing (Software/Platform)" into the dashboard and (b) produced
+    one-line snippets that were just the feed's blurb, not editorial
+    summaries. Drop the batch and the items get re-collected next run.
+
+    Raises RuntimeError if every batch fails so the daily runner can mark
+    the refresh as errored.
+    """
     batch_size = 10
     categorized = []
     total = len(items)
+    total_batches = (total + batch_size - 1) // batch_size
+    failed_batches = 0
 
     for i in range(0, len(items), batch_size):
         batch = items[i : i + batch_size]
+        batch_num = i // batch_size + 1
 
         articles_text = ""
         for idx, item in enumerate(batch):
@@ -79,22 +95,28 @@ Respond with ONLY a JSON array of objects, one per article, in order:
                     item["flags"] = result.get("flags", [])
                     categorized.append(item)
 
-        except (json.JSONDecodeError, KeyError, IndexError, ValueError, RuntimeError) as e:
-            print(f"  ⚠ Batch {i // batch_size + 1} error: {e}")
-            for item in batch:
-                item["category"] = item.get("category_hint", "HIGHLIGHTS")
-                item["summary"] = item.get("description", "")
-                item["significance"] = "medium"
-                item["flags"] = ["parse_error"]
-                categorized.append(item)
+            log(f"  Editor batch {batch_num}/{total_batches}: {len(batch)} items categorized")
 
-        print(f"  Batch {i // batch_size + 1}: {len(batch)} items categorized")
+        except (json.JSONDecodeError, KeyError, IndexError, ValueError, RuntimeError) as e:
+            failed_batches += 1
+            log(f"  ⚠ Editor batch {batch_num}/{total_batches} failed ({type(e).__name__}: {e}). Dropping batch.")
 
         progress_update(
             stage="editing",
             current=min(i + batch_size, total),
             total=total,
             last_done=f"{len(categorized)} written so far",
+        )
+
+    if total_batches and failed_batches == total_batches:
+        raise RuntimeError(
+            f"Editor failed on every batch ({failed_batches}/{total_batches}). "
+            "LLM provider is likely unreachable or unauthenticated."
+        )
+    if failed_batches:
+        log(
+            f"  ⚠ Editor completed with {failed_batches}/{total_batches} failed batches "
+            f"({total_batches - failed_batches} succeeded)."
         )
 
     return categorized

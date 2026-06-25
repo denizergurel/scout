@@ -16,23 +16,44 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from collector import collect, deduplicate, load_config
-from scout import filter_items, load_prompt as load_scout_prompt
 from editor import categorize_items, load_prompt as load_editor_prompt
+from llm import call_llm, current_provider
+from pipeline_log import log
+from scout import filter_items, load_prompt as load_scout_prompt
 from store import add_pending, known_links, load_store
 
 BASE_DIR = Path(__file__).parent.parent
 OUTPUT_DIR = BASE_DIR / "output" / "daily"
-LOG_FILE = OUTPUT_DIR / "agent.log"
 STATUS_FILE = OUTPUT_DIR / "refresh_status.json"
 
 
-def log(msg: str):
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    line = f"[{timestamp}] {msg}"
-    print(line)
-    LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with open(LOG_FILE, "a") as f:
-        f.write(line + "\n")
+def preflight_llm() -> None:
+    """Tiny probe before the expensive stages so we fail loudly when the
+    configured LLM is unreachable (e.g. Claude CLI not authenticated).
+
+    Without this, the run silently degrades: Scout drops every batch and
+    Editor drops every batch, the pending pool stays empty, and the user
+    has to dig through agent.log to figure out why nothing showed up.
+    """
+    provider = current_provider("scout")
+    try:
+        call_llm(
+            "You return literal text only.",
+            "Reply with only the literal text: OK",
+            max_tokens=16,
+            stage="scout",
+        )
+    except Exception as e:  # noqa: BLE001 — any failure here aborts the run
+        hint = ""
+        if provider == "claude":
+            hint = " Run `claude` in a terminal to (re)authenticate the CLI."
+        elif provider == "openai":
+            hint = " Check OPENAI_API_KEY or the api_base/api_key in config.yaml."
+        elif provider == "gemini":
+            hint = " Check GEMINI_API_KEY."
+        raise RuntimeError(
+            f"LLM provider {provider!r} preflight failed: {e}.{hint}"
+        ) from e
 
 
 def _read_status() -> dict:
@@ -56,6 +77,7 @@ def _write_status(**fields) -> None:
 _STAGE_LABELS = {
     "starting": "Getting ready",
     "collecting": "Reading your feeds",
+    "preflight": "Checking the LLM connection",
     "scouting": "Picking what's worth reading",
     "editing": "Writing summaries",
     "done": "Done",
@@ -131,6 +153,11 @@ def run_daily():
             log("  Nothing new today. Exiting.")
             finish_idle("No new stories — already up to date.", added=0)
             return
+
+        _set_progress("preflight", "Checking the LLM connection…", started_at)
+        log(f"Pre-flight: pinging {current_provider('scout')!r}…")
+        preflight_llm()
+        log("  LLM reachable.")
 
         _set_progress(
             "scouting",

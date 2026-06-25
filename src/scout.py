@@ -14,6 +14,7 @@ from pathlib import Path
 import yaml
 
 from llm import call_llm_json
+from pipeline_log import log
 from progress import update as progress_update
 
 BASE_DIR = Path(__file__).parent.parent
@@ -37,16 +38,29 @@ def load_raw_items(config: dict) -> dict:
 
 
 def filter_items(items: list[dict], system_prompt: str) -> list[dict]:
-    """Send items to the LLM for relevance filtering."""
+    """Send items to the LLM for relevance filtering.
+
+    Fail-closed semantics: a batch that errors out is DROPPED, not kept.
+    The previous behavior (keep-all-on-error) silently turned a transient
+    LLM outage — e.g. an unauthenticated Claude CLI — into a 100% pass rate
+    that flooded the dashboard with raw RSS items. Drop the batch and the
+    items get re-collected on the next run.
+
+    Raises RuntimeError if every batch fails so the daily runner can mark
+    the refresh as errored instead of writing an empty pending pool.
+    """
     batch_size = 20
     filtered = []
     # Report against items reviewed so the front-end can show "47/300" and a
     # percent rather than abstract batch numbers, which read better to a
     # non-engineer.
     total = len(items)
+    total_batches = (total + batch_size - 1) // batch_size
+    failed_batches = 0
 
     for i in range(0, len(items), batch_size):
         batch = items[i : i + batch_size]
+        batch_num = i // batch_size + 1
 
         articles_text = ""
         for idx, item in enumerate(batch):
@@ -78,17 +92,28 @@ Respond with ONLY a JSON array of objects, one per article, in order:
                     filtered.append(item)
 
             kept = sum(1 for r in results if r.get("relevant", False))
-            print(f"  Batch {i // batch_size + 1}: {kept}/{len(batch)} items kept")
+            log(f"  Scout batch {batch_num}/{total_batches}: {kept}/{len(batch)} items kept")
 
         except (json.JSONDecodeError, KeyError, IndexError, ValueError, RuntimeError) as e:
-            print(f"  ⚠ Batch {i // batch_size + 1} error: {e}, keeping all items")
-            filtered.extend(batch)
+            failed_batches += 1
+            log(f"  ⚠ Scout batch {batch_num}/{total_batches} failed ({type(e).__name__}: {e}). Dropping batch.")
 
         progress_update(
             stage="scouting",
             current=min(i + batch_size, total),
             total=total,
             last_done=f"{len(filtered)} kept so far",
+        )
+
+    if total_batches and failed_batches == total_batches:
+        raise RuntimeError(
+            f"Scout failed on every batch ({failed_batches}/{total_batches}). "
+            "LLM provider is likely unreachable or unauthenticated."
+        )
+    if failed_batches:
+        log(
+            f"  ⚠ Scout completed with {failed_batches}/{total_batches} failed batches "
+            f"({total_batches - failed_batches} succeeded)."
         )
 
     return filtered
