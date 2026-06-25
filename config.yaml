@@ -294,6 +294,11 @@ sources:
     source_type: "Trade Press"
     category_hint: "Core XR News"
 
+  - name: "9to5Mac Vision Pro"
+    url: "https://9to5mac.com/guides/apple-vision-pro/feed/"
+    source_type: "Trade Press"
+    category_hint: "App Store Highlights"
+
   - name: "The Verge - VR"
     url: "https://www.theverge.com/rss/vr/index.xml"
     source_type: "Mainstream Press"
@@ -334,6 +339,11 @@ sources:
     source_type: "Mainstream Press"
     category_hint: "Spatial Computing (General Tech)"
 
+  - name: "The Verge"
+    url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
+    source_type: "Mainstream Press"
+    category_hint: "Artificial Intelligence"
+
   - name: "Hacker News (Spatial/XR)"
     url: "https://hnrss.org/newest?q=spatial+computing+OR+augmented+reality+OR+virtual+reality+OR+mixed+reality"
     source_type: "Community"
@@ -369,6 +379,11 @@ sources:
     source_type: "Independent Voices"
     category_hint: "Spatial Computing (Hardware)"
 
+  - name: "MacStories Vision Pro"
+    url: "https://www.macstories.net/tag/vision-pro/feed/"
+    source_type: "Independent Voices"
+    category_hint: "App Store Highlights"
+
   - name: "Meta"
     url: "https://about.fb.com/news/feed/"
     source_type: "Platform Owners"
@@ -383,16 +398,6 @@ sources:
     url: "https://www.apple.com/newsroom/rss-feed.rss"
     source_type: "Platform Owners"
     category_hint: "Apple Vision Pro"
-
-  - name: "9to5Mac Vision Pro"
-    url: "https://9to5mac.com/guides/apple-vision-pro/feed/"
-    source_type: "Trade Press"
-    category_hint: "App Store Highlights"
-
-  - name: "MacStories Vision Pro"
-    url: "https://www.macstories.net/tag/vision-pro/feed/"
-    source_type: "Independent Voices"
-    category_hint: "App Store Highlights"
 
 # --- Search Queries (for future non-RSS sources) ---
 search_queries:
