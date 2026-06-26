@@ -284,11 +284,6 @@ sources:
     source_type: "Trade Press"
     category_hint: "Core XR News"
 
-  - name: "AR Insider"
-    url: "https://arinsider.co/feed/"
-    source_type: "Trade Press"
-    category_hint: "Core XR News"
-
   - name: "Immersive Wire"
     url: "https://www.immersivewire.com/feed"
     source_type: "Trade Press"
@@ -364,6 +359,11 @@ sources:
     source_type: "Research"
     category_hint: "Research (Graphics/Rendering)"
 
+  - name: "arXiv cs.CV (Computer Vision)"
+    url: "https://rss.arxiv.org/rss/cs.CV"
+    source_type: "Research"
+    category_hint: "Research (Computer Vision)"
+
   - name: "IEEE TVCG"
     url: "https://ieeexplore.ieee.org/rss/TOC2945.XML"
     source_type: "Research"
@@ -384,12 +384,12 @@ sources:
     source_type: "Independent Voices"
     category_hint: "App Store Highlights"
 
-  - name: "Meta"
+  - name: "Meta Newsroom"
     url: "https://about.fb.com/news/feed/"
     source_type: "Platform Owners"
     category_hint: "Platform Owners"
 
-  - name: "Meta"
+  - name: "Meta Blog"
     url: "https://www.meta.com/blog/rss/"
     source_type: "Platform Owners"
     category_hint: "Platform Owners"
@@ -398,6 +398,26 @@ sources:
     url: "https://www.apple.com/newsroom/rss-feed.rss"
     source_type: "Platform Owners"
     category_hint: "Apple Vision Pro"
+
+  - name: "Snap Newsroom"
+    url: "https://newsroom.snap.com/feed"
+    source_type: "Platform Owners"
+    category_hint: "Platform Owners"
+
+  - name: "OpenAI News"
+    url: "https://openai.com/news/rss.xml"
+    source_type: "Platform Owners"
+    category_hint: "Seismic AI"
+
+  - name: "Google DeepMind"
+    url: "https://deepmind.google/blog/rss.xml"
+    source_type: "Platform Owners"
+    category_hint: "Seismic AI"
+
+  - name: "Google Blog"
+    url: "https://blog.google/rss/"
+    source_type: "Platform Owners"
+    category_hint: "AI / ML (Spatial-relevant)"
 
 # --- Search Queries (for future non-RSS sources) ---
 search_queries:
