@@ -19,6 +19,8 @@ You receive a list of articles (title, description, source, date) and determine 
 
 {{exclude_criteria_block}}
 
+{{per_source_rules_block}}
+
 {{learning_hides_block}}
 
 ## Output Format

@@ -234,6 +234,10 @@ def render_prompt(name: str) -> str:
             f"Additional DISCARD rules for this newsletter",
             editorial.get("extra_exclude_criteria"),
         ),
+        "per_source_rules_block": _criteria_block(
+            "Source-specific rules",
+            editorial.get("per_source_rules"),
+        ),
         "universal_discard_block": _render_universal_discards(editorial, topics),
         "categories_table": _render_categories_table(cfg),
         "learning_hides_block": learning_hides_block,

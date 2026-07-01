@@ -59,6 +59,15 @@ editorial:
     - Gaming news that isn't specifically about VR/AR/MR
     - Incremental AI news (minor updates, funding rounds, hiring)
 
+  # ─── Source-specific refinements ──────────────────────────────────────
+  # Extra Scout guidance keyed to a specific `Source` value on the item.
+  # Use this to tighten noisy feeds (arXiv, HN, broad tech blogs) without
+  # polluting the newsletter-wide criteria above. Free-form text is
+  # rendered under a "## Source-specific rules" heading in the Scout
+  # prompt; the LLM applies each rule when it sees the matching source.
+  per_source_rules: |
+    - For arXiv items: only keep if the abstract directly addresses SLAM, 3D reconstruction, NeRF or Gaussian splatting, scene understanding, XR interaction, spatial AI, or Apple Vision Pro. Reject generic vision/language/ML papers with no spatial connection.
+
   # ─── Universal DISCARD rules ──────────────────────────────────────────
   # Scout's default discard rules — applied to every newsletter. The `rule`
   # is the literal line that appears in the Scout prompt; flip `enabled`
