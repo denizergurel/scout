@@ -1,0 +1,781 @@
+{
+  "title": "Spatial Report — 2026-06-01",
+  "edition_number": "",
+  "date": "2026-06-01",
+  "spotlight": "",
+  "item_ids": [
+    "86475ac164b90b9a",
+    "e829e36109b45c48",
+    "a0eb3a05482bad0c",
+    "daaa5ffd32ad553a",
+    "782726dc37a099d6",
+    "4be0f7ee65bdaab8",
+    "bb84d47420285fda",
+    "1a351ff2c797d418",
+    "8c7e3a110c131c5c",
+    "33d945b73beb4384",
+    "2ae2eaea4efd5c73",
+    "9ee76512fa42a519",
+    "aba47075953dff32",
+    "b8e2adf51915d8ae",
+    "47ffa06a8f1260bd",
+    "288c7fa369b79ea0",
+    "4ced7484a6e3ff2a",
+    "0a826cf99432346c",
+    "b8ae3d59dd076f6d",
+    "0faab2468cc3fb0c",
+    "703d56c2db138221",
+    "689d78a31531a873",
+    "4221c30f8d8f6b36",
+    "a4b14aaa4aae3291",
+    "8606f923a17d28f1",
+    "cec40416fcd0f373",
+    "507347a8ff091b61",
+    "c3be22c7b005f9ba",
+    "4a972167c9281874",
+    "56f9db036603e48e",
+    "e71422a873a2c6e7",
+    "60e0e1e72c8aaa6c",
+    "abbc245917658a95",
+    "734028e274c78bdb",
+    "f89ebac875504581",
+    "c214d27d7bd49337",
+    "875df5746e62c027",
+    "ebb9d1608c16455d",
+    "1739eb569189d557",
+    "fc5443d374006f71",
+    "9ba1cfdc06d40f5a",
+    "a09840f957e8e238",
+    "66dc6c72c7be555e",
+    "b5befa4c33de93d6"
+  ],
+  "sections": {
+    "HIGHLIGHTS": [
+      {
+        "id": "288c7fa369b79ea0",
+        "title": "Xreal’s New $299 ‘xbx’ Smart Glasses Channel Xbox Vibes",
+        "link": "https://www.wired.com/story/xreal-expands-xbx-its-extra-light-smart-specs/",
+        "source": "Wired",
+        "category": "HIGHLIGHTS",
+        "summary": "Wired reports that Xreal has launched a new $299 pair of display smart glasses called 'xbx,' styled with Xbox-inspired branding, that connect to a phone, laptop, or gaming handheld to project a virtual screen for the wearer. The launch extends Xreal's lineup of lightweight display glasses aimed at gamers and mobile users."
+      },
+      {
+        "id": "abbc245917658a95",
+        "title": "New Study Reveals 33 Percent of U.S. Adults Have Tried VR",
+        "link": "https://arinsider.co/2026/05/27/new-study-reveals-33-percent-of-u-s-adults-have-tried-vr/",
+        "source": "AR Insider",
+        "category": "HIGHLIGHTS",
+        "summary": "AR Insider reports that 33 percent of U.S. adults have now tried VR, according to new survey research from ARtillery Intelligence and Thrive Analytics. The findings point to broadening top-of-funnel exposure for the category even as repeat usage and headset ownership remain the harder metrics for the industry to move."
+      }
+    ],
+    "APP STORE HIGHLIGHTS": [
+      {
+        "id": "703d56c2db138221",
+        "title": "‘Five Nights at Freddy’s: Secret of the Mimic’ Finally Comes to PC VR Headsets",
+        "link": "https://roadtovr.com/five-nights-at-freddys-secrets-mimic-pc-vr-support/",
+        "source": "Road to VR",
+        "category": "APP STORE HIGHLIGHTS",
+        "summary": "According to Road to VR, Steel Wool Studios has released SteamVR support for Five Nights at Freddy's: Secret of the Mimic, bringing the horror title to PC VR headsets after the studio's initial plan to launch with PSVR 2 support last year did not materialize."
+      },
+      {
+        "id": "689d78a31531a873",
+        "title": "Millennial Internet Cartoon ‘Homestar Runner’ is Coming to ‘Walkabout Mini Golf’ in June DLC",
+        "link": "https://roadtovr.com/walkabout-mini-golf-homestar-runner-dlc-june/",
+        "source": "Road to VR",
+        "category": "APP STORE HIGHLIGHTS",
+        "summary": "Road to VR reports that Walkabout Mini Golf developer Mighty Coconut is releasing a 'Homestar Runner Distraction Pack' DLC on June 25, departing from its usual course-based drops by collaborating with series creators The Brothers Chaps to bring the early 2000s flash cartoon to the game."
+      },
+      {
+        "id": "4221c30f8d8f6b36",
+        "title": "Clonkball Is A New Game Mode In Free-To-Play VR Party Game Clonk Available Now",
+        "link": "https://www.uploadvr.com/clonkball-is-a-new-game-mode-in-free-to-play-vr-party-game-clonk-available-now/",
+        "source": "UploadVR",
+        "category": "APP STORE HIGHLIGHTS",
+        "summary": "UploadVR reports that free-to-play VR party game Clonk on Quest has added Clonkball, a new Rocket League-inspired game mode now available to players."
+      },
+      {
+        "id": "1739eb569189d557",
+        "title": "Take Flight and Explore the Unknown Skies of 'Compass,' Launching Today on Meta Quest",
+        "link": "https://www.meta.com/blog/compass-launch-meta-quest/",
+        "source": "Meta",
+        "category": "APP STORE HIGHLIGHTS",
+        "summary": "Meta announced the launch of Compass, a new exploration title available today on Meta Quest, in which players take flight to traverse uncharted skies."
+      }
+    ],
+    "INVESTMENT": [
+      {
+        "id": "47ffa06a8f1260bd",
+        "title": "Former Google and Apple Researchers Launch a Startup to Build AI’s Missing Feedback Loop",
+        "link": "https://www.wired.com/story/ex-google-apple-ai-researchers-want-to-make-ai-that-gets-smarter-as-you-use-it/",
+        "source": "Wired",
+        "category": "INVESTMENT",
+        "summary": "According to Wired, former Google and Apple researchers have launched Trajectory, a startup aiming to build continuous-learning feedback loops into AI products. The company is betting that the rapid iteration cycle behind vibe-coding can extend to a broader range of enterprise AI applications."
+      }
+    ],
+    "HARDWARE": [
+      {
+        "id": "782726dc37a099d6",
+        "title": "Steam Deck’s Massive Price Hike May Not Bode Well for Steam Frame",
+        "link": "https://roadtovr.com/steam-decks-price-hike-steam-frame-speculation/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "Road to VR reports that Valve is raising the price of the Steam Deck by $240 to $300, with the 512 GB OLED model jumping from $549 to a higher tier, raising questions about pricing expectations for the upcoming Steam Frame standalone VR headset."
+      },
+      {
+        "id": "4be0f7ee65bdaab8",
+        "title": "Sony Knocks $100 Off PSVR 2 for ‘Days of Play’ Sale, Bringing Headset to Just $300",
+        "link": "https://roadtovr.com/sony-knocks-100-off-psvr-2-for-days-of-play-sale-bringing-headset-bundle-to-300/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "Sony is cutting the price of PSVR 2 by $100 to $300 as part of its annual Days of Play sale, which runs from May 27th through June 10th, according to Road to VR."
+      },
+      {
+        "id": "bb84d47420285fda",
+        "title": "XREAL Launches AR Glasses Sub-brand That Could Cause Another Trademark Dispute",
+        "link": "https://roadtovr.com/xreal-launches-xbx-glasses-brand-china/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "Road to VR reports that XREAL has launched a new China-only sub-brand called XBX, whose first product, the XBX A01, offers a 50-degree field-of-view, HDR10 support, and real-time SDR-to-HDR conversion, though the XBX name could trigger trademark conflicts if the brand expands westward."
+      },
+      {
+        "id": "33d945b73beb4384",
+        "title": "Steam Deck sells out in North America within 24 hours of price hike",
+        "link": "https://arstechnica.com/gaming/2026/05/despite-price-hike-steam-deck-is-already-sold-out-in-north-america/",
+        "source": "Ars Technica - Gaming/VR",
+        "category": "HARDWARE",
+        "summary": "Ars Technica reports that the Steam Deck sold out across North America within 24 hours of Valve's price hike, while stock remains available in Europe, Australia, and Asia."
+      },
+      {
+        "id": "e71422a873a2c6e7",
+        "title": "Distance and Galvion Collaborate on AR Helmet Systems for Defense Applications",
+        "link": "https://www.auganix.org/ar-news-distance-galvion-partnership/",
+        "source": "Auganix",
+        "category": "HARDWARE",
+        "summary": "Auganix reports that Galvion and Distance Technologies have announced a collaboration to develop AR-enabled headworn systems for defense applications, focused on visual augmentation for dismounted troops. The partnership pairs Galvion's military helmet platforms with Distance's glasses-free 3D display technology for battlefield situational awareness."
+      },
+      {
+        "id": "f89ebac875504581",
+        "title": "Acer Says Hey, We Can Do Smart Glasses Too",
+        "link": "https://www.cnet.com/tech/computing/acer-smart-glasses-augmented-reality-ai-assistant/",
+        "source": "CNET",
+        "category": "HARDWARE",
+        "summary": "According to CNET, Acer is entering the increasingly crowded smart glasses market with two models planned for later this year, marking the PC-maker's first push into AI-assisted eyewear."
+      },
+      {
+        "id": "ebb9d1608c16455d",
+        "title": "Hands-on: Xvisio’s HoloLens substitutes may be what companies are looking for",
+        "link": "https://skarredghost.com/2026/05/21/xvisio-hololens-substitute-hands-on/",
+        "source": "Skarred Ghost",
+        "category": "HARDWARE",
+        "summary": "Skarred Ghost reports on a hands-on with Chinese company Xvisio Technology's HoloLens alternative, describing it as a shipping enterprise mixed-reality option for businesses seeking a replacement now that Microsoft has wound down HoloLens."
+      }
+    ],
+    "AI AND SIMULATED WORLDS": [
+      {
+        "id": "2ae2eaea4efd5c73",
+        "title": "Amazon builds its own AI production platform and greenlights three AI animated series for Prime Video",
+        "link": "https://the-decoder.com/amazon-builds-its-own-ai-production-platform-and-greenlights-three-ai-animated-series-for-prime-video/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to The Decoder, Amazon MGM Studios and AWS have launched a GenAI Creators' Fund providing filmmakers with funding and access to Amazon's in-house AI platform Project Nara, with three AI-animated series already greenlit for Prime Video after five-week pilot sprints, in what Amazon describes as the industry's only end-to-end AI content ecosystem."
+      },
+      {
+        "id": "9ee76512fa42a519",
+        "title": "ElevenLabs Music v2 promises opera-to-metal transitions without losing musical coherence",
+        "link": "https://the-decoder.com/elevenlabs-music-v2-promises-opera-to-metal-transitions-without-losing-musical-coherence/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Decoder reports that ElevenLabs has released Music v2, an upgraded AI music generation model capable of shifting a single track across genres such as opera, heavy metal, and rap while maintaining musical coherence, with a new inpainting feature allowing users to regenerate specific sections without altering the rest."
+      },
+      {
+        "id": "aba47075953dff32",
+        "title": "Coming Soon to a Roblox Game Near You: Strange AI-Generated Machines and Creatures",
+        "link": "https://www.cnet.com/tech/services-and-software/roblox-cubepart-ai-model-generative-worlds-weird-creations/",
+        "source": "CNET",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to CNET, Roblox is releasing a new AI model called Cube that will allow developers to generate AI-created machines, tools, and creatures inside their games. The move extends Roblox's push to integrate generative AI into user-created spatial worlds at scale."
+      },
+      {
+        "id": "b8e2adf51915d8ae",
+        "title": "Illinois Lawmakers Just Passed America’s Strongest AI Safety Bill",
+        "link": "https://www.wired.com/story/illinois-pass-major-ai-safety-law-pritzker/",
+        "source": "Wired",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Wired reports that Illinois lawmakers have passed what is being called the strongest AI safety bill in the United States, requiring companies including OpenAI, Anthropic, and Google to have third parties verify their compliance with safety standards. Governor JB Pritzker has indicated he will sign the legislation into law."
+      },
+      {
+        "id": "4ced7484a6e3ff2a",
+        "title": "Why the Vatican Invited Anthropic to the Pope’s AI Encyclical Presentation",
+        "link": "https://www.wired.com/story/anthropic-christopher-olah-pope-ai-encyclical/",
+        "source": "Wired",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Wired reports that the Vatican invited Anthropic researcher Christopher Olah to the presentation of Pope Leo's first encyclical on AI, marking an unusual alliance between the Catholic Church and a leading AI lab. The encyclical signals the Church's intent to shape global discourse around AI ethics and governance."
+      },
+      {
+        "id": "a4b14aaa4aae3291",
+        "title": "Anthropic ships Claude Opus 4.8 as a \"modest but tangible improvement\" that tops GPT-5.5 in most benchmarks",
+        "link": "https://the-decoder.com/anthropic-ships-claude-opus-4-8-as-a-modest-but-tangible-improvement-that-tops-gpt-5-5-in-most-benchmarks/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Anthropic has released Claude Opus 4.8, which The Decoder describes as a modest but tangible improvement that outperforms GPT-5.5 and Gemini 3.1 Pro on most benchmarks and catches its own coding errors four times more often than its predecessor. Alongside the launch, Anthropic introduced dynamic workflows that can spin up hundreds of parallel sub-agents for tasks like codebase-wide migrations."
+      },
+      {
+        "id": "8606f923a17d28f1",
+        "title": "Anthropic Says a Mythos-Class AI Model Will Be Available Soon",
+        "link": "https://www.cnet.com/tech/services-and-software/anthropic-claude-opus-4-8-release-mythos-class-ai-model-soon/",
+        "source": "CNET",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to CNET, Anthropic has positioned its newly released Claude Opus 4.8 as a modest but tangible improvement, while signaling that a more powerful Mythos-class model could be available to users within weeks."
+      },
+      {
+        "id": "cec40416fcd0f373",
+        "title": "AI-Generated Film About Iranian Protest Violence Heads to Tribeca Film Festival",
+        "link": "https://www.cnet.com/culture/entertainment/ai-generated-film-dreams-of-violets-iran-tribeca-film-festival/",
+        "source": "CNET",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to CNET, Dreams of Violets, a 75-minute docudrama about Iranian protest violence from first-time filmmakers Ash and Prooya Koosha, was produced entirely with AI tools and will premiere at the Tribeca Film Festival. The selection signals growing acceptance of fully AI-generated long-form work at major festivals."
+      },
+      {
+        "id": "4a972167c9281874",
+        "title": "Niantic Spatial and Spexi Partner to Turn Drone Imagery Into 3D Intelligence for Physical AI",
+        "link": "https://www.auganix.org/xr-news-niantic-spexi-drone-capture-partnership/",
+        "source": "Auganix",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Niantic Spatial and Spexi Geospatial announced a partnership combining Spexi's drone-based aerial capture with Niantic's 3D reconstruction technology to produce geospatial models for physical AI applications, according to Auganix. The companies say the joint offering will give customers access to drone-captured imagery converted into structured 3D intelligence for use in robotics, simulation, and spatial computing workflows."
+      }
+    ],
+    "RESEARCH": [
+      {
+        "id": "86475ac164b90b9a",
+        "title": "Quantifying Full-Body Immersion",
+        "link": "https://arxiv.org/abs/2605.22521",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "A paper published on arXiv introduces a framework for quantifying full-body immersion in virtual experiences, proposing three tiers — audio-visual immersion, physical immersion, and kinetic immersion — as a way to evaluate how whole-body interactions reshape user perception in immersive environments."
+      },
+      {
+        "id": "e829e36109b45c48",
+        "title": "AnyMo: Geometry-Aware Setup-Agnostic Modeling of Human Motion in the Wild",
+        "link": "https://arxiv.org/abs/2605.22715",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "Researchers on arXiv present AnyMo, a geometry-aware modeling approach designed to learn human motion representations from wearable inertial sensors that transfer across different body locations, mounting positions, and device hardware, addressing a key limitation that has hindered cross-device motion sensing in the wild."
+      },
+      {
+        "id": "a0eb3a05482bad0c",
+        "title": "ViPS: Video-informed Pose Spaces for Auto-Rigged Meshes",
+        "link": "https://arxiv.org/abs/2604.17623",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "Researchers on arXiv propose ViPS, a method for generating video-informed pose spaces for auto-rigged 3D meshes, aiming to constrain joint configurations to plausible, anatomically valid manifolds and reduce common artifacts such as hyperextension and self-intersection during pose sampling or manipulation."
+      },
+      {
+        "id": "daaa5ffd32ad553a",
+        "title": "MambaGaze: Bidirectional Mamba with Explicit Missing Data Modeling for Cognitive Load Assessment from Eye-Gaze Tracking Data",
+        "link": "https://arxiv.org/abs/2605.22775",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "A new arXiv paper introduces MambaGaze, a bidirectional Mamba-based framework that estimates real-time cognitive load from eye-tracking signals while explicitly modeling missing data from blinks and tracking failures. The authors position the approach for adaptive human-centered AI in safety-critical settings such as driver vigilance monitoring and automated flight deck assistance."
+      },
+      {
+        "id": "0a826cf99432346c",
+        "title": "Designing Augmented Reality for Preschoolers on the Move",
+        "link": "https://arxiv.org/abs/2605.27386",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "A new arXiv paper examines how augmented reality systems can be designed for preschoolers aged 3 to 8, a user group whose unpredictable and physically dynamic behavior strains assumptions baked into most commercial AR experiences. The authors frame young children as a stress test for mobile spatial computing and explore design implications for early-childhood AR."
+      },
+      {
+        "id": "b8ae3d59dd076f6d",
+        "title": "EyeSpy: Inferring Eye Gaze via Side-Channel Attacks Against Foveated Rendering",
+        "link": "https://arxiv.org/abs/2605.27939",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "An arXiv paper titled EyeSpy demonstrates a side-channel attack that can infer a VR user's eye gaze by observing the effects of dynamic foveated rendering, even when direct access to gaze data is blocked. The researchers argue that current permission-based protections are insufficient on DFR-enabled headsets because gaze data is intrinsically used to drive the rendering pipeline."
+      },
+      {
+        "id": "0faab2468cc3fb0c",
+        "title": "PocketGS: On-Device Training of 3D Gaussian Splatting for High Perceptual Modeling",
+        "link": "https://arxiv.org/abs/2601.17354",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "An arXiv paper presents PocketGS, a method for training 3D Gaussian Splatting models directly on mobile devices under minute-scale time budgets and limited memory, which the authors argue makes high-fidelity on-device scene reconstruction practical where standard 3DGS training requires workstation-level compute. The work targets the gap between real-time 3DGS rendering on phones and the heavier training step that has so far kept the pipeline tethered to desktops."
+      },
+      {
+        "id": "507347a8ff091b61",
+        "title": "Improving outdoor navigation for people with blindness using an AI-driven smartphone application and personalized audio guidance",
+        "link": "https://arxiv.org/abs/2605.29120",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "A new paper by Harvard researchers describes an AI-driven smartphone application with personalized audio guidance designed to improve outdoor navigation for people with blindness or moderate-to-severe visual impairment, based on a survey of 112 users identifying turn-by-turn directions, path guidance, and obstacle detection as essential features. The work highlights how on-device AI is extending accessibility tools beyond traditional aids like white canes and guide dogs."
+      }
+    ],
+    "OPINION": [
+      {
+        "id": "60e0e1e72c8aaa6c",
+        "title": "Is This Xreal’s iPhone SE Moment?",
+        "link": "https://www.cnet.com/tech/mobile/xreals-new-budget-display-glasses-can-change-their-look-on-the-fly/",
+        "source": "AR Insider",
+        "category": "OPINION",
+        "summary": "Writing in AR Insider and citing CNET's hands-on coverage, Mike Boland argues that Xreal's new $299 aO1 display glasses — shipping in July with electrochromic lenses that change tint on the fly — could be the company's 'iPhone SE moment,' attacking the low end of the display glasses market where Meta's Ray-Ban line has gained traction. The piece frames price sensitivity as the key variable for mainstream adoption."
+      },
+      {
+        "id": "734028e274c78bdb",
+        "title": "How Much Do Brands Spend on Immersive Marketing?",
+        "link": "https://arinsider.co/2026/05/25/how-much-do-brands-spend-on-immersive-marketing/",
+        "source": "AR Insider",
+        "category": "OPINION",
+        "summary": "AR Insider's latest 'Behind the Numbers' column estimates that brands currently spend roughly $6.6 billion annually on immersive marketing, with forecasts projecting growth to $10.3 billion by 2030. The analysis breaks down the categories and channels driving the spend and where AR Insider expects budgets to shift over the next five years."
+      },
+      {
+        "id": "fc5443d374006f71",
+        "title": "Boz to the Future Episode 26: The Future According to Ed Catmull",
+        "link": "https://www.meta.com/blog/boz-to-the-future-episode-26-ed-catmull-3d-graphics-art-technology/",
+        "source": "Meta",
+        "category": "OPINION",
+        "summary": "On Meta's Boz to the Future podcast, CTO Andrew Bosworth interviews Pixar co-founder Ed Catmull about the trajectory of 3D graphics, art, and technology, drawing on Catmull's perspective from decades of leading computer graphics innovation."
+      },
+      {
+        "id": "b5befa4c33de93d6",
+        "title": "As Virtual Worlds Close, Communities in ‘Rec Room’, Meta’s ‘Horizon Worlds’, and Others Create Ways to Survive",
+        "link": "https://roadtovr.com/as-virtual-worlds-close-communities-in-rec-room-metas-horizon-worlds-and-others-create-ways-to-survive/",
+        "source": "Road to VR",
+        "category": "OPINION",
+        "summary": "In a guest article for Road to VR, Virtual Worlds Museum founder Julian Reyes examines how communities inside platforms like Rec Room and Meta's Horizon Worlds are organizing to preserve their virtual spaces as social VR services shut down or scale back, framing the effort as a question of cultural preservation rather than nostalgia."
+      }
+    ],
+    "GAMING MARKETPLACE WATCH": [
+      {
+        "id": "1a351ff2c797d418",
+        "title": "Upcoming VR Games 2026: New Releases On Meta Quest, PC VR, PlayStation VR2 &amp; More",
+        "link": "https://www.uploadvr.com/upcoming-vr-games/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "UploadVR has published its rolling roundup of upcoming VR games for 2026 across Meta Quest, PC VR, PSVR 2, Pico, Apple Vision Pro, and Galaxy XR, serving as a reference for major releases on the calendar."
+      },
+      {
+        "id": "8c7e3a110c131c5c",
+        "title": "Multiplayer VR Hero Shooter Larcenauts Shutting Down In October",
+        "link": "https://www.uploadvr.com/vr-hero-shooter-larcenauts-shutting-down-in-october/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "According to UploadVR, Impulse Gear's 6v6 VR hero shooter Larcenauts will officially shut down in October, marking another live-service VR title winding down operations."
+      }
+    ],
+    "NEW EXPERIENCES": [
+      {
+        "id": "c3be22c7b005f9ba",
+        "title": "Loft Dynamics Brings FTD Level 7 VR Helicopter Training Simulator to Japan",
+        "link": "https://www.auganix.org/vr-news-loft-dynamics-japan-ftd-level-7/",
+        "source": "Auganix",
+        "category": "NEW EXPERIENCES",
+        "summary": "Auganix reports that Loft Dynamics' Airbus H125 TXi VR helicopter simulator at Nakanihon Air has earned FTD Level 7 qualification from Japan's Civil Aviation Bureau, marking the regulator's recognition of a VR-based training device at that level. The certification allows Japanese operators to use the headset-based simulator for a broader range of pilot training and recurrency requirements."
+      },
+      {
+        "id": "56f9db036603e48e",
+        "title": "Proto and Holomedia Power New AI Concierge Hologram at LaGuardia Airport",
+        "link": "https://www.auganix.org/xr-news-proto-holomedia-laguardia-airport-hologram/",
+        "source": "Auganix",
+        "category": "NEW EXPERIENCES",
+        "summary": "Auganix reports that LaGuardia Terminal B has deployed Bridget, an interactive AI concierge hologram running on Proto's volumetric display hardware with wayfinding software from Holomedia. The installation gives travelers a life-size holographic assistant for airport navigation and information, marking a high-traffic public deployment of Proto's display platform."
+      },
+      {
+        "id": "c214d27d7bd49337",
+        "title": "An exclusive preview of 5 companies exhibiting at AWE USA 2026",
+        "link": "https://skarredghost.com/2026/05/28/preview-awe-usa-2026/",
+        "source": "Skarred Ghost",
+        "category": "NEW EXPERIENCES",
+        "summary": "Skarred Ghost previews five companies set to exhibit at AWE USA 2026 in Long Beach from June 15–18, offering an early look at the hardware and software demos attendees can expect at the XR industry's largest annual gathering."
+      },
+      {
+        "id": "a09840f957e8e238",
+        "title": "Marine ACV crews to face ‘thinking adversaries’ in new VR simulator",
+        "link": "https://www.marinecorpstimes.com/news/your-marine-corps/2026/05/29/marine-acv-crews-to-face-thinking-adversaries-in-new-vr-simulator/",
+        "source": "Marinecorpstimes",
+        "category": "NEW EXPERIENCES",
+        "summary": "Marine Corps Times reports that the U.S. Marine Corps has awarded XR Training a $5.1 million contract to build a VR crew gunnery training prototype for its Amphibious Combat Vehicle, simulating combat against an unpredictable adversary across both the standard personnel variant and the ACV-30 fighting variant. The award follows XRT's 2024 deployment of 81 driver training simulators to the Corps and is part of a broader overhaul of amphibious vehicle training driven in part by a 2020 mishap off the California coast that killed nine troops and was linked to training shortfalls."
+      }
+    ],
+    "HANDS-ON REVIEW": [
+      {
+        "id": "875df5746e62c027",
+        "title": "Huawei AI Glasses hands-on: exclusive impressions from my hands-on in China",
+        "link": "https://skarredghost.com/2026/05/26/huawei-ai-glasses-hands-on-impressions/",
+        "source": "Skarred Ghost",
+        "category": "HANDS-ON REVIEW",
+        "summary": "Writing on Skarred Ghost, Antony Vitillo shares hands-on impressions of Huawei's first AI glasses after trying them at a Huawei store in Shenzhen, reporting largely positive takeaways while flagging areas where the device falls short."
+      },
+      {
+        "id": "9ba1cfdc06d40f5a",
+        "title": "The Meta Quest's new UI is a beautiful disaster. Here's how to navigate through its most frustrating flaws",
+        "link": "https://www.androidcentral.com/gaming/virtual-reality/meta-quest-new-navigator-ui-how-to",
+        "source": "Androidcentral",
+        "category": "HANDS-ON REVIEW",
+        "summary": "Android Central reports that Meta's new Navigator UI for Quest headsets, which began rolling out broadly in recent weeks, speeds up launching VR experiences but has frustrated users by removing the ability to pin apps, complicating window management, and forcing a double-click of the Meta button to hide floating windows. The outlet notes there is no option to revert to the prior interface, and offers workarounds for the most common navigation pain points."
+      },
+      {
+        "id": "66dc6c72c7be555e",
+        "title": "Compass Review: Fly The Friendly Skies",
+        "link": "https://www.uploadvr.com/compass-review-fly-the-friendly-skies/",
+        "source": "UploadVR",
+        "category": "HANDS-ON REVIEW",
+        "summary": "UploadVR reviews Compass, a flight experience that pairs a cockpit, open skies, and atmospheric environments, calling the experience simple and visually striking with enough variety to satisfy casual pilots."
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "86475ac164b90b9a",
+      "title": "Quantifying Full-Body Immersion",
+      "link": "https://arxiv.org/abs/2605.22521",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "A paper published on arXiv introduces a framework for quantifying full-body immersion in virtual experiences, proposing three tiers — audio-visual immersion, physical immersion, and kinetic immersion — as a way to evaluate how whole-body interactions reshape user perception in immersive environments."
+    },
+    {
+      "id": "e829e36109b45c48",
+      "title": "AnyMo: Geometry-Aware Setup-Agnostic Modeling of Human Motion in the Wild",
+      "link": "https://arxiv.org/abs/2605.22715",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "Researchers on arXiv present AnyMo, a geometry-aware modeling approach designed to learn human motion representations from wearable inertial sensors that transfer across different body locations, mounting positions, and device hardware, addressing a key limitation that has hindered cross-device motion sensing in the wild."
+    },
+    {
+      "id": "a0eb3a05482bad0c",
+      "title": "ViPS: Video-informed Pose Spaces for Auto-Rigged Meshes",
+      "link": "https://arxiv.org/abs/2604.17623",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "Researchers on arXiv propose ViPS, a method for generating video-informed pose spaces for auto-rigged 3D meshes, aiming to constrain joint configurations to plausible, anatomically valid manifolds and reduce common artifacts such as hyperextension and self-intersection during pose sampling or manipulation."
+    },
+    {
+      "id": "daaa5ffd32ad553a",
+      "title": "MambaGaze: Bidirectional Mamba with Explicit Missing Data Modeling for Cognitive Load Assessment from Eye-Gaze Tracking Data",
+      "link": "https://arxiv.org/abs/2605.22775",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "A new arXiv paper introduces MambaGaze, a bidirectional Mamba-based framework that estimates real-time cognitive load from eye-tracking signals while explicitly modeling missing data from blinks and tracking failures. The authors position the approach for adaptive human-centered AI in safety-critical settings such as driver vigilance monitoring and automated flight deck assistance."
+    },
+    {
+      "id": "782726dc37a099d6",
+      "title": "Steam Deck’s Massive Price Hike May Not Bode Well for Steam Frame",
+      "link": "https://roadtovr.com/steam-decks-price-hike-steam-frame-speculation/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "Road to VR reports that Valve is raising the price of the Steam Deck by $240 to $300, with the 512 GB OLED model jumping from $549 to a higher tier, raising questions about pricing expectations for the upcoming Steam Frame standalone VR headset."
+    },
+    {
+      "id": "4be0f7ee65bdaab8",
+      "title": "Sony Knocks $100 Off PSVR 2 for ‘Days of Play’ Sale, Bringing Headset to Just $300",
+      "link": "https://roadtovr.com/sony-knocks-100-off-psvr-2-for-days-of-play-sale-bringing-headset-bundle-to-300/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "Sony is cutting the price of PSVR 2 by $100 to $300 as part of its annual Days of Play sale, which runs from May 27th through June 10th, according to Road to VR."
+    },
+    {
+      "id": "bb84d47420285fda",
+      "title": "XREAL Launches AR Glasses Sub-brand That Could Cause Another Trademark Dispute",
+      "link": "https://roadtovr.com/xreal-launches-xbx-glasses-brand-china/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "Road to VR reports that XREAL has launched a new China-only sub-brand called XBX, whose first product, the XBX A01, offers a 50-degree field-of-view, HDR10 support, and real-time SDR-to-HDR conversion, though the XBX name could trigger trademark conflicts if the brand expands westward."
+    },
+    {
+      "id": "1a351ff2c797d418",
+      "title": "Upcoming VR Games 2026: New Releases On Meta Quest, PC VR, PlayStation VR2 &amp; More",
+      "link": "https://www.uploadvr.com/upcoming-vr-games/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "UploadVR has published its rolling roundup of upcoming VR games for 2026 across Meta Quest, PC VR, PSVR 2, Pico, Apple Vision Pro, and Galaxy XR, serving as a reference for major releases on the calendar."
+    },
+    {
+      "id": "8c7e3a110c131c5c",
+      "title": "Multiplayer VR Hero Shooter Larcenauts Shutting Down In October",
+      "link": "https://www.uploadvr.com/vr-hero-shooter-larcenauts-shutting-down-in-october/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "According to UploadVR, Impulse Gear's 6v6 VR hero shooter Larcenauts will officially shut down in October, marking another live-service VR title winding down operations."
+    },
+    {
+      "id": "33d945b73beb4384",
+      "title": "Steam Deck sells out in North America within 24 hours of price hike",
+      "link": "https://arstechnica.com/gaming/2026/05/despite-price-hike-steam-deck-is-already-sold-out-in-north-america/",
+      "source": "Ars Technica - Gaming/VR",
+      "category": "HARDWARE",
+      "summary": "Ars Technica reports that the Steam Deck sold out across North America within 24 hours of Valve's price hike, while stock remains available in Europe, Australia, and Asia."
+    },
+    {
+      "id": "2ae2eaea4efd5c73",
+      "title": "Amazon builds its own AI production platform and greenlights three AI animated series for Prime Video",
+      "link": "https://the-decoder.com/amazon-builds-its-own-ai-production-platform-and-greenlights-three-ai-animated-series-for-prime-video/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to The Decoder, Amazon MGM Studios and AWS have launched a GenAI Creators' Fund providing filmmakers with funding and access to Amazon's in-house AI platform Project Nara, with three AI-animated series already greenlit for Prime Video after five-week pilot sprints, in what Amazon describes as the industry's only end-to-end AI content ecosystem."
+    },
+    {
+      "id": "9ee76512fa42a519",
+      "title": "ElevenLabs Music v2 promises opera-to-metal transitions without losing musical coherence",
+      "link": "https://the-decoder.com/elevenlabs-music-v2-promises-opera-to-metal-transitions-without-losing-musical-coherence/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Decoder reports that ElevenLabs has released Music v2, an upgraded AI music generation model capable of shifting a single track across genres such as opera, heavy metal, and rap while maintaining musical coherence, with a new inpainting feature allowing users to regenerate specific sections without altering the rest."
+    },
+    {
+      "id": "aba47075953dff32",
+      "title": "Coming Soon to a Roblox Game Near You: Strange AI-Generated Machines and Creatures",
+      "link": "https://www.cnet.com/tech/services-and-software/roblox-cubepart-ai-model-generative-worlds-weird-creations/",
+      "source": "CNET",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to CNET, Roblox is releasing a new AI model called Cube that will allow developers to generate AI-created machines, tools, and creatures inside their games. The move extends Roblox's push to integrate generative AI into user-created spatial worlds at scale."
+    },
+    {
+      "id": "b8e2adf51915d8ae",
+      "title": "Illinois Lawmakers Just Passed America’s Strongest AI Safety Bill",
+      "link": "https://www.wired.com/story/illinois-pass-major-ai-safety-law-pritzker/",
+      "source": "Wired",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Wired reports that Illinois lawmakers have passed what is being called the strongest AI safety bill in the United States, requiring companies including OpenAI, Anthropic, and Google to have third parties verify their compliance with safety standards. Governor JB Pritzker has indicated he will sign the legislation into law."
+    },
+    {
+      "id": "47ffa06a8f1260bd",
+      "title": "Former Google and Apple Researchers Launch a Startup to Build AI’s Missing Feedback Loop",
+      "link": "https://www.wired.com/story/ex-google-apple-ai-researchers-want-to-make-ai-that-gets-smarter-as-you-use-it/",
+      "source": "Wired",
+      "category": "INVESTMENT",
+      "summary": "According to Wired, former Google and Apple researchers have launched Trajectory, a startup aiming to build continuous-learning feedback loops into AI products. The company is betting that the rapid iteration cycle behind vibe-coding can extend to a broader range of enterprise AI applications."
+    },
+    {
+      "id": "288c7fa369b79ea0",
+      "title": "Xreal’s New $299 ‘xbx’ Smart Glasses Channel Xbox Vibes",
+      "link": "https://www.wired.com/story/xreal-expands-xbx-its-extra-light-smart-specs/",
+      "source": "Wired",
+      "category": "HIGHLIGHTS",
+      "summary": "Wired reports that Xreal has launched a new $299 pair of display smart glasses called 'xbx,' styled with Xbox-inspired branding, that connect to a phone, laptop, or gaming handheld to project a virtual screen for the wearer. The launch extends Xreal's lineup of lightweight display glasses aimed at gamers and mobile users."
+    },
+    {
+      "id": "4ced7484a6e3ff2a",
+      "title": "Why the Vatican Invited Anthropic to the Pope’s AI Encyclical Presentation",
+      "link": "https://www.wired.com/story/anthropic-christopher-olah-pope-ai-encyclical/",
+      "source": "Wired",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Wired reports that the Vatican invited Anthropic researcher Christopher Olah to the presentation of Pope Leo's first encyclical on AI, marking an unusual alliance between the Catholic Church and a leading AI lab. The encyclical signals the Church's intent to shape global discourse around AI ethics and governance."
+    },
+    {
+      "id": "0a826cf99432346c",
+      "title": "Designing Augmented Reality for Preschoolers on the Move",
+      "link": "https://arxiv.org/abs/2605.27386",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "A new arXiv paper examines how augmented reality systems can be designed for preschoolers aged 3 to 8, a user group whose unpredictable and physically dynamic behavior strains assumptions baked into most commercial AR experiences. The authors frame young children as a stress test for mobile spatial computing and explore design implications for early-childhood AR."
+    },
+    {
+      "id": "b8ae3d59dd076f6d",
+      "title": "EyeSpy: Inferring Eye Gaze via Side-Channel Attacks Against Foveated Rendering",
+      "link": "https://arxiv.org/abs/2605.27939",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "An arXiv paper titled EyeSpy demonstrates a side-channel attack that can infer a VR user's eye gaze by observing the effects of dynamic foveated rendering, even when direct access to gaze data is blocked. The researchers argue that current permission-based protections are insufficient on DFR-enabled headsets because gaze data is intrinsically used to drive the rendering pipeline."
+    },
+    {
+      "id": "0faab2468cc3fb0c",
+      "title": "PocketGS: On-Device Training of 3D Gaussian Splatting for High Perceptual Modeling",
+      "link": "https://arxiv.org/abs/2601.17354",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "An arXiv paper presents PocketGS, a method for training 3D Gaussian Splatting models directly on mobile devices under minute-scale time budgets and limited memory, which the authors argue makes high-fidelity on-device scene reconstruction practical where standard 3DGS training requires workstation-level compute. The work targets the gap between real-time 3DGS rendering on phones and the heavier training step that has so far kept the pipeline tethered to desktops."
+    },
+    {
+      "id": "703d56c2db138221",
+      "title": "‘Five Nights at Freddy’s: Secret of the Mimic’ Finally Comes to PC VR Headsets",
+      "link": "https://roadtovr.com/five-nights-at-freddys-secrets-mimic-pc-vr-support/",
+      "source": "Road to VR",
+      "category": "APP STORE HIGHLIGHTS",
+      "summary": "According to Road to VR, Steel Wool Studios has released SteamVR support for Five Nights at Freddy's: Secret of the Mimic, bringing the horror title to PC VR headsets after the studio's initial plan to launch with PSVR 2 support last year did not materialize."
+    },
+    {
+      "id": "689d78a31531a873",
+      "title": "Millennial Internet Cartoon ‘Homestar Runner’ is Coming to ‘Walkabout Mini Golf’ in June DLC",
+      "link": "https://roadtovr.com/walkabout-mini-golf-homestar-runner-dlc-june/",
+      "source": "Road to VR",
+      "category": "APP STORE HIGHLIGHTS",
+      "summary": "Road to VR reports that Walkabout Mini Golf developer Mighty Coconut is releasing a 'Homestar Runner Distraction Pack' DLC on June 25, departing from its usual course-based drops by collaborating with series creators The Brothers Chaps to bring the early 2000s flash cartoon to the game."
+    },
+    {
+      "id": "4221c30f8d8f6b36",
+      "title": "Clonkball Is A New Game Mode In Free-To-Play VR Party Game Clonk Available Now",
+      "link": "https://www.uploadvr.com/clonkball-is-a-new-game-mode-in-free-to-play-vr-party-game-clonk-available-now/",
+      "source": "UploadVR",
+      "category": "APP STORE HIGHLIGHTS",
+      "summary": "UploadVR reports that free-to-play VR party game Clonk on Quest has added Clonkball, a new Rocket League-inspired game mode now available to players."
+    },
+    {
+      "id": "a4b14aaa4aae3291",
+      "title": "Anthropic ships Claude Opus 4.8 as a \"modest but tangible improvement\" that tops GPT-5.5 in most benchmarks",
+      "link": "https://the-decoder.com/anthropic-ships-claude-opus-4-8-as-a-modest-but-tangible-improvement-that-tops-gpt-5-5-in-most-benchmarks/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Anthropic has released Claude Opus 4.8, which The Decoder describes as a modest but tangible improvement that outperforms GPT-5.5 and Gemini 3.1 Pro on most benchmarks and catches its own coding errors four times more often than its predecessor. Alongside the launch, Anthropic introduced dynamic workflows that can spin up hundreds of parallel sub-agents for tasks like codebase-wide migrations."
+    },
+    {
+      "id": "8606f923a17d28f1",
+      "title": "Anthropic Says a Mythos-Class AI Model Will Be Available Soon",
+      "link": "https://www.cnet.com/tech/services-and-software/anthropic-claude-opus-4-8-release-mythos-class-ai-model-soon/",
+      "source": "CNET",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to CNET, Anthropic has positioned its newly released Claude Opus 4.8 as a modest but tangible improvement, while signaling that a more powerful Mythos-class model could be available to users within weeks."
+    },
+    {
+      "id": "cec40416fcd0f373",
+      "title": "AI-Generated Film About Iranian Protest Violence Heads to Tribeca Film Festival",
+      "link": "https://www.cnet.com/culture/entertainment/ai-generated-film-dreams-of-violets-iran-tribeca-film-festival/",
+      "source": "CNET",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to CNET, Dreams of Violets, a 75-minute docudrama about Iranian protest violence from first-time filmmakers Ash and Prooya Koosha, was produced entirely with AI tools and will premiere at the Tribeca Film Festival. The selection signals growing acceptance of fully AI-generated long-form work at major festivals."
+    },
+    {
+      "id": "507347a8ff091b61",
+      "title": "Improving outdoor navigation for people with blindness using an AI-driven smartphone application and personalized audio guidance",
+      "link": "https://arxiv.org/abs/2605.29120",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "A new paper by Harvard researchers describes an AI-driven smartphone application with personalized audio guidance designed to improve outdoor navigation for people with blindness or moderate-to-severe visual impairment, based on a survey of 112 users identifying turn-by-turn directions, path guidance, and obstacle detection as essential features. The work highlights how on-device AI is extending accessibility tools beyond traditional aids like white canes and guide dogs."
+    },
+    {
+      "id": "c3be22c7b005f9ba",
+      "title": "Loft Dynamics Brings FTD Level 7 VR Helicopter Training Simulator to Japan",
+      "link": "https://www.auganix.org/vr-news-loft-dynamics-japan-ftd-level-7/",
+      "source": "Auganix",
+      "category": "NEW EXPERIENCES",
+      "summary": "Auganix reports that Loft Dynamics' Airbus H125 TXi VR helicopter simulator at Nakanihon Air has earned FTD Level 7 qualification from Japan's Civil Aviation Bureau, marking the regulator's recognition of a VR-based training device at that level. The certification allows Japanese operators to use the headset-based simulator for a broader range of pilot training and recurrency requirements."
+    },
+    {
+      "id": "4a972167c9281874",
+      "title": "Niantic Spatial and Spexi Partner to Turn Drone Imagery Into 3D Intelligence for Physical AI",
+      "link": "https://www.auganix.org/xr-news-niantic-spexi-drone-capture-partnership/",
+      "source": "Auganix",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Niantic Spatial and Spexi Geospatial announced a partnership combining Spexi's drone-based aerial capture with Niantic's 3D reconstruction technology to produce geospatial models for physical AI applications, according to Auganix. The companies say the joint offering will give customers access to drone-captured imagery converted into structured 3D intelligence for use in robotics, simulation, and spatial computing workflows."
+    },
+    {
+      "id": "56f9db036603e48e",
+      "title": "Proto and Holomedia Power New AI Concierge Hologram at LaGuardia Airport",
+      "link": "https://www.auganix.org/xr-news-proto-holomedia-laguardia-airport-hologram/",
+      "source": "Auganix",
+      "category": "NEW EXPERIENCES",
+      "summary": "Auganix reports that LaGuardia Terminal B has deployed Bridget, an interactive AI concierge hologram running on Proto's volumetric display hardware with wayfinding software from Holomedia. The installation gives travelers a life-size holographic assistant for airport navigation and information, marking a high-traffic public deployment of Proto's display platform."
+    },
+    {
+      "id": "e71422a873a2c6e7",
+      "title": "Distance and Galvion Collaborate on AR Helmet Systems for Defense Applications",
+      "link": "https://www.auganix.org/ar-news-distance-galvion-partnership/",
+      "source": "Auganix",
+      "category": "HARDWARE",
+      "summary": "Auganix reports that Galvion and Distance Technologies have announced a collaboration to develop AR-enabled headworn systems for defense applications, focused on visual augmentation for dismounted troops. The partnership pairs Galvion's military helmet platforms with Distance's glasses-free 3D display technology for battlefield situational awareness."
+    },
+    {
+      "id": "60e0e1e72c8aaa6c",
+      "title": "Is This Xreal’s iPhone SE Moment?",
+      "link": "https://www.cnet.com/tech/mobile/xreals-new-budget-display-glasses-can-change-their-look-on-the-fly/",
+      "source": "AR Insider",
+      "category": "OPINION",
+      "summary": "Writing in AR Insider and citing CNET's hands-on coverage, Mike Boland argues that Xreal's new $299 aO1 display glasses — shipping in July with electrochromic lenses that change tint on the fly — could be the company's 'iPhone SE moment,' attacking the low end of the display glasses market where Meta's Ray-Ban line has gained traction. The piece frames price sensitivity as the key variable for mainstream adoption."
+    },
+    {
+      "id": "abbc245917658a95",
+      "title": "New Study Reveals 33 Percent of U.S. Adults Have Tried VR",
+      "link": "https://arinsider.co/2026/05/27/new-study-reveals-33-percent-of-u-s-adults-have-tried-vr/",
+      "source": "AR Insider",
+      "category": "HIGHLIGHTS",
+      "summary": "AR Insider reports that 33 percent of U.S. adults have now tried VR, according to new survey research from ARtillery Intelligence and Thrive Analytics. The findings point to broadening top-of-funnel exposure for the category even as repeat usage and headset ownership remain the harder metrics for the industry to move."
+    },
+    {
+      "id": "734028e274c78bdb",
+      "title": "How Much Do Brands Spend on Immersive Marketing?",
+      "link": "https://arinsider.co/2026/05/25/how-much-do-brands-spend-on-immersive-marketing/",
+      "source": "AR Insider",
+      "category": "OPINION",
+      "summary": "AR Insider's latest 'Behind the Numbers' column estimates that brands currently spend roughly $6.6 billion annually on immersive marketing, with forecasts projecting growth to $10.3 billion by 2030. The analysis breaks down the categories and channels driving the spend and where AR Insider expects budgets to shift over the next five years."
+    },
+    {
+      "id": "f89ebac875504581",
+      "title": "Acer Says Hey, We Can Do Smart Glasses Too",
+      "link": "https://www.cnet.com/tech/computing/acer-smart-glasses-augmented-reality-ai-assistant/",
+      "source": "CNET",
+      "category": "HARDWARE",
+      "summary": "According to CNET, Acer is entering the increasingly crowded smart glasses market with two models planned for later this year, marking the PC-maker's first push into AI-assisted eyewear."
+    },
+    {
+      "id": "c214d27d7bd49337",
+      "title": "An exclusive preview of 5 companies exhibiting at AWE USA 2026",
+      "link": "https://skarredghost.com/2026/05/28/preview-awe-usa-2026/",
+      "source": "Skarred Ghost",
+      "category": "NEW EXPERIENCES",
+      "summary": "Skarred Ghost previews five companies set to exhibit at AWE USA 2026 in Long Beach from June 15–18, offering an early look at the hardware and software demos attendees can expect at the XR industry's largest annual gathering."
+    },
+    {
+      "id": "875df5746e62c027",
+      "title": "Huawei AI Glasses hands-on: exclusive impressions from my hands-on in China",
+      "link": "https://skarredghost.com/2026/05/26/huawei-ai-glasses-hands-on-impressions/",
+      "source": "Skarred Ghost",
+      "category": "HANDS-ON REVIEW",
+      "summary": "Writing on Skarred Ghost, Antony Vitillo shares hands-on impressions of Huawei's first AI glasses after trying them at a Huawei store in Shenzhen, reporting largely positive takeaways while flagging areas where the device falls short."
+    },
+    {
+      "id": "ebb9d1608c16455d",
+      "title": "Hands-on: Xvisio’s HoloLens substitutes may be what companies are looking for",
+      "link": "https://skarredghost.com/2026/05/21/xvisio-hololens-substitute-hands-on/",
+      "source": "Skarred Ghost",
+      "category": "HARDWARE",
+      "summary": "Skarred Ghost reports on a hands-on with Chinese company Xvisio Technology's HoloLens alternative, describing it as a shipping enterprise mixed-reality option for businesses seeking a replacement now that Microsoft has wound down HoloLens."
+    },
+    {
+      "id": "1739eb569189d557",
+      "title": "Take Flight and Explore the Unknown Skies of 'Compass,' Launching Today on Meta Quest",
+      "link": "https://www.meta.com/blog/compass-launch-meta-quest/",
+      "source": "Meta",
+      "category": "APP STORE HIGHLIGHTS",
+      "summary": "Meta announced the launch of Compass, a new exploration title available today on Meta Quest, in which players take flight to traverse uncharted skies."
+    },
+    {
+      "id": "fc5443d374006f71",
+      "title": "Boz to the Future Episode 26: The Future According to Ed Catmull",
+      "link": "https://www.meta.com/blog/boz-to-the-future-episode-26-ed-catmull-3d-graphics-art-technology/",
+      "source": "Meta",
+      "category": "OPINION",
+      "summary": "On Meta's Boz to the Future podcast, CTO Andrew Bosworth interviews Pixar co-founder Ed Catmull about the trajectory of 3D graphics, art, and technology, drawing on Catmull's perspective from decades of leading computer graphics innovation."
+    },
+    {
+      "id": "9ba1cfdc06d40f5a",
+      "title": "The Meta Quest's new UI is a beautiful disaster. Here's how to navigate through its most frustrating flaws",
+      "link": "https://www.androidcentral.com/gaming/virtual-reality/meta-quest-new-navigator-ui-how-to",
+      "source": "Androidcentral",
+      "category": "HANDS-ON REVIEW",
+      "summary": "Android Central reports that Meta's new Navigator UI for Quest headsets, which began rolling out broadly in recent weeks, speeds up launching VR experiences but has frustrated users by removing the ability to pin apps, complicating window management, and forcing a double-click of the Meta button to hide floating windows. The outlet notes there is no option to revert to the prior interface, and offers workarounds for the most common navigation pain points."
+    },
+    {
+      "id": "a09840f957e8e238",
+      "title": "Marine ACV crews to face ‘thinking adversaries’ in new VR simulator",
+      "link": "https://www.marinecorpstimes.com/news/your-marine-corps/2026/05/29/marine-acv-crews-to-face-thinking-adversaries-in-new-vr-simulator/",
+      "source": "Marinecorpstimes",
+      "category": "NEW EXPERIENCES",
+      "summary": "Marine Corps Times reports that the U.S. Marine Corps has awarded XR Training a $5.1 million contract to build a VR crew gunnery training prototype for its Amphibious Combat Vehicle, simulating combat against an unpredictable adversary across both the standard personnel variant and the ACV-30 fighting variant. The award follows XRT's 2024 deployment of 81 driver training simulators to the Corps and is part of a broader overhaul of amphibious vehicle training driven in part by a 2020 mishap off the California coast that killed nine troops and was linked to training shortfalls."
+    },
+    {
+      "id": "66dc6c72c7be555e",
+      "title": "Compass Review: Fly The Friendly Skies",
+      "link": "https://www.uploadvr.com/compass-review-fly-the-friendly-skies/",
+      "source": "UploadVR",
+      "category": "HANDS-ON REVIEW",
+      "summary": "UploadVR reviews Compass, a flight experience that pairs a cockpit, open skies, and atmospheric environments, calling the experience simple and visually striking with enough variety to satisfy casual pilots."
+    },
+    {
+      "id": "b5befa4c33de93d6",
+      "title": "As Virtual Worlds Close, Communities in ‘Rec Room’, Meta’s ‘Horizon Worlds’, and Others Create Ways to Survive",
+      "link": "https://roadtovr.com/as-virtual-worlds-close-communities-in-rec-room-metas-horizon-worlds-and-others-create-ways-to-survive/",
+      "source": "Road to VR",
+      "category": "OPINION",
+      "summary": "In a guest article for Road to VR, Virtual Worlds Museum founder Julian Reyes examines how communities inside platforms like Rec Room and Meta's Horizon Worlds are organizing to preserve their virtual spaces as social VR services shut down or scale back, framing the effort as a question of cultural preservation rather than nostalgia."
+    }
+  ],
+  "raw_content": "Spatial Report\nWeek of 2026-06-01\n\nHIGHLIGHTS\n\nWired reports that Xreal has launched a new $299 pair of display smart glasses called 'xbx,' styled with Xbox-inspired branding, that connect to a phone, laptop, or gaming handheld to project a virtual screen for the wearer. The launch extends Xreal's lineup of lightweight display glasses aimed at gamers and mobile users.\n\nhttps://www.wired.com/story/xreal-expands-xbx-its-extra-light-smart-specs/\n\nAR Insider reports that 33 percent of U.S. adults have now tried VR, according to new survey research from ARtillery Intelligence and Thrive Analytics. The findings point to broadening top-of-funnel exposure for the category even as repeat usage and headset ownership remain the harder metrics for the industry to move.\n\nhttps://arinsider.co/2026/05/27/new-study-reveals-33-percent-of-u-s-adults-have-tried-vr/\n\nAPP STORE HIGHLIGHTS\n\nAccording to Road to VR, Steel Wool Studios has released SteamVR support for Five Nights at Freddy's: Secret of the Mimic, bringing the horror title to PC VR headsets after the studio's initial plan to launch with PSVR 2 support last year did not materialize.\n\nhttps://roadtovr.com/five-nights-at-freddys-secrets-mimic-pc-vr-support/\n\nRoad to VR reports that Walkabout Mini Golf developer Mighty Coconut is releasing a 'Homestar Runner Distraction Pack' DLC on June 25, departing from its usual course-based drops by collaborating with series creators The Brothers Chaps to bring the early 2000s flash cartoon to the game.\n\nhttps://roadtovr.com/walkabout-mini-golf-homestar-runner-dlc-june/\n\nUploadVR reports that free-to-play VR party game Clonk on Quest has added Clonkball, a new Rocket League-inspired game mode now available to players.\n\nhttps://www.uploadvr.com/clonkball-is-a-new-game-mode-in-free-to-play-vr-party-game-clonk-available-now/\n\nMeta announced the launch of Compass, a new exploration title available today on Meta Quest, in which players take flight to traverse uncharted skies.\n\nhttps://www.meta.com/blog/compass-launch-meta-quest/\n\nINVESTMENT\n\nAccording to Wired, former Google and Apple researchers have launched Trajectory, a startup aiming to build continuous-learning feedback loops into AI products. The company is betting that the rapid iteration cycle behind vibe-coding can extend to a broader range of enterprise AI applications.\n\nhttps://www.wired.com/story/ex-google-apple-ai-researchers-want-to-make-ai-that-gets-smarter-as-you-use-it/\n\nHARDWARE\n\nRoad to VR reports that Valve is raising the price of the Steam Deck by $240 to $300, with the 512 GB OLED model jumping from $549 to a higher tier, raising questions about pricing expectations for the upcoming Steam Frame standalone VR headset.\n\nhttps://roadtovr.com/steam-decks-price-hike-steam-frame-speculation/\n\nSony is cutting the price of PSVR 2 by $100 to $300 as part of its annual Days of Play sale, which runs from May 27th through June 10th, according to Road to VR.\n\nhttps://roadtovr.com/sony-knocks-100-off-psvr-2-for-days-of-play-sale-bringing-headset-bundle-to-300/\n\nRoad to VR reports that XREAL has launched a new China-only sub-brand called XBX, whose first product, the XBX A01, offers a 50-degree field-of-view, HDR10 support, and real-time SDR-to-HDR conversion, though the XBX name could trigger trademark conflicts if the brand expands westward.\n\nhttps://roadtovr.com/xreal-launches-xbx-glasses-brand-china/\n\nArs Technica reports that the Steam Deck sold out across North America within 24 hours of Valve's price hike, while stock remains available in Europe, Australia, and Asia.\n\nhttps://arstechnica.com/gaming/2026/05/despite-price-hike-steam-deck-is-already-sold-out-in-north-america/\n\nAuganix reports that Galvion and Distance Technologies have announced a collaboration to develop AR-enabled headworn systems for defense applications, focused on visual augmentation for dismounted troops. The partnership pairs Galvion's military helmet platforms with Distance's glasses-free 3D display technology for battlefield situational awareness.\n\nhttps://www.auganix.org/ar-news-distance-galvion-partnership/\n\nAccording to CNET, Acer is entering the increasingly crowded smart glasses market with two models planned for later this year, marking the PC-maker's first push into AI-assisted eyewear.\n\nhttps://www.cnet.com/tech/computing/acer-smart-glasses-augmented-reality-ai-assistant/\n\nSkarred Ghost reports on a hands-on with Chinese company Xvisio Technology's HoloLens alternative, describing it as a shipping enterprise mixed-reality option for businesses seeking a replacement now that Microsoft has wound down HoloLens.\n\nhttps://skarredghost.com/2026/05/21/xvisio-hololens-substitute-hands-on/\n\nAI AND SIMULATED WORLDS\n\nAccording to The Decoder, Amazon MGM Studios and AWS have launched a GenAI Creators' Fund providing filmmakers with funding and access to Amazon's in-house AI platform Project Nara, with three AI-animated series already greenlit for Prime Video after five-week pilot sprints, in what Amazon describes as the industry's only end-to-end AI content ecosystem.\n\nhttps://the-decoder.com/amazon-builds-its-own-ai-production-platform-and-greenlights-three-ai-animated-series-for-prime-video/\n\nThe Decoder reports that ElevenLabs has released Music v2, an upgraded AI music generation model capable of shifting a single track across genres such as opera, heavy metal, and rap while maintaining musical coherence, with a new inpainting feature allowing users to regenerate specific sections without altering the rest.\n\nhttps://the-decoder.com/elevenlabs-music-v2-promises-opera-to-metal-transitions-without-losing-musical-coherence/\n\nAccording to CNET, Roblox is releasing a new AI model called Cube that will allow developers to generate AI-created machines, tools, and creatures inside their games. The move extends Roblox's push to integrate generative AI into user-created spatial worlds at scale.\n\nhttps://www.cnet.com/tech/services-and-software/roblox-cubepart-ai-model-generative-worlds-weird-creations/\n\nWired reports that Illinois lawmakers have passed what is being called the strongest AI safety bill in the United States, requiring companies including OpenAI, Anthropic, and Google to have third parties verify their compliance with safety standards. Governor JB Pritzker has indicated he will sign the legislation into law.\n\nhttps://www.wired.com/story/illinois-pass-major-ai-safety-law-pritzker/\n\nWired reports that the Vatican invited Anthropic researcher Christopher Olah to the presentation of Pope Leo's first encyclical on AI, marking an unusual alliance between the Catholic Church and a leading AI lab. The encyclical signals the Church's intent to shape global discourse around AI ethics and governance.\n\nhttps://www.wired.com/story/anthropic-christopher-olah-pope-ai-encyclical/\n\nAnthropic has released Claude Opus 4.8, which The Decoder describes as a modest but tangible improvement that outperforms GPT-5.5 and Gemini 3.1 Pro on most benchmarks and catches its own coding errors four times more often than its predecessor. Alongside the launch, Anthropic introduced dynamic workflows that can spin up hundreds of parallel sub-agents for tasks like codebase-wide migrations.\n\nhttps://the-decoder.com/anthropic-ships-claude-opus-4-8-as-a-modest-but-tangible-improvement-that-tops-gpt-5-5-in-most-benchmarks/\n\nAccording to CNET, Anthropic has positioned its newly released Claude Opus 4.8 as a modest but tangible improvement, while signaling that a more powerful Mythos-class model could be available to users within weeks.\n\nhttps://www.cnet.com/tech/services-and-software/anthropic-claude-opus-4-8-release-mythos-class-ai-model-soon/\n\nAccording to CNET, Dreams of Violets, a 75-minute docudrama about Iranian protest violence from first-time filmmakers Ash and Prooya Koosha, was produced entirely with AI tools and will premiere at the Tribeca Film Festival. The selection signals growing acceptance of fully AI-generated long-form work at major festivals.\n\nhttps://www.cnet.com/culture/entertainment/ai-generated-film-dreams-of-violets-iran-tribeca-film-festival/\n\nNiantic Spatial and Spexi Geospatial announced a partnership combining Spexi's drone-based aerial capture with Niantic's 3D reconstruction technology to produce geospatial models for physical AI applications, according to Auganix. The companies say the joint offering will give customers access to drone-captured imagery converted into structured 3D intelligence for use in robotics, simulation, and spatial computing workflows.\n\nhttps://www.auganix.org/xr-news-niantic-spexi-drone-capture-partnership/\n\nRESEARCH\n\nA paper published on arXiv introduces a framework for quantifying full-body immersion in virtual experiences, proposing three tiers — audio-visual immersion, physical immersion, and kinetic immersion — as a way to evaluate how whole-body interactions reshape user perception in immersive environments.\n\nhttps://arxiv.org/abs/2605.22521\n\nResearchers on arXiv present AnyMo, a geometry-aware modeling approach designed to learn human motion representations from wearable inertial sensors that transfer across different body locations, mounting positions, and device hardware, addressing a key limitation that has hindered cross-device motion sensing in the wild.\n\nhttps://arxiv.org/abs/2605.22715\n\nResearchers on arXiv propose ViPS, a method for generating video-informed pose spaces for auto-rigged 3D meshes, aiming to constrain joint configurations to plausible, anatomically valid manifolds and reduce common artifacts such as hyperextension and self-intersection during pose sampling or manipulation.\n\nhttps://arxiv.org/abs/2604.17623\n\nA new arXiv paper introduces MambaGaze, a bidirectional Mamba-based framework that estimates real-time cognitive load from eye-tracking signals while explicitly modeling missing data from blinks and tracking failures. The authors position the approach for adaptive human-centered AI in safety-critical settings such as driver vigilance monitoring and automated flight deck assistance.\n\nhttps://arxiv.org/abs/2605.22775\n\nA new arXiv paper examines how augmented reality systems can be designed for preschoolers aged 3 to 8, a user group whose unpredictable and physically dynamic behavior strains assumptions baked into most commercial AR experiences. The authors frame young children as a stress test for mobile spatial computing and explore design implications for early-childhood AR.\n\nhttps://arxiv.org/abs/2605.27386\n\nAn arXiv paper titled EyeSpy demonstrates a side-channel attack that can infer a VR user's eye gaze by observing the effects of dynamic foveated rendering, even when direct access to gaze data is blocked. The researchers argue that current permission-based protections are insufficient on DFR-enabled headsets because gaze data is intrinsically used to drive the rendering pipeline.\n\nhttps://arxiv.org/abs/2605.27939\n\nAn arXiv paper presents PocketGS, a method for training 3D Gaussian Splatting models directly on mobile devices under minute-scale time budgets and limited memory, which the authors argue makes high-fidelity on-device scene reconstruction practical where standard 3DGS training requires workstation-level compute. The work targets the gap between real-time 3DGS rendering on phones and the heavier training step that has so far kept the pipeline tethered to desktops.\n\nhttps://arxiv.org/abs/2601.17354\n\nA new paper by Harvard researchers describes an AI-driven smartphone application with personalized audio guidance designed to improve outdoor navigation for people with blindness or moderate-to-severe visual impairment, based on a survey of 112 users identifying turn-by-turn directions, path guidance, and obstacle detection as essential features. The work highlights how on-device AI is extending accessibility tools beyond traditional aids like white canes and guide dogs.\n\nhttps://arxiv.org/abs/2605.29120\n\nOPINION\n\nWriting in AR Insider and citing CNET's hands-on coverage, Mike Boland argues that Xreal's new $299 aO1 display glasses — shipping in July with electrochromic lenses that change tint on the fly — could be the company's 'iPhone SE moment,' attacking the low end of the display glasses market where Meta's Ray-Ban line has gained traction. The piece frames price sensitivity as the key variable for mainstream adoption.\n\nhttps://www.cnet.com/tech/mobile/xreals-new-budget-display-glasses-can-change-their-look-on-the-fly/\n\nAR Insider's latest 'Behind the Numbers' column estimates that brands currently spend roughly $6.6 billion annually on immersive marketing, with forecasts projecting growth to $10.3 billion by 2030. The analysis breaks down the categories and channels driving the spend and where AR Insider expects budgets to shift over the next five years.\n\nhttps://arinsider.co/2026/05/25/how-much-do-brands-spend-on-immersive-marketing/\n\nOn Meta's Boz to the Future podcast, CTO Andrew Bosworth interviews Pixar co-founder Ed Catmull about the trajectory of 3D graphics, art, and technology, drawing on Catmull's perspective from decades of leading computer graphics innovation.\n\nhttps://www.meta.com/blog/boz-to-the-future-episode-26-ed-catmull-3d-graphics-art-technology/\n\nIn a guest article for Road to VR, Virtual Worlds Museum founder Julian Reyes examines how communities inside platforms like Rec Room and Meta's Horizon Worlds are organizing to preserve their virtual spaces as social VR services shut down or scale back, framing the effort as a question of cultural preservation rather than nostalgia.\n\nhttps://roadtovr.com/as-virtual-worlds-close-communities-in-rec-room-metas-horizon-worlds-and-others-create-ways-to-survive/\n\nGAMING MARKETPLACE WATCH\n\nUploadVR has published its rolling roundup of upcoming VR games for 2026 across Meta Quest, PC VR, PSVR 2, Pico, Apple Vision Pro, and Galaxy XR, serving as a reference for major releases on the calendar.\n\nhttps://www.uploadvr.com/upcoming-vr-games/\n\nAccording to UploadVR, Impulse Gear's 6v6 VR hero shooter Larcenauts will officially shut down in October, marking another live-service VR title winding down operations.\n\nhttps://www.uploadvr.com/vr-hero-shooter-larcenauts-shutting-down-in-october/\n\nNEW EXPERIENCES\n\nAuganix reports that Loft Dynamics' Airbus H125 TXi VR helicopter simulator at Nakanihon Air has earned FTD Level 7 qualification from Japan's Civil Aviation Bureau, marking the regulator's recognition of a VR-based training device at that level. The certification allows Japanese operators to use the headset-based simulator for a broader range of pilot training and recurrency requirements.\n\nhttps://www.auganix.org/vr-news-loft-dynamics-japan-ftd-level-7/\n\nAuganix reports that LaGuardia Terminal B has deployed Bridget, an interactive AI concierge hologram running on Proto's volumetric display hardware with wayfinding software from Holomedia. The installation gives travelers a life-size holographic assistant for airport navigation and information, marking a high-traffic public deployment of Proto's display platform.\n\nhttps://www.auganix.org/xr-news-proto-holomedia-laguardia-airport-hologram/\n\nSkarred Ghost previews five companies set to exhibit at AWE USA 2026 in Long Beach from June 15–18, offering an early look at the hardware and software demos attendees can expect at the XR industry's largest annual gathering.\n\nhttps://skarredghost.com/2026/05/28/preview-awe-usa-2026/\n\nMarine Corps Times reports that the U.S. Marine Corps has awarded XR Training a $5.1 million contract to build a VR crew gunnery training prototype for its Amphibious Combat Vehicle, simulating combat against an unpredictable adversary across both the standard personnel variant and the ACV-30 fighting variant. The award follows XRT's 2024 deployment of 81 driver training simulators to the Corps and is part of a broader overhaul of amphibious vehicle training driven in part by a 2020 mishap off the California coast that killed nine troops and was linked to training shortfalls.\n\nhttps://www.marinecorpstimes.com/news/your-marine-corps/2026/05/29/marine-acv-crews-to-face-thinking-adversaries-in-new-vr-simulator/\n\nHANDS-ON REVIEW\n\nWriting on Skarred Ghost, Antony Vitillo shares hands-on impressions of Huawei's first AI glasses after trying them at a Huawei store in Shenzhen, reporting largely positive takeaways while flagging areas where the device falls short.\n\nhttps://skarredghost.com/2026/05/26/huawei-ai-glasses-hands-on-impressions/\n\nAndroid Central reports that Meta's new Navigator UI for Quest headsets, which began rolling out broadly in recent weeks, speeds up launching VR experiences but has frustrated users by removing the ability to pin apps, complicating window management, and forcing a double-click of the Meta button to hide floating windows. The outlet notes there is no option to revert to the prior interface, and offers workarounds for the most common navigation pain points.\n\nhttps://www.androidcentral.com/gaming/virtual-reality/meta-quest-new-navigator-ui-how-to\n\nUploadVR reviews Compass, a flight experience that pairs a cockpit, open skies, and atmospheric environments, calling the experience simple and visually striking with enough variety to satisfy casual pilots.\n\nhttps://www.uploadvr.com/compass-review-fly-the-friendly-skies/\n"
+}

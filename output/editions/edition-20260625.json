@@ -1,0 +1,1431 @@
+{
+  "title": "Spatial Report — 2026-06-25",
+  "edition_number": "",
+  "date": "2026-06-25",
+  "spotlight": "",
+  "item_ids": [
+    "eac69ab425cbb764",
+    "9543c785d8662ad5",
+    "77a6de37e8d9cb49",
+    "5f2fe3a2ac39038d",
+    "918321a807752b25",
+    "2a0c46444290378d",
+    "1398160e36cd2b54",
+    "009a50a283dd2810",
+    "0f4f7900daf42b9b",
+    "e27d700ace8bbd45",
+    "dec9fef2390caa3a",
+    "d924ac8104ee618e",
+    "babc3c36ab08be7b",
+    "00de3f3e067b5378",
+    "ace9206338c4bbfd",
+    "33390e4ca0c53d8b",
+    "4fec294b89b4c129",
+    "520fbee58f69cfb4",
+    "ac31f22810c53d2b",
+    "72b2b4b59adb6e27",
+    "01183e0faf80721e",
+    "f95e9ea6585a4215",
+    "169871f0fda56189",
+    "b0a9b9113ae50b26",
+    "5e6df51377acc525",
+    "897cc4dbaf7313fd",
+    "432418d955a39153",
+    "26f50f579eea217d",
+    "bcf7effb618ac437",
+    "340adf6d5cbb4628",
+    "21247c92f24a154e",
+    "809fe1f2b3f4d2c4",
+    "4853669098a9eab6",
+    "51e64d76b7896e04",
+    "95bccd6105cbd6b5",
+    "f1079affed9cf9ab",
+    "15cd45c3819d59d3",
+    "43b57f071d47c12c",
+    "a7d6afb8f1da6ae4",
+    "7f081a4352950aa8",
+    "752ebc9394a9d189",
+    "a3f67405a75385de",
+    "56aaefc684ae2f74",
+    "05e91802a397a6d5",
+    "82e7bc2ea35bf83c",
+    "27fa951b941313db",
+    "8aa9d6b3a5cda150",
+    "fdcd63a8f2818865",
+    "d4dfcce5b49ad3af",
+    "14bba98f7445a7ea",
+    "07a96b56158c0e5d",
+    "1d7ab4db7ef5e247",
+    "15059a461358b21f",
+    "0b1dbcdce1755256",
+    "ab0b230b5a0b777f",
+    "79ea467419149bf8",
+    "3589188143989de4",
+    "4a500f4a83d6cc63",
+    "6571c06c2f152fe9",
+    "a0af43fc0ee22c82",
+    "3ad073d8cb028ad2",
+    "04f0a1e646d7f60e",
+    "66db1310d1d7274b",
+    "bf90804fbedd9bec",
+    "9fbd59a62870f5b7",
+    "392eca56411907bf",
+    "5a5ce2d394ba2184",
+    "5c3d0274acbe181a",
+    "5600e88968a62cc9",
+    "877a85ea6e254542",
+    "47c6d6fc23e5ea7b",
+    "a1d1223132657e39",
+    "88dcdfa223c26e6d",
+    "358e207ac3c718c8",
+    "9ef08ab1d7876924",
+    "d84f6e5d3df2ce7f",
+    "718cc416a29794a2",
+    "b03f8cd58c33fe90",
+    "cfffeb7b2fbf4b31",
+    "9db0528d1a80d14b",
+    "d21388d9de6eea53",
+    "188f938e615d67c8"
+  ],
+  "sections": {
+    "HIGHLIGHTS": [
+      {
+        "id": "5f2fe3a2ac39038d",
+        "title": "US government forces Anthropic to disable Claude Fable 5 and Mythos 5 for all customers worldwide",
+        "link": "https://the-decoder.com/us-government-forces-anthropic-to-disable-claude-fable-5-and-mythos-5-for-all-customers-worldwide/",
+        "source": "The Decoder",
+        "category": "HIGHLIGHTS",
+        "summary": "The Decoder reports that the US government has ordered Anthropic to disable global access to its Claude Fable 5 and Mythos 5 models over alleged jailbreak risks, with Anthropic complying but publicly pushing back, saying the vulnerabilities also exist in competing models and warning that the move could set a precedent that halts future frontier deployments."
+      },
+      {
+        "id": "babc3c36ab08be7b",
+        "title": "Snap Reveals Next-gen Specs AR Glasses, Priced at $2,200",
+        "link": "https://roadtovr.com/snap-specs-2026-ar-glasses-release-date-price/",
+        "source": "Road to VR",
+        "category": "HIGHLIGHTS",
+        "summary": "Road to VR reports that Snap unveiled its first consumer-facing standalone AR glasses at Augmented World Expo 2026, priced at $2,200 and positioned as the sixth-generation Spectacles device, with onboard AI assistance, entertainment, and productivity features."
+      },
+      {
+        "id": "33390e4ca0c53d8b",
+        "title": "Snap Opens Preorders For Specs, True AR Glasses Shipping This Fall For $2195",
+        "link": "https://www.uploadvr.com/snap-specs-design-revealed-preorders-open-price/",
+        "source": "UploadVR",
+        "category": "HIGHLIGHTS",
+        "summary": "UploadVR reports that Snap officially revealed and opened preorders for Specs, its fully standalone true AR glasses, which will ship this fall in the U.S., U.K., and France for $2,195."
+      },
+      {
+        "id": "f95e9ea6585a4215",
+        "title": "The US government may be asking Anthropic the impossible by demanding unhackable LLMs",
+        "link": "https://the-decoder.com/the-us-government-may-be-asking-anthropic-the-impossible-by-demanding-unhackable-llms/",
+        "source": "The Decoder",
+        "category": "HIGHLIGHTS",
+        "summary": "The Decoder reports that US government officials have accused Anthropic of disregarding a Trump cyber directive by releasing Fable 5 without approval, with one administration official saying \"They screwed us,\" as talks continue with the Department of Commerce, the CIA, and science advisor Michael Kratsios over demands that may be technically impossible to meet."
+      },
+      {
+        "id": "169871f0fda56189",
+        "title": "Pokémon Go data helped train AI now linked to military drones",
+        "link": "https://the-decoder.com/pokemon-go-data-helped-train-ai-now-linked-to-military-drones/",
+        "source": "The Decoder",
+        "category": "HIGHLIGHTS",
+        "summary": "According to The Decoder, volunteer AR scans contributed by Pokémon Go players were used to train Niantic's spatial AI models, and that technology is now being combined with a US defense contractor's software to enable GPS-free navigation for military drones."
+      },
+      {
+        "id": "bcf7effb618ac437",
+        "title": "Snap's slimmed down AR Specs go on sale later this year for $2,195",
+        "link": "https://www.engadget.com/2195207/snap-ar-specs-launch-price/",
+        "source": "Engadget",
+        "category": "HIGHLIGHTS",
+        "summary": "According to Engadget, Snap announced that its slimmed-down AR Specs will go on sale later this year at $2,195, with the company describing the standalone device as a wearable computer rather than a conventional smart-glasses accessory."
+      },
+      {
+        "id": "340adf6d5cbb4628",
+        "title": "Xreal's Android XR Aura Glasses Are Coming This Fall, With a Brand New Qualcomm Chip Inside",
+        "link": "https://www.cnet.com/tech/computing/qualcomm-snapdragon-reality-elite-chip-xreal-aura-glasses-awe-2026/",
+        "source": "CNET",
+        "category": "HIGHLIGHTS",
+        "summary": "CNET reports that Xreal's Aura glasses, running Android XR, will ship this fall as the first device powered by Qualcomm's new Snapdragon Reality Elite chip, with Qualcomm promising meaningful gains in graphics performance, battery life, and AI capabilities across future headsets using the platform."
+      },
+      {
+        "id": "809fe1f2b3f4d2c4",
+        "title": "AWE 2026 Live: Smart Glasses Are Bringing AI to Our Faces",
+        "link": "https://www.cnet.com/news-live/awe-2026-smart-glasses-augmented-reality-live-coverage/",
+        "source": "CNET",
+        "category": "HIGHLIGHTS",
+        "summary": "CNET is providing live coverage of Augmented World Expo 2026, framing the event as the clearest look yet at how smart glasses are evolving into AI-first wearables, with major announcements expected from Snap, Qualcomm, Xreal, and other vendors."
+      },
+      {
+        "id": "95bccd6105cbd6b5",
+        "title": "You Can Finally Buy Snap’s New AR Specs—for $2,195",
+        "link": "https://www.wired.com/story/snaps-new-ar-specs-cost-2195/",
+        "source": "Wired",
+        "category": "HIGHLIGHTS",
+        "summary": "Wired reports that Snap is now selling its new AR Specs for $2,195, with CEO Evan Spiegel laying out the company's vision for the augmented-reality smart glasses arriving later this year. The launch marks Snap's transition from developer-only Spectacles to a consumer-facing AR product, intensifying competition in the smart glasses market alongside Meta and Google."
+      },
+      {
+        "id": "a7d6afb8f1da6ae4",
+        "title": "Meta Tapped a Pentagon Supplier to Prototype Face Recognition for Its Glasses",
+        "link": "https://www.wired.com/story/meta-rank-one-computing-face-recognition-smart-glasses/",
+        "source": "Wired",
+        "category": "HIGHLIGHTS",
+        "summary": "Wired reports that Meta tapped Rank One Computing, a Pentagon supplier whose board includes a former CIA deputy director and a former FBI science chief, to prototype face recognition for its smart glasses app during internal development. The disclosure raises fresh questions about surveillance capabilities being built into consumer smart eyewear as Meta expands its glasses lineup."
+      },
+      {
+        "id": "0b1dbcdce1755256",
+        "title": "Evan Spiegel doesn't want you to call Snap Specs AI glasses",
+        "link": "https://www.engadget.com/2195862/snap-specs-ceo-evan-spiegel-interview-at-awe-2026/",
+        "source": "Engadget",
+        "category": "HIGHLIGHTS",
+        "summary": "In an interview with Engadget at AWE 2026, Snap CEO Evan Spiegel pushed back on framing the company's new Specs as AI glasses, repeatedly describing them as a computing platform and discussing privacy and parental controls."
+      },
+      {
+        "id": "ab0b230b5a0b777f",
+        "title": "Meta's Smart Glasses Are Testing Facial Recognition Software Used by Police and the Military",
+        "link": "https://www.cnet.com/tech/mobile/metas-smart-glasses-testing-facial-recognition-software-police-and-military/",
+        "source": "CNET",
+        "category": "HIGHLIGHTS",
+        "summary": "According to CNET, Meta's smart glasses are testing facial recognition software of the kind used by police and the military, renewing surveillance concerns around the wearable."
+      },
+      {
+        "id": "9fbd59a62870f5b7",
+        "title": "Illinois Could Be the First State to Ban Wearing Smart Glasses While Driving",
+        "link": "https://www.cnet.com/tech/mobile/illinois-could-be-first-to-ban-wearing-smart-glasses-while-driving/",
+        "source": "CNET",
+        "category": "HIGHLIGHTS",
+        "summary": "According to CNET, Illinois could become the first U.S. state to ban wearing smart glasses while driving, with a bill having passed the state legislature and now awaiting the governor's signature."
+      },
+      {
+        "id": "358e207ac3c718c8",
+        "title": "After unveiling ridiculously expensive AR glasses, Snap’s stock takes a dive",
+        "link": "https://techcrunch.com/2026/06/17/after-unveiling-ridiculously-expensive-ar-glasses-snaps-stock-takes-a-dive/",
+        "source": "TechCrunch",
+        "category": "HIGHLIGHTS",
+        "summary": "TechCrunch reports that Snap's stock dropped following the unveiling of its $2,195 Specs AR glasses, as investors reacted to the steep consumer price point and questioned the commercial viability of the company's long-awaited true AR hardware debut."
+      }
+    ],
+    "APP STORE HIGHLIGHTS": [
+      {
+        "id": "82e7bc2ea35bf83c",
+        "title": "Theremin&#x27;s Ghost Hands Add-On Lets You Be A One Person Musical Ensemble This July",
+        "link": "https://www.uploadvr.com/theremins-ghost-hands-add-on-lets-you-be-a-one-person-musical-ensemble-this-july/",
+        "source": "UploadVR",
+        "category": "APP STORE HIGHLIGHTS",
+        "summary": "UploadVR reports that mixed reality musical app Theremin will receive a Ghost Hands add-on in July, allowing users to layer performances with recordings of their past selves to create one-person ensembles. The update extends the app's appeal to amateur musicians experimenting with mixed reality performance tools."
+      },
+      {
+        "id": "188f938e615d67c8",
+        "title": "Pixi’s new iOS app turns text messages into interactive AR experiences",
+        "link": "https://techcrunch.com/2026/06/18/pixis-new-ios-app-turns-text-messages-into-interactive-ar-experiences/",
+        "source": "TechCrunch",
+        "category": "APP STORE HIGHLIGHTS",
+        "summary": "TechCrunch reports that Pixi launched a new iOS app that converts text messages into interactive augmented reality experiences, positioning AR as a successor to stickers, GIFs, and emoji reactions in mobile messaging."
+      }
+    ],
+    "INVESTMENT": [
+      {
+        "id": "3ad073d8cb028ad2",
+        "title": "Amazon, Nvidia, and AMD bet $310 million on AI startup building 3D world models",
+        "link": "https://the-decoder.com/amazon-nvidia-and-amd-bet-310-million-on-ai-startup-building-3d-world-models/",
+        "source": "The Decoder",
+        "category": "INVESTMENT",
+        "summary": "The Decoder reports that Amazon, Nvidia, and AMD are investing $310 million into world model startup Odyssey ML at a $1.45 billion valuation, with CIA-linked fund IQT and Google chief scientist Jeff Dean also backing the round as world models emerge as the industry's next major AI bet beyond language models."
+      },
+      {
+        "id": "d84f6e5d3df2ce7f",
+        "title": "World model maker Odyssey nabs $1.45B valuation backed by Amazon and other big names",
+        "link": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/",
+        "source": "TechCrunch",
+        "category": "INVESTMENT",
+        "summary": "According to TechCrunch, world model startup Odyssey has secured a $1.45 billion valuation in a new funding round backed by Amazon and other major investors, cementing its position as a leading contender in the emerging category of AI systems that model physical environments rather than language. World models are increasingly viewed as a critical next frontier beyond LLMs, with direct implications for simulation, robotics, and spatial computing applications."
+      }
+    ],
+    "SOFTWARE": [
+      {
+        "id": "eac69ab425cbb764",
+        "title": "UPDATED: Someone Filed A Fake VRChat Data Breach Notice To Maine&#x27;s Attorney General",
+        "link": "https://www.uploadvr.com/vrchat-maine-attorney-general-fake-data-breach-notice/",
+        "source": "UploadVR",
+        "category": "SOFTWARE",
+        "summary": "UploadVR reports that a public filing claiming a VRChat data breach affecting more than 2 million users was submitted to Maine's Attorney General by a person who does not appear to exist, and the notice has been confirmed as fraudulent."
+      },
+      {
+        "id": "dec9fef2390caa3a",
+        "title": "Due to DMA, Siri AI delayed in EU for iOS 27 and iPadOS 27",
+        "link": "https://www.apple.com/newsroom/2026/06/due-to-dma-siri-ai-delayed-in-eu-for-ios-27-and-ipados-27/",
+        "source": "Apple Newsroom",
+        "category": "SOFTWARE",
+        "summary": "Apple announced that Siri AI will not ship in the European Union with iOS 27 and iPadOS 27, citing requirements imposed by the Digital Markets Act. The delay continues a pattern of Apple withholding AI features from EU users while it negotiates compliance with the bloc's competition rules."
+      },
+      {
+        "id": "d924ac8104ee618e",
+        "title": "Apple expands App Store capabilities to help developers grow and reach new users",
+        "link": "https://www.apple.com/newsroom/2026/06/apple-expands-app-store-capabilities-to-help-developers-grow-and-reach-new-users/",
+        "source": "Apple Newsroom",
+        "category": "SOFTWARE",
+        "summary": "Apple announced expanded App Store capabilities intended to give developers more flexibility in marketing apps, acquiring users, and managing subscriptions. The changes apply across Apple's platforms, including visionOS, and follow ongoing regulatory pressure on the company's developer policies."
+      },
+      {
+        "id": "4a500f4a83d6cc63",
+        "title": "Android 17 launches with new multitasking tools as Google expands Gemini features",
+        "link": "https://techcrunch.com/2026/06/16/android-17-launches-with-new-multitasking-tools-as-google-expands-gemini-features/",
+        "source": "TechCrunch",
+        "category": "SOFTWARE",
+        "summary": "TechCrunch reports that Google has released Android 17 and Wear OS 7, introducing new multitasking features, parental controls, security tools, and smartwatch upgrades, alongside a Pixel Drop that brings Google's latest AI models to its devices. The release expands Gemini's footprint across Google's mobile and wearable platforms."
+      },
+      {
+        "id": "bf90804fbedd9bec",
+        "title": "Epic Games details how it's embracing generative AI in Unreal Engine",
+        "link": "https://www.engadget.com/2196807/epic-games-details-how-its-embracing-gen-ai-in-unreal-engine/",
+        "source": "Engadget",
+        "category": "SOFTWARE",
+        "summary": "Engadget reports that Epic Games is integrating generative AI as a significant component of upcoming versions of Unreal Engine, signaling a deeper embrace of AI tooling across the company's real-time 3D development platform."
+      }
+    ],
+    "HARDWARE": [
+      {
+        "id": "00de3f3e067b5378",
+        "title": "Raven Prism Smart Glasses Announced with Unique Hot-swappable Battery",
+        "link": "https://roadtovr.com/raven-prism-smart-glasses-reveal-awe-2026/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "Road to VR reports that San Francisco-based startup Raven Resonance is publicly demoing its upcoming Raven Prism smart glasses for the first time at Augmented World Expo 2026, with the device differentiated by a hot-swappable battery system intended to keep the glasses powered throughout the day."
+      },
+      {
+        "id": "ace9206338c4bbfd",
+        "title": "Qualcomm Announces Snapdragon Reality Elite, Its New Flagship XR Chipset",
+        "link": "https://www.uploadvr.com/qualcomm-snapdragon-reality-elite-new-flagship-xr-chipset/",
+        "source": "UploadVR",
+        "category": "HARDWARE",
+        "summary": "UploadVR reports that Qualcomm announced Snapdragon Reality Elite, a new flagship XR chipset that will debut this fall in the compute puck of Xreal's Aura Android XR device."
+      },
+      {
+        "id": "520fbee58f69cfb4",
+        "title": "This Quest 3 Accessory Makes Your VR Avatar Expressive Without Face Tracking",
+        "link": "https://www.uploadvr.com/pieeg-xr-makes-your-vr-avatar-expressive-without-face-tracking/",
+        "source": "UploadVR",
+        "category": "HARDWARE",
+        "summary": "UploadVR reports on PiEEG XR, an upcoming Quest 3 accessory that aims to make VR avatars more expressive without relying on face-tracking cameras, instead using EEG-based signals to drive avatar expressiveness."
+      },
+      {
+        "id": "897cc4dbaf7313fd",
+        "title": "Qualcomm unveils its Snapdragon Reality Elite chip for next-gen AR headsets",
+        "link": "https://www.engadget.com/2194353/qualcomm-unveils-its-snapdragon-reality-elite-chip-for-next-gen-ar-headsets/",
+        "source": "Engadget",
+        "category": "HARDWARE",
+        "summary": "Engadget reports that Qualcomm unveiled its Snapdragon Reality Elite chip at AWE 2026, a new silicon platform aimed at next-generation AR headsets and smart glasses that promises significant improvements in graphics, battery life, and on-device AI processing."
+      },
+      {
+        "id": "432418d955a39153",
+        "title": "Xreal officially reveals its Android XR Aura glasses — without a pricetag",
+        "link": "https://www.engadget.com/2194861/xreal-aura-android-xr-glasses-launch-no-price/",
+        "source": "Engadget",
+        "category": "HARDWARE",
+        "summary": "According to Engadget, Xreal officially revealed its Android XR Aura glasses at AWE 2026 and began taking paid reservations ahead of a launch later this year, though the company has not yet disclosed a final price."
+      },
+      {
+        "id": "26f50f579eea217d",
+        "title": "Is NFC charging the secret to nicer-looking smartglasses?",
+        "link": "https://www.engadget.com/2195309/nucurrent-smart-glass-nfc-charging-tech-in-ray-ban-meta-prototype/",
+        "source": "Engadget",
+        "category": "HARDWARE",
+        "summary": "Engadget reports that NuCurrent demonstrated NFC-based charging in a Ray-Ban Meta prototype at AWE 2026, showing the technology can match the performance of the pogo pins currently used in smart glasses while enabling slimmer, more refined industrial designs."
+      },
+      {
+        "id": "7f081a4352950aa8",
+        "title": "Qualcomm’s latest chip hints that more powerful smart glasses could be on the way",
+        "link": "https://www.theverge.com/gadgets/950229/qualcomm-snapdragon-reality-elite-xr-smart-glasses-wearables",
+        "source": "The Verge",
+        "category": "HARDWARE",
+        "summary": "Qualcomm unveiled its Snapdragon Reality Elite chip at Augmented World Expo, designed to power the next generation of XR devices and smart glasses, according to The Verge, which already had hands-on time with a device running the new silicon."
+      },
+      {
+        "id": "05e91802a397a6d5",
+        "title": "Xreal Aura Ships This Fall, With Snapdragon Reality Elite In Its Puck",
+        "link": "https://www.uploadvr.com/xreal-aura-ships-this-fall-with-snapdragon-reality-elite-in-its-puck/",
+        "source": "UploadVR",
+        "category": "HARDWARE",
+        "summary": "UploadVR reports that Xreal has opened preorders for its Aura Android XR glasses, confirming Qualcomm's new Snapdragon Reality Elite chip in the accompanying puck, though the company has yet to disclose pricing. The device is slated to ship this fall as part of the broader push of Android XR hardware into the consumer market."
+      },
+      {
+        "id": "8aa9d6b3a5cda150",
+        "title": "Wear OS 7 is Out In the Wild and It's Bringing Watches and Glasses Closer Together",
+        "link": "https://www.cnet.com/tech/mobile/wheres-wear-os-7/",
+        "source": "CNET",
+        "category": "HARDWARE",
+        "summary": "According to CNET, Google has begun rolling out Wear OS 7, delivering battery-life improvements and tighter integration between smartwatches and smart glasses as gateways into Google's broader AI ecosystem. The update reinforces Google's strategy of positioning wearables as connected entry points for Gemini-powered experiences."
+      },
+      {
+        "id": "6571c06c2f152fe9",
+        "title": "XREAL AURA AR Glasses Get Fall Release Window, $1,500 Price Ceiling",
+        "link": "https://roadtovr.com/xreal-aura-release-date-price-1500/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "Road to VR reports that XREAL will launch its AURA AR glasses this fall at a price not exceeding $1,500, with the device built in collaboration with Google and Qualcomm and among the first to ship with Qualcomm's newly announced Snapdragon Reality Elite chipset."
+      },
+      {
+        "id": "a0af43fc0ee22c82",
+        "title": "Qualcomm’s New Snapdragon Chip Paves the Way for More Compact XR Headsets and Glasses",
+        "link": "https://roadtovr.com/qualcomm-snapdragon-reality-elite-compact-headsets-glasses/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "At Augmented World Expo, Qualcomm announced Snapdragon Reality Elite, a new processor targeting both standalone XR headsets and lightweight tethered AR glasses with a focus on on-device AI, improved performance, and lower power consumption, according to Road to VR."
+      },
+      {
+        "id": "66db1310d1d7274b",
+        "title": "Snapdragon Reality Elite Sparks Qualcomm’s Next Phase of XR",
+        "link": "https://arinsider.co/2026/06/17/snapdragon-reality-elite-sparks-qualcomms-next-phase-of-xr/",
+        "source": "AR Insider",
+        "category": "HARDWARE",
+        "summary": "AR Insider reports that Qualcomm unveiled Snapdragon Reality Elite at AWE, with VP and GM of XR Ziad Asghar presenting the new branding and capabilities, which will debut commercially in XREAL's Project Aura glasses."
+      },
+      {
+        "id": "718cc416a29794a2",
+        "title": "Canon Reveals Concept Handheld MR Device, Glass Waveguide & Collaboration Software",
+        "link": "https://roadtovr.com/canon-concept-mr-device-ar-waveguide-reveal/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "Road to VR reports that Canon used Augmented World Expo to unveil a concept handheld mixed reality device, new augmented reality waveguide optics, and an XR collaboration software suite, extending the imaging company's longstanding enterprise XR efforts. The reveals position Canon as a continued contender in optics and enterprise-grade spatial tools."
+      },
+      {
+        "id": "9db0528d1a80d14b",
+        "title": "Midjourney, the AI image generator, is developing a full-body ultrasonic scanner",
+        "link": "https://www.engadget.com/2196998/midjourney-full-body-ultrasonic-scanner/",
+        "source": "Engadget",
+        "category": "HARDWARE",
+        "summary": "Engadget reports that Midjourney, best known as an AI image generator, has announced its first hardware project: a full-body ultrasonic scanner, signaling an unexpected move from the company into physical devices."
+      }
+    ],
+    "AI AND SIMULATED WORLDS": [
+      {
+        "id": "9543c785d8662ad5",
+        "title": "Meta shifts from \"tokenmaxxing\" to token managing as internal AI costs reportedly hit billions",
+        "link": "https://the-decoder.com/meta-shifts-from-tokenmaxxing-to-token-managing-as-internal-ai-costs-reportedly-hit-billions/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to The Decoder, an internal Meta memo to 6,000 employees outlines a shift from unrestricted AI usage to centralized governance through a dashboard called AI Gateway starting in 2027, with CTO Andrew Bosworth telling staff that token usage alone is not a measure of impact as internal AI costs reportedly climb into the billions."
+      },
+      {
+        "id": "77a6de37e8d9cb49",
+        "title": "Open model Kimi K2.7 Code undercuts GPT-5.5 and Claude by up to 12x on price per token",
+        "link": "https://the-decoder.com/moonshots-open-model-kimi-k2-7-code-undercuts-gpt-5-5-and-claude-by-up-to-12x-on-price-per-token/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Decoder reports that Moonshot AI has released Kimi K2.7 Code, an open-weights one-trillion-parameter model built for programming that trails GPT-5.5 and Claude Opus 4.8 on coding benchmarks but costs up to 12 times less per token, raising the question of whether additional runs at the same budget offset the quality gap."
+      },
+      {
+        "id": "918321a807752b25",
+        "title": "Anthropic blocks all customers' access to Fable 5 and Mythos 5",
+        "link": "https://www.engadget.com/2193656/anthropic-blocks-access-fable-5-mythos-5/",
+        "source": "Engadget",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Engadget reports that Anthropic has suspended all customer access to its Fable 5 and Mythos 5 AI models to comply with a US government order citing national security concerns, an unusual intervention in commercial AI deployment."
+      },
+      {
+        "id": "2a0c46444290378d",
+        "title": "Over half of Americans fear losing both their jobs and their independent thinking to AI, survey finds",
+        "link": "https://the-decoder.com/over-half-of-americans-fear-losing-both-their-jobs-and-their-independent-thinking-to-ai-survey-finds/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to The Decoder, an Anthropic survey of nearly 52,000 Americans found that 64 percent fear AI-driven job losses and 56 percent worry about losing the ability to think independently, though daily AI users expressed far less concern. The survey also found that most respondents reject AI use in their own workplace, even for tasks they believe it could handle."
+      },
+      {
+        "id": "1398160e36cd2b54",
+        "title": "OpenAI kicks off the AI price wars with flexible rate-limit resets for its Codex coding agent",
+        "link": "https://the-decoder.com/openai-kicks-off-the-ai-price-wars-with-flexible-rate-limit-resets-for-its-codex-coding-agent/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Decoder reports that OpenAI now allows Codex users to bank rate-limit resets and trigger them manually rather than waiting for fixed schedules, with Go, Plus, Pro, and Business plan users each receiving one free reset. Plus and Pro users can also unlock additional resets by inviting others, a move The Decoder frames as the opening of an AI pricing war among coding-agent providers."
+      },
+      {
+        "id": "009a50a283dd2810",
+        "title": "‘Tell Him He’s a Piece of Shit’: Meta’s New AI Unit Is a Total Mess",
+        "link": "https://www.wired.com/story/mark-zuckerberg-meta-employee-meeting-interrupt-ai/",
+        "source": "Wired",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to Wired, executives and employees at Meta's new AI unit are struggling with what sources describe as a chaotic strategy, based on internal discussions and interviews reviewed by the publication. The report points to tension within the organization as Meta attempts to consolidate its AI efforts under Mark Zuckerberg's direction."
+      },
+      {
+        "id": "72b2b4b59adb6e27",
+        "title": "SpaceX bets $60 billion on Cursor to catch OpenAI and Anthropic",
+        "link": "https://the-decoder.com/spacex-bets-60-billion-on-cursor-to-catch-openai-and-anthropic/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Decoder reports that just two trading days after its IPO, Elon Musk's SpaceX is acquiring AI coding startup Anysphere, maker of Cursor, in a $60 billion deal intended to help the struggling xAI division catch up with Anthropic and OpenAI."
+      },
+      {
+        "id": "01183e0faf80721e",
+        "title": "How easily can Russian propaganda fool AI models? A new benchmark finds out",
+        "link": "https://the-decoder.com/how-easily-can-russian-propaganda-fool-ai-models-a-new-benchmark-finds-out/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Decoder reports that the Institute of the Estonian Language has released a new benchmark measuring how susceptible AI language models are to Russian propaganda, providing a structured way to evaluate model resilience against state-sponsored disinformation."
+      },
+      {
+        "id": "b0a9b9113ae50b26",
+        "title": "Anthropic shutdown sparks sovereignty debate across Europe",
+        "link": "https://the-decoder.com/anthropic-shutdown-sparks-sovereignty-debate-across-europe/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Decoder reports that the European Commission is assessing the implications of the US order that forced Anthropic to shut down Fable 5 and Mythos 5 worldwide, with European researchers debating whether to build sovereign foundation models or secure access through contracts, though experts warn Europe currently lacks the computing capacity, energy, and competitive providers needed for homegrown infrastructure."
+      },
+      {
+        "id": "51e64d76b7896e04",
+        "title": "‘Dangerous’ AI Models Are Coming No Matter What",
+        "link": "https://www.wired.com/story/dangerous-ai-models-are-coming-no-matter-what/",
+        "source": "Wired",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Wired argues that the US government's crackdown on Anthropic's Claude Fable 5 and Mythos 5 obscures a broader reality, contending that AI models with advanced offensive hacking capabilities will soon be widespread regardless of regulatory action against any single vendor."
+      },
+      {
+        "id": "752ebc9394a9d189",
+        "title": "ChatGPT’s market share slips below 50% for first time",
+        "link": "https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/",
+        "source": "TechCrunch",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "TechCrunch reports that ChatGPT's share of the AI assistant market has slipped below 50 percent for the first time, though it remains the most popular chatbot worldwide with over 1.1 billion monthly users, followed by Google's Gemini at 662 million and Anthropic's Claude at 245 million."
+      },
+      {
+        "id": "a3f67405a75385de",
+        "title": "Meta’s new ‘AI Mode’ on Facebook pulls from public info across its platforms",
+        "link": "https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms/",
+        "source": "TechCrunch",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "TechCrunch reports that Meta is rolling out a new 'AI Mode' on Facebook that pulls from public information across its platforms, part of a broader push to catch up in the AI race and deepen user engagement on the social network."
+      },
+      {
+        "id": "fdcd63a8f2818865",
+        "title": "Anthropic Is Still at Odds With the White House Over Claude Fable 5",
+        "link": "https://www.wired.com/story/anthropic-is-still-at-odds-with-the-white-house-over-claude-fable-5/",
+        "source": "Wired",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Wired reports that Anthropic leaders met with White House officials this week but remain at odds with the administration over the risk profile of Claude Fable 5, the company's latest frontier model. The standoff highlights mounting friction between AI labs and US policymakers over how to evaluate and govern increasingly capable systems."
+      },
+      {
+        "id": "d4dfcce5b49ad3af",
+        "title": "Meta CTO Andrew Bosworth Admits the Company’s AI Reorg Was ‘Atrocious’",
+        "link": "https://www.wired.com/story/andrew-bosworth-meta-employees-unrest/",
+        "source": "Wired",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Wired reports that Meta CTO Andrew Bosworth, in an internal memo, described the company's recent AI reorganization as 'atrocious' and promised employees more stability, clearer communication, and the return of workplace perks. The admission comes as Meta works to restore morale across its AI and Reality Labs divisions amid sustained pressure on its long-term spatial computing bets."
+      },
+      {
+        "id": "07a96b56158c0e5d",
+        "title": "SpaceX is officially buying Cursor for $60 billion",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/950571/spacex-is-officially-buying-cursor-for-60-billion",
+        "source": "The Verge",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Verge reports that SpaceX is acquiring AI coding startup Cursor for $60 billion just days after its IPO, a move aimed at helping Elon Musk's company court enterprise customers and close the gap with AI rivals Anthropic and OpenAI."
+      },
+      {
+        "id": "1d7ab4db7ef5e247",
+        "title": "Inside the fight over Claude Mythos 5",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/950412/anthropic-trump-adminstration-claude-mythos-fable-5-export-controls",
+        "source": "The Verge",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to The Verge, Anthropic spent the weekend in a standoff with the Trump administration after receiving a Friday export control directive to suspend access to its newly released Claude Mythos 5 and Fable 5 models, escalating tensions between frontier AI labs and US government policy on model distribution."
+      },
+      {
+        "id": "15059a461358b21f",
+        "title": "Microsoft's Copilot Cowork moves to usage-based billing and may tap DeepSeek",
+        "link": "https://the-decoder.com/microsofts-copilot-cowork-moves-to-usage-based-billing-and-may-tap-deepseek/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to The Decoder, Microsoft is considering a fine-tuned version of DeepSeek V4 as a lower-cost model option for Copilot Cowork and is shifting the product to usage-based billing, with Copilot head Charles Lamanna saying flat-rate pricing is not sustainable."
+      },
+      {
+        "id": "79ea467419149bf8",
+        "title": "Disney's Imagineers Are Using Adobe's Firefly AI to Dream Up Ride Designs",
+        "link": "https://www.cnet.com/tech/services-and-software/disney-imagineers-partner-with-adobe-on-firefly-ai-for-attraction-design/",
+        "source": "CNET",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "CNET reports that Disney's Imagineers are partnering with Adobe to use Firefly AI, trained on proprietary Disney assets, to rapidly produce 3D models of characters and rides for attraction design."
+      },
+      {
+        "id": "3589188143989de4",
+        "title": "China may have accessed Mythos",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/949644/china-white-house-anthropic-mythos",
+        "source": "The Verge",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Verge, citing a Semafor report, says the White House's decision to impose export restrictions on Anthropic's Mythos was driven in part by concerns that a group linked to China had accessed the model. Officials reportedly worry that access to Mythos 5 or Fable 5 would carry serious national security implications."
+      },
+      {
+        "id": "04f0a1e646d7f60e",
+        "title": "Nvidia research shows robots that train themselves through AI coding agents",
+        "link": "https://the-decoder.com/nvidia-research-shows-robots-that-train-themselves-through-ai-coding-agents/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to The Decoder, researchers from Nvidia, Carnegie Mellon University, and UC Berkeley are using AI coding agents to teach robots dexterous grasping, with a fleet of eight robots achieving up to 99 percent success on complex manipulation tasks."
+      },
+      {
+        "id": "392eca56411907bf",
+        "title": "Anthropic Is Bringing Together AI Design and Coding in Claude",
+        "link": "https://www.cnet.com/tech/services-and-software/anthropic-claude-code-design-june-2026-news/",
+        "source": "CNET",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "CNET reports that Anthropic is bringing AI design and coding capabilities together in Claude, with new updates aimed at letting users move between coding and designing tasks without interruptions."
+      },
+      {
+        "id": "5a5ce2d394ba2184",
+        "title": "The Korean Telecom Giant at the Center of Anthropic’s Mythos Controversy",
+        "link": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
+        "source": "Wired",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to Wired, the White House ordered Anthropic to revoke SK Telecom's access to its Claude Mythos models over alleged ties to China, with the directive coming just days before Anthropic took its most advanced AI models offline."
+      },
+      {
+        "id": "5c3d0274acbe181a",
+        "title": "The White House Wants Anthropic to Block All Jailbreaks. That May Not Be Possible",
+        "link": "https://www.wired.com/story/the-white-house-wants-anthropic-to-block-all-jailbreaks-that-may-not-be-possible/",
+        "source": "Wired",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Wired reports that Trump administration officials are demanding Anthropic guarantee its Fable 5 model's guardrails cannot be circumvented before allowing a rerelease, a standard security experts told the publication is effectively impossible to meet given the current state of LLM jailbreak research."
+      },
+      {
+        "id": "9ef08ab1d7876924",
+        "title": "World leaders want American AI. They just don’t want America to be able to turn it off.",
+        "link": "https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off/",
+        "source": "TechCrunch",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "TechCrunch reports that French President Emmanuel Macron and Indian Prime Minister Narendra Modi raised concerns at the G7 summit that the United States could unilaterally cut off access to American AI services overnight, a fear given new weight by the recent Anthropic blackout that left international users without service. The episode is intensifying calls among allied governments to pursue sovereign AI capabilities and reduce dependency on U.S.-controlled model providers."
+      },
+      {
+        "id": "b03f8cd58c33fe90",
+        "title": "OpenAI researchers want to predict how often AI models will fail before launch",
+        "link": "https://the-decoder.com/openai-researchers-want-to-predict-how-often-ai-models-will-fail-before-launch/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Decoder reports that OpenAI researchers have proposed a method for predicting how frequently a new AI model will produce errors after release, aimed at filling gaps left by standard pre-launch safety testing."
+      },
+      {
+        "id": "d21388d9de6eea53",
+        "title": "The next humanoid robot might not look human at all",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/951283/genesis-ai-humanoid-robot-eno",
+        "source": "The Verge",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to The Verge, French startup Genesis AI introduced Eno, a humanoid robot that abandons conventional human form factors — sitting on a wheeled base and folding down like a deck chair — with the company arguing that humanoid robots don't need to look human to be useful."
+      }
+    ],
+    "RESEARCH": [
+      {
+        "id": "0f4f7900daf42b9b",
+        "title": "Award-Winning Researcher Trains Robots to Make Educated Guesses",
+        "link": "https://spectrum.ieee.org/researcher-trains-robots-to-guess",
+        "source": "IEEE Spectrum",
+        "category": "RESEARCH",
+        "summary": "IEEE Spectrum profiles Yen-Ling Kuo, an assistant professor of computer science at the University of Virginia, whose award-winning research trains robots to make educated guesses about uncertain environments. Her work draws on early exposure to programming through Logo and aims to give robots more flexible reasoning when navigating incomplete information."
+      },
+      {
+        "id": "5e6df51377acc525",
+        "title": "This man with ALS is “the first power user” of a brain implant that lets him speak",
+        "link": "https://www.technologyreview.com/2026/06/15/1138953/man-als-first-power-user-brain-implant-speak-bci/",
+        "source": "MIT Tech Review - AI",
+        "category": "RESEARCH",
+        "summary": "MIT Technology Review reports that Casey Harrell, who has ALS and is paralyzed, has become \"the first power user\" of a brain-computer interface, logging thousands of hours since electrodes were implanted nearly three years ago to help him speak."
+      },
+      {
+        "id": "f1079affed9cf9ab",
+        "title": "TurboGS: Accelerating 3D Gaussian Splatting via Error-Guided Sparse Pixel Sampling and Optimization",
+        "link": "https://arxiv.org/abs/2606.15924",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "Researchers on arXiv present TurboGS, an error-guided training framework that accelerates 3D Gaussian Splatting by concentrating optimization on perceptually informative pixels through sparse sampling. The method targets consumer-level applications that need fast 3DGS optimization with high-fidelity novel view rendering without sacrificing fine details."
+      },
+      {
+        "id": "15cd45c3819d59d3",
+        "title": "VEPHand: View-Efficient Photometric Hand Performance Capture at Scale",
+        "link": "https://arxiv.org/abs/2606.15966",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "An arXiv paper introduces VEPHand, an end-to-end pipeline for dynamic hand performance capture and registration designed for view-efficient multi-view setups using roughly 20 cameras. The work addresses geometric ambiguities in 3D hand reconstruction that have limited photometric capture systems used in digital human creation."
+      },
+      {
+        "id": "43b57f071d47c12c",
+        "title": "LentiAvatar: Pseudo-Multiview Reconstruction and Subpixel Prism Rendering for Real-Time Stereoscopic Communication",
+        "link": "https://arxiv.org/abs/2606.10550",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "Researchers on arXiv describe LentiAvatar, a Gaussian head-avatar system that pairs monocular portrait video capture with subpixel-encoded glasses-free lenticular displays to enable real-time autostereoscopic telepresence. The approach removes the need for specialized capture rigs that have historically constrained stereoscopic video communication."
+      },
+      {
+        "id": "14bba98f7445a7ea",
+        "title": "HairLRM: Strand-based Hair Modeling via Large Reconstruction Models",
+        "link": "https://arxiv.org/abs/2606.15238",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "A paper on arXiv presents HairLRM, a strand-based hair modeling approach using large reconstruction models that introduces structural constraints to resolve global occlusion and local directionality failures in 3D hair geometry inferred from 2D imagery."
+      },
+      {
+        "id": "5600e88968a62cc9",
+        "title": "Is It Real? Exploiting Virtual-Physical Discrimination Vulnerability in Mixed Reality",
+        "link": "https://arxiv.org/abs/2606.17783",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "A new arXiv preprint from cs.HC researchers identifies the inability of mixed reality users to distinguish virtual from physical objects as an exploitable security vulnerability, presenting a taxonomy of virtual-physical confusion attacks developed through speculative design workshops with 12 cybersecurity and MR/HCI experts."
+      },
+      {
+        "id": "877a85ea6e254542",
+        "title": "Impact of Hand Impairment and Occlusions on Hand Pose Estimation Accuracy in Augmented Reality Applications",
+        "link": "https://arxiv.org/abs/2606.17427",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "An arXiv paper from cs.HC examines how hand impairment and occlusion from real-world objects affect hand pose estimation accuracy on augmented reality head-mounted displays, addressing a gap relevant to AR-based hand rehabilitation applications that rely on precise tracking."
+      },
+      {
+        "id": "47c6d6fc23e5ea7b",
+        "title": "A Wearable Multimodal Ultrasound+Inertial System for Real-Time Virtual Reality Interaction",
+        "link": "https://arxiv.org/abs/2606.17741",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "Researchers publishing on arXiv propose a fully wearable multimodal interface combining A-mode ultrasound and inertial sensing for real-time virtual reality interaction, aiming to map muscular activity into control commands without relying on external cameras or hardware."
+      },
+      {
+        "id": "a1d1223132657e39",
+        "title": "Renderable Partial Representations for Dynamic Gaussian Splatting under Incomplete Delivery",
+        "link": "https://arxiv.org/abs/2606.17212",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "An arXiv cs.GR paper studies dynamic Gaussian splatting representations that remain renderable under incomplete delivery, optimizing degradation in image space for interactive rendering scenarios where some spatiotemporal regions arrive late or are missing entirely."
+      },
+      {
+        "id": "88dcdfa223c26e6d",
+        "title": "HoloPathTracer: Fast and Accurate Wave Path Tracing for Holography",
+        "link": "https://arxiv.org/abs/2606.14173",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "An updated arXiv preprint describes HoloPathTracer, a wave path tracing approach for computer-generated holography that aims to deliver photorealistic perceptual quality for VR and AR displays while preserving the compact form factors holography enables."
+      }
+    ],
+    "OPINION": [
+      {
+        "id": "e27d700ace8bbd45",
+        "title": "We Are Crowdsourcing the Panopticon",
+        "link": "https://spectrum.ieee.org/unintended-consequences-video-surveillance",
+        "source": "IEEE Spectrum",
+        "category": "OPINION",
+        "summary": "IEEE Spectrum examines how crowdsourced smartphone video, once a tool of civic accountability, is increasingly being fed into facial recognition and surveillance systems by civil authorities. The piece warns that the same footage citizens use to hold officials accountable can be repurposed into a distributed surveillance apparatus with consequences for privacy and civil liberties."
+      }
+    ],
+    "GAMING MARKETPLACE WATCH": [
+      {
+        "id": "4fec294b89b4c129",
+        "title": "G-Smash Hopes to Bring VR Developers Together &amp; Grow the Japanese Market For All",
+        "link": "https://www.uploadvr.com/g-smash-hopes-to-bring-vr-developers-together-and-grow-the-japanese-market-for-all/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "UploadVR examines the G-Smash initiative, which aims to unite VR developers and grow Japan's VR market, noting that the Japanese segment has remained resilient even as the global VR industry faces broader instability."
+      },
+      {
+        "id": "56aaefc684ae2f74",
+        "title": "‘Wanderer 2’ Cancelled Amid “volatile” VR Gaming Market",
+        "link": "https://roadtovr.com/wanderer-2-cancelled-vr-market-woes/",
+        "source": "Road to VR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "Road to VR reports that Mighty Eyes has cancelled Wanderer 2: The Seas of Fortune, the sequel to its 2025 VR action-adventure Wanderer: The Fragments of Fate, citing a volatile VR gaming market. The studio announced via its official Discord that all future updates on the project have ceased, underscoring continued headwinds for mid-sized VR studios."
+      },
+      {
+        "id": "27fa951b941313db",
+        "title": "BrushHammer Brings Miniature Model Painting To Quest This Summer",
+        "link": "https://www.uploadvr.com/brushhammer-brings-miniature-model-painting-to-quest-this-summer/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "UploadVR reports that BrushHammer, a mixed reality miniature figure painting app, will launch on Meta Quest in August. The release targets tabletop hobbyists looking to practice or design paint schemes in mixed reality before applying them to physical models."
+      }
+    ],
+    "APPLE VISION PRO IN THE NEWS": [
+      {
+        "id": "ac31f22810c53d2b",
+        "title": "visionOS 27 Is A Much Bigger Update Than Apple&#x27;s Keynote Suggested",
+        "link": "https://www.uploadvr.com/visionos-27-announced-apple-vision-pro-wwdc-26/",
+        "source": "UploadVR",
+        "category": "APPLE VISION PRO IN THE NEWS",
+        "summary": "UploadVR reports that visionOS 27 is a substantially larger update than Apple's WWDC 2026 keynote suggested, detailing additional features and improvements coming to Apple Vision Pro beyond those highlighted on stage."
+      }
+    ],
+    "HANDS-ON REVIEW": [
+      {
+        "id": "21247c92f24a154e",
+        "title": "Snap's New Specs Are Chunky, Pricey and I Really Need to Try Them",
+        "link": "https://www.cnet.com/tech/computing/snap-specs-evan-spiegel-augmented-reality-smart-glasses-awe-2026/",
+        "source": "CNET",
+        "category": "HANDS-ON REVIEW",
+        "summary": "CNET's Scott Stein reports from AWE 2026 that Snap's new AR Specs are chunkier and significantly more expensive than competing smart glasses, though still cheaper than Apple Vision Pro, in an early impression piece based on a conversation with CEO Evan Spiegel ahead of a full hands-on."
+      },
+      {
+        "id": "cfffeb7b2fbf4b31",
+        "title": "VITURE’s Enterprise Expansion: Hands on with Helix",
+        "link": "https://arinsider.co/2026/06/18/vitures-enterprise-expansion-hands-on-with-helix/",
+        "source": "AR Insider",
+        "category": "HANDS-ON REVIEW",
+        "summary": "AR Insider went hands-on at AWE with Viture's Helix, an NVIDIA-powered device marking the video-display-glasses maker's expansion from its consumer roots into the enterprise market."
+      }
+    ],
+    "NEW EXPERIENCES": [
+      {
+        "id": "4853669098a9eab6",
+        "title": "Google Earth's Flight Simulator Is Now on Browsers: Here's How to Play",
+        "link": "https://www.cnet.com/tech/gaming/google-earths-flight-simulator-is-now-on-browsers-heres-how-to-play/",
+        "source": "CNET",
+        "category": "NEW EXPERIENCES",
+        "summary": "CNET reports that Google Earth's Flight Simulator is now playable directly in web browsers, removing the need to download the desktop application and lowering the barrier to a long-running virtual flight experience built atop Google's 3D world data."
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "eac69ab425cbb764",
+      "title": "UPDATED: Someone Filed A Fake VRChat Data Breach Notice To Maine&#x27;s Attorney General",
+      "link": "https://www.uploadvr.com/vrchat-maine-attorney-general-fake-data-breach-notice/",
+      "source": "UploadVR",
+      "category": "SOFTWARE",
+      "summary": "UploadVR reports that a public filing claiming a VRChat data breach affecting more than 2 million users was submitted to Maine's Attorney General by a person who does not appear to exist, and the notice has been confirmed as fraudulent."
+    },
+    {
+      "id": "9543c785d8662ad5",
+      "title": "Meta shifts from \"tokenmaxxing\" to token managing as internal AI costs reportedly hit billions",
+      "link": "https://the-decoder.com/meta-shifts-from-tokenmaxxing-to-token-managing-as-internal-ai-costs-reportedly-hit-billions/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to The Decoder, an internal Meta memo to 6,000 employees outlines a shift from unrestricted AI usage to centralized governance through a dashboard called AI Gateway starting in 2027, with CTO Andrew Bosworth telling staff that token usage alone is not a measure of impact as internal AI costs reportedly climb into the billions."
+    },
+    {
+      "id": "77a6de37e8d9cb49",
+      "title": "Open model Kimi K2.7 Code undercuts GPT-5.5 and Claude by up to 12x on price per token",
+      "link": "https://the-decoder.com/moonshots-open-model-kimi-k2-7-code-undercuts-gpt-5-5-and-claude-by-up-to-12x-on-price-per-token/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Decoder reports that Moonshot AI has released Kimi K2.7 Code, an open-weights one-trillion-parameter model built for programming that trails GPT-5.5 and Claude Opus 4.8 on coding benchmarks but costs up to 12 times less per token, raising the question of whether additional runs at the same budget offset the quality gap."
+    },
+    {
+      "id": "5f2fe3a2ac39038d",
+      "title": "US government forces Anthropic to disable Claude Fable 5 and Mythos 5 for all customers worldwide",
+      "link": "https://the-decoder.com/us-government-forces-anthropic-to-disable-claude-fable-5-and-mythos-5-for-all-customers-worldwide/",
+      "source": "The Decoder",
+      "category": "HIGHLIGHTS",
+      "summary": "The Decoder reports that the US government has ordered Anthropic to disable global access to its Claude Fable 5 and Mythos 5 models over alleged jailbreak risks, with Anthropic complying but publicly pushing back, saying the vulnerabilities also exist in competing models and warning that the move could set a precedent that halts future frontier deployments."
+    },
+    {
+      "id": "918321a807752b25",
+      "title": "Anthropic blocks all customers' access to Fable 5 and Mythos 5",
+      "link": "https://www.engadget.com/2193656/anthropic-blocks-access-fable-5-mythos-5/",
+      "source": "Engadget",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Engadget reports that Anthropic has suspended all customer access to its Fable 5 and Mythos 5 AI models to comply with a US government order citing national security concerns, an unusual intervention in commercial AI deployment."
+    },
+    {
+      "id": "2a0c46444290378d",
+      "title": "Over half of Americans fear losing both their jobs and their independent thinking to AI, survey finds",
+      "link": "https://the-decoder.com/over-half-of-americans-fear-losing-both-their-jobs-and-their-independent-thinking-to-ai-survey-finds/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to The Decoder, an Anthropic survey of nearly 52,000 Americans found that 64 percent fear AI-driven job losses and 56 percent worry about losing the ability to think independently, though daily AI users expressed far less concern. The survey also found that most respondents reject AI use in their own workplace, even for tasks they believe it could handle."
+    },
+    {
+      "id": "1398160e36cd2b54",
+      "title": "OpenAI kicks off the AI price wars with flexible rate-limit resets for its Codex coding agent",
+      "link": "https://the-decoder.com/openai-kicks-off-the-ai-price-wars-with-flexible-rate-limit-resets-for-its-codex-coding-agent/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Decoder reports that OpenAI now allows Codex users to bank rate-limit resets and trigger them manually rather than waiting for fixed schedules, with Go, Plus, Pro, and Business plan users each receiving one free reset. Plus and Pro users can also unlock additional resets by inviting others, a move The Decoder frames as the opening of an AI pricing war among coding-agent providers."
+    },
+    {
+      "id": "009a50a283dd2810",
+      "title": "‘Tell Him He’s a Piece of Shit’: Meta’s New AI Unit Is a Total Mess",
+      "link": "https://www.wired.com/story/mark-zuckerberg-meta-employee-meeting-interrupt-ai/",
+      "source": "Wired",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to Wired, executives and employees at Meta's new AI unit are struggling with what sources describe as a chaotic strategy, based on internal discussions and interviews reviewed by the publication. The report points to tension within the organization as Meta attempts to consolidate its AI efforts under Mark Zuckerberg's direction."
+    },
+    {
+      "id": "0f4f7900daf42b9b",
+      "title": "Award-Winning Researcher Trains Robots to Make Educated Guesses",
+      "link": "https://spectrum.ieee.org/researcher-trains-robots-to-guess",
+      "source": "IEEE Spectrum",
+      "category": "RESEARCH",
+      "summary": "IEEE Spectrum profiles Yen-Ling Kuo, an assistant professor of computer science at the University of Virginia, whose award-winning research trains robots to make educated guesses about uncertain environments. Her work draws on early exposure to programming through Logo and aims to give robots more flexible reasoning when navigating incomplete information."
+    },
+    {
+      "id": "e27d700ace8bbd45",
+      "title": "We Are Crowdsourcing the Panopticon",
+      "link": "https://spectrum.ieee.org/unintended-consequences-video-surveillance",
+      "source": "IEEE Spectrum",
+      "category": "OPINION",
+      "summary": "IEEE Spectrum examines how crowdsourced smartphone video, once a tool of civic accountability, is increasingly being fed into facial recognition and surveillance systems by civil authorities. The piece warns that the same footage citizens use to hold officials accountable can be repurposed into a distributed surveillance apparatus with consequences for privacy and civil liberties."
+    },
+    {
+      "id": "dec9fef2390caa3a",
+      "title": "Due to DMA, Siri AI delayed in EU for iOS 27 and iPadOS 27",
+      "link": "https://www.apple.com/newsroom/2026/06/due-to-dma-siri-ai-delayed-in-eu-for-ios-27-and-ipados-27/",
+      "source": "Apple Newsroom",
+      "category": "SOFTWARE",
+      "summary": "Apple announced that Siri AI will not ship in the European Union with iOS 27 and iPadOS 27, citing requirements imposed by the Digital Markets Act. The delay continues a pattern of Apple withholding AI features from EU users while it negotiates compliance with the bloc's competition rules."
+    },
+    {
+      "id": "d924ac8104ee618e",
+      "title": "Apple expands App Store capabilities to help developers grow and reach new users",
+      "link": "https://www.apple.com/newsroom/2026/06/apple-expands-app-store-capabilities-to-help-developers-grow-and-reach-new-users/",
+      "source": "Apple Newsroom",
+      "category": "SOFTWARE",
+      "summary": "Apple announced expanded App Store capabilities intended to give developers more flexibility in marketing apps, acquiring users, and managing subscriptions. The changes apply across Apple's platforms, including visionOS, and follow ongoing regulatory pressure on the company's developer policies."
+    },
+    {
+      "id": "babc3c36ab08be7b",
+      "title": "Snap Reveals Next-gen Specs AR Glasses, Priced at $2,200",
+      "link": "https://roadtovr.com/snap-specs-2026-ar-glasses-release-date-price/",
+      "source": "Road to VR",
+      "category": "HIGHLIGHTS",
+      "summary": "Road to VR reports that Snap unveiled its first consumer-facing standalone AR glasses at Augmented World Expo 2026, priced at $2,200 and positioned as the sixth-generation Spectacles device, with onboard AI assistance, entertainment, and productivity features."
+    },
+    {
+      "id": "00de3f3e067b5378",
+      "title": "Raven Prism Smart Glasses Announced with Unique Hot-swappable Battery",
+      "link": "https://roadtovr.com/raven-prism-smart-glasses-reveal-awe-2026/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "Road to VR reports that San Francisco-based startup Raven Resonance is publicly demoing its upcoming Raven Prism smart glasses for the first time at Augmented World Expo 2026, with the device differentiated by a hot-swappable battery system intended to keep the glasses powered throughout the day."
+    },
+    {
+      "id": "ace9206338c4bbfd",
+      "title": "Qualcomm Announces Snapdragon Reality Elite, Its New Flagship XR Chipset",
+      "link": "https://www.uploadvr.com/qualcomm-snapdragon-reality-elite-new-flagship-xr-chipset/",
+      "source": "UploadVR",
+      "category": "HARDWARE",
+      "summary": "UploadVR reports that Qualcomm announced Snapdragon Reality Elite, a new flagship XR chipset that will debut this fall in the compute puck of Xreal's Aura Android XR device."
+    },
+    {
+      "id": "33390e4ca0c53d8b",
+      "title": "Snap Opens Preorders For Specs, True AR Glasses Shipping This Fall For $2195",
+      "link": "https://www.uploadvr.com/snap-specs-design-revealed-preorders-open-price/",
+      "source": "UploadVR",
+      "category": "HIGHLIGHTS",
+      "summary": "UploadVR reports that Snap officially revealed and opened preorders for Specs, its fully standalone true AR glasses, which will ship this fall in the U.S., U.K., and France for $2,195."
+    },
+    {
+      "id": "4fec294b89b4c129",
+      "title": "G-Smash Hopes to Bring VR Developers Together &amp; Grow the Japanese Market For All",
+      "link": "https://www.uploadvr.com/g-smash-hopes-to-bring-vr-developers-together-and-grow-the-japanese-market-for-all/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "UploadVR examines the G-Smash initiative, which aims to unite VR developers and grow Japan's VR market, noting that the Japanese segment has remained resilient even as the global VR industry faces broader instability."
+    },
+    {
+      "id": "520fbee58f69cfb4",
+      "title": "This Quest 3 Accessory Makes Your VR Avatar Expressive Without Face Tracking",
+      "link": "https://www.uploadvr.com/pieeg-xr-makes-your-vr-avatar-expressive-without-face-tracking/",
+      "source": "UploadVR",
+      "category": "HARDWARE",
+      "summary": "UploadVR reports on PiEEG XR, an upcoming Quest 3 accessory that aims to make VR avatars more expressive without relying on face-tracking cameras, instead using EEG-based signals to drive avatar expressiveness."
+    },
+    {
+      "id": "ac31f22810c53d2b",
+      "title": "visionOS 27 Is A Much Bigger Update Than Apple&#x27;s Keynote Suggested",
+      "link": "https://www.uploadvr.com/visionos-27-announced-apple-vision-pro-wwdc-26/",
+      "source": "UploadVR",
+      "category": "APPLE VISION PRO IN THE NEWS",
+      "summary": "UploadVR reports that visionOS 27 is a substantially larger update than Apple's WWDC 2026 keynote suggested, detailing additional features and improvements coming to Apple Vision Pro beyond those highlighted on stage."
+    },
+    {
+      "id": "72b2b4b59adb6e27",
+      "title": "SpaceX bets $60 billion on Cursor to catch OpenAI and Anthropic",
+      "link": "https://the-decoder.com/spacex-bets-60-billion-on-cursor-to-catch-openai-and-anthropic/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Decoder reports that just two trading days after its IPO, Elon Musk's SpaceX is acquiring AI coding startup Anysphere, maker of Cursor, in a $60 billion deal intended to help the struggling xAI division catch up with Anthropic and OpenAI."
+    },
+    {
+      "id": "01183e0faf80721e",
+      "title": "How easily can Russian propaganda fool AI models? A new benchmark finds out",
+      "link": "https://the-decoder.com/how-easily-can-russian-propaganda-fool-ai-models-a-new-benchmark-finds-out/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Decoder reports that the Institute of the Estonian Language has released a new benchmark measuring how susceptible AI language models are to Russian propaganda, providing a structured way to evaluate model resilience against state-sponsored disinformation."
+    },
+    {
+      "id": "f95e9ea6585a4215",
+      "title": "The US government may be asking Anthropic the impossible by demanding unhackable LLMs",
+      "link": "https://the-decoder.com/the-us-government-may-be-asking-anthropic-the-impossible-by-demanding-unhackable-llms/",
+      "source": "The Decoder",
+      "category": "HIGHLIGHTS",
+      "summary": "The Decoder reports that US government officials have accused Anthropic of disregarding a Trump cyber directive by releasing Fable 5 without approval, with one administration official saying \"They screwed us,\" as talks continue with the Department of Commerce, the CIA, and science advisor Michael Kratsios over demands that may be technically impossible to meet."
+    },
+    {
+      "id": "169871f0fda56189",
+      "title": "Pokémon Go data helped train AI now linked to military drones",
+      "link": "https://the-decoder.com/pokemon-go-data-helped-train-ai-now-linked-to-military-drones/",
+      "source": "The Decoder",
+      "category": "HIGHLIGHTS",
+      "summary": "According to The Decoder, volunteer AR scans contributed by Pokémon Go players were used to train Niantic's spatial AI models, and that technology is now being combined with a US defense contractor's software to enable GPS-free navigation for military drones."
+    },
+    {
+      "id": "b0a9b9113ae50b26",
+      "title": "Anthropic shutdown sparks sovereignty debate across Europe",
+      "link": "https://the-decoder.com/anthropic-shutdown-sparks-sovereignty-debate-across-europe/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Decoder reports that the European Commission is assessing the implications of the US order that forced Anthropic to shut down Fable 5 and Mythos 5 worldwide, with European researchers debating whether to build sovereign foundation models or secure access through contracts, though experts warn Europe currently lacks the computing capacity, energy, and competitive providers needed for homegrown infrastructure."
+    },
+    {
+      "id": "5e6df51377acc525",
+      "title": "This man with ALS is “the first power user” of a brain implant that lets him speak",
+      "link": "https://www.technologyreview.com/2026/06/15/1138953/man-als-first-power-user-brain-implant-speak-bci/",
+      "source": "MIT Tech Review - AI",
+      "category": "RESEARCH",
+      "summary": "MIT Technology Review reports that Casey Harrell, who has ALS and is paralyzed, has become \"the first power user\" of a brain-computer interface, logging thousands of hours since electrodes were implanted nearly three years ago to help him speak."
+    },
+    {
+      "id": "897cc4dbaf7313fd",
+      "title": "Qualcomm unveils its Snapdragon Reality Elite chip for next-gen AR headsets",
+      "link": "https://www.engadget.com/2194353/qualcomm-unveils-its-snapdragon-reality-elite-chip-for-next-gen-ar-headsets/",
+      "source": "Engadget",
+      "category": "HARDWARE",
+      "summary": "Engadget reports that Qualcomm unveiled its Snapdragon Reality Elite chip at AWE 2026, a new silicon platform aimed at next-generation AR headsets and smart glasses that promises significant improvements in graphics, battery life, and on-device AI processing."
+    },
+    {
+      "id": "432418d955a39153",
+      "title": "Xreal officially reveals its Android XR Aura glasses — without a pricetag",
+      "link": "https://www.engadget.com/2194861/xreal-aura-android-xr-glasses-launch-no-price/",
+      "source": "Engadget",
+      "category": "HARDWARE",
+      "summary": "According to Engadget, Xreal officially revealed its Android XR Aura glasses at AWE 2026 and began taking paid reservations ahead of a launch later this year, though the company has not yet disclosed a final price."
+    },
+    {
+      "id": "26f50f579eea217d",
+      "title": "Is NFC charging the secret to nicer-looking smartglasses?",
+      "link": "https://www.engadget.com/2195309/nucurrent-smart-glass-nfc-charging-tech-in-ray-ban-meta-prototype/",
+      "source": "Engadget",
+      "category": "HARDWARE",
+      "summary": "Engadget reports that NuCurrent demonstrated NFC-based charging in a Ray-Ban Meta prototype at AWE 2026, showing the technology can match the performance of the pogo pins currently used in smart glasses while enabling slimmer, more refined industrial designs."
+    },
+    {
+      "id": "bcf7effb618ac437",
+      "title": "Snap's slimmed down AR Specs go on sale later this year for $2,195",
+      "link": "https://www.engadget.com/2195207/snap-ar-specs-launch-price/",
+      "source": "Engadget",
+      "category": "HIGHLIGHTS",
+      "summary": "According to Engadget, Snap announced that its slimmed-down AR Specs will go on sale later this year at $2,195, with the company describing the standalone device as a wearable computer rather than a conventional smart-glasses accessory."
+    },
+    {
+      "id": "340adf6d5cbb4628",
+      "title": "Xreal's Android XR Aura Glasses Are Coming This Fall, With a Brand New Qualcomm Chip Inside",
+      "link": "https://www.cnet.com/tech/computing/qualcomm-snapdragon-reality-elite-chip-xreal-aura-glasses-awe-2026/",
+      "source": "CNET",
+      "category": "HIGHLIGHTS",
+      "summary": "CNET reports that Xreal's Aura glasses, running Android XR, will ship this fall as the first device powered by Qualcomm's new Snapdragon Reality Elite chip, with Qualcomm promising meaningful gains in graphics performance, battery life, and AI capabilities across future headsets using the platform."
+    },
+    {
+      "id": "21247c92f24a154e",
+      "title": "Snap's New Specs Are Chunky, Pricey and I Really Need to Try Them",
+      "link": "https://www.cnet.com/tech/computing/snap-specs-evan-spiegel-augmented-reality-smart-glasses-awe-2026/",
+      "source": "CNET",
+      "category": "HANDS-ON REVIEW",
+      "summary": "CNET's Scott Stein reports from AWE 2026 that Snap's new AR Specs are chunkier and significantly more expensive than competing smart glasses, though still cheaper than Apple Vision Pro, in an early impression piece based on a conversation with CEO Evan Spiegel ahead of a full hands-on."
+    },
+    {
+      "id": "809fe1f2b3f4d2c4",
+      "title": "AWE 2026 Live: Smart Glasses Are Bringing AI to Our Faces",
+      "link": "https://www.cnet.com/news-live/awe-2026-smart-glasses-augmented-reality-live-coverage/",
+      "source": "CNET",
+      "category": "HIGHLIGHTS",
+      "summary": "CNET is providing live coverage of Augmented World Expo 2026, framing the event as the clearest look yet at how smart glasses are evolving into AI-first wearables, with major announcements expected from Snap, Qualcomm, Xreal, and other vendors."
+    },
+    {
+      "id": "4853669098a9eab6",
+      "title": "Google Earth's Flight Simulator Is Now on Browsers: Here's How to Play",
+      "link": "https://www.cnet.com/tech/gaming/google-earths-flight-simulator-is-now-on-browsers-heres-how-to-play/",
+      "source": "CNET",
+      "category": "NEW EXPERIENCES",
+      "summary": "CNET reports that Google Earth's Flight Simulator is now playable directly in web browsers, removing the need to download the desktop application and lowering the barrier to a long-running virtual flight experience built atop Google's 3D world data."
+    },
+    {
+      "id": "51e64d76b7896e04",
+      "title": "‘Dangerous’ AI Models Are Coming No Matter What",
+      "link": "https://www.wired.com/story/dangerous-ai-models-are-coming-no-matter-what/",
+      "source": "Wired",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Wired argues that the US government's crackdown on Anthropic's Claude Fable 5 and Mythos 5 obscures a broader reality, contending that AI models with advanced offensive hacking capabilities will soon be widespread regardless of regulatory action against any single vendor."
+    },
+    {
+      "id": "95bccd6105cbd6b5",
+      "title": "You Can Finally Buy Snap’s New AR Specs—for $2,195",
+      "link": "https://www.wired.com/story/snaps-new-ar-specs-cost-2195/",
+      "source": "Wired",
+      "category": "HIGHLIGHTS",
+      "summary": "Wired reports that Snap is now selling its new AR Specs for $2,195, with CEO Evan Spiegel laying out the company's vision for the augmented-reality smart glasses arriving later this year. The launch marks Snap's transition from developer-only Spectacles to a consumer-facing AR product, intensifying competition in the smart glasses market alongside Meta and Google."
+    },
+    {
+      "id": "f1079affed9cf9ab",
+      "title": "TurboGS: Accelerating 3D Gaussian Splatting via Error-Guided Sparse Pixel Sampling and Optimization",
+      "link": "https://arxiv.org/abs/2606.15924",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "Researchers on arXiv present TurboGS, an error-guided training framework that accelerates 3D Gaussian Splatting by concentrating optimization on perceptually informative pixels through sparse sampling. The method targets consumer-level applications that need fast 3DGS optimization with high-fidelity novel view rendering without sacrificing fine details."
+    },
+    {
+      "id": "15cd45c3819d59d3",
+      "title": "VEPHand: View-Efficient Photometric Hand Performance Capture at Scale",
+      "link": "https://arxiv.org/abs/2606.15966",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "An arXiv paper introduces VEPHand, an end-to-end pipeline for dynamic hand performance capture and registration designed for view-efficient multi-view setups using roughly 20 cameras. The work addresses geometric ambiguities in 3D hand reconstruction that have limited photometric capture systems used in digital human creation."
+    },
+    {
+      "id": "43b57f071d47c12c",
+      "title": "LentiAvatar: Pseudo-Multiview Reconstruction and Subpixel Prism Rendering for Real-Time Stereoscopic Communication",
+      "link": "https://arxiv.org/abs/2606.10550",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "Researchers on arXiv describe LentiAvatar, a Gaussian head-avatar system that pairs monocular portrait video capture with subpixel-encoded glasses-free lenticular displays to enable real-time autostereoscopic telepresence. The approach removes the need for specialized capture rigs that have historically constrained stereoscopic video communication."
+    },
+    {
+      "id": "a7d6afb8f1da6ae4",
+      "title": "Meta Tapped a Pentagon Supplier to Prototype Face Recognition for Its Glasses",
+      "link": "https://www.wired.com/story/meta-rank-one-computing-face-recognition-smart-glasses/",
+      "source": "Wired",
+      "category": "HIGHLIGHTS",
+      "summary": "Wired reports that Meta tapped Rank One Computing, a Pentagon supplier whose board includes a former CIA deputy director and a former FBI science chief, to prototype face recognition for its smart glasses app during internal development. The disclosure raises fresh questions about surveillance capabilities being built into consumer smart eyewear as Meta expands its glasses lineup."
+    },
+    {
+      "id": "7f081a4352950aa8",
+      "title": "Qualcomm’s latest chip hints that more powerful smart glasses could be on the way",
+      "link": "https://www.theverge.com/gadgets/950229/qualcomm-snapdragon-reality-elite-xr-smart-glasses-wearables",
+      "source": "The Verge",
+      "category": "HARDWARE",
+      "summary": "Qualcomm unveiled its Snapdragon Reality Elite chip at Augmented World Expo, designed to power the next generation of XR devices and smart glasses, according to The Verge, which already had hands-on time with a device running the new silicon."
+    },
+    {
+      "id": "752ebc9394a9d189",
+      "title": "ChatGPT’s market share slips below 50% for first time",
+      "link": "https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/",
+      "source": "TechCrunch",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "TechCrunch reports that ChatGPT's share of the AI assistant market has slipped below 50 percent for the first time, though it remains the most popular chatbot worldwide with over 1.1 billion monthly users, followed by Google's Gemini at 662 million and Anthropic's Claude at 245 million."
+    },
+    {
+      "id": "a3f67405a75385de",
+      "title": "Meta’s new ‘AI Mode’ on Facebook pulls from public info across its platforms",
+      "link": "https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms/",
+      "source": "TechCrunch",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "TechCrunch reports that Meta is rolling out a new 'AI Mode' on Facebook that pulls from public information across its platforms, part of a broader push to catch up in the AI race and deepen user engagement on the social network."
+    },
+    {
+      "id": "56aaefc684ae2f74",
+      "title": "‘Wanderer 2’ Cancelled Amid “volatile” VR Gaming Market",
+      "link": "https://roadtovr.com/wanderer-2-cancelled-vr-market-woes/",
+      "source": "Road to VR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "Road to VR reports that Mighty Eyes has cancelled Wanderer 2: The Seas of Fortune, the sequel to its 2025 VR action-adventure Wanderer: The Fragments of Fate, citing a volatile VR gaming market. The studio announced via its official Discord that all future updates on the project have ceased, underscoring continued headwinds for mid-sized VR studios."
+    },
+    {
+      "id": "05e91802a397a6d5",
+      "title": "Xreal Aura Ships This Fall, With Snapdragon Reality Elite In Its Puck",
+      "link": "https://www.uploadvr.com/xreal-aura-ships-this-fall-with-snapdragon-reality-elite-in-its-puck/",
+      "source": "UploadVR",
+      "category": "HARDWARE",
+      "summary": "UploadVR reports that Xreal has opened preorders for its Aura Android XR glasses, confirming Qualcomm's new Snapdragon Reality Elite chip in the accompanying puck, though the company has yet to disclose pricing. The device is slated to ship this fall as part of the broader push of Android XR hardware into the consumer market."
+    },
+    {
+      "id": "82e7bc2ea35bf83c",
+      "title": "Theremin&#x27;s Ghost Hands Add-On Lets You Be A One Person Musical Ensemble This July",
+      "link": "https://www.uploadvr.com/theremins-ghost-hands-add-on-lets-you-be-a-one-person-musical-ensemble-this-july/",
+      "source": "UploadVR",
+      "category": "APP STORE HIGHLIGHTS",
+      "summary": "UploadVR reports that mixed reality musical app Theremin will receive a Ghost Hands add-on in July, allowing users to layer performances with recordings of their past selves to create one-person ensembles. The update extends the app's appeal to amateur musicians experimenting with mixed reality performance tools."
+    },
+    {
+      "id": "27fa951b941313db",
+      "title": "BrushHammer Brings Miniature Model Painting To Quest This Summer",
+      "link": "https://www.uploadvr.com/brushhammer-brings-miniature-model-painting-to-quest-this-summer/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "UploadVR reports that BrushHammer, a mixed reality miniature figure painting app, will launch on Meta Quest in August. The release targets tabletop hobbyists looking to practice or design paint schemes in mixed reality before applying them to physical models."
+    },
+    {
+      "id": "8aa9d6b3a5cda150",
+      "title": "Wear OS 7 is Out In the Wild and It's Bringing Watches and Glasses Closer Together",
+      "link": "https://www.cnet.com/tech/mobile/wheres-wear-os-7/",
+      "source": "CNET",
+      "category": "HARDWARE",
+      "summary": "According to CNET, Google has begun rolling out Wear OS 7, delivering battery-life improvements and tighter integration between smartwatches and smart glasses as gateways into Google's broader AI ecosystem. The update reinforces Google's strategy of positioning wearables as connected entry points for Gemini-powered experiences."
+    },
+    {
+      "id": "fdcd63a8f2818865",
+      "title": "Anthropic Is Still at Odds With the White House Over Claude Fable 5",
+      "link": "https://www.wired.com/story/anthropic-is-still-at-odds-with-the-white-house-over-claude-fable-5/",
+      "source": "Wired",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Wired reports that Anthropic leaders met with White House officials this week but remain at odds with the administration over the risk profile of Claude Fable 5, the company's latest frontier model. The standoff highlights mounting friction between AI labs and US policymakers over how to evaluate and govern increasingly capable systems."
+    },
+    {
+      "id": "d4dfcce5b49ad3af",
+      "title": "Meta CTO Andrew Bosworth Admits the Company’s AI Reorg Was ‘Atrocious’",
+      "link": "https://www.wired.com/story/andrew-bosworth-meta-employees-unrest/",
+      "source": "Wired",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Wired reports that Meta CTO Andrew Bosworth, in an internal memo, described the company's recent AI reorganization as 'atrocious' and promised employees more stability, clearer communication, and the return of workplace perks. The admission comes as Meta works to restore morale across its AI and Reality Labs divisions amid sustained pressure on its long-term spatial computing bets."
+    },
+    {
+      "id": "14bba98f7445a7ea",
+      "title": "HairLRM: Strand-based Hair Modeling via Large Reconstruction Models",
+      "link": "https://arxiv.org/abs/2606.15238",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "A paper on arXiv presents HairLRM, a strand-based hair modeling approach using large reconstruction models that introduces structural constraints to resolve global occlusion and local directionality failures in 3D hair geometry inferred from 2D imagery."
+    },
+    {
+      "id": "07a96b56158c0e5d",
+      "title": "SpaceX is officially buying Cursor for $60 billion",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/950571/spacex-is-officially-buying-cursor-for-60-billion",
+      "source": "The Verge",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Verge reports that SpaceX is acquiring AI coding startup Cursor for $60 billion just days after its IPO, a move aimed at helping Elon Musk's company court enterprise customers and close the gap with AI rivals Anthropic and OpenAI."
+    },
+    {
+      "id": "1d7ab4db7ef5e247",
+      "title": "Inside the fight over Claude Mythos 5",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/950412/anthropic-trump-adminstration-claude-mythos-fable-5-export-controls",
+      "source": "The Verge",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to The Verge, Anthropic spent the weekend in a standoff with the Trump administration after receiving a Friday export control directive to suspend access to its newly released Claude Mythos 5 and Fable 5 models, escalating tensions between frontier AI labs and US government policy on model distribution."
+    },
+    {
+      "id": "15059a461358b21f",
+      "title": "Microsoft's Copilot Cowork moves to usage-based billing and may tap DeepSeek",
+      "link": "https://the-decoder.com/microsofts-copilot-cowork-moves-to-usage-based-billing-and-may-tap-deepseek/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to The Decoder, Microsoft is considering a fine-tuned version of DeepSeek V4 as a lower-cost model option for Copilot Cowork and is shifting the product to usage-based billing, with Copilot head Charles Lamanna saying flat-rate pricing is not sustainable."
+    },
+    {
+      "id": "0b1dbcdce1755256",
+      "title": "Evan Spiegel doesn't want you to call Snap Specs AI glasses",
+      "link": "https://www.engadget.com/2195862/snap-specs-ceo-evan-spiegel-interview-at-awe-2026/",
+      "source": "Engadget",
+      "category": "HIGHLIGHTS",
+      "summary": "In an interview with Engadget at AWE 2026, Snap CEO Evan Spiegel pushed back on framing the company's new Specs as AI glasses, repeatedly describing them as a computing platform and discussing privacy and parental controls."
+    },
+    {
+      "id": "ab0b230b5a0b777f",
+      "title": "Meta's Smart Glasses Are Testing Facial Recognition Software Used by Police and the Military",
+      "link": "https://www.cnet.com/tech/mobile/metas-smart-glasses-testing-facial-recognition-software-police-and-military/",
+      "source": "CNET",
+      "category": "HIGHLIGHTS",
+      "summary": "According to CNET, Meta's smart glasses are testing facial recognition software of the kind used by police and the military, renewing surveillance concerns around the wearable."
+    },
+    {
+      "id": "79ea467419149bf8",
+      "title": "Disney's Imagineers Are Using Adobe's Firefly AI to Dream Up Ride Designs",
+      "link": "https://www.cnet.com/tech/services-and-software/disney-imagineers-partner-with-adobe-on-firefly-ai-for-attraction-design/",
+      "source": "CNET",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "CNET reports that Disney's Imagineers are partnering with Adobe to use Firefly AI, trained on proprietary Disney assets, to rapidly produce 3D models of characters and rides for attraction design."
+    },
+    {
+      "id": "3589188143989de4",
+      "title": "China may have accessed Mythos",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/949644/china-white-house-anthropic-mythos",
+      "source": "The Verge",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Verge, citing a Semafor report, says the White House's decision to impose export restrictions on Anthropic's Mythos was driven in part by concerns that a group linked to China had accessed the model. Officials reportedly worry that access to Mythos 5 or Fable 5 would carry serious national security implications."
+    },
+    {
+      "id": "4a500f4a83d6cc63",
+      "title": "Android 17 launches with new multitasking tools as Google expands Gemini features",
+      "link": "https://techcrunch.com/2026/06/16/android-17-launches-with-new-multitasking-tools-as-google-expands-gemini-features/",
+      "source": "TechCrunch",
+      "category": "SOFTWARE",
+      "summary": "TechCrunch reports that Google has released Android 17 and Wear OS 7, introducing new multitasking features, parental controls, security tools, and smartwatch upgrades, alongside a Pixel Drop that brings Google's latest AI models to its devices. The release expands Gemini's footprint across Google's mobile and wearable platforms."
+    },
+    {
+      "id": "6571c06c2f152fe9",
+      "title": "XREAL AURA AR Glasses Get Fall Release Window, $1,500 Price Ceiling",
+      "link": "https://roadtovr.com/xreal-aura-release-date-price-1500/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "Road to VR reports that XREAL will launch its AURA AR glasses this fall at a price not exceeding $1,500, with the device built in collaboration with Google and Qualcomm and among the first to ship with Qualcomm's newly announced Snapdragon Reality Elite chipset."
+    },
+    {
+      "id": "a0af43fc0ee22c82",
+      "title": "Qualcomm’s New Snapdragon Chip Paves the Way for More Compact XR Headsets and Glasses",
+      "link": "https://roadtovr.com/qualcomm-snapdragon-reality-elite-compact-headsets-glasses/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "At Augmented World Expo, Qualcomm announced Snapdragon Reality Elite, a new processor targeting both standalone XR headsets and lightweight tethered AR glasses with a focus on on-device AI, improved performance, and lower power consumption, according to Road to VR."
+    },
+    {
+      "id": "3ad073d8cb028ad2",
+      "title": "Amazon, Nvidia, and AMD bet $310 million on AI startup building 3D world models",
+      "link": "https://the-decoder.com/amazon-nvidia-and-amd-bet-310-million-on-ai-startup-building-3d-world-models/",
+      "source": "The Decoder",
+      "category": "INVESTMENT",
+      "summary": "The Decoder reports that Amazon, Nvidia, and AMD are investing $310 million into world model startup Odyssey ML at a $1.45 billion valuation, with CIA-linked fund IQT and Google chief scientist Jeff Dean also backing the round as world models emerge as the industry's next major AI bet beyond language models."
+    },
+    {
+      "id": "04f0a1e646d7f60e",
+      "title": "Nvidia research shows robots that train themselves through AI coding agents",
+      "link": "https://the-decoder.com/nvidia-research-shows-robots-that-train-themselves-through-ai-coding-agents/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to The Decoder, researchers from Nvidia, Carnegie Mellon University, and UC Berkeley are using AI coding agents to teach robots dexterous grasping, with a fleet of eight robots achieving up to 99 percent success on complex manipulation tasks."
+    },
+    {
+      "id": "66db1310d1d7274b",
+      "title": "Snapdragon Reality Elite Sparks Qualcomm’s Next Phase of XR",
+      "link": "https://arinsider.co/2026/06/17/snapdragon-reality-elite-sparks-qualcomms-next-phase-of-xr/",
+      "source": "AR Insider",
+      "category": "HARDWARE",
+      "summary": "AR Insider reports that Qualcomm unveiled Snapdragon Reality Elite at AWE, with VP and GM of XR Ziad Asghar presenting the new branding and capabilities, which will debut commercially in XREAL's Project Aura glasses."
+    },
+    {
+      "id": "bf90804fbedd9bec",
+      "title": "Epic Games details how it's embracing generative AI in Unreal Engine",
+      "link": "https://www.engadget.com/2196807/epic-games-details-how-its-embracing-gen-ai-in-unreal-engine/",
+      "source": "Engadget",
+      "category": "SOFTWARE",
+      "summary": "Engadget reports that Epic Games is integrating generative AI as a significant component of upcoming versions of Unreal Engine, signaling a deeper embrace of AI tooling across the company's real-time 3D development platform."
+    },
+    {
+      "id": "9fbd59a62870f5b7",
+      "title": "Illinois Could Be the First State to Ban Wearing Smart Glasses While Driving",
+      "link": "https://www.cnet.com/tech/mobile/illinois-could-be-first-to-ban-wearing-smart-glasses-while-driving/",
+      "source": "CNET",
+      "category": "HIGHLIGHTS",
+      "summary": "According to CNET, Illinois could become the first U.S. state to ban wearing smart glasses while driving, with a bill having passed the state legislature and now awaiting the governor's signature."
+    },
+    {
+      "id": "392eca56411907bf",
+      "title": "Anthropic Is Bringing Together AI Design and Coding in Claude",
+      "link": "https://www.cnet.com/tech/services-and-software/anthropic-claude-code-design-june-2026-news/",
+      "source": "CNET",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "CNET reports that Anthropic is bringing AI design and coding capabilities together in Claude, with new updates aimed at letting users move between coding and designing tasks without interruptions."
+    },
+    {
+      "id": "5a5ce2d394ba2184",
+      "title": "The Korean Telecom Giant at the Center of Anthropic’s Mythos Controversy",
+      "link": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
+      "source": "Wired",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to Wired, the White House ordered Anthropic to revoke SK Telecom's access to its Claude Mythos models over alleged ties to China, with the directive coming just days before Anthropic took its most advanced AI models offline."
+    },
+    {
+      "id": "5c3d0274acbe181a",
+      "title": "The White House Wants Anthropic to Block All Jailbreaks. That May Not Be Possible",
+      "link": "https://www.wired.com/story/the-white-house-wants-anthropic-to-block-all-jailbreaks-that-may-not-be-possible/",
+      "source": "Wired",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Wired reports that Trump administration officials are demanding Anthropic guarantee its Fable 5 model's guardrails cannot be circumvented before allowing a rerelease, a standard security experts told the publication is effectively impossible to meet given the current state of LLM jailbreak research."
+    },
+    {
+      "id": "5600e88968a62cc9",
+      "title": "Is It Real? Exploiting Virtual-Physical Discrimination Vulnerability in Mixed Reality",
+      "link": "https://arxiv.org/abs/2606.17783",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "A new arXiv preprint from cs.HC researchers identifies the inability of mixed reality users to distinguish virtual from physical objects as an exploitable security vulnerability, presenting a taxonomy of virtual-physical confusion attacks developed through speculative design workshops with 12 cybersecurity and MR/HCI experts."
+    },
+    {
+      "id": "877a85ea6e254542",
+      "title": "Impact of Hand Impairment and Occlusions on Hand Pose Estimation Accuracy in Augmented Reality Applications",
+      "link": "https://arxiv.org/abs/2606.17427",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "An arXiv paper from cs.HC examines how hand impairment and occlusion from real-world objects affect hand pose estimation accuracy on augmented reality head-mounted displays, addressing a gap relevant to AR-based hand rehabilitation applications that rely on precise tracking."
+    },
+    {
+      "id": "47c6d6fc23e5ea7b",
+      "title": "A Wearable Multimodal Ultrasound+Inertial System for Real-Time Virtual Reality Interaction",
+      "link": "https://arxiv.org/abs/2606.17741",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "Researchers publishing on arXiv propose a fully wearable multimodal interface combining A-mode ultrasound and inertial sensing for real-time virtual reality interaction, aiming to map muscular activity into control commands without relying on external cameras or hardware."
+    },
+    {
+      "id": "a1d1223132657e39",
+      "title": "Renderable Partial Representations for Dynamic Gaussian Splatting under Incomplete Delivery",
+      "link": "https://arxiv.org/abs/2606.17212",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "An arXiv cs.GR paper studies dynamic Gaussian splatting representations that remain renderable under incomplete delivery, optimizing degradation in image space for interactive rendering scenarios where some spatiotemporal regions arrive late or are missing entirely."
+    },
+    {
+      "id": "88dcdfa223c26e6d",
+      "title": "HoloPathTracer: Fast and Accurate Wave Path Tracing for Holography",
+      "link": "https://arxiv.org/abs/2606.14173",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "An updated arXiv preprint describes HoloPathTracer, a wave path tracing approach for computer-generated holography that aims to deliver photorealistic perceptual quality for VR and AR displays while preserving the compact form factors holography enables."
+    },
+    {
+      "id": "358e207ac3c718c8",
+      "title": "After unveiling ridiculously expensive AR glasses, Snap’s stock takes a dive",
+      "link": "https://techcrunch.com/2026/06/17/after-unveiling-ridiculously-expensive-ar-glasses-snaps-stock-takes-a-dive/",
+      "source": "TechCrunch",
+      "category": "HIGHLIGHTS",
+      "summary": "TechCrunch reports that Snap's stock dropped following the unveiling of its $2,195 Specs AR glasses, as investors reacted to the steep consumer price point and questioned the commercial viability of the company's long-awaited true AR hardware debut."
+    },
+    {
+      "id": "9ef08ab1d7876924",
+      "title": "World leaders want American AI. They just don’t want America to be able to turn it off.",
+      "link": "https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off/",
+      "source": "TechCrunch",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "TechCrunch reports that French President Emmanuel Macron and Indian Prime Minister Narendra Modi raised concerns at the G7 summit that the United States could unilaterally cut off access to American AI services overnight, a fear given new weight by the recent Anthropic blackout that left international users without service. The episode is intensifying calls among allied governments to pursue sovereign AI capabilities and reduce dependency on U.S.-controlled model providers."
+    },
+    {
+      "id": "d84f6e5d3df2ce7f",
+      "title": "World model maker Odyssey nabs $1.45B valuation backed by Amazon and other big names",
+      "link": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/",
+      "source": "TechCrunch",
+      "category": "INVESTMENT",
+      "summary": "According to TechCrunch, world model startup Odyssey has secured a $1.45 billion valuation in a new funding round backed by Amazon and other major investors, cementing its position as a leading contender in the emerging category of AI systems that model physical environments rather than language. World models are increasingly viewed as a critical next frontier beyond LLMs, with direct implications for simulation, robotics, and spatial computing applications."
+    },
+    {
+      "id": "718cc416a29794a2",
+      "title": "Canon Reveals Concept Handheld MR Device, Glass Waveguide & Collaboration Software",
+      "link": "https://roadtovr.com/canon-concept-mr-device-ar-waveguide-reveal/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "Road to VR reports that Canon used Augmented World Expo to unveil a concept handheld mixed reality device, new augmented reality waveguide optics, and an XR collaboration software suite, extending the imaging company's longstanding enterprise XR efforts. The reveals position Canon as a continued contender in optics and enterprise-grade spatial tools."
+    },
+    {
+      "id": "b03f8cd58c33fe90",
+      "title": "OpenAI researchers want to predict how often AI models will fail before launch",
+      "link": "https://the-decoder.com/openai-researchers-want-to-predict-how-often-ai-models-will-fail-before-launch/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Decoder reports that OpenAI researchers have proposed a method for predicting how frequently a new AI model will produce errors after release, aimed at filling gaps left by standard pre-launch safety testing."
+    },
+    {
+      "id": "cfffeb7b2fbf4b31",
+      "title": "VITURE’s Enterprise Expansion: Hands on with Helix",
+      "link": "https://arinsider.co/2026/06/18/vitures-enterprise-expansion-hands-on-with-helix/",
+      "source": "AR Insider",
+      "category": "HANDS-ON REVIEW",
+      "summary": "AR Insider went hands-on at AWE with Viture's Helix, an NVIDIA-powered device marking the video-display-glasses maker's expansion from its consumer roots into the enterprise market."
+    },
+    {
+      "id": "9db0528d1a80d14b",
+      "title": "Midjourney, the AI image generator, is developing a full-body ultrasonic scanner",
+      "link": "https://www.engadget.com/2196998/midjourney-full-body-ultrasonic-scanner/",
+      "source": "Engadget",
+      "category": "HARDWARE",
+      "summary": "Engadget reports that Midjourney, best known as an AI image generator, has announced its first hardware project: a full-body ultrasonic scanner, signaling an unexpected move from the company into physical devices."
+    },
+    {
+      "id": "d21388d9de6eea53",
+      "title": "The next humanoid robot might not look human at all",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/951283/genesis-ai-humanoid-robot-eno",
+      "source": "The Verge",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to The Verge, French startup Genesis AI introduced Eno, a humanoid robot that abandons conventional human form factors — sitting on a wheeled base and folding down like a deck chair — with the company arguing that humanoid robots don't need to look human to be useful."
+    },
+    {
+      "id": "188f938e615d67c8",
+      "title": "Pixi’s new iOS app turns text messages into interactive AR experiences",
+      "link": "https://techcrunch.com/2026/06/18/pixis-new-ios-app-turns-text-messages-into-interactive-ar-experiences/",
+      "source": "TechCrunch",
+      "category": "APP STORE HIGHLIGHTS",
+      "summary": "TechCrunch reports that Pixi launched a new iOS app that converts text messages into interactive augmented reality experiences, positioning AR as a successor to stickers, GIFs, and emoji reactions in mobile messaging."
+    }
+  ],
+  "raw_content": "Spatial Report\nWeek of 2026-06-25\n\nHIGHLIGHTS\n\nThe Decoder reports that the US government has ordered Anthropic to disable global access to its Claude Fable 5 and Mythos 5 models over alleged jailbreak risks, with Anthropic complying but publicly pushing back, saying the vulnerabilities also exist in competing models and warning that the move could set a precedent that halts future frontier deployments.\n\nhttps://the-decoder.com/us-government-forces-anthropic-to-disable-claude-fable-5-and-mythos-5-for-all-customers-worldwide/\n\nRoad to VR reports that Snap unveiled its first consumer-facing standalone AR glasses at Augmented World Expo 2026, priced at $2,200 and positioned as the sixth-generation Spectacles device, with onboard AI assistance, entertainment, and productivity features.\n\nhttps://roadtovr.com/snap-specs-2026-ar-glasses-release-date-price/\n\nUploadVR reports that Snap officially revealed and opened preorders for Specs, its fully standalone true AR glasses, which will ship this fall in the U.S., U.K., and France for $2,195.\n\nhttps://www.uploadvr.com/snap-specs-design-revealed-preorders-open-price/\n\nThe Decoder reports that US government officials have accused Anthropic of disregarding a Trump cyber directive by releasing Fable 5 without approval, with one administration official saying \"They screwed us,\" as talks continue with the Department of Commerce, the CIA, and science advisor Michael Kratsios over demands that may be technically impossible to meet.\n\nhttps://the-decoder.com/the-us-government-may-be-asking-anthropic-the-impossible-by-demanding-unhackable-llms/\n\nAccording to The Decoder, volunteer AR scans contributed by Pokémon Go players were used to train Niantic's spatial AI models, and that technology is now being combined with a US defense contractor's software to enable GPS-free navigation for military drones.\n\nhttps://the-decoder.com/pokemon-go-data-helped-train-ai-now-linked-to-military-drones/\n\nAccording to Engadget, Snap announced that its slimmed-down AR Specs will go on sale later this year at $2,195, with the company describing the standalone device as a wearable computer rather than a conventional smart-glasses accessory.\n\nhttps://www.engadget.com/2195207/snap-ar-specs-launch-price/\n\nCNET reports that Xreal's Aura glasses, running Android XR, will ship this fall as the first device powered by Qualcomm's new Snapdragon Reality Elite chip, with Qualcomm promising meaningful gains in graphics performance, battery life, and AI capabilities across future headsets using the platform.\n\nhttps://www.cnet.com/tech/computing/qualcomm-snapdragon-reality-elite-chip-xreal-aura-glasses-awe-2026/\n\nCNET is providing live coverage of Augmented World Expo 2026, framing the event as the clearest look yet at how smart glasses are evolving into AI-first wearables, with major announcements expected from Snap, Qualcomm, Xreal, and other vendors.\n\nhttps://www.cnet.com/news-live/awe-2026-smart-glasses-augmented-reality-live-coverage/\n\nWired reports that Snap is now selling its new AR Specs for $2,195, with CEO Evan Spiegel laying out the company's vision for the augmented-reality smart glasses arriving later this year. The launch marks Snap's transition from developer-only Spectacles to a consumer-facing AR product, intensifying competition in the smart glasses market alongside Meta and Google.\n\nhttps://www.wired.com/story/snaps-new-ar-specs-cost-2195/\n\nWired reports that Meta tapped Rank One Computing, a Pentagon supplier whose board includes a former CIA deputy director and a former FBI science chief, to prototype face recognition for its smart glasses app during internal development. The disclosure raises fresh questions about surveillance capabilities being built into consumer smart eyewear as Meta expands its glasses lineup.\n\nhttps://www.wired.com/story/meta-rank-one-computing-face-recognition-smart-glasses/\n\nIn an interview with Engadget at AWE 2026, Snap CEO Evan Spiegel pushed back on framing the company's new Specs as AI glasses, repeatedly describing them as a computing platform and discussing privacy and parental controls.\n\nhttps://www.engadget.com/2195862/snap-specs-ceo-evan-spiegel-interview-at-awe-2026/\n\nAccording to CNET, Meta's smart glasses are testing facial recognition software of the kind used by police and the military, renewing surveillance concerns around the wearable.\n\nhttps://www.cnet.com/tech/mobile/metas-smart-glasses-testing-facial-recognition-software-police-and-military/\n\nAccording to CNET, Illinois could become the first U.S. state to ban wearing smart glasses while driving, with a bill having passed the state legislature and now awaiting the governor's signature.\n\nhttps://www.cnet.com/tech/mobile/illinois-could-be-first-to-ban-wearing-smart-glasses-while-driving/\n\nTechCrunch reports that Snap's stock dropped following the unveiling of its $2,195 Specs AR glasses, as investors reacted to the steep consumer price point and questioned the commercial viability of the company's long-awaited true AR hardware debut.\n\nhttps://techcrunch.com/2026/06/17/after-unveiling-ridiculously-expensive-ar-glasses-snaps-stock-takes-a-dive/\n\nAPP STORE HIGHLIGHTS\n\nUploadVR reports that mixed reality musical app Theremin will receive a Ghost Hands add-on in July, allowing users to layer performances with recordings of their past selves to create one-person ensembles. The update extends the app's appeal to amateur musicians experimenting with mixed reality performance tools.\n\nhttps://www.uploadvr.com/theremins-ghost-hands-add-on-lets-you-be-a-one-person-musical-ensemble-this-july/\n\nTechCrunch reports that Pixi launched a new iOS app that converts text messages into interactive augmented reality experiences, positioning AR as a successor to stickers, GIFs, and emoji reactions in mobile messaging.\n\nhttps://techcrunch.com/2026/06/18/pixis-new-ios-app-turns-text-messages-into-interactive-ar-experiences/\n\nINVESTMENT\n\nThe Decoder reports that Amazon, Nvidia, and AMD are investing $310 million into world model startup Odyssey ML at a $1.45 billion valuation, with CIA-linked fund IQT and Google chief scientist Jeff Dean also backing the round as world models emerge as the industry's next major AI bet beyond language models.\n\nhttps://the-decoder.com/amazon-nvidia-and-amd-bet-310-million-on-ai-startup-building-3d-world-models/\n\nAccording to TechCrunch, world model startup Odyssey has secured a $1.45 billion valuation in a new funding round backed by Amazon and other major investors, cementing its position as a leading contender in the emerging category of AI systems that model physical environments rather than language. World models are increasingly viewed as a critical next frontier beyond LLMs, with direct implications for simulation, robotics, and spatial computing applications.\n\nhttps://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/\n\nSOFTWARE\n\nUploadVR reports that a public filing claiming a VRChat data breach affecting more than 2 million users was submitted to Maine's Attorney General by a person who does not appear to exist, and the notice has been confirmed as fraudulent.\n\nhttps://www.uploadvr.com/vrchat-maine-attorney-general-fake-data-breach-notice/\n\nApple announced that Siri AI will not ship in the European Union with iOS 27 and iPadOS 27, citing requirements imposed by the Digital Markets Act. The delay continues a pattern of Apple withholding AI features from EU users while it negotiates compliance with the bloc's competition rules.\n\nhttps://www.apple.com/newsroom/2026/06/due-to-dma-siri-ai-delayed-in-eu-for-ios-27-and-ipados-27/\n\nApple announced expanded App Store capabilities intended to give developers more flexibility in marketing apps, acquiring users, and managing subscriptions. The changes apply across Apple's platforms, including visionOS, and follow ongoing regulatory pressure on the company's developer policies.\n\nhttps://www.apple.com/newsroom/2026/06/apple-expands-app-store-capabilities-to-help-developers-grow-and-reach-new-users/\n\nTechCrunch reports that Google has released Android 17 and Wear OS 7, introducing new multitasking features, parental controls, security tools, and smartwatch upgrades, alongside a Pixel Drop that brings Google's latest AI models to its devices. The release expands Gemini's footprint across Google's mobile and wearable platforms.\n\nhttps://techcrunch.com/2026/06/16/android-17-launches-with-new-multitasking-tools-as-google-expands-gemini-features/\n\nEngadget reports that Epic Games is integrating generative AI as a significant component of upcoming versions of Unreal Engine, signaling a deeper embrace of AI tooling across the company's real-time 3D development platform.\n\nhttps://www.engadget.com/2196807/epic-games-details-how-its-embracing-gen-ai-in-unreal-engine/\n\nHARDWARE\n\nRoad to VR reports that San Francisco-based startup Raven Resonance is publicly demoing its upcoming Raven Prism smart glasses for the first time at Augmented World Expo 2026, with the device differentiated by a hot-swappable battery system intended to keep the glasses powered throughout the day.\n\nhttps://roadtovr.com/raven-prism-smart-glasses-reveal-awe-2026/\n\nUploadVR reports that Qualcomm announced Snapdragon Reality Elite, a new flagship XR chipset that will debut this fall in the compute puck of Xreal's Aura Android XR device.\n\nhttps://www.uploadvr.com/qualcomm-snapdragon-reality-elite-new-flagship-xr-chipset/\n\nUploadVR reports on PiEEG XR, an upcoming Quest 3 accessory that aims to make VR avatars more expressive without relying on face-tracking cameras, instead using EEG-based signals to drive avatar expressiveness.\n\nhttps://www.uploadvr.com/pieeg-xr-makes-your-vr-avatar-expressive-without-face-tracking/\n\nEngadget reports that Qualcomm unveiled its Snapdragon Reality Elite chip at AWE 2026, a new silicon platform aimed at next-generation AR headsets and smart glasses that promises significant improvements in graphics, battery life, and on-device AI processing.\n\nhttps://www.engadget.com/2194353/qualcomm-unveils-its-snapdragon-reality-elite-chip-for-next-gen-ar-headsets/\n\nAccording to Engadget, Xreal officially revealed its Android XR Aura glasses at AWE 2026 and began taking paid reservations ahead of a launch later this year, though the company has not yet disclosed a final price.\n\nhttps://www.engadget.com/2194861/xreal-aura-android-xr-glasses-launch-no-price/\n\nEngadget reports that NuCurrent demonstrated NFC-based charging in a Ray-Ban Meta prototype at AWE 2026, showing the technology can match the performance of the pogo pins currently used in smart glasses while enabling slimmer, more refined industrial designs.\n\nhttps://www.engadget.com/2195309/nucurrent-smart-glass-nfc-charging-tech-in-ray-ban-meta-prototype/\n\nQualcomm unveiled its Snapdragon Reality Elite chip at Augmented World Expo, designed to power the next generation of XR devices and smart glasses, according to The Verge, which already had hands-on time with a device running the new silicon.\n\nhttps://www.theverge.com/gadgets/950229/qualcomm-snapdragon-reality-elite-xr-smart-glasses-wearables\n\nUploadVR reports that Xreal has opened preorders for its Aura Android XR glasses, confirming Qualcomm's new Snapdragon Reality Elite chip in the accompanying puck, though the company has yet to disclose pricing. The device is slated to ship this fall as part of the broader push of Android XR hardware into the consumer market.\n\nhttps://www.uploadvr.com/xreal-aura-ships-this-fall-with-snapdragon-reality-elite-in-its-puck/\n\nAccording to CNET, Google has begun rolling out Wear OS 7, delivering battery-life improvements and tighter integration between smartwatches and smart glasses as gateways into Google's broader AI ecosystem. The update reinforces Google's strategy of positioning wearables as connected entry points for Gemini-powered experiences.\n\nhttps://www.cnet.com/tech/mobile/wheres-wear-os-7/\n\nRoad to VR reports that XREAL will launch its AURA AR glasses this fall at a price not exceeding $1,500, with the device built in collaboration with Google and Qualcomm and among the first to ship with Qualcomm's newly announced Snapdragon Reality Elite chipset.\n\nhttps://roadtovr.com/xreal-aura-release-date-price-1500/\n\nAt Augmented World Expo, Qualcomm announced Snapdragon Reality Elite, a new processor targeting both standalone XR headsets and lightweight tethered AR glasses with a focus on on-device AI, improved performance, and lower power consumption, according to Road to VR.\n\nhttps://roadtovr.com/qualcomm-snapdragon-reality-elite-compact-headsets-glasses/\n\nAR Insider reports that Qualcomm unveiled Snapdragon Reality Elite at AWE, with VP and GM of XR Ziad Asghar presenting the new branding and capabilities, which will debut commercially in XREAL's Project Aura glasses.\n\nhttps://arinsider.co/2026/06/17/snapdragon-reality-elite-sparks-qualcomms-next-phase-of-xr/\n\nRoad to VR reports that Canon used Augmented World Expo to unveil a concept handheld mixed reality device, new augmented reality waveguide optics, and an XR collaboration software suite, extending the imaging company's longstanding enterprise XR efforts. The reveals position Canon as a continued contender in optics and enterprise-grade spatial tools.\n\nhttps://roadtovr.com/canon-concept-mr-device-ar-waveguide-reveal/\n\nEngadget reports that Midjourney, best known as an AI image generator, has announced its first hardware project: a full-body ultrasonic scanner, signaling an unexpected move from the company into physical devices.\n\nhttps://www.engadget.com/2196998/midjourney-full-body-ultrasonic-scanner/\n\nAI AND SIMULATED WORLDS\n\nAccording to The Decoder, an internal Meta memo to 6,000 employees outlines a shift from unrestricted AI usage to centralized governance through a dashboard called AI Gateway starting in 2027, with CTO Andrew Bosworth telling staff that token usage alone is not a measure of impact as internal AI costs reportedly climb into the billions.\n\nhttps://the-decoder.com/meta-shifts-from-tokenmaxxing-to-token-managing-as-internal-ai-costs-reportedly-hit-billions/\n\nThe Decoder reports that Moonshot AI has released Kimi K2.7 Code, an open-weights one-trillion-parameter model built for programming that trails GPT-5.5 and Claude Opus 4.8 on coding benchmarks but costs up to 12 times less per token, raising the question of whether additional runs at the same budget offset the quality gap.\n\nhttps://the-decoder.com/moonshots-open-model-kimi-k2-7-code-undercuts-gpt-5-5-and-claude-by-up-to-12x-on-price-per-token/\n\nEngadget reports that Anthropic has suspended all customer access to its Fable 5 and Mythos 5 AI models to comply with a US government order citing national security concerns, an unusual intervention in commercial AI deployment.\n\nhttps://www.engadget.com/2193656/anthropic-blocks-access-fable-5-mythos-5/\n\nAccording to The Decoder, an Anthropic survey of nearly 52,000 Americans found that 64 percent fear AI-driven job losses and 56 percent worry about losing the ability to think independently, though daily AI users expressed far less concern. The survey also found that most respondents reject AI use in their own workplace, even for tasks they believe it could handle.\n\nhttps://the-decoder.com/over-half-of-americans-fear-losing-both-their-jobs-and-their-independent-thinking-to-ai-survey-finds/\n\nThe Decoder reports that OpenAI now allows Codex users to bank rate-limit resets and trigger them manually rather than waiting for fixed schedules, with Go, Plus, Pro, and Business plan users each receiving one free reset. Plus and Pro users can also unlock additional resets by inviting others, a move The Decoder frames as the opening of an AI pricing war among coding-agent providers.\n\nhttps://the-decoder.com/openai-kicks-off-the-ai-price-wars-with-flexible-rate-limit-resets-for-its-codex-coding-agent/\n\nAccording to Wired, executives and employees at Meta's new AI unit are struggling with what sources describe as a chaotic strategy, based on internal discussions and interviews reviewed by the publication. The report points to tension within the organization as Meta attempts to consolidate its AI efforts under Mark Zuckerberg's direction.\n\nhttps://www.wired.com/story/mark-zuckerberg-meta-employee-meeting-interrupt-ai/\n\nThe Decoder reports that just two trading days after its IPO, Elon Musk's SpaceX is acquiring AI coding startup Anysphere, maker of Cursor, in a $60 billion deal intended to help the struggling xAI division catch up with Anthropic and OpenAI.\n\nhttps://the-decoder.com/spacex-bets-60-billion-on-cursor-to-catch-openai-and-anthropic/\n\nThe Decoder reports that the Institute of the Estonian Language has released a new benchmark measuring how susceptible AI language models are to Russian propaganda, providing a structured way to evaluate model resilience against state-sponsored disinformation.\n\nhttps://the-decoder.com/how-easily-can-russian-propaganda-fool-ai-models-a-new-benchmark-finds-out/\n\nThe Decoder reports that the European Commission is assessing the implications of the US order that forced Anthropic to shut down Fable 5 and Mythos 5 worldwide, with European researchers debating whether to build sovereign foundation models or secure access through contracts, though experts warn Europe currently lacks the computing capacity, energy, and competitive providers needed for homegrown infrastructure.\n\nhttps://the-decoder.com/anthropic-shutdown-sparks-sovereignty-debate-across-europe/\n\nWired argues that the US government's crackdown on Anthropic's Claude Fable 5 and Mythos 5 obscures a broader reality, contending that AI models with advanced offensive hacking capabilities will soon be widespread regardless of regulatory action against any single vendor.\n\nhttps://www.wired.com/story/dangerous-ai-models-are-coming-no-matter-what/\n\nTechCrunch reports that ChatGPT's share of the AI assistant market has slipped below 50 percent for the first time, though it remains the most popular chatbot worldwide with over 1.1 billion monthly users, followed by Google's Gemini at 662 million and Anthropic's Claude at 245 million.\n\nhttps://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/\n\nTechCrunch reports that Meta is rolling out a new 'AI Mode' on Facebook that pulls from public information across its platforms, part of a broader push to catch up in the AI race and deepen user engagement on the social network.\n\nhttps://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms/\n\nWired reports that Anthropic leaders met with White House officials this week but remain at odds with the administration over the risk profile of Claude Fable 5, the company's latest frontier model. The standoff highlights mounting friction between AI labs and US policymakers over how to evaluate and govern increasingly capable systems.\n\nhttps://www.wired.com/story/anthropic-is-still-at-odds-with-the-white-house-over-claude-fable-5/\n\nWired reports that Meta CTO Andrew Bosworth, in an internal memo, described the company's recent AI reorganization as 'atrocious' and promised employees more stability, clearer communication, and the return of workplace perks. The admission comes as Meta works to restore morale across its AI and Reality Labs divisions amid sustained pressure on its long-term spatial computing bets.\n\nhttps://www.wired.com/story/andrew-bosworth-meta-employees-unrest/\n\nThe Verge reports that SpaceX is acquiring AI coding startup Cursor for $60 billion just days after its IPO, a move aimed at helping Elon Musk's company court enterprise customers and close the gap with AI rivals Anthropic and OpenAI.\n\nhttps://www.theverge.com/ai-artificial-intelligence/950571/spacex-is-officially-buying-cursor-for-60-billion\n\nAccording to The Verge, Anthropic spent the weekend in a standoff with the Trump administration after receiving a Friday export control directive to suspend access to its newly released Claude Mythos 5 and Fable 5 models, escalating tensions between frontier AI labs and US government policy on model distribution.\n\nhttps://www.theverge.com/ai-artificial-intelligence/950412/anthropic-trump-adminstration-claude-mythos-fable-5-export-controls\n\nAccording to The Decoder, Microsoft is considering a fine-tuned version of DeepSeek V4 as a lower-cost model option for Copilot Cowork and is shifting the product to usage-based billing, with Copilot head Charles Lamanna saying flat-rate pricing is not sustainable.\n\nhttps://the-decoder.com/microsofts-copilot-cowork-moves-to-usage-based-billing-and-may-tap-deepseek/\n\nCNET reports that Disney's Imagineers are partnering with Adobe to use Firefly AI, trained on proprietary Disney assets, to rapidly produce 3D models of characters and rides for attraction design.\n\nhttps://www.cnet.com/tech/services-and-software/disney-imagineers-partner-with-adobe-on-firefly-ai-for-attraction-design/\n\nThe Verge, citing a Semafor report, says the White House's decision to impose export restrictions on Anthropic's Mythos was driven in part by concerns that a group linked to China had accessed the model. Officials reportedly worry that access to Mythos 5 or Fable 5 would carry serious national security implications.\n\nhttps://www.theverge.com/ai-artificial-intelligence/949644/china-white-house-anthropic-mythos\n\nAccording to The Decoder, researchers from Nvidia, Carnegie Mellon University, and UC Berkeley are using AI coding agents to teach robots dexterous grasping, with a fleet of eight robots achieving up to 99 percent success on complex manipulation tasks.\n\nhttps://the-decoder.com/nvidia-research-shows-robots-that-train-themselves-through-ai-coding-agents/\n\nCNET reports that Anthropic is bringing AI design and coding capabilities together in Claude, with new updates aimed at letting users move between coding and designing tasks without interruptions.\n\nhttps://www.cnet.com/tech/services-and-software/anthropic-claude-code-design-june-2026-news/\n\nAccording to Wired, the White House ordered Anthropic to revoke SK Telecom's access to its Claude Mythos models over alleged ties to China, with the directive coming just days before Anthropic took its most advanced AI models offline.\n\nhttps://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/\n\nWired reports that Trump administration officials are demanding Anthropic guarantee its Fable 5 model's guardrails cannot be circumvented before allowing a rerelease, a standard security experts told the publication is effectively impossible to meet given the current state of LLM jailbreak research.\n\nhttps://www.wired.com/story/the-white-house-wants-anthropic-to-block-all-jailbreaks-that-may-not-be-possible/\n\nTechCrunch reports that French President Emmanuel Macron and Indian Prime Minister Narendra Modi raised concerns at the G7 summit that the United States could unilaterally cut off access to American AI services overnight, a fear given new weight by the recent Anthropic blackout that left international users without service. The episode is intensifying calls among allied governments to pursue sovereign AI capabilities and reduce dependency on U.S.-controlled model providers.\n\nhttps://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off/\n\nThe Decoder reports that OpenAI researchers have proposed a method for predicting how frequently a new AI model will produce errors after release, aimed at filling gaps left by standard pre-launch safety testing.\n\nhttps://the-decoder.com/openai-researchers-want-to-predict-how-often-ai-models-will-fail-before-launch/\n\nAccording to The Verge, French startup Genesis AI introduced Eno, a humanoid robot that abandons conventional human form factors — sitting on a wheeled base and folding down like a deck chair — with the company arguing that humanoid robots don't need to look human to be useful.\n\nhttps://www.theverge.com/ai-artificial-intelligence/951283/genesis-ai-humanoid-robot-eno\n\nRESEARCH\n\nIEEE Spectrum profiles Yen-Ling Kuo, an assistant professor of computer science at the University of Virginia, whose award-winning research trains robots to make educated guesses about uncertain environments. Her work draws on early exposure to programming through Logo and aims to give robots more flexible reasoning when navigating incomplete information.\n\nhttps://spectrum.ieee.org/researcher-trains-robots-to-guess\n\nMIT Technology Review reports that Casey Harrell, who has ALS and is paralyzed, has become \"the first power user\" of a brain-computer interface, logging thousands of hours since electrodes were implanted nearly three years ago to help him speak.\n\nhttps://www.technologyreview.com/2026/06/15/1138953/man-als-first-power-user-brain-implant-speak-bci/\n\nResearchers on arXiv present TurboGS, an error-guided training framework that accelerates 3D Gaussian Splatting by concentrating optimization on perceptually informative pixels through sparse sampling. The method targets consumer-level applications that need fast 3DGS optimization with high-fidelity novel view rendering without sacrificing fine details.\n\nhttps://arxiv.org/abs/2606.15924\n\nAn arXiv paper introduces VEPHand, an end-to-end pipeline for dynamic hand performance capture and registration designed for view-efficient multi-view setups using roughly 20 cameras. The work addresses geometric ambiguities in 3D hand reconstruction that have limited photometric capture systems used in digital human creation.\n\nhttps://arxiv.org/abs/2606.15966\n\nResearchers on arXiv describe LentiAvatar, a Gaussian head-avatar system that pairs monocular portrait video capture with subpixel-encoded glasses-free lenticular displays to enable real-time autostereoscopic telepresence. The approach removes the need for specialized capture rigs that have historically constrained stereoscopic video communication.\n\nhttps://arxiv.org/abs/2606.10550\n\nA paper on arXiv presents HairLRM, a strand-based hair modeling approach using large reconstruction models that introduces structural constraints to resolve global occlusion and local directionality failures in 3D hair geometry inferred from 2D imagery.\n\nhttps://arxiv.org/abs/2606.15238\n\nA new arXiv preprint from cs.HC researchers identifies the inability of mixed reality users to distinguish virtual from physical objects as an exploitable security vulnerability, presenting a taxonomy of virtual-physical confusion attacks developed through speculative design workshops with 12 cybersecurity and MR/HCI experts.\n\nhttps://arxiv.org/abs/2606.17783\n\nAn arXiv paper from cs.HC examines how hand impairment and occlusion from real-world objects affect hand pose estimation accuracy on augmented reality head-mounted displays, addressing a gap relevant to AR-based hand rehabilitation applications that rely on precise tracking.\n\nhttps://arxiv.org/abs/2606.17427\n\nResearchers publishing on arXiv propose a fully wearable multimodal interface combining A-mode ultrasound and inertial sensing for real-time virtual reality interaction, aiming to map muscular activity into control commands without relying on external cameras or hardware.\n\nhttps://arxiv.org/abs/2606.17741\n\nAn arXiv cs.GR paper studies dynamic Gaussian splatting representations that remain renderable under incomplete delivery, optimizing degradation in image space for interactive rendering scenarios where some spatiotemporal regions arrive late or are missing entirely.\n\nhttps://arxiv.org/abs/2606.17212\n\nAn updated arXiv preprint describes HoloPathTracer, a wave path tracing approach for computer-generated holography that aims to deliver photorealistic perceptual quality for VR and AR displays while preserving the compact form factors holography enables.\n\nhttps://arxiv.org/abs/2606.14173\n\nOPINION\n\nIEEE Spectrum examines how crowdsourced smartphone video, once a tool of civic accountability, is increasingly being fed into facial recognition and surveillance systems by civil authorities. The piece warns that the same footage citizens use to hold officials accountable can be repurposed into a distributed surveillance apparatus with consequences for privacy and civil liberties.\n\nhttps://spectrum.ieee.org/unintended-consequences-video-surveillance\n\nGAMING MARKETPLACE WATCH\n\nUploadVR examines the G-Smash initiative, which aims to unite VR developers and grow Japan's VR market, noting that the Japanese segment has remained resilient even as the global VR industry faces broader instability.\n\nhttps://www.uploadvr.com/g-smash-hopes-to-bring-vr-developers-together-and-grow-the-japanese-market-for-all/\n\nRoad to VR reports that Mighty Eyes has cancelled Wanderer 2: The Seas of Fortune, the sequel to its 2025 VR action-adventure Wanderer: The Fragments of Fate, citing a volatile VR gaming market. The studio announced via its official Discord that all future updates on the project have ceased, underscoring continued headwinds for mid-sized VR studios.\n\nhttps://roadtovr.com/wanderer-2-cancelled-vr-market-woes/\n\nUploadVR reports that BrushHammer, a mixed reality miniature figure painting app, will launch on Meta Quest in August. The release targets tabletop hobbyists looking to practice or design paint schemes in mixed reality before applying them to physical models.\n\nhttps://www.uploadvr.com/brushhammer-brings-miniature-model-painting-to-quest-this-summer/\n\nAPPLE VISION PRO IN THE NEWS\n\nUploadVR reports that visionOS 27 is a substantially larger update than Apple's WWDC 2026 keynote suggested, detailing additional features and improvements coming to Apple Vision Pro beyond those highlighted on stage.\n\nhttps://www.uploadvr.com/visionos-27-announced-apple-vision-pro-wwdc-26/\n\nHANDS-ON REVIEW\n\nCNET's Scott Stein reports from AWE 2026 that Snap's new AR Specs are chunkier and significantly more expensive than competing smart glasses, though still cheaper than Apple Vision Pro, in an early impression piece based on a conversation with CEO Evan Spiegel ahead of a full hands-on.\n\nhttps://www.cnet.com/tech/computing/snap-specs-evan-spiegel-augmented-reality-smart-glasses-awe-2026/\n\nAR Insider went hands-on at AWE with Viture's Helix, an NVIDIA-powered device marking the video-display-glasses maker's expansion from its consumer roots into the enterprise market.\n\nhttps://arinsider.co/2026/06/18/vitures-enterprise-expansion-hands-on-with-helix/\n\nNEW EXPERIENCES\n\nCNET reports that Google Earth's Flight Simulator is now playable directly in web browsers, removing the need to download the desktop application and lowering the barrier to a long-running virtual flight experience built atop Google's 3D world data.\n\nhttps://www.cnet.com/tech/gaming/google-earths-flight-simulator-is-now-on-browsers-heres-how-to-play/\n"
+}

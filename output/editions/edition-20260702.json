@@ -1,0 +1,1053 @@
+{
+  "title": "Spatial Report — 2026-07-02",
+  "edition_number": "",
+  "date": "2026-07-02",
+  "spotlight": "OpenAI previewed GPT-5.6 Sol and Anthropic launched Claude Science alongside its restored Fable 5 model, as Wired reports a researcher used Claude Opus 4.7 to uncover a vulnerability in the ticketing platform behind nearly every major US music festival. Meta began charging a subscription for premium features on its smart glasses and moved to sell spare AI compute to outside customers, while Sony set a January 2028 end date for PS5 and PSVR 2 physical discs. IBM unveiled a sub-1nm prototype chip that could extend Moore's Law another decade, and the Remote Labor Index showed AI agents now complete 16 percent of freelance jobs at professional quality — up from 2.5 percent eight months ago.",
+  "item_ids": [
+    "6a7b51bea549b53c",
+    "d3c837b199cff3ed",
+    "1bc8b9cb5521d3b4",
+    "9e51e80993cc70b0",
+    "70389c915744faab",
+    "018a570ce7b1cecd",
+    "1d1d7046ff35ab9a",
+    "280dd78e6552e9d9",
+    "3443658b005d3634",
+    "7843b9ea14bc3390",
+    "5d9de7a5a94aebe9",
+    "308644ddb0681293",
+    "d304943414b3ed85",
+    "57be1c733c92a151",
+    "058d8aa2cbf8d61a",
+    "60f58833267a931c",
+    "623e337cec36b250",
+    "0b321e9fdc033636",
+    "1efe0e0ee7087666",
+    "78c501247f18c641",
+    "012cc0e931b85f82",
+    "e1ba458b4ae18db7",
+    "cc8f74c208ab3748",
+    "e6fff87f6492b053",
+    "88634f28df46fb69",
+    "86b7b987dee7f601",
+    "3c610c759a68a4d4",
+    "474d4e312b755290",
+    "b13e4677f11359b9",
+    "2e6cef4a2c57448c",
+    "cf5e1cfcdbcacfd2",
+    "ecbe4a8b9c8fa55a",
+    "8c8497d77396ce4b",
+    "aa03ab9530510010",
+    "c03fba1cc4b90823",
+    "72a8f31bd0b4b387",
+    "9d5e9da6ab7c288b",
+    "d866a21bc3340953",
+    "40018b405de13615",
+    "3af333ce2249694b",
+    "6e41a6d07d973184",
+    "b3e1be97c2d9e00a",
+    "fe19c99d47f97c63",
+    "e99b5ab66b4ae5a7",
+    "b5dc6088136a509a",
+    "714a5dcd7fae826c",
+    "424ae7d9abd2053f",
+    "4cd6d8f79d5e6b0b",
+    "232f299cd9b9c647",
+    "3a3937c9afc40e9d",
+    "6ce6685fe0bccc4c",
+    "7eb3a1afda968485",
+    "509e4292fd42b52a",
+    "d2ced2f7c9581716",
+    "071d823eaa9f02c7",
+    "8a7173ff9126a37d",
+    "f627697009d7c4aa",
+    "0e159879b0d216f7",
+    "830e0da1a75b9a57",
+    "a26e5afefd3320db"
+  ],
+  "sections": {
+    "HIGHLIGHTS": [
+      {
+        "id": "830e0da1a75b9a57",
+        "title": "Meta Is Charging a Subscription for Smart Glasses Features. Welcome to the New Era of Consumer Tech",
+        "link": "https://www.wired.com/story/why-meta-is-charging-a-subscription-for-on-device-smart-glasses-features/",
+        "source": "Wired",
+        "category": "HIGHLIGHTS",
+        "summary": "Wired reports that Meta is introducing a paid subscription tier for expanded access to advanced on-device features on its smart glasses, extending the wearables market into a recurring-revenue model where hardware ownership no longer guarantees access to the most capable AI functionality."
+      }
+    ],
+    "APP STORE HIGHLIGHTS": [
+      {
+        "id": "cc8f74c208ab3748",
+        "title": "Discord now runs natively on Meta Quest headsets",
+        "link": "https://www.engadget.com/2205537/discord-now-runs-natively-on-meta-quest-headsets/",
+        "source": "Engadget",
+        "category": "APP STORE HIGHLIGHTS",
+        "summary": "According to Engadget, Discord is now available as a native app on Meta Quest headsets, delivering on a commitment made at last year's Meta Connect conference. The native integration lets Quest users voice-chat and message with Discord communities without switching devices or relying on phone tethering."
+      }
+    ],
+    "INVESTMENT": [
+      {
+        "id": "b5dc6088136a509a",
+        "title": "Flatirons Solutions Acquires Scope AR to Combine Technical Content Management and AR Work Instructions",
+        "link": "https://www.auganix.org/ar-news-scope-ar-flatirons-solutions-acquisition/",
+        "source": "Auganix",
+        "category": "INVESTMENT",
+        "summary": "Auganix reports that Flatirons Solutions has acquired Scope AR, combining AI-powered technical content management with immersive 3D work instructions and remote expert support into a single platform aimed at industrial and enterprise customers."
+      }
+    ],
+    "SOFTWARE": [
+      {
+        "id": "308644ddb0681293",
+        "title": "Official Discord App Finally Comes to Quest After Years of Waiting",
+        "link": "https://roadtovr.com/official-discord-meta-quest-app-release/",
+        "source": "Road to VR",
+        "category": "SOFTWARE",
+        "summary": "Road to VR reports that Discord has officially released a native app for Meta Quest, now available for free on the Horizon Store after years of user requests. Meta CTO Andrew Bosworth had signaled in May 2024 that the company was working on some form of Discord integration, though a fully-fledged first-party app was long delayed."
+      },
+      {
+        "id": "e1ba458b4ae18db7",
+        "title": "Gemini Spark comes to Google's Gemini app for macOS",
+        "link": "https://www.engadget.com/2205605/google-gemini-spark-macos-app/",
+        "source": "Engadget",
+        "category": "SOFTWARE",
+        "summary": "Engadget reports that Google's Spark agentic AI assistant is now available inside the Gemini app for macOS, extending agentic task execution — including multi-step research and workflow automation — to Mac users. The rollout deepens Google's push to embed Gemini across desktop platforms as competition with OpenAI and Anthropic intensifies."
+      },
+      {
+        "id": "9d5e9da6ab7c288b",
+        "title": "Chat With Your Squad In-Game or Just Hang Out with Friends with Discord, Now Available on Meta Quest",
+        "link": "https://www.meta.com/blog/discord-launch/",
+        "source": "Meta Blog",
+        "category": "SOFTWARE",
+        "summary": "Meta announced that Discord is now available on Meta Quest, letting players chat with their squad in-game or hang out with friends across the platform. The launch brings one of the largest gaming communication platforms natively to Quest, addressing a longstanding gap in social infrastructure on the headset."
+      },
+      {
+        "id": "0e159879b0d216f7",
+        "title": "Cintoo Workspace Brings Multi-User Collaboration to Reality Capture Data",
+        "link": "https://www.auganix.org/xr-news-cintoo-workspace-reality-capture/",
+        "source": "Auganix",
+        "category": "SOFTWARE",
+        "summary": "Auganix reports that Cintoo has unveiled Cintoo Workspace, a multi-user collaboration tool for viewing and inspecting reality capture data in real time, aimed at teams working across office and field environments on scanned physical assets."
+      }
+    ],
+    "HARDWARE": [
+      {
+        "id": "6a7b51bea549b53c",
+        "title": "IBM has unveiled chip technology that could help extend Moore’s Law another decade",
+        "link": "https://www.technologyreview.com/2026/06/25/1139696/ibm-unveils-sub1nm-chip/",
+        "source": "MIT Tech Review - AI",
+        "category": "HARDWARE",
+        "summary": "MIT Technology Review reports that IBM has unveiled a prototype sub-1nm chip packing roughly 100 billion transistors onto a fingernail-sized area, doubling the density of its 2021 state-of-the-art design and potentially extending Moore's Law by another decade through more energy-efficient compute."
+      },
+      {
+        "id": "d3c837b199cff3ed",
+        "title": "What to expect at the next Samsung Galaxy Unpacked",
+        "link": "https://www.engadget.com/2202726/foldables-watches-and-glasses-could-be-on-the-way/",
+        "source": "Engadget",
+        "category": "HARDWARE",
+        "summary": "Engadget reports that Samsung's next Galaxy Unpacked event is expected to feature new foldables, watches, and smart glasses, with the glasses representing the company's continued expansion into wearable AI hardware alongside its Android XR partnership with Google."
+      },
+      {
+        "id": "57be1c733c92a151",
+        "title": "Elon Musk’s Brain-chip Startup Aims for Scalability with New Transdural Procedure",
+        "link": "https://roadtovr.com/elon-musk-brain-neuralink-transdural-implant/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "Neuralink said it has performed its first transdural brain implant surgery, threading electrodes through the dura rather than beneath it in an effort to reduce surgical trauma and improve scalability, Road to VR reports. The company framed the procedure as a step toward broader deployment of its brain-computer interface."
+      },
+      {
+        "id": "012cc0e931b85f82",
+        "title": "Meta puts rate limits on its smart glasses' Conversation Focus feature",
+        "link": "https://www.engadget.com/2205660/meta-rate-limits-smart-glasses-conversation-focus-feature/",
+        "source": "Engadget",
+        "category": "HARDWARE",
+        "summary": "Engadget reports that Meta has imposed a three-hour monthly free usage cap on the Conversation Focus feature of its smart glasses, which uses on-device AI to isolate the voice of the person a wearer is speaking with in noisy environments. The move signals Meta's shift toward monetizing premium AI features on its Ray-Ban and Oakley-branded eyewear."
+      },
+      {
+        "id": "2e6cef4a2c57448c",
+        "title": "The Lab Mistake That Might Revolutionize Computing",
+        "link": "https://spectrum.ieee.org/artificial-neurons-on-silicon-chips",
+        "source": "IEEE Spectrum",
+        "category": "HARDWARE",
+        "summary": "IEEE Spectrum reports on research into artificial neurons fabricated on silicon chips, an approach that could sharply reduce the energy cost of running AI workloads currently powered by GPU-heavy data centers. The piece frames the work as a potential path toward more efficient neuromorphic computing as AI compute demand escalates."
+      },
+      {
+        "id": "c03fba1cc4b90823",
+        "title": "Elevate Your Golf Game with Meta AI Glasses, 18Birdies, and Arccos",
+        "link": "https://www.meta.com/blog/meta-ai-glasses-oakley-meta-hstn-oakley-meta-vanguard-18birdies-arccos/",
+        "source": "Meta Blog",
+        "category": "HARDWARE",
+        "summary": "Meta announced that its Oakley Meta HSTN and Oakley Meta Vanguard AI glasses now integrate with the 18Birdies and Arccos golf platforms, allowing wearers to access on-course data and coaching hands-free. The move extends Meta's push to position its AI glasses line as a fitness and sports-focused wearable beyond general lifestyle use."
+      },
+      {
+        "id": "6e41a6d07d973184",
+        "title": "SpaceX shows investors a slim AI smartphone prototype powered by xAI technology",
+        "link": "https://the-decoder.com/spacex-shows-investors-a-slim-ai-smartphone-prototype-powered-by-xai-technology/",
+        "source": "The Decoder",
+        "category": "HARDWARE",
+        "summary": "The Decoder reports that SpaceX showed investors a prototype AI smartphone said to be thinner than an iPhone, running a Qualcomm Snapdragon chip with a proprietary operating system and integrating xAI technology, as Elon Musk pursues an 'everything app' modeled on WeChat."
+      },
+      {
+        "id": "424ae7d9abd2053f",
+        "title": "Meta Limits the Usage of an AI Glasses Feature, Even if You Pay for a $20 Subscription",
+        "link": "https://www.cnet.com/tech/mobile/fresh-off-glasses-controversy-meta-is-rate-limiting-one-feature-even-with-a-20-subscription/",
+        "source": "CNET",
+        "category": "HARDWARE",
+        "summary": "CNET reports that Meta is rate-limiting the conversation focus feature on its AI glasses, capping free users at three hours per month while also throttling usage for subscribers on its $20-per-month plan. The feature, which amplifies the speech of the person a wearer is talking to, has been positioned as a key accessibility and social use case for the glasses."
+      }
+    ],
+    "AI AND SIMULATED WORLDS": [
+      {
+        "id": "9e51e80993cc70b0",
+        "title": "AI Is Learning to Read the Room",
+        "link": "https://spectrum.ieee.org/emotion-ai-context",
+        "source": "IEEE Spectrum",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "IEEE Spectrum examines the emerging field of context-aware emotion AI, which moves beyond categorizing facial expressions in isolation to interpret tone, posture, and situational cues — a capability with implications for spatial computing interfaces that aim to read user state in real time."
+      },
+      {
+        "id": "7843b9ea14bc3390",
+        "title": "Previewing GPT-5.6 Sol: a next-generation model",
+        "link": "https://openai.com/index/previewing-gpt-5-6-sol",
+        "source": "OpenAI News",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "OpenAI previewed GPT-5.6 Sol, a next-generation model the company says delivers stronger capabilities across coding, science, and cybersecurity, paired with what it describes as its most advanced safety stack to date. The preview signals OpenAI's continued push to differentiate on frontier reasoning and security-sensitive workloads as competition with Google, Anthropic, and xAI intensifies."
+      },
+      {
+        "id": "5d9de7a5a94aebe9",
+        "title": "Daybreak: Tools for securing every organization in the world",
+        "link": "https://openai.com/index/daybreak-securing-the-world",
+        "source": "OpenAI News",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "OpenAI introduced Daybreak, a suite of security tools including Codex Security and GPT-5.5-Cyber, designed to help organizations find, validate, and patch software vulnerabilities at scale. The release positions OpenAI as a direct player in the enterprise cybersecurity market, where AI-driven vulnerability discovery is becoming a competitive front among foundation model providers."
+      },
+      {
+        "id": "60f58833267a931c",
+        "title": "Meta follows SpaceX's playbook and builds a cloud business to sell its spare AI compute to outside customers",
+        "link": "https://the-decoder.com/meta-follows-spacexs-playbook-and-builds-a-cloud-business-to-sell-its-spare-ai-compute-to-outside-customers/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Decoder reports that Meta is launching a cloud business to sell spare AI compute capacity to external customers, following a playbook similar to SpaceX's approach with Starlink. With planned AI investments of up to $145 billion this year, Meta is looking to monetize infrastructure not fully consumed by its own model training."
+      },
+      {
+        "id": "623e337cec36b250",
+        "title": "Anthropic's new Claude Sonnet 5 closes the gap to Opus model series",
+        "link": "https://the-decoder.com/anthropics-new-claude-sonnet-5-closes-the-gap-to-the-pricier-opus-model-series/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Anthropic released Claude Sonnet 5, which The Decoder reports outperforms its predecessor Sonnet 4.6 across benchmarks and edges past the larger Opus 4.8 on the GDPval-AA v2 knowledge work test with a score of 1,618. Anthropic also noted that the model scores well below US government-blocked models on cybersecurity tasks, a deliberate signal amid ongoing regulatory debate."
+      },
+      {
+        "id": "0b321e9fdc033636",
+        "title": "Anthropic launches Claude Science, an AI workspace built specifically for researchers",
+        "link": "https://the-decoder.com/anthropic-launches-claude-science-an-ai-workspace-built-specifically-for-researchers/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Decoder reports that Anthropic has launched Claude Science, an AI workbench for researchers that includes more than 60 preconfigured skills across fields such as genomics and computational chemistry, plus a verification agent that checks citations and calculations. The application can run locally or on HPC clusters, keeping sensitive research data within a lab's own infrastructure."
+      },
+      {
+        "id": "1efe0e0ee7087666",
+        "title": "Google launches Nano Banana 2 Lite for fast AI images and Gemini Omni Flash for video via API",
+        "link": "https://the-decoder.com/google-launches-nano-banana-2-lite-for-fast-ai-images-and-gemini-omni-flash-for-video-via-api/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Google introduced two new generative AI models, according to The Decoder: Nano Banana 2 Lite, which generates images in four seconds at $0.034 each, and Gemini Omni Flash, which brings text-prompted video generation and editing to the API for the first time. Google is recommending developers chain the two models to move from a quick still image to an animated video."
+      },
+      {
+        "id": "78c501247f18c641",
+        "title": "Claude Science is Anthropic’s newest flagship product",
+        "link": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/",
+        "source": "MIT Tech Review - AI",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to MIT Technology Review, Anthropic has launched Claude Science, a new flagship product designed to support scientific research the way Claude Code supports software engineering. Unveiled at an event for pharmaceutical executives and biotech founders, the system can autonomously execute meaningful research work from concise, high-level instructions and has access to specialized scientific tools."
+      },
+      {
+        "id": "e6fff87f6492b053",
+        "title": "Anthropic's new Sonnet 5 model is better at the tasks that are running up enterprise bills",
+        "link": "https://www.engadget.com/2205475/anthropic-releases-claude-sonnet-5-model/",
+        "source": "Engadget",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Engadget reports that Anthropic has released Claude Sonnet 5, a new model trained specifically to excel at agentic tasks that have driven up costs for enterprise customers and power users. The company is positioning Sonnet 5 as a more efficient workhorse for long-running, tool-using workflows that have strained budgets under earlier models."
+      },
+      {
+        "id": "88634f28df46fb69",
+        "title": "Claude Helped a Hacker Find a Way to Issue Tickets to Almost Every US Music Festival",
+        "link": "https://www.wired.com/story/claude-helped-a-hacker-find-a-way-to-issue-tickets-to-almost-every-us-music-festival/",
+        "source": "Wired",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Wired reports that a security researcher used Anthropic's Claude Opus 4.7 to discover a vulnerability in Front Gate Tickets — the platform behind Lollapalooza, Bonnaroo, and virtually every major US music festival — that allowed him to freely issue tickets of his choosing. The disclosure highlights how frontier AI models are accelerating both offensive security research and the discovery of high-impact web vulnerabilities."
+      },
+      {
+        "id": "86b7b987dee7f601",
+        "title": "The Trump Administration Is Lifting Its Export Controls on Anthropic’s Mythos and Fable AI Models",
+        "link": "https://www.wired.com/story/trump-administration-lifts-export-controls-on-anthropics-mythos-and-fable-ai-models/",
+        "source": "Wired",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to Wired, the Trump administration is lifting export controls on Anthropic's most advanced Mythos and Fable AI models, reversing course weeks after ordering the company to suspend access for foreign nationals. The move reflects continuing policy volatility around US restrictions on frontier AI access abroad."
+      },
+      {
+        "id": "3c610c759a68a4d4",
+        "title": "Meta Contractors Posed as Teens to Prompt Rival Chatbots About Suicide, Sex, and Drugs",
+        "link": "https://www.wired.com/story/meta-contractors-pretending-to-be-teens-chatbot-testing/",
+        "source": "Wired",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Wired reports that hundreds of contractors working on a Meta project posed as teenagers to prompt rival chatbots including Gemini and ChatGPT about suicide, sex, and drugs, gathering data on how competitors handle high-risk subjects with minors. The revelation raises fresh questions about competitive AI safety testing practices and the ethics of adversarial evaluation using fake underage personas."
+      },
+      {
+        "id": "474d4e312b755290",
+        "title": "Google built a great smart speaker, but Gemini isn’t ready for it",
+        "link": "https://www.theverge.com/tech/959503/google-home-speaker-review-gemini-for-home",
+        "source": "The Verge",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Verge reports that Google's new Home smart speaker delivers strong hardware but is hamstrung by an unfinished Gemini-for-Home experience, with the assistant struggling to consistently handle the kinds of conversational queries the device is being marketed for. The review underscores the broader challenge facing AI-powered ambient devices as Amazon and Google race to justify smart speakers' place on the counter."
+      },
+      {
+        "id": "b13e4677f11359b9",
+        "title": "Anthropic&#8217;s long-sidelined Fable 5 is greenlit to return",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back",
+        "source": "The Verge",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to The Verge, Anthropic said it will begin restoring global access to Claude Fable 5 on Wednesday after weeks of negotiations with the Trump administration, with availability returning across Claude platforms as well as AWS, Google Cloud, and Microsoft. The move ends a high-profile pause on one of Anthropic's flagship models."
+      },
+      {
+        "id": "aa03ab9530510010",
+        "title": "MemoBench: Benchmarking World Modeling in Dynamically Changing Environments",
+        "link": "https://arxiv.org/abs/2606.27537",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "A paper on arXiv introduces MemoBench, a diagnostic benchmark for evaluating memory consistency in video generation and world models when objects disappear from view and later reappear in dynamically changing scenes. The authors argue existing benchmarks only test consistency for in-view targets or static occlusion, leaving world models' handling of dynamic off-screen state largely unmeasured."
+      },
+      {
+        "id": "d866a21bc3340953",
+        "title": "Start building with Nano Banana 2 Lite and Gemini Omni Flash",
+        "link": "https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash/",
+        "source": "Google DeepMind",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Google DeepMind announced that developers can now start building with Nano Banana 2 Lite and Gemini Omni Flash, expanding its lineup of smaller, faster Gemini-family models aimed at broader deployment. The release deepens Google's push to make multimodal AI accessible at lower cost and latency, with downstream implications for AI-powered glasses and spatial applications."
+      },
+      {
+        "id": "b3e1be97c2d9e00a",
+        "title": "Meta's non-invasive brain-to-text AI is closing the gap with surgical implants",
+        "link": "https://the-decoder.com/metas-non-invasive-brain-to-text-ai-is-closing-the-gap-with-surgical-implants/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to The Decoder, Meta's FAIR AI team has advanced its non-invasive brain-to-text system Brain2Qwerty v2, which reads magnetic signals outside the skull to reconstruct typed sentences without surgery, narrowing the accuracy gap with surgical implants though clinical use for paralyzed patients remains distant."
+      },
+      {
+        "id": "fe19c99d47f97c63",
+        "title": "OpenAI's genomics paper accidentally reveals a Pro lineup it hasn't announced yet",
+        "link": "https://the-decoder.com/openai-paper-reveals-three-gpt-5-6-pro-models-breaking-with-single-top-tier-strategy/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Decoder reports that an OpenAI genomics benchmark paper inadvertently revealed the Pro tier of GPT-5.6 could ship in three variants, which would mark the first major structural change to ChatGPT Pro since the plan launched."
+      },
+      {
+        "id": "e99b5ab66b4ae5a7",
+        "title": "Anthropic's Fable 5 is back worldwide after a two-week government ban over a jailbreak",
+        "link": "https://the-decoder.com/anthropics-fable-5-is-back-worldwide-after-a-two-week-government-ban-over-a-jailbreak/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to The Decoder, the US government has lifted a two-week ban and allowed Anthropic to resume shipping Fable 5 globally after Amazon researchers identified a jailbreak; Anthropic said smaller models like Claude Haiku 4.5 could execute the same exploit, and a new safety classifier now blocks the technique in over 99 percent of cases while also flagging more harmless requests."
+      },
+      {
+        "id": "714a5dcd7fae826c",
+        "title": "The Download: Anthropic launches Claude Science, and California’s carbon manure math",
+        "link": "https://www.technologyreview.com/2026/07/01/1139996/the-download-anthropic-claude-science-california-carbon-manure/",
+        "source": "MIT Tech Review - AI",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "MIT Technology Review reports that Anthropic unveiled Claude Science at an event for pharmaceutical executives, biotech founders, and researchers, positioning it as a major new flagship product intended to support scientific research workflows."
+      },
+      {
+        "id": "4cd6d8f79d5e6b0b",
+        "title": "China’s Z.ai claims it can match Mythos on cybersecurity",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity",
+        "source": "The Verge",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to The Verge, China's Zhipu AI (Z.ai) has released its open-weight GLM-5.2 model, with some researchers claiming it matches Mythos on certain bug-finding and cybersecurity tasks. While GLM still trails Anthropic and OpenAI models on broader general-purpose benchmarks, the release signals a narrowing capability gap between leading Chinese and U.S. frontier models."
+      },
+      {
+        "id": "8a7173ff9126a37d",
+        "title": "Anthropic says it cut 80 percent of Claude Code's system prompt because Fable 5 models \"want a smaller system prompt\"",
+        "link": "https://the-decoder.com/anthropic-says-it-cut-80-percent-of-claude-codes-system-prompt-because-fable-5-models-want-a-smaller-system-prompt/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Decoder reports that Anthropic has cut Claude Code's system prompt by 80 percent, with staffer Tariq Shihipar saying the new Fable 5 models need fewer instructions and examples because guidelines can hold back models that are \"more imaginative\" than the rules they're given, shifting Anthropic's approach toward steering via context rather than strict rules."
+      },
+      {
+        "id": "f627697009d7c4aa",
+        "title": "AI agents can now complete 16 percent of freelance jobs at pro quality, up from 2.5 percent eight months ago",
+        "link": "https://the-decoder.com/ai-agents-can-now-complete-16-percent-of-freelance-jobs-at-pro-quality-up-from-2-5-percent-eight-months-ago/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to The Decoder, the Remote Labor Index — a benchmark tracking how often AI agents complete paid freelance projects at professional quality — has risen from 2.5 percent to 16 percent in eight months, signaling a rapid acceleration in the practical capability of autonomous agents on real-world knowledge work."
+      }
+    ],
+    "RESEARCH": [
+      {
+        "id": "1bc8b9cb5521d3b4",
+        "title": "AI Is Designing Radio Chips That Humans Couldn’t Even Imagine",
+        "link": "https://spectrum.ieee.org/ai-radio-chip-design",
+        "source": "IEEE Spectrum",
+        "category": "RESEARCH",
+        "summary": "IEEE Spectrum reports that Princeton researchers are using reinforcement learning and diffusion models to automate the design of radio-frequency integrated circuits, generating novel RF layouts that achieve record performance and drastically reduce design time for wireless technologies including 5G and satellite communications."
+      },
+      {
+        "id": "70389c915744faab",
+        "title": "Capacity-Controlled Multi-View Stylization of 3D Gaussian Splatting",
+        "link": "https://arxiv.org/abs/2606.26754",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "Researchers on arXiv present a capacity-controlled framework for multi-view stylization of 3D Gaussian Splatting scenes, addressing the cross-view inconsistency problems that plague existing 3D stylization methods. The approach replaces per-view 2D feature-matching losses with a more stable allocation scheme aimed at coherent stylistic transfer across viewpoints."
+      },
+      {
+        "id": "018a570ce7b1cecd",
+        "title": "SatSplatDiff: Geometry-preserving generative refinement for high-fidelity satellite Gaussian Splatting",
+        "link": "https://arxiv.org/abs/2606.27223",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "Researchers on arXiv present SatSplatDiff, a geometry-preserving generative refinement method for satellite-based Gaussian Splatting that uses pretrained generative priors to fill in building facades poorly supervised by top-down satellite imagery. The approach targets surface holes and degraded fidelity in large-scale satellite 3D reconstruction."
+      },
+      {
+        "id": "1d1d7046ff35ab9a",
+        "title": "Sculpting NeRF Geometry: Human-Preference Fine-Tuning of a 3D-Aware Face GAN",
+        "link": "https://arxiv.org/abs/2606.27305",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "An arXiv paper fine-tunes a pretrained 3D-aware face GAN using reinforcement learning from human feedback applied directly to NeRF radiance-field density values, sidestepping the mesh conversion step common in prior 3D RLHF pipelines. The method aims to align generated face geometry with human aesthetic preferences without surface-supervised training data."
+      },
+      {
+        "id": "280dd78e6552e9d9",
+        "title": "Look-Before-Move: Narrative-Grounded World Visual Attention in Dynamic 3D Story Worlds",
+        "link": "https://arxiv.org/abs/2606.26964",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "A new arXiv paper, Look-Before-Move, proposes a framework for camera planning in dynamic 3D story worlds in which an embodied agent actively decides what visual evidence to acquire before moving, advancing visual perception beyond passive interpretation toward narrative-grounded attention for world models."
+      },
+      {
+        "id": "3443658b005d3634",
+        "title": "Agentic Collaborative Cognition for Zero-Shot 3D Understanding",
+        "link": "https://arxiv.org/abs/2606.24649",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "An updated arXiv paper proposes a collaborative multi-agent framework for zero-shot 3D scene understanding that assigns a Planning Agent to handle high-level visual reasoning, aiming to overcome the perspective and perception bottlenecks faced by prior video-keyframe approaches using multimodal large language models."
+      },
+      {
+        "id": "cf5e1cfcdbcacfd2",
+        "title": "GaussLite: Online Task-Conditioned 3D Gaussian Splatting for Real-Time Robotic Mapping",
+        "link": "https://arxiv.org/abs/2606.30809",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "An arXiv paper, GaussLite: Online Task-Conditioned 3D Gaussian Splatting for Real-Time Robotic Mapping, introduces a task-driven 3D Gaussian Splatting system that concentrates compute on scene regions relevant to the robot's task, aiming to enable more efficient real-time mapping onboard embodied agents."
+      },
+      {
+        "id": "ecbe4a8b9c8fa55a",
+        "title": "Knowledge-Driven Dimension Estimation from a Single Image -3D Asset Generation Technology for Digital Twin Construction",
+        "link": "https://arxiv.org/abs/2606.30896",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "According to arXiv, Knowledge-Driven Dimension Estimation from a Single Image proposes a 3D asset generation technique for digital-twin construction that uses prior knowledge to estimate real-world scale from a single image, targeting simulation pipelines used to validate in-vehicle camera systems against traffic signs and other high-mounted objects."
+      },
+      {
+        "id": "8c8497d77396ce4b",
+        "title": "MemLearner: Learning to Query Context memory for Video World Models",
+        "link": "https://arxiv.org/abs/2606.31734",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "Researchers publishing on arXiv propose MemLearner, a learned context memory retrieval method for video world models that aims to maintain scene consistency over extended durations, addressing failures of rule-based frame retrieval under occlusions and dynamic objects."
+      },
+      {
+        "id": "232f299cd9b9c647",
+        "title": "LLM-Driven Personalities for Decision Making in Emergency Simulations",
+        "link": "https://arxiv.org/abs/2606.31038",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "A new arXiv paper explores using Large Language Models to drive decision-making for virtual humans in emergency simulation scenarios, aiming to produce agents that exhibit spatial awareness and competent behavior when interacting with their environments. The authors argue that LLM-driven personalities can improve the believability and agency of simulated characters in training and simulation contexts."
+      },
+      {
+        "id": "a26e5afefd3320db",
+        "title": "Draped Surfaces: A Contour-Adaptive Interface Overlaid on the Physical Environment for Mixed Reality Workspaces",
+        "link": "https://arxiv.org/abs/2607.00518",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "A new arXiv paper introduces Contour-Adaptive Mixed Environment Overlays (CAMEO), a mixed reality interface technique that drapes digital surfaces along the contours of a user's physical environment rather than floating windows in a cockpit-style layout, aiming to reduce occlusion and preserve access to real-world objects in MR workspaces."
+      }
+    ],
+    "GAMING MARKETPLACE WATCH": [
+      {
+        "id": "d304943414b3ed85",
+        "title": "Sony: The Countdown Begins on PSVR 2 & PS5 Physical Discs",
+        "link": "https://roadtovr.com/sony-ends-psvr-2-ps5-physical-discs/",
+        "source": "Road to VR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "Sony announced it will phase out physical disc production for PlayStation consoles, with all new PS5 and PSVR 2 games shifting to digital-only distribution starting January 2028, according to Road to VR. The move ends a more than three-decade run of physical PlayStation media and reshapes distribution economics for VR titles on the platform."
+      },
+      {
+        "id": "72a8f31bd0b4b387",
+        "title": "What to Play on Meta Quest: June 2026 Recap",
+        "link": "https://www.meta.com/blog/what-to-play-on-meta-quest-june-2026-recap/",
+        "source": "Meta Blog",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "Meta published its June 2026 recap of new and notable titles on Meta Quest, highlighting the month's releases and updates across the Quest store. The roundup offers a snapshot of the platform's current gaming pipeline and content momentum heading into the summer."
+      },
+      {
+        "id": "40018b405de13615",
+        "title": "Quest’s Most Popular Game ‘Gorilla Tag’ is Going Mobile in ‘Monke Mayhem’ Next Year",
+        "link": "https://roadtovr.com/gorilla-tag-mobile-game-announce-2027/",
+        "source": "Road to VR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "Road to VR reports that Another Axiom is bringing Gorilla Tag, Quest's most popular game, to mobile devices as a standalone free-to-play sandbox titled Gorilla Tag: Monke Mayhem, slated to launch on iOS and Android sometime in 2027 with additional platforms to be announced later."
+      },
+      {
+        "id": "3af333ce2249694b",
+        "title": "New VR Games &amp; Releases July 2026: Quest, PS VR2, PC VR &amp; More",
+        "link": "https://www.uploadvr.com/new-vr-games-releases-july-2026-meta-quest-pc-vr-playstation-vr2-more-2/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "UploadVR published its monthly roundup of the biggest VR games, updates, and DLCs launching in July 2026 across Quest, PS VR2, and PC VR platforms."
+      },
+      {
+        "id": "3a3937c9afc40e9d",
+        "title": "Lock and Load: New Titles Join the Meta Horizon+ Catalog in July",
+        "link": "https://www.meta.com/blog/meta-horizon-plus-vr-subscription-service-july-gun-club-vr-dragon-fist-vr-kung-fu-phantom-covert-ops/",
+        "source": "Meta Blog",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "Meta announced the July additions to its Meta Horizon+ VR subscription catalog, with Gun Club VR, Dragon Fist VR Kung Fu, and Phantom: Covert Ops joining the service for Quest users."
+      },
+      {
+        "id": "7eb3a1afda968485",
+        "title": "How ArtQuest VR Became One Of VR&#x27;s Most Ambitious Virtual Museums",
+        "link": "https://www.uploadvr.com/how-artquest-vr-became-one-of-vrs-most-ambitious-virtual-museums/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "UploadVR profiles ArtQuest VR, a virtual museum built by Eric Mosinger after he could not find the experience he wanted, describing it as one of VR's most ambitious museum experiences."
+      },
+      {
+        "id": "509e4292fd42b52a",
+        "title": "Fanmade VR Port Of Nintendo 64 Classic Perfect Dark Out Now On Quest &amp; PC",
+        "link": "https://www.uploadvr.com/fanmade-vr-port-of-nintendo-64-classic-perfect-dark-out-now-on-quest-pc/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "UploadVR reports that modder Alex Le Tux has released the first public build of Perfect Dark VR, a fanmade port of the Nintendo 64 classic for Quest headsets and PC VR."
+      },
+      {
+        "id": "071d823eaa9f02c7",
+        "title": "Yungblud&#x27;s &quot;Zombie&quot; Is The Latest Beat Saber Shock Drop",
+        "link": "https://www.uploadvr.com/yungbluds-zombie-is-the-latest-beat-saber-shock-drop/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "UploadVR reports that Beat Saber's latest shock drop is Yungblud's Grammy-nominated alternative rock single \"Zombie,\" adding to the rhythm game's rotating catalog of licensed tracks."
+      }
+    ],
+    "APPLE VISION PRO IN THE NEWS": [
+      {
+        "id": "058d8aa2cbf8d61a",
+        "title": "SpatialGen Zeus Streams Live Immersive Video To Apple Vision Pro",
+        "link": "https://www.uploadvr.com/spatialgen-zeus-streams-live-immersive-video-to-apple-vision-pro/",
+        "source": "UploadVR",
+        "category": "APPLE VISION PRO IN THE NEWS",
+        "summary": "UploadVR reports that SpatialGen has introduced Zeus, a rack-mounted system capable of streaming live Apple Immersive Video to Apple Vision Pro headsets for sports and other live events. The product targets a persistent gap in real-time immersive broadcast production for Vision Pro's proprietary video format."
+      }
+    ],
+    "HANDS-ON REVIEW": [
+      {
+        "id": "6ce6685fe0bccc4c",
+        "title": "Lanesplit VR Support Impressions: A Disappointing Missed Opportunity",
+        "link": "https://www.uploadvr.com/lanesplit-vr-support-impressions-a-disappointing-missed-opportunity/",
+        "source": "UploadVR",
+        "category": "HANDS-ON REVIEW",
+        "summary": "UploadVR reports that the VR support for urban street racer Lanesplit is a disappointing missed opportunity, citing confusing design choices and performance issues that undermine the port."
+      },
+      {
+        "id": "d2ced2f7c9581716",
+        "title": "Color-A-Cube Impressions: A Deeply Satisfying Color-By-Number Game",
+        "link": "https://www.uploadvr.com/color-a-cube-impressions-a-deepl-satisfying-color-by-number-game/",
+        "source": "UploadVR",
+        "category": "HANDS-ON REVIEW",
+        "summary": "UploadVR reviews Color-A-Cube as a cozy color-by-number VR game built around charming voxel models and simple, satisfying mechanics."
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "6a7b51bea549b53c",
+      "title": "IBM has unveiled chip technology that could help extend Moore’s Law another decade",
+      "link": "https://www.technologyreview.com/2026/06/25/1139696/ibm-unveils-sub1nm-chip/",
+      "source": "MIT Tech Review - AI",
+      "category": "HARDWARE",
+      "summary": "MIT Technology Review reports that IBM has unveiled a prototype sub-1nm chip packing roughly 100 billion transistors onto a fingernail-sized area, doubling the density of its 2021 state-of-the-art design and potentially extending Moore's Law by another decade through more energy-efficient compute."
+    },
+    {
+      "id": "d3c837b199cff3ed",
+      "title": "What to expect at the next Samsung Galaxy Unpacked",
+      "link": "https://www.engadget.com/2202726/foldables-watches-and-glasses-could-be-on-the-way/",
+      "source": "Engadget",
+      "category": "HARDWARE",
+      "summary": "Engadget reports that Samsung's next Galaxy Unpacked event is expected to feature new foldables, watches, and smart glasses, with the glasses representing the company's continued expansion into wearable AI hardware alongside its Android XR partnership with Google."
+    },
+    {
+      "id": "1bc8b9cb5521d3b4",
+      "title": "AI Is Designing Radio Chips That Humans Couldn’t Even Imagine",
+      "link": "https://spectrum.ieee.org/ai-radio-chip-design",
+      "source": "IEEE Spectrum",
+      "category": "RESEARCH",
+      "summary": "IEEE Spectrum reports that Princeton researchers are using reinforcement learning and diffusion models to automate the design of radio-frequency integrated circuits, generating novel RF layouts that achieve record performance and drastically reduce design time for wireless technologies including 5G and satellite communications."
+    },
+    {
+      "id": "9e51e80993cc70b0",
+      "title": "AI Is Learning to Read the Room",
+      "link": "https://spectrum.ieee.org/emotion-ai-context",
+      "source": "IEEE Spectrum",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "IEEE Spectrum examines the emerging field of context-aware emotion AI, which moves beyond categorizing facial expressions in isolation to interpret tone, posture, and situational cues — a capability with implications for spatial computing interfaces that aim to read user state in real time."
+    },
+    {
+      "id": "70389c915744faab",
+      "title": "Capacity-Controlled Multi-View Stylization of 3D Gaussian Splatting",
+      "link": "https://arxiv.org/abs/2606.26754",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "Researchers on arXiv present a capacity-controlled framework for multi-view stylization of 3D Gaussian Splatting scenes, addressing the cross-view inconsistency problems that plague existing 3D stylization methods. The approach replaces per-view 2D feature-matching losses with a more stable allocation scheme aimed at coherent stylistic transfer across viewpoints."
+    },
+    {
+      "id": "018a570ce7b1cecd",
+      "title": "SatSplatDiff: Geometry-preserving generative refinement for high-fidelity satellite Gaussian Splatting",
+      "link": "https://arxiv.org/abs/2606.27223",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "Researchers on arXiv present SatSplatDiff, a geometry-preserving generative refinement method for satellite-based Gaussian Splatting that uses pretrained generative priors to fill in building facades poorly supervised by top-down satellite imagery. The approach targets surface holes and degraded fidelity in large-scale satellite 3D reconstruction."
+    },
+    {
+      "id": "1d1d7046ff35ab9a",
+      "title": "Sculpting NeRF Geometry: Human-Preference Fine-Tuning of a 3D-Aware Face GAN",
+      "link": "https://arxiv.org/abs/2606.27305",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "An arXiv paper fine-tunes a pretrained 3D-aware face GAN using reinforcement learning from human feedback applied directly to NeRF radiance-field density values, sidestepping the mesh conversion step common in prior 3D RLHF pipelines. The method aims to align generated face geometry with human aesthetic preferences without surface-supervised training data."
+    },
+    {
+      "id": "280dd78e6552e9d9",
+      "title": "Look-Before-Move: Narrative-Grounded World Visual Attention in Dynamic 3D Story Worlds",
+      "link": "https://arxiv.org/abs/2606.26964",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "A new arXiv paper, Look-Before-Move, proposes a framework for camera planning in dynamic 3D story worlds in which an embodied agent actively decides what visual evidence to acquire before moving, advancing visual perception beyond passive interpretation toward narrative-grounded attention for world models."
+    },
+    {
+      "id": "3443658b005d3634",
+      "title": "Agentic Collaborative Cognition for Zero-Shot 3D Understanding",
+      "link": "https://arxiv.org/abs/2606.24649",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "An updated arXiv paper proposes a collaborative multi-agent framework for zero-shot 3D scene understanding that assigns a Planning Agent to handle high-level visual reasoning, aiming to overcome the perspective and perception bottlenecks faced by prior video-keyframe approaches using multimodal large language models."
+    },
+    {
+      "id": "7843b9ea14bc3390",
+      "title": "Previewing GPT-5.6 Sol: a next-generation model",
+      "link": "https://openai.com/index/previewing-gpt-5-6-sol",
+      "source": "OpenAI News",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "OpenAI previewed GPT-5.6 Sol, a next-generation model the company says delivers stronger capabilities across coding, science, and cybersecurity, paired with what it describes as its most advanced safety stack to date. The preview signals OpenAI's continued push to differentiate on frontier reasoning and security-sensitive workloads as competition with Google, Anthropic, and xAI intensifies."
+    },
+    {
+      "id": "5d9de7a5a94aebe9",
+      "title": "Daybreak: Tools for securing every organization in the world",
+      "link": "https://openai.com/index/daybreak-securing-the-world",
+      "source": "OpenAI News",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "OpenAI introduced Daybreak, a suite of security tools including Codex Security and GPT-5.5-Cyber, designed to help organizations find, validate, and patch software vulnerabilities at scale. The release positions OpenAI as a direct player in the enterprise cybersecurity market, where AI-driven vulnerability discovery is becoming a competitive front among foundation model providers."
+    },
+    {
+      "id": "308644ddb0681293",
+      "title": "Official Discord App Finally Comes to Quest After Years of Waiting",
+      "link": "https://roadtovr.com/official-discord-meta-quest-app-release/",
+      "source": "Road to VR",
+      "category": "SOFTWARE",
+      "summary": "Road to VR reports that Discord has officially released a native app for Meta Quest, now available for free on the Horizon Store after years of user requests. Meta CTO Andrew Bosworth had signaled in May 2024 that the company was working on some form of Discord integration, though a fully-fledged first-party app was long delayed."
+    },
+    {
+      "id": "d304943414b3ed85",
+      "title": "Sony: The Countdown Begins on PSVR 2 & PS5 Physical Discs",
+      "link": "https://roadtovr.com/sony-ends-psvr-2-ps5-physical-discs/",
+      "source": "Road to VR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "Sony announced it will phase out physical disc production for PlayStation consoles, with all new PS5 and PSVR 2 games shifting to digital-only distribution starting January 2028, according to Road to VR. The move ends a more than three-decade run of physical PlayStation media and reshapes distribution economics for VR titles on the platform."
+    },
+    {
+      "id": "57be1c733c92a151",
+      "title": "Elon Musk’s Brain-chip Startup Aims for Scalability with New Transdural Procedure",
+      "link": "https://roadtovr.com/elon-musk-brain-neuralink-transdural-implant/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "Neuralink said it has performed its first transdural brain implant surgery, threading electrodes through the dura rather than beneath it in an effort to reduce surgical trauma and improve scalability, Road to VR reports. The company framed the procedure as a step toward broader deployment of its brain-computer interface."
+    },
+    {
+      "id": "058d8aa2cbf8d61a",
+      "title": "SpatialGen Zeus Streams Live Immersive Video To Apple Vision Pro",
+      "link": "https://www.uploadvr.com/spatialgen-zeus-streams-live-immersive-video-to-apple-vision-pro/",
+      "source": "UploadVR",
+      "category": "APPLE VISION PRO IN THE NEWS",
+      "summary": "UploadVR reports that SpatialGen has introduced Zeus, a rack-mounted system capable of streaming live Apple Immersive Video to Apple Vision Pro headsets for sports and other live events. The product targets a persistent gap in real-time immersive broadcast production for Vision Pro's proprietary video format."
+    },
+    {
+      "id": "60f58833267a931c",
+      "title": "Meta follows SpaceX's playbook and builds a cloud business to sell its spare AI compute to outside customers",
+      "link": "https://the-decoder.com/meta-follows-spacexs-playbook-and-builds-a-cloud-business-to-sell-its-spare-ai-compute-to-outside-customers/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Decoder reports that Meta is launching a cloud business to sell spare AI compute capacity to external customers, following a playbook similar to SpaceX's approach with Starlink. With planned AI investments of up to $145 billion this year, Meta is looking to monetize infrastructure not fully consumed by its own model training."
+    },
+    {
+      "id": "623e337cec36b250",
+      "title": "Anthropic's new Claude Sonnet 5 closes the gap to Opus model series",
+      "link": "https://the-decoder.com/anthropics-new-claude-sonnet-5-closes-the-gap-to-the-pricier-opus-model-series/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Anthropic released Claude Sonnet 5, which The Decoder reports outperforms its predecessor Sonnet 4.6 across benchmarks and edges past the larger Opus 4.8 on the GDPval-AA v2 knowledge work test with a score of 1,618. Anthropic also noted that the model scores well below US government-blocked models on cybersecurity tasks, a deliberate signal amid ongoing regulatory debate."
+    },
+    {
+      "id": "0b321e9fdc033636",
+      "title": "Anthropic launches Claude Science, an AI workspace built specifically for researchers",
+      "link": "https://the-decoder.com/anthropic-launches-claude-science-an-ai-workspace-built-specifically-for-researchers/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Decoder reports that Anthropic has launched Claude Science, an AI workbench for researchers that includes more than 60 preconfigured skills across fields such as genomics and computational chemistry, plus a verification agent that checks citations and calculations. The application can run locally or on HPC clusters, keeping sensitive research data within a lab's own infrastructure."
+    },
+    {
+      "id": "1efe0e0ee7087666",
+      "title": "Google launches Nano Banana 2 Lite for fast AI images and Gemini Omni Flash for video via API",
+      "link": "https://the-decoder.com/google-launches-nano-banana-2-lite-for-fast-ai-images-and-gemini-omni-flash-for-video-via-api/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Google introduced two new generative AI models, according to The Decoder: Nano Banana 2 Lite, which generates images in four seconds at $0.034 each, and Gemini Omni Flash, which brings text-prompted video generation and editing to the API for the first time. Google is recommending developers chain the two models to move from a quick still image to an animated video."
+    },
+    {
+      "id": "78c501247f18c641",
+      "title": "Claude Science is Anthropic’s newest flagship product",
+      "link": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/",
+      "source": "MIT Tech Review - AI",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to MIT Technology Review, Anthropic has launched Claude Science, a new flagship product designed to support scientific research the way Claude Code supports software engineering. Unveiled at an event for pharmaceutical executives and biotech founders, the system can autonomously execute meaningful research work from concise, high-level instructions and has access to specialized scientific tools."
+    },
+    {
+      "id": "012cc0e931b85f82",
+      "title": "Meta puts rate limits on its smart glasses' Conversation Focus feature",
+      "link": "https://www.engadget.com/2205660/meta-rate-limits-smart-glasses-conversation-focus-feature/",
+      "source": "Engadget",
+      "category": "HARDWARE",
+      "summary": "Engadget reports that Meta has imposed a three-hour monthly free usage cap on the Conversation Focus feature of its smart glasses, which uses on-device AI to isolate the voice of the person a wearer is speaking with in noisy environments. The move signals Meta's shift toward monetizing premium AI features on its Ray-Ban and Oakley-branded eyewear."
+    },
+    {
+      "id": "e1ba458b4ae18db7",
+      "title": "Gemini Spark comes to Google's Gemini app for macOS",
+      "link": "https://www.engadget.com/2205605/google-gemini-spark-macos-app/",
+      "source": "Engadget",
+      "category": "SOFTWARE",
+      "summary": "Engadget reports that Google's Spark agentic AI assistant is now available inside the Gemini app for macOS, extending agentic task execution — including multi-step research and workflow automation — to Mac users. The rollout deepens Google's push to embed Gemini across desktop platforms as competition with OpenAI and Anthropic intensifies."
+    },
+    {
+      "id": "cc8f74c208ab3748",
+      "title": "Discord now runs natively on Meta Quest headsets",
+      "link": "https://www.engadget.com/2205537/discord-now-runs-natively-on-meta-quest-headsets/",
+      "source": "Engadget",
+      "category": "APP STORE HIGHLIGHTS",
+      "summary": "According to Engadget, Discord is now available as a native app on Meta Quest headsets, delivering on a commitment made at last year's Meta Connect conference. The native integration lets Quest users voice-chat and message with Discord communities without switching devices or relying on phone tethering."
+    },
+    {
+      "id": "e6fff87f6492b053",
+      "title": "Anthropic's new Sonnet 5 model is better at the tasks that are running up enterprise bills",
+      "link": "https://www.engadget.com/2205475/anthropic-releases-claude-sonnet-5-model/",
+      "source": "Engadget",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Engadget reports that Anthropic has released Claude Sonnet 5, a new model trained specifically to excel at agentic tasks that have driven up costs for enterprise customers and power users. The company is positioning Sonnet 5 as a more efficient workhorse for long-running, tool-using workflows that have strained budgets under earlier models."
+    },
+    {
+      "id": "88634f28df46fb69",
+      "title": "Claude Helped a Hacker Find a Way to Issue Tickets to Almost Every US Music Festival",
+      "link": "https://www.wired.com/story/claude-helped-a-hacker-find-a-way-to-issue-tickets-to-almost-every-us-music-festival/",
+      "source": "Wired",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Wired reports that a security researcher used Anthropic's Claude Opus 4.7 to discover a vulnerability in Front Gate Tickets — the platform behind Lollapalooza, Bonnaroo, and virtually every major US music festival — that allowed him to freely issue tickets of his choosing. The disclosure highlights how frontier AI models are accelerating both offensive security research and the discovery of high-impact web vulnerabilities."
+    },
+    {
+      "id": "86b7b987dee7f601",
+      "title": "The Trump Administration Is Lifting Its Export Controls on Anthropic’s Mythos and Fable AI Models",
+      "link": "https://www.wired.com/story/trump-administration-lifts-export-controls-on-anthropics-mythos-and-fable-ai-models/",
+      "source": "Wired",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to Wired, the Trump administration is lifting export controls on Anthropic's most advanced Mythos and Fable AI models, reversing course weeks after ordering the company to suspend access for foreign nationals. The move reflects continuing policy volatility around US restrictions on frontier AI access abroad."
+    },
+    {
+      "id": "3c610c759a68a4d4",
+      "title": "Meta Contractors Posed as Teens to Prompt Rival Chatbots About Suicide, Sex, and Drugs",
+      "link": "https://www.wired.com/story/meta-contractors-pretending-to-be-teens-chatbot-testing/",
+      "source": "Wired",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Wired reports that hundreds of contractors working on a Meta project posed as teenagers to prompt rival chatbots including Gemini and ChatGPT about suicide, sex, and drugs, gathering data on how competitors handle high-risk subjects with minors. The revelation raises fresh questions about competitive AI safety testing practices and the ethics of adversarial evaluation using fake underage personas."
+    },
+    {
+      "id": "474d4e312b755290",
+      "title": "Google built a great smart speaker, but Gemini isn’t ready for it",
+      "link": "https://www.theverge.com/tech/959503/google-home-speaker-review-gemini-for-home",
+      "source": "The Verge",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Verge reports that Google's new Home smart speaker delivers strong hardware but is hamstrung by an unfinished Gemini-for-Home experience, with the assistant struggling to consistently handle the kinds of conversational queries the device is being marketed for. The review underscores the broader challenge facing AI-powered ambient devices as Amazon and Google race to justify smart speakers' place on the counter."
+    },
+    {
+      "id": "b13e4677f11359b9",
+      "title": "Anthropic&#8217;s long-sidelined Fable 5 is greenlit to return",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back",
+      "source": "The Verge",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to The Verge, Anthropic said it will begin restoring global access to Claude Fable 5 on Wednesday after weeks of negotiations with the Trump administration, with availability returning across Claude platforms as well as AWS, Google Cloud, and Microsoft. The move ends a high-profile pause on one of Anthropic's flagship models."
+    },
+    {
+      "id": "2e6cef4a2c57448c",
+      "title": "The Lab Mistake That Might Revolutionize Computing",
+      "link": "https://spectrum.ieee.org/artificial-neurons-on-silicon-chips",
+      "source": "IEEE Spectrum",
+      "category": "HARDWARE",
+      "summary": "IEEE Spectrum reports on research into artificial neurons fabricated on silicon chips, an approach that could sharply reduce the energy cost of running AI workloads currently powered by GPU-heavy data centers. The piece frames the work as a potential path toward more efficient neuromorphic computing as AI compute demand escalates."
+    },
+    {
+      "id": "cf5e1cfcdbcacfd2",
+      "title": "GaussLite: Online Task-Conditioned 3D Gaussian Splatting for Real-Time Robotic Mapping",
+      "link": "https://arxiv.org/abs/2606.30809",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "An arXiv paper, GaussLite: Online Task-Conditioned 3D Gaussian Splatting for Real-Time Robotic Mapping, introduces a task-driven 3D Gaussian Splatting system that concentrates compute on scene regions relevant to the robot's task, aiming to enable more efficient real-time mapping onboard embodied agents."
+    },
+    {
+      "id": "ecbe4a8b9c8fa55a",
+      "title": "Knowledge-Driven Dimension Estimation from a Single Image -3D Asset Generation Technology for Digital Twin Construction",
+      "link": "https://arxiv.org/abs/2606.30896",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "According to arXiv, Knowledge-Driven Dimension Estimation from a Single Image proposes a 3D asset generation technique for digital-twin construction that uses prior knowledge to estimate real-world scale from a single image, targeting simulation pipelines used to validate in-vehicle camera systems against traffic signs and other high-mounted objects."
+    },
+    {
+      "id": "8c8497d77396ce4b",
+      "title": "MemLearner: Learning to Query Context memory for Video World Models",
+      "link": "https://arxiv.org/abs/2606.31734",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "Researchers publishing on arXiv propose MemLearner, a learned context memory retrieval method for video world models that aims to maintain scene consistency over extended durations, addressing failures of rule-based frame retrieval under occlusions and dynamic objects."
+    },
+    {
+      "id": "aa03ab9530510010",
+      "title": "MemoBench: Benchmarking World Modeling in Dynamically Changing Environments",
+      "link": "https://arxiv.org/abs/2606.27537",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "A paper on arXiv introduces MemoBench, a diagnostic benchmark for evaluating memory consistency in video generation and world models when objects disappear from view and later reappear in dynamically changing scenes. The authors argue existing benchmarks only test consistency for in-view targets or static occlusion, leaving world models' handling of dynamic off-screen state largely unmeasured."
+    },
+    {
+      "id": "c03fba1cc4b90823",
+      "title": "Elevate Your Golf Game with Meta AI Glasses, 18Birdies, and Arccos",
+      "link": "https://www.meta.com/blog/meta-ai-glasses-oakley-meta-hstn-oakley-meta-vanguard-18birdies-arccos/",
+      "source": "Meta Blog",
+      "category": "HARDWARE",
+      "summary": "Meta announced that its Oakley Meta HSTN and Oakley Meta Vanguard AI glasses now integrate with the 18Birdies and Arccos golf platforms, allowing wearers to access on-course data and coaching hands-free. The move extends Meta's push to position its AI glasses line as a fitness and sports-focused wearable beyond general lifestyle use."
+    },
+    {
+      "id": "72a8f31bd0b4b387",
+      "title": "What to Play on Meta Quest: June 2026 Recap",
+      "link": "https://www.meta.com/blog/what-to-play-on-meta-quest-june-2026-recap/",
+      "source": "Meta Blog",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "Meta published its June 2026 recap of new and notable titles on Meta Quest, highlighting the month's releases and updates across the Quest store. The roundup offers a snapshot of the platform's current gaming pipeline and content momentum heading into the summer."
+    },
+    {
+      "id": "9d5e9da6ab7c288b",
+      "title": "Chat With Your Squad In-Game or Just Hang Out with Friends with Discord, Now Available on Meta Quest",
+      "link": "https://www.meta.com/blog/discord-launch/",
+      "source": "Meta Blog",
+      "category": "SOFTWARE",
+      "summary": "Meta announced that Discord is now available on Meta Quest, letting players chat with their squad in-game or hang out with friends across the platform. The launch brings one of the largest gaming communication platforms natively to Quest, addressing a longstanding gap in social infrastructure on the headset."
+    },
+    {
+      "id": "d866a21bc3340953",
+      "title": "Start building with Nano Banana 2 Lite and Gemini Omni Flash",
+      "link": "https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash/",
+      "source": "Google DeepMind",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Google DeepMind announced that developers can now start building with Nano Banana 2 Lite and Gemini Omni Flash, expanding its lineup of smaller, faster Gemini-family models aimed at broader deployment. The release deepens Google's push to make multimodal AI accessible at lower cost and latency, with downstream implications for AI-powered glasses and spatial applications."
+    },
+    {
+      "id": "40018b405de13615",
+      "title": "Quest’s Most Popular Game ‘Gorilla Tag’ is Going Mobile in ‘Monke Mayhem’ Next Year",
+      "link": "https://roadtovr.com/gorilla-tag-mobile-game-announce-2027/",
+      "source": "Road to VR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "Road to VR reports that Another Axiom is bringing Gorilla Tag, Quest's most popular game, to mobile devices as a standalone free-to-play sandbox titled Gorilla Tag: Monke Mayhem, slated to launch on iOS and Android sometime in 2027 with additional platforms to be announced later."
+    },
+    {
+      "id": "3af333ce2249694b",
+      "title": "New VR Games &amp; Releases July 2026: Quest, PS VR2, PC VR &amp; More",
+      "link": "https://www.uploadvr.com/new-vr-games-releases-july-2026-meta-quest-pc-vr-playstation-vr2-more-2/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "UploadVR published its monthly roundup of the biggest VR games, updates, and DLCs launching in July 2026 across Quest, PS VR2, and PC VR platforms."
+    },
+    {
+      "id": "6e41a6d07d973184",
+      "title": "SpaceX shows investors a slim AI smartphone prototype powered by xAI technology",
+      "link": "https://the-decoder.com/spacex-shows-investors-a-slim-ai-smartphone-prototype-powered-by-xai-technology/",
+      "source": "The Decoder",
+      "category": "HARDWARE",
+      "summary": "The Decoder reports that SpaceX showed investors a prototype AI smartphone said to be thinner than an iPhone, running a Qualcomm Snapdragon chip with a proprietary operating system and integrating xAI technology, as Elon Musk pursues an 'everything app' modeled on WeChat."
+    },
+    {
+      "id": "b3e1be97c2d9e00a",
+      "title": "Meta's non-invasive brain-to-text AI is closing the gap with surgical implants",
+      "link": "https://the-decoder.com/metas-non-invasive-brain-to-text-ai-is-closing-the-gap-with-surgical-implants/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to The Decoder, Meta's FAIR AI team has advanced its non-invasive brain-to-text system Brain2Qwerty v2, which reads magnetic signals outside the skull to reconstruct typed sentences without surgery, narrowing the accuracy gap with surgical implants though clinical use for paralyzed patients remains distant."
+    },
+    {
+      "id": "fe19c99d47f97c63",
+      "title": "OpenAI's genomics paper accidentally reveals a Pro lineup it hasn't announced yet",
+      "link": "https://the-decoder.com/openai-paper-reveals-three-gpt-5-6-pro-models-breaking-with-single-top-tier-strategy/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Decoder reports that an OpenAI genomics benchmark paper inadvertently revealed the Pro tier of GPT-5.6 could ship in three variants, which would mark the first major structural change to ChatGPT Pro since the plan launched."
+    },
+    {
+      "id": "e99b5ab66b4ae5a7",
+      "title": "Anthropic's Fable 5 is back worldwide after a two-week government ban over a jailbreak",
+      "link": "https://the-decoder.com/anthropics-fable-5-is-back-worldwide-after-a-two-week-government-ban-over-a-jailbreak/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to The Decoder, the US government has lifted a two-week ban and allowed Anthropic to resume shipping Fable 5 globally after Amazon researchers identified a jailbreak; Anthropic said smaller models like Claude Haiku 4.5 could execute the same exploit, and a new safety classifier now blocks the technique in over 99 percent of cases while also flagging more harmless requests."
+    },
+    {
+      "id": "b5dc6088136a509a",
+      "title": "Flatirons Solutions Acquires Scope AR to Combine Technical Content Management and AR Work Instructions",
+      "link": "https://www.auganix.org/ar-news-scope-ar-flatirons-solutions-acquisition/",
+      "source": "Auganix",
+      "category": "INVESTMENT",
+      "summary": "Auganix reports that Flatirons Solutions has acquired Scope AR, combining AI-powered technical content management with immersive 3D work instructions and remote expert support into a single platform aimed at industrial and enterprise customers."
+    },
+    {
+      "id": "714a5dcd7fae826c",
+      "title": "The Download: Anthropic launches Claude Science, and California’s carbon manure math",
+      "link": "https://www.technologyreview.com/2026/07/01/1139996/the-download-anthropic-claude-science-california-carbon-manure/",
+      "source": "MIT Tech Review - AI",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "MIT Technology Review reports that Anthropic unveiled Claude Science at an event for pharmaceutical executives, biotech founders, and researchers, positioning it as a major new flagship product intended to support scientific research workflows."
+    },
+    {
+      "id": "424ae7d9abd2053f",
+      "title": "Meta Limits the Usage of an AI Glasses Feature, Even if You Pay for a $20 Subscription",
+      "link": "https://www.cnet.com/tech/mobile/fresh-off-glasses-controversy-meta-is-rate-limiting-one-feature-even-with-a-20-subscription/",
+      "source": "CNET",
+      "category": "HARDWARE",
+      "summary": "CNET reports that Meta is rate-limiting the conversation focus feature on its AI glasses, capping free users at three hours per month while also throttling usage for subscribers on its $20-per-month plan. The feature, which amplifies the speech of the person a wearer is talking to, has been positioned as a key accessibility and social use case for the glasses."
+    },
+    {
+      "id": "4cd6d8f79d5e6b0b",
+      "title": "China’s Z.ai claims it can match Mythos on cybersecurity",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity",
+      "source": "The Verge",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to The Verge, China's Zhipu AI (Z.ai) has released its open-weight GLM-5.2 model, with some researchers claiming it matches Mythos on certain bug-finding and cybersecurity tasks. While GLM still trails Anthropic and OpenAI models on broader general-purpose benchmarks, the release signals a narrowing capability gap between leading Chinese and U.S. frontier models."
+    },
+    {
+      "id": "232f299cd9b9c647",
+      "title": "LLM-Driven Personalities for Decision Making in Emergency Simulations",
+      "link": "https://arxiv.org/abs/2606.31038",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "A new arXiv paper explores using Large Language Models to drive decision-making for virtual humans in emergency simulation scenarios, aiming to produce agents that exhibit spatial awareness and competent behavior when interacting with their environments. The authors argue that LLM-driven personalities can improve the believability and agency of simulated characters in training and simulation contexts."
+    },
+    {
+      "id": "3a3937c9afc40e9d",
+      "title": "Lock and Load: New Titles Join the Meta Horizon+ Catalog in July",
+      "link": "https://www.meta.com/blog/meta-horizon-plus-vr-subscription-service-july-gun-club-vr-dragon-fist-vr-kung-fu-phantom-covert-ops/",
+      "source": "Meta Blog",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "Meta announced the July additions to its Meta Horizon+ VR subscription catalog, with Gun Club VR, Dragon Fist VR Kung Fu, and Phantom: Covert Ops joining the service for Quest users."
+    },
+    {
+      "id": "6ce6685fe0bccc4c",
+      "title": "Lanesplit VR Support Impressions: A Disappointing Missed Opportunity",
+      "link": "https://www.uploadvr.com/lanesplit-vr-support-impressions-a-disappointing-missed-opportunity/",
+      "source": "UploadVR",
+      "category": "HANDS-ON REVIEW",
+      "summary": "UploadVR reports that the VR support for urban street racer Lanesplit is a disappointing missed opportunity, citing confusing design choices and performance issues that undermine the port."
+    },
+    {
+      "id": "7eb3a1afda968485",
+      "title": "How ArtQuest VR Became One Of VR&#x27;s Most Ambitious Virtual Museums",
+      "link": "https://www.uploadvr.com/how-artquest-vr-became-one-of-vrs-most-ambitious-virtual-museums/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "UploadVR profiles ArtQuest VR, a virtual museum built by Eric Mosinger after he could not find the experience he wanted, describing it as one of VR's most ambitious museum experiences."
+    },
+    {
+      "id": "509e4292fd42b52a",
+      "title": "Fanmade VR Port Of Nintendo 64 Classic Perfect Dark Out Now On Quest &amp; PC",
+      "link": "https://www.uploadvr.com/fanmade-vr-port-of-nintendo-64-classic-perfect-dark-out-now-on-quest-pc/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "UploadVR reports that modder Alex Le Tux has released the first public build of Perfect Dark VR, a fanmade port of the Nintendo 64 classic for Quest headsets and PC VR."
+    },
+    {
+      "id": "d2ced2f7c9581716",
+      "title": "Color-A-Cube Impressions: A Deeply Satisfying Color-By-Number Game",
+      "link": "https://www.uploadvr.com/color-a-cube-impressions-a-deepl-satisfying-color-by-number-game/",
+      "source": "UploadVR",
+      "category": "HANDS-ON REVIEW",
+      "summary": "UploadVR reviews Color-A-Cube as a cozy color-by-number VR game built around charming voxel models and simple, satisfying mechanics."
+    },
+    {
+      "id": "071d823eaa9f02c7",
+      "title": "Yungblud&#x27;s &quot;Zombie&quot; Is The Latest Beat Saber Shock Drop",
+      "link": "https://www.uploadvr.com/yungbluds-zombie-is-the-latest-beat-saber-shock-drop/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "UploadVR reports that Beat Saber's latest shock drop is Yungblud's Grammy-nominated alternative rock single \"Zombie,\" adding to the rhythm game's rotating catalog of licensed tracks."
+    },
+    {
+      "id": "8a7173ff9126a37d",
+      "title": "Anthropic says it cut 80 percent of Claude Code's system prompt because Fable 5 models \"want a smaller system prompt\"",
+      "link": "https://the-decoder.com/anthropic-says-it-cut-80-percent-of-claude-codes-system-prompt-because-fable-5-models-want-a-smaller-system-prompt/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Decoder reports that Anthropic has cut Claude Code's system prompt by 80 percent, with staffer Tariq Shihipar saying the new Fable 5 models need fewer instructions and examples because guidelines can hold back models that are \"more imaginative\" than the rules they're given, shifting Anthropic's approach toward steering via context rather than strict rules."
+    },
+    {
+      "id": "f627697009d7c4aa",
+      "title": "AI agents can now complete 16 percent of freelance jobs at pro quality, up from 2.5 percent eight months ago",
+      "link": "https://the-decoder.com/ai-agents-can-now-complete-16-percent-of-freelance-jobs-at-pro-quality-up-from-2-5-percent-eight-months-ago/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to The Decoder, the Remote Labor Index — a benchmark tracking how often AI agents complete paid freelance projects at professional quality — has risen from 2.5 percent to 16 percent in eight months, signaling a rapid acceleration in the practical capability of autonomous agents on real-world knowledge work."
+    },
+    {
+      "id": "0e159879b0d216f7",
+      "title": "Cintoo Workspace Brings Multi-User Collaboration to Reality Capture Data",
+      "link": "https://www.auganix.org/xr-news-cintoo-workspace-reality-capture/",
+      "source": "Auganix",
+      "category": "SOFTWARE",
+      "summary": "Auganix reports that Cintoo has unveiled Cintoo Workspace, a multi-user collaboration tool for viewing and inspecting reality capture data in real time, aimed at teams working across office and field environments on scanned physical assets."
+    },
+    {
+      "id": "830e0da1a75b9a57",
+      "title": "Meta Is Charging a Subscription for Smart Glasses Features. Welcome to the New Era of Consumer Tech",
+      "link": "https://www.wired.com/story/why-meta-is-charging-a-subscription-for-on-device-smart-glasses-features/",
+      "source": "Wired",
+      "category": "HIGHLIGHTS",
+      "summary": "Wired reports that Meta is introducing a paid subscription tier for expanded access to advanced on-device features on its smart glasses, extending the wearables market into a recurring-revenue model where hardware ownership no longer guarantees access to the most capable AI functionality."
+    },
+    {
+      "id": "a26e5afefd3320db",
+      "title": "Draped Surfaces: A Contour-Adaptive Interface Overlaid on the Physical Environment for Mixed Reality Workspaces",
+      "link": "https://arxiv.org/abs/2607.00518",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "A new arXiv paper introduces Contour-Adaptive Mixed Environment Overlays (CAMEO), a mixed reality interface technique that drapes digital surfaces along the contours of a user's physical environment rather than floating windows in a cockpit-style layout, aiming to reduce occlusion and preserve access to real-world objects in MR workspaces."
+    }
+  ],
+  "raw_content": "Spatial Report\nWeek of 2026-07-02\n\nSPOTLIGHT\n\nOpenAI previewed GPT-5.6 Sol and Anthropic launched Claude Science alongside its restored Fable 5 model, as Wired reports a researcher used Claude Opus 4.7 to uncover a vulnerability in the ticketing platform behind nearly every major US music festival. Meta began charging a subscription for premium features on its smart glasses and moved to sell spare AI compute to outside customers, while Sony set a January 2028 end date for PS5 and PSVR 2 physical discs. IBM unveiled a sub-1nm prototype chip that could extend Moore's Law another decade, and the Remote Labor Index showed AI agents now complete 16 percent of freelance jobs at professional quality — up from 2.5 percent eight months ago.\n\nHIGHLIGHTS\n\nWired reports that Meta is introducing a paid subscription tier for expanded access to advanced on-device features on its smart glasses, extending the wearables market into a recurring-revenue model where hardware ownership no longer guarantees access to the most capable AI functionality.\n\nhttps://www.wired.com/story/why-meta-is-charging-a-subscription-for-on-device-smart-glasses-features/\n\nAPP STORE HIGHLIGHTS\n\nAccording to Engadget, Discord is now available as a native app on Meta Quest headsets, delivering on a commitment made at last year's Meta Connect conference. The native integration lets Quest users voice-chat and message with Discord communities without switching devices or relying on phone tethering.\n\nhttps://www.engadget.com/2205537/discord-now-runs-natively-on-meta-quest-headsets/\n\nINVESTMENT\n\nAuganix reports that Flatirons Solutions has acquired Scope AR, combining AI-powered technical content management with immersive 3D work instructions and remote expert support into a single platform aimed at industrial and enterprise customers.\n\nhttps://www.auganix.org/ar-news-scope-ar-flatirons-solutions-acquisition/\n\nSOFTWARE\n\nRoad to VR reports that Discord has officially released a native app for Meta Quest, now available for free on the Horizon Store after years of user requests. Meta CTO Andrew Bosworth had signaled in May 2024 that the company was working on some form of Discord integration, though a fully-fledged first-party app was long delayed.\n\nhttps://roadtovr.com/official-discord-meta-quest-app-release/\n\nEngadget reports that Google's Spark agentic AI assistant is now available inside the Gemini app for macOS, extending agentic task execution — including multi-step research and workflow automation — to Mac users. The rollout deepens Google's push to embed Gemini across desktop platforms as competition with OpenAI and Anthropic intensifies.\n\nhttps://www.engadget.com/2205605/google-gemini-spark-macos-app/\n\nMeta announced that Discord is now available on Meta Quest, letting players chat with their squad in-game or hang out with friends across the platform. The launch brings one of the largest gaming communication platforms natively to Quest, addressing a longstanding gap in social infrastructure on the headset.\n\nhttps://www.meta.com/blog/discord-launch/\n\nAuganix reports that Cintoo has unveiled Cintoo Workspace, a multi-user collaboration tool for viewing and inspecting reality capture data in real time, aimed at teams working across office and field environments on scanned physical assets.\n\nhttps://www.auganix.org/xr-news-cintoo-workspace-reality-capture/\n\nHARDWARE\n\nMIT Technology Review reports that IBM has unveiled a prototype sub-1nm chip packing roughly 100 billion transistors onto a fingernail-sized area, doubling the density of its 2021 state-of-the-art design and potentially extending Moore's Law by another decade through more energy-efficient compute.\n\nhttps://www.technologyreview.com/2026/06/25/1139696/ibm-unveils-sub1nm-chip/\n\nEngadget reports that Samsung's next Galaxy Unpacked event is expected to feature new foldables, watches, and smart glasses, with the glasses representing the company's continued expansion into wearable AI hardware alongside its Android XR partnership with Google.\n\nhttps://www.engadget.com/2202726/foldables-watches-and-glasses-could-be-on-the-way/\n\nNeuralink said it has performed its first transdural brain implant surgery, threading electrodes through the dura rather than beneath it in an effort to reduce surgical trauma and improve scalability, Road to VR reports. The company framed the procedure as a step toward broader deployment of its brain-computer interface.\n\nhttps://roadtovr.com/elon-musk-brain-neuralink-transdural-implant/\n\nEngadget reports that Meta has imposed a three-hour monthly free usage cap on the Conversation Focus feature of its smart glasses, which uses on-device AI to isolate the voice of the person a wearer is speaking with in noisy environments. The move signals Meta's shift toward monetizing premium AI features on its Ray-Ban and Oakley-branded eyewear.\n\nhttps://www.engadget.com/2205660/meta-rate-limits-smart-glasses-conversation-focus-feature/\n\nIEEE Spectrum reports on research into artificial neurons fabricated on silicon chips, an approach that could sharply reduce the energy cost of running AI workloads currently powered by GPU-heavy data centers. The piece frames the work as a potential path toward more efficient neuromorphic computing as AI compute demand escalates.\n\nhttps://spectrum.ieee.org/artificial-neurons-on-silicon-chips\n\nMeta announced that its Oakley Meta HSTN and Oakley Meta Vanguard AI glasses now integrate with the 18Birdies and Arccos golf platforms, allowing wearers to access on-course data and coaching hands-free. The move extends Meta's push to position its AI glasses line as a fitness and sports-focused wearable beyond general lifestyle use.\n\nhttps://www.meta.com/blog/meta-ai-glasses-oakley-meta-hstn-oakley-meta-vanguard-18birdies-arccos/\n\nThe Decoder reports that SpaceX showed investors a prototype AI smartphone said to be thinner than an iPhone, running a Qualcomm Snapdragon chip with a proprietary operating system and integrating xAI technology, as Elon Musk pursues an 'everything app' modeled on WeChat.\n\nhttps://the-decoder.com/spacex-shows-investors-a-slim-ai-smartphone-prototype-powered-by-xai-technology/\n\nCNET reports that Meta is rate-limiting the conversation focus feature on its AI glasses, capping free users at three hours per month while also throttling usage for subscribers on its $20-per-month plan. The feature, which amplifies the speech of the person a wearer is talking to, has been positioned as a key accessibility and social use case for the glasses.\n\nhttps://www.cnet.com/tech/mobile/fresh-off-glasses-controversy-meta-is-rate-limiting-one-feature-even-with-a-20-subscription/\n\nAI AND SIMULATED WORLDS\n\nIEEE Spectrum examines the emerging field of context-aware emotion AI, which moves beyond categorizing facial expressions in isolation to interpret tone, posture, and situational cues — a capability with implications for spatial computing interfaces that aim to read user state in real time.\n\nhttps://spectrum.ieee.org/emotion-ai-context\n\nOpenAI previewed GPT-5.6 Sol, a next-generation model the company says delivers stronger capabilities across coding, science, and cybersecurity, paired with what it describes as its most advanced safety stack to date. The preview signals OpenAI's continued push to differentiate on frontier reasoning and security-sensitive workloads as competition with Google, Anthropic, and xAI intensifies.\n\nhttps://openai.com/index/previewing-gpt-5-6-sol\n\nOpenAI introduced Daybreak, a suite of security tools including Codex Security and GPT-5.5-Cyber, designed to help organizations find, validate, and patch software vulnerabilities at scale. The release positions OpenAI as a direct player in the enterprise cybersecurity market, where AI-driven vulnerability discovery is becoming a competitive front among foundation model providers.\n\nhttps://openai.com/index/daybreak-securing-the-world\n\nThe Decoder reports that Meta is launching a cloud business to sell spare AI compute capacity to external customers, following a playbook similar to SpaceX's approach with Starlink. With planned AI investments of up to $145 billion this year, Meta is looking to monetize infrastructure not fully consumed by its own model training.\n\nhttps://the-decoder.com/meta-follows-spacexs-playbook-and-builds-a-cloud-business-to-sell-its-spare-ai-compute-to-outside-customers/\n\nAnthropic released Claude Sonnet 5, which The Decoder reports outperforms its predecessor Sonnet 4.6 across benchmarks and edges past the larger Opus 4.8 on the GDPval-AA v2 knowledge work test with a score of 1,618. Anthropic also noted that the model scores well below US government-blocked models on cybersecurity tasks, a deliberate signal amid ongoing regulatory debate.\n\nhttps://the-decoder.com/anthropics-new-claude-sonnet-5-closes-the-gap-to-the-pricier-opus-model-series/\n\nThe Decoder reports that Anthropic has launched Claude Science, an AI workbench for researchers that includes more than 60 preconfigured skills across fields such as genomics and computational chemistry, plus a verification agent that checks citations and calculations. The application can run locally or on HPC clusters, keeping sensitive research data within a lab's own infrastructure.\n\nhttps://the-decoder.com/anthropic-launches-claude-science-an-ai-workspace-built-specifically-for-researchers/\n\nGoogle introduced two new generative AI models, according to The Decoder: Nano Banana 2 Lite, which generates images in four seconds at $0.034 each, and Gemini Omni Flash, which brings text-prompted video generation and editing to the API for the first time. Google is recommending developers chain the two models to move from a quick still image to an animated video.\n\nhttps://the-decoder.com/google-launches-nano-banana-2-lite-for-fast-ai-images-and-gemini-omni-flash-for-video-via-api/\n\nAccording to MIT Technology Review, Anthropic has launched Claude Science, a new flagship product designed to support scientific research the way Claude Code supports software engineering. Unveiled at an event for pharmaceutical executives and biotech founders, the system can autonomously execute meaningful research work from concise, high-level instructions and has access to specialized scientific tools.\n\nhttps://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/\n\nEngadget reports that Anthropic has released Claude Sonnet 5, a new model trained specifically to excel at agentic tasks that have driven up costs for enterprise customers and power users. The company is positioning Sonnet 5 as a more efficient workhorse for long-running, tool-using workflows that have strained budgets under earlier models.\n\nhttps://www.engadget.com/2205475/anthropic-releases-claude-sonnet-5-model/\n\nWired reports that a security researcher used Anthropic's Claude Opus 4.7 to discover a vulnerability in Front Gate Tickets — the platform behind Lollapalooza, Bonnaroo, and virtually every major US music festival — that allowed him to freely issue tickets of his choosing. The disclosure highlights how frontier AI models are accelerating both offensive security research and the discovery of high-impact web vulnerabilities.\n\nhttps://www.wired.com/story/claude-helped-a-hacker-find-a-way-to-issue-tickets-to-almost-every-us-music-festival/\n\nAccording to Wired, the Trump administration is lifting export controls on Anthropic's most advanced Mythos and Fable AI models, reversing course weeks after ordering the company to suspend access for foreign nationals. The move reflects continuing policy volatility around US restrictions on frontier AI access abroad.\n\nhttps://www.wired.com/story/trump-administration-lifts-export-controls-on-anthropics-mythos-and-fable-ai-models/\n\nWired reports that hundreds of contractors working on a Meta project posed as teenagers to prompt rival chatbots including Gemini and ChatGPT about suicide, sex, and drugs, gathering data on how competitors handle high-risk subjects with minors. The revelation raises fresh questions about competitive AI safety testing practices and the ethics of adversarial evaluation using fake underage personas.\n\nhttps://www.wired.com/story/meta-contractors-pretending-to-be-teens-chatbot-testing/\n\nThe Verge reports that Google's new Home smart speaker delivers strong hardware but is hamstrung by an unfinished Gemini-for-Home experience, with the assistant struggling to consistently handle the kinds of conversational queries the device is being marketed for. The review underscores the broader challenge facing AI-powered ambient devices as Amazon and Google race to justify smart speakers' place on the counter.\n\nhttps://www.theverge.com/tech/959503/google-home-speaker-review-gemini-for-home\n\nAccording to The Verge, Anthropic said it will begin restoring global access to Claude Fable 5 on Wednesday after weeks of negotiations with the Trump administration, with availability returning across Claude platforms as well as AWS, Google Cloud, and Microsoft. The move ends a high-profile pause on one of Anthropic's flagship models.\n\nhttps://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back\n\nA paper on arXiv introduces MemoBench, a diagnostic benchmark for evaluating memory consistency in video generation and world models when objects disappear from view and later reappear in dynamically changing scenes. The authors argue existing benchmarks only test consistency for in-view targets or static occlusion, leaving world models' handling of dynamic off-screen state largely unmeasured.\n\nhttps://arxiv.org/abs/2606.27537\n\nGoogle DeepMind announced that developers can now start building with Nano Banana 2 Lite and Gemini Omni Flash, expanding its lineup of smaller, faster Gemini-family models aimed at broader deployment. The release deepens Google's push to make multimodal AI accessible at lower cost and latency, with downstream implications for AI-powered glasses and spatial applications.\n\nhttps://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash/\n\nAccording to The Decoder, Meta's FAIR AI team has advanced its non-invasive brain-to-text system Brain2Qwerty v2, which reads magnetic signals outside the skull to reconstruct typed sentences without surgery, narrowing the accuracy gap with surgical implants though clinical use for paralyzed patients remains distant.\n\nhttps://the-decoder.com/metas-non-invasive-brain-to-text-ai-is-closing-the-gap-with-surgical-implants/\n\nThe Decoder reports that an OpenAI genomics benchmark paper inadvertently revealed the Pro tier of GPT-5.6 could ship in three variants, which would mark the first major structural change to ChatGPT Pro since the plan launched.\n\nhttps://the-decoder.com/openai-paper-reveals-three-gpt-5-6-pro-models-breaking-with-single-top-tier-strategy/\n\nAccording to The Decoder, the US government has lifted a two-week ban and allowed Anthropic to resume shipping Fable 5 globally after Amazon researchers identified a jailbreak; Anthropic said smaller models like Claude Haiku 4.5 could execute the same exploit, and a new safety classifier now blocks the technique in over 99 percent of cases while also flagging more harmless requests.\n\nhttps://the-decoder.com/anthropics-fable-5-is-back-worldwide-after-a-two-week-government-ban-over-a-jailbreak/\n\nMIT Technology Review reports that Anthropic unveiled Claude Science at an event for pharmaceutical executives, biotech founders, and researchers, positioning it as a major new flagship product intended to support scientific research workflows.\n\nhttps://www.technologyreview.com/2026/07/01/1139996/the-download-anthropic-claude-science-california-carbon-manure/\n\nAccording to The Verge, China's Zhipu AI (Z.ai) has released its open-weight GLM-5.2 model, with some researchers claiming it matches Mythos on certain bug-finding and cybersecurity tasks. While GLM still trails Anthropic and OpenAI models on broader general-purpose benchmarks, the release signals a narrowing capability gap between leading Chinese and U.S. frontier models.\n\nhttps://www.theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity\n\nThe Decoder reports that Anthropic has cut Claude Code's system prompt by 80 percent, with staffer Tariq Shihipar saying the new Fable 5 models need fewer instructions and examples because guidelines can hold back models that are \"more imaginative\" than the rules they're given, shifting Anthropic's approach toward steering via context rather than strict rules.\n\nhttps://the-decoder.com/anthropic-says-it-cut-80-percent-of-claude-codes-system-prompt-because-fable-5-models-want-a-smaller-system-prompt/\n\nAccording to The Decoder, the Remote Labor Index — a benchmark tracking how often AI agents complete paid freelance projects at professional quality — has risen from 2.5 percent to 16 percent in eight months, signaling a rapid acceleration in the practical capability of autonomous agents on real-world knowledge work.\n\nhttps://the-decoder.com/ai-agents-can-now-complete-16-percent-of-freelance-jobs-at-pro-quality-up-from-2-5-percent-eight-months-ago/\n\nRESEARCH\n\nIEEE Spectrum reports that Princeton researchers are using reinforcement learning and diffusion models to automate the design of radio-frequency integrated circuits, generating novel RF layouts that achieve record performance and drastically reduce design time for wireless technologies including 5G and satellite communications.\n\nhttps://spectrum.ieee.org/ai-radio-chip-design\n\nResearchers on arXiv present a capacity-controlled framework for multi-view stylization of 3D Gaussian Splatting scenes, addressing the cross-view inconsistency problems that plague existing 3D stylization methods. The approach replaces per-view 2D feature-matching losses with a more stable allocation scheme aimed at coherent stylistic transfer across viewpoints.\n\nhttps://arxiv.org/abs/2606.26754\n\nResearchers on arXiv present SatSplatDiff, a geometry-preserving generative refinement method for satellite-based Gaussian Splatting that uses pretrained generative priors to fill in building facades poorly supervised by top-down satellite imagery. The approach targets surface holes and degraded fidelity in large-scale satellite 3D reconstruction.\n\nhttps://arxiv.org/abs/2606.27223\n\nAn arXiv paper fine-tunes a pretrained 3D-aware face GAN using reinforcement learning from human feedback applied directly to NeRF radiance-field density values, sidestepping the mesh conversion step common in prior 3D RLHF pipelines. The method aims to align generated face geometry with human aesthetic preferences without surface-supervised training data.\n\nhttps://arxiv.org/abs/2606.27305\n\nA new arXiv paper, Look-Before-Move, proposes a framework for camera planning in dynamic 3D story worlds in which an embodied agent actively decides what visual evidence to acquire before moving, advancing visual perception beyond passive interpretation toward narrative-grounded attention for world models.\n\nhttps://arxiv.org/abs/2606.26964\n\nAn updated arXiv paper proposes a collaborative multi-agent framework for zero-shot 3D scene understanding that assigns a Planning Agent to handle high-level visual reasoning, aiming to overcome the perspective and perception bottlenecks faced by prior video-keyframe approaches using multimodal large language models.\n\nhttps://arxiv.org/abs/2606.24649\n\nAn arXiv paper, GaussLite: Online Task-Conditioned 3D Gaussian Splatting for Real-Time Robotic Mapping, introduces a task-driven 3D Gaussian Splatting system that concentrates compute on scene regions relevant to the robot's task, aiming to enable more efficient real-time mapping onboard embodied agents.\n\nhttps://arxiv.org/abs/2606.30809\n\nAccording to arXiv, Knowledge-Driven Dimension Estimation from a Single Image proposes a 3D asset generation technique for digital-twin construction that uses prior knowledge to estimate real-world scale from a single image, targeting simulation pipelines used to validate in-vehicle camera systems against traffic signs and other high-mounted objects.\n\nhttps://arxiv.org/abs/2606.30896\n\nResearchers publishing on arXiv propose MemLearner, a learned context memory retrieval method for video world models that aims to maintain scene consistency over extended durations, addressing failures of rule-based frame retrieval under occlusions and dynamic objects.\n\nhttps://arxiv.org/abs/2606.31734\n\nA new arXiv paper explores using Large Language Models to drive decision-making for virtual humans in emergency simulation scenarios, aiming to produce agents that exhibit spatial awareness and competent behavior when interacting with their environments. The authors argue that LLM-driven personalities can improve the believability and agency of simulated characters in training and simulation contexts.\n\nhttps://arxiv.org/abs/2606.31038\n\nA new arXiv paper introduces Contour-Adaptive Mixed Environment Overlays (CAMEO), a mixed reality interface technique that drapes digital surfaces along the contours of a user's physical environment rather than floating windows in a cockpit-style layout, aiming to reduce occlusion and preserve access to real-world objects in MR workspaces.\n\nhttps://arxiv.org/abs/2607.00518\n\nGAMING MARKETPLACE WATCH\n\nSony announced it will phase out physical disc production for PlayStation consoles, with all new PS5 and PSVR 2 games shifting to digital-only distribution starting January 2028, according to Road to VR. The move ends a more than three-decade run of physical PlayStation media and reshapes distribution economics for VR titles on the platform.\n\nhttps://roadtovr.com/sony-ends-psvr-2-ps5-physical-discs/\n\nMeta published its June 2026 recap of new and notable titles on Meta Quest, highlighting the month's releases and updates across the Quest store. The roundup offers a snapshot of the platform's current gaming pipeline and content momentum heading into the summer.\n\nhttps://www.meta.com/blog/what-to-play-on-meta-quest-june-2026-recap/\n\nRoad to VR reports that Another Axiom is bringing Gorilla Tag, Quest's most popular game, to mobile devices as a standalone free-to-play sandbox titled Gorilla Tag: Monke Mayhem, slated to launch on iOS and Android sometime in 2027 with additional platforms to be announced later.\n\nhttps://roadtovr.com/gorilla-tag-mobile-game-announce-2027/\n\nUploadVR published its monthly roundup of the biggest VR games, updates, and DLCs launching in July 2026 across Quest, PS VR2, and PC VR platforms.\n\nhttps://www.uploadvr.com/new-vr-games-releases-july-2026-meta-quest-pc-vr-playstation-vr2-more-2/\n\nMeta announced the July additions to its Meta Horizon+ VR subscription catalog, with Gun Club VR, Dragon Fist VR Kung Fu, and Phantom: Covert Ops joining the service for Quest users.\n\nhttps://www.meta.com/blog/meta-horizon-plus-vr-subscription-service-july-gun-club-vr-dragon-fist-vr-kung-fu-phantom-covert-ops/\n\nUploadVR profiles ArtQuest VR, a virtual museum built by Eric Mosinger after he could not find the experience he wanted, describing it as one of VR's most ambitious museum experiences.\n\nhttps://www.uploadvr.com/how-artquest-vr-became-one-of-vrs-most-ambitious-virtual-museums/\n\nUploadVR reports that modder Alex Le Tux has released the first public build of Perfect Dark VR, a fanmade port of the Nintendo 64 classic for Quest headsets and PC VR.\n\nhttps://www.uploadvr.com/fanmade-vr-port-of-nintendo-64-classic-perfect-dark-out-now-on-quest-pc/\n\nUploadVR reports that Beat Saber's latest shock drop is Yungblud's Grammy-nominated alternative rock single \"Zombie,\" adding to the rhythm game's rotating catalog of licensed tracks.\n\nhttps://www.uploadvr.com/yungbluds-zombie-is-the-latest-beat-saber-shock-drop/\n\nAPPLE VISION PRO IN THE NEWS\n\nUploadVR reports that SpatialGen has introduced Zeus, a rack-mounted system capable of streaming live Apple Immersive Video to Apple Vision Pro headsets for sports and other live events. The product targets a persistent gap in real-time immersive broadcast production for Vision Pro's proprietary video format.\n\nhttps://www.uploadvr.com/spatialgen-zeus-streams-live-immersive-video-to-apple-vision-pro/\n\nHANDS-ON REVIEW\n\nUploadVR reports that the VR support for urban street racer Lanesplit is a disappointing missed opportunity, citing confusing design choices and performance issues that undermine the port.\n\nhttps://www.uploadvr.com/lanesplit-vr-support-impressions-a-disappointing-missed-opportunity/\n\nUploadVR reviews Color-A-Cube as a cozy color-by-number VR game built around charming voxel models and simple, satisfying mechanics.\n\nhttps://www.uploadvr.com/color-a-cube-impressions-a-deepl-satisfying-color-by-number-game/\n"
+}

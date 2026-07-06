@@ -1,0 +1,728 @@
+{
+  "title": "Spatial Report — 2026-06-26",
+  "edition_number": "",
+  "date": "2026-06-26",
+  "spotlight": "",
+  "item_ids": [
+    "e583cd583601473d",
+    "4dac573f85f9a4e3",
+    "1f43076416181f57",
+    "95658bcb5fc81bbe",
+    "689d013ceb7f7e01",
+    "66703ac845b0491e",
+    "7ea27caa9b2b7f8a",
+    "2867e5023cd65d91",
+    "90417ec7ff887f8c",
+    "2036c0c6e25a9487",
+    "2f8c93f2fcb65486",
+    "068c74b680ba1f99",
+    "6dc77e8742470bef",
+    "52aae94f237bb535",
+    "baaac91b60829a68",
+    "4464f8463d484f38",
+    "1e85916676862251",
+    "913889f1ec07b23b",
+    "a97054bb6e75cd59",
+    "1282bc900402f1f3",
+    "7f91937988289ef8",
+    "0199501a83270398",
+    "63297451bc7f99ed",
+    "6d8b7e775d2c8016",
+    "f7d683190dfad7fb",
+    "1716bdf363d30746",
+    "3f71f5a85453990b",
+    "7795f2ffb48364d5",
+    "2152dd3b24d2474d",
+    "6dc584c0ce9aace5",
+    "75817865f603f135",
+    "2393d4ed8c0e4533",
+    "08222b31a4e3f26b",
+    "93aa234c2d3ce8e4",
+    "d715b6f9b6d42726",
+    "39e0709b2d872725",
+    "2c879fc8897df808",
+    "eefc39b3c7ebd1ab",
+    "3a8fe7036f3931d4",
+    "cfac8b7094d39600",
+    "2fc3177742dc329d"
+  ],
+  "sections": {
+    "HIGHLIGHTS": [
+      {
+        "id": "cfac8b7094d39600",
+        "title": "OpenAI will delay GPT-5.6 after Trump administration request",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request",
+        "source": "The Verge",
+        "category": "HIGHLIGHTS",
+        "summary": "The Verge reports that OpenAI will delay the full release of GPT-5.6 after the Trump administration, citing potential security concerns, asked the company to stagger its rollout. The Information first reported that CEO Sam Altman told employees in a company Q&A that GPT-5.6 will initially launch in limited preview form to a small group, marking a notable instance of federal influence over a frontier model release schedule."
+      }
+    ],
+    "APP STORE HIGHLIGHTS": [
+      {
+        "id": "0199501a83270398",
+        "title": "Apple Vision Pro’s longest immersive concert was harder to film than you’d think",
+        "link": "https://9to5mac.com/2026/06/24/apple-vision-pros-longest-immersive-concert-was-harder-to-film-than-youd-think/",
+        "source": "9to5Mac Vision Pro",
+        "category": "App Store Highlights",
+        "summary": "CineD interviewed director Ian Russell about producing Debut at the BBC Proms for Apple Vision Pro, including the use of five Blackmagic URSA Cine Immersive cameras, new framing and camera-placement constraints, and the shift from conventional concert production to stereoscopic 180-degree filming."
+      }
+    ],
+    "AI AND SIMULATED WORLDS": [
+      {
+        "id": "7795f2ffb48364d5",
+        "title": "OpenAI's free GPT-5.5 model makes ChatGPT better at understanding context",
+        "link": "https://www.engadget.com/2201255/openai-gpt-5-5-instant-chatgpt-upgrade/",
+        "source": "Engadget",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Engadget reports that OpenAI has rolled out GPT-5.5, a free upgrade to the default ChatGPT model, with improvements aimed at better context understanding for the company's most widely used tier of users."
+      },
+      {
+        "id": "2152dd3b24d2474d",
+        "title": "I Met With China’s Top AI Experts. They’re Freaking Out, Too",
+        "link": "https://www.wired.com/story/ai-arms-race-china-us-cooperation/",
+        "source": "Wired",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Wired reports that researchers on both sides of the US–China AI race are increasingly worried about a potential 'Chernobyl moment,' with top Chinese AI experts the publication met expressing concern about the speed and competitive intensity of frontier model development."
+      },
+      {
+        "id": "6dc584c0ce9aace5",
+        "title": "OpenAI reveals its first AI processor: Jalapeño",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno",
+        "source": "The Verge",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Verge reports that OpenAI has unveiled its first in-house AI chip, called Jalapeño, an application-specific integrated circuit designed for AI inference and built in partnership with Broadcom, marking the company's move into custom silicon for current and future large language models."
+      }
+    ],
+    "RESEARCH": [
+      {
+        "id": "2393d4ed8c0e4533",
+        "title": "ARTOO-DARTU: Studying AR-HRC With AR Obstruction Mitigation During a Warehouse Task",
+        "link": "https://arxiv.org/abs/2606.25202",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "An arXiv paper titled ARTOO-DARTU studies augmented reality human-robot collaboration during a warehouse task, examining how AR situated analytics can obstruct important real-world elements when content is dynamically positioned relative to mobile robots, and proposing obstruction mitigation techniques to improve safety and usability."
+      },
+      {
+        "id": "08222b31a4e3f26b",
+        "title": "Co-designing a Preliminary Repository of Augmented Reality Concepts for Real-Time Emotion Regulation",
+        "link": "https://arxiv.org/abs/2606.25271",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "Researchers on arXiv present a co-designed preliminary repository of augmented reality concepts for real-time emotion regulation, addressing the lack of user-centered, expert-informed design resources for AR-based mental health support that does not disengage users from their ongoing activities."
+      },
+      {
+        "id": "93aa234c2d3ce8e4",
+        "title": "Dissociable Spatial and Temporal Effects of Interaction Latency in Virtual Reality",
+        "link": "https://arxiv.org/abs/2606.25681",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "An arXiv study investigates dissociable spatial and temporal effects of interaction latency in virtual reality, examining how motion-to-photon latency from head movement and hand-to-virtual-effector loops impair VR performance and whether common spatial, temporal, and efficiency measures capture latency effects equivalently."
+      },
+      {
+        "id": "d715b6f9b6d42726",
+        "title": "Virtual Reality Alters Perceived Functional Body Size",
+        "link": "https://arxiv.org/abs/2510.00824",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "An arXiv study with 60 participants finds that immersive virtual reality presented through a head-mounted display alters perceived functional body size, using a passable aperture paradigm to compare action and perception tasks across physical and VR conditions."
+      },
+      {
+        "id": "39e0709b2d872725",
+        "title": "From Sparse and Imperfect 2D Anchors to Consistent 3D Gaussian Street Scenes: Support-Aware Appearance",
+        "link": "https://arxiv.org/abs/2606.26007",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "An arXiv paper introduces a support-aware appearance method for building consistent 3D Gaussian street scenes from sparse and imperfect 2D anchors, using teacher-relative appearance residual distillation to handle view-specific noise and enable standard-rasterizer deployment."
+      },
+      {
+        "id": "2c879fc8897df808",
+        "title": "SplatPainter: Interactive Authoring of 3D Gaussians from 2D Edits via Test-Time Training",
+        "link": "https://arxiv.org/abs/2512.05354",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "A paper posted to arXiv introduces SplatPainter, a method for interactively editing 3D Gaussian Splatting assets by propagating 2D edits into the underlying 3D representation via test-time training, addressing limitations of diffusion- and optimization-based approaches that the authors describe as slow, destructive to asset identity, or lacking fine-grained control."
+      },
+      {
+        "id": "2fc3177742dc329d",
+        "title": "StayStill: a large-scale 3D idle animation dataset",
+        "link": "https://arxiv.org/abs/2605.13693",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "A new arXiv paper introduces StayStill, a large-scale 3D idle animation dataset comprising approximately six hours of motion data captured from 50 subjects, aimed at filling a gap in training data for automatic generation of realistic inactive-state behaviors in virtual characters. The authors argue that idle motion has received limited attention compared to other animation tasks despite its importance for believable avatars in XR and gaming contexts."
+      }
+    ],
+    "SPATIAL COMPUTING (HARDWARE)": [
+      {
+        "id": "e583cd583601473d",
+        "title": "Amazon Prime Day Deal Reduces Quest 3S For First Time Since April Price Hike",
+        "link": "https://roadtovr.com/amazon-prime-day-deal-quest-3s-2026/",
+        "source": "Road to VR",
+        "category": "Spatial Computing (Hardware)",
+        "summary": "Amazon Prime Day is among us, which also means you can save a couple bucks on a brand new Meta Quest 3S. Its only been a few months since Meta raised the price of Quest 3 and Quest 3S, essentially bumping prices across the board by $50 &#8211; 100. Now, for Amazon&#8217;s June 23-26th Prime [&#8230;]\nThe post Amazon Prime Day Deal Reduces Quest 3S For First Time Since April Price Hike appeared first on Road to VR."
+      },
+      {
+        "id": "4dac573f85f9a4e3",
+        "title": "Everything Announced at the Summer 2026 VR Games Showcase",
+        "link": "https://roadtovr.com/everything-announced-at-the-summer-2026-vr-games-showcase/",
+        "source": "Road to VR",
+        "category": "Spatial Computing (Hardware)",
+        "summary": "The sixth iteration of the VR Games Showcase just wrapped up, delivering massive new game announcements including the reveal of Breachers: Outbreak and DRIFTERS: Blackout Crew as well as new looks at Payday: Aces High, Hot Dogs, Horseshoes and Hand Grenades 2, and Korea. IL-2 Series! Missed the show? Fear not &#8211; we’ve wrapped up [&#8230;]\nThe post Everything Announced at the Summer 2026 VR Games Showcase appeared first on Road to VR."
+      },
+      {
+        "id": "1f43076416181f57",
+        "title": "Meta Announces Cheaper Smart Glasses without Ray-Ban or Oakley Branding, Starting at $300",
+        "link": "https://roadtovr.com/meta-announces-cheaper-smart-glasses-without-ray-ban-or-oakley-branding-starting-at-300/",
+        "source": "Road to VR",
+        "category": "Spatial Computing (Hardware)",
+        "summary": "Meta today announced it&#8217;s releasing Meta Glasses, the company&#8217;s first slate of smart glasses that don&#8217;t feature any EssilorLuxottica styles or branding. The News While Meta is still working with long-time eyewear partner EssilorLuxottica, the company is releasing three new Meta Glasses styles that aren&#8217;t packing any Ray-Ban or Oakley branding: Meta Glasses appear to [&#8230;]\nThe post Meta Announces Cheaper Smart Glasses without Ray-Ban or Oakley Branding, Starting at ..."
+      },
+      {
+        "id": "95658bcb5fc81bbe",
+        "title": "Omni One is the First VR Treadmill with Official Support for Meta Quest",
+        "link": "https://roadtovr.com/omni-one-first-vr-treadmill-quest-support/",
+        "source": "Road to VR",
+        "category": "Spatial Computing (Hardware)",
+        "summary": "Virtuix has finally brought native Quest support to Omni One, making it Quest&#8217;s first officially supported VR treadmill. As Virtuix&#8217;s consumer-focused VR treadmill, Omni One launched in 2024 with support for Pico 4 Ultra Enterprise, as well as PC VR headsets, which notably included Quest if connected to a capable PC via Link. In February, [&#8230;]\nThe post Omni One is the First VR Treadmill with Official Support for Meta Quest appeared first on Road to VR."
+      },
+      {
+        "id": "689d013ceb7f7e01",
+        "title": "Steam Machine Launches Next Week Starting at $1,050, Hints at What to Expect from Steam Frame’s Launch",
+        "link": "https://roadtovr.com/steam-machine-launches-next-week-starting-at-1050-hints-at-what-to-expect-from-steam-frames-launch/",
+        "source": "Road to VR",
+        "category": "Spatial Computing (Hardware)",
+        "summary": "Valve today announced that Steam Machine is now available for pre-orders, starting at $1,050, and will officially launch on June 29th. While the announcement doesn&#8217;t include any direct details about Steam Frame availability, it offers clear hints about what to expect, including a randomized pre-order process. The News Valve today announced availability of Steam Machine; [&#8230;]\nThe post Steam Machine Launches Next Week Starting at $1,050, Hints at What to Expect from Steam Frame&#8217..."
+      },
+      {
+        "id": "66703ac845b0491e",
+        "title": "Meta Now Sells A Charging Stand For (Most Of) Its Smart Glasses",
+        "link": "https://www.uploadvr.com/meta-glasses-charging-stand/",
+        "source": "UploadVR",
+        "category": "Spatial Computing (Hardware)",
+        "summary": "Meta now sells a $60 stainless steel Charging Stand compatible with most of its smart glasses, providing 50% charge in 20 minutes or full charge in 1 hour."
+      },
+      {
+        "id": "7ea27caa9b2b7f8a",
+        "title": "Meta Preempts Google&#x27;s Gentle Monster Glasses With Kylie Jenner &#x27;Starfire&#x27; Design",
+        "link": "https://www.uploadvr.com/meta-starfire-smart-glasses-kylie-jenner-designed/",
+        "source": "UploadVR",
+        "category": "Spatial Computing (Hardware)",
+        "summary": "Meta teamed up with Kylie Jenner for new 'Starfire' smart glasses featuring her voice for Meta AI, a gemstone on the right lens, and a metal nose pad to prevent absorbing makeup."
+      },
+      {
+        "id": "2867e5023cd65d91",
+        "title": "Meta Launches Cheaper Smart Glasses Without Ray-Ban Branding",
+        "link": "https://www.uploadvr.com/meta-launches-cheaper-smart-glasses-without-ray-ban-branding/",
+        "source": "UploadVR",
+        "category": "Spatial Computing (Hardware)",
+        "summary": "Meta launched a range of cheaper smart glasses featuring the same technology as Ray-Ban Meta but without the branding, and with a compact folding case."
+      },
+      {
+        "id": "90417ec7ff887f8c",
+        "title": "VR Games Showcase Roundup: Everything Shown At Today&#x27;s Event",
+        "link": "https://www.uploadvr.com/vr-games-showcase-roundup-everything-shown-at-todays-event/",
+        "source": "UploadVR",
+        "category": "Spatial Computing (Hardware)",
+        "summary": "Here's everything shown at today's massive VR Games Showcase!"
+      },
+      {
+        "id": "2036c0c6e25a9487",
+        "title": "Virtuix Brings Native Omni Treadmill Support To Quest Games",
+        "link": "https://www.uploadvr.com/virtuix-brings-native-vr-treadmill-support-to-meta-quest-games-with-omni-one-for-quest/",
+        "source": "UploadVR",
+        "category": "Spatial Computing (Hardware)",
+        "summary": "Virtuix has launched a new VR treadmill with full integration for Meta Quest standalone VR games."
+      },
+      {
+        "id": "2f8c93f2fcb65486",
+        "title": "The Longest Day Explores New Paths for Immersive Sports Stories",
+        "link": "https://www.uploadvr.com/the-longest-day-explores-new-paths-for-immersive-sports-stories/",
+        "source": "UploadVR",
+        "category": "Spatial Computing (Hardware)",
+        "summary": "The Longest Day is now available free in the Amplium and Theater apps for Apple Vision Pro. The 7-minute documentary follows triathlete Jules Wagner as he trains for an Ironman."
+      },
+      {
+        "id": "068c74b680ba1f99",
+        "title": "Makoa Shelf, Subside&#x27;s New Expansion, Is A Must-Own Experience On PlayStation VR2 and PC VR",
+        "link": "https://www.uploadvr.com/makoa-shelf-subsides-new-expansion-is-a-must-own-experience-on-playstation-vr2-and-pc-vr/",
+        "source": "UploadVR",
+        "category": "Spatial Computing (Hardware)",
+        "summary": "Subside's Makoa Shelf expansion is out today, and it makes one of the most breathtaking VR experiences available today even better."
+      },
+      {
+        "id": "1716bdf363d30746",
+        "title": "MicroLED & AR/VR Connect in Eindhoven, Sept. 2026, and Recap of AWE 2026",
+        "link": "https://kguttag.com/2026/06/23/microled-ar-vr-connect-in-eindhoven-sept-2026-and-recap-of-awe-2026/",
+        "source": "Karl Guttag",
+        "category": "Spatial Computing (Hardware)",
+        "summary": "In this short article, I will provide links to some videos I made at AWE 2026 and invite you to join me for my presentation and a panel at MicroLED and AR/VR Connect in Eindhoven in September."
+      }
+    ],
+    "AI / ML (SPATIAL-RELEVANT)": [
+      {
+        "id": "6dc77e8742470bef",
+        "title": "Grok AI is reportedly a porn platform now, with over half its traffic tied to adult content",
+        "link": "https://the-decoder.com/grok-ai-is-reportedly-a-porn-platform-now-with-over-half-its-traffic-tied-to-adult-content/",
+        "source": "The Decoder",
+        "category": "AI / ML (Spatial-relevant)",
+        "summary": "Two former xAI employees estimate that porn accounts for well over half of all Grok traffic. xAI is leaning into it, while OpenAI, Anthropic, and Google won't touch adult content.\nThe article Grok AI is reportedly a porn platform now, with over half its traffic tied to adult content appeared first on The Decoder."
+      },
+      {
+        "id": "52aae94f237bb535",
+        "title": "Authors Guild test finds some AI detectors perfectly identify human writing while others fail on every single text",
+        "link": "https://the-decoder.com/authors-guild-test-finds-some-ai-detectors-perfectly-identify-human-writing-while-others-fail-on-every-single-text/",
+        "source": "The Decoder",
+        "category": "AI / ML (Spatial-relevant)",
+        "summary": "The Authors Guild tested five AI detectors on human-written texts. Pangram and Grammarly correctly identified all of them, while Sidekicker and ZeroGPT flagged human-written articles as AI-generated. But the Guild also warns of a paradox: professionally written texts look statistically similar to AI output because language models were trained on exactly that kind of writing.\nThe article Authors Guild test finds some AI detectors perfectly identify human writing while others fail on every sing..."
+      },
+      {
+        "id": "baaac91b60829a68",
+        "title": "Meta employees warn AI moderation rollout is too fast",
+        "link": "https://the-decoder.com/meta-employees-warn-ai-moderation-rollout-is-too-fast/",
+        "source": "The Decoder",
+        "category": "AI / ML (Spatial-relevant)",
+        "summary": "By 2025, Meta will have already replaced about half of all human moderation requests with large language models and aims to increase that percentage to over 90 percent for certain types of content by the end of the year.\nThe article Meta employees warn AI moderation rollout is too fast appeared first on The Decoder."
+      },
+      {
+        "id": "4464f8463d484f38",
+        "title": "Qualcomm enters the data center market with its own processor",
+        "link": "https://the-decoder.com/qualcomm-enters-the-data-center-market-with-its-own-processor/",
+        "source": "The Decoder",
+        "category": "AI / ML (Spatial-relevant)",
+        "summary": "Qualcomm is pushing further into the data center market with a new processor called the Dragonfly C1000.\nThe article Qualcomm enters the data center market with its own processor appeared first on The Decoder."
+      },
+      {
+        "id": "1e85916676862251",
+        "title": "Google bakes computer control directly into Gemini 3.5 Flash, letting the model see and operate your screen",
+        "link": "https://the-decoder.com/google-bakes-computer-control-directly-into-gemini-3-5-flash-letting-the-model-see-and-operate-your-screen/",
+        "source": "The Decoder",
+        "category": "AI / ML (Spatial-relevant)",
+        "summary": "Google has integrated \"Computer Use\" directly into Gemini 3.5 Flash, letting the model operate computers, browsers, and mobile devices on its own. On the OSWorld benchmark, it scores 78.4, putting it on par with GPT-5.5. Developers can use the Gemini API to build agents for software testing or office automation.\nThe article Google bakes computer control directly into Gemini 3.5 Flash, letting the model see and operate your screen appeared first on The Decoder."
+      },
+      {
+        "id": "913889f1ec07b23b",
+        "title": "OpenAI says ChatGPT Instant now better understands what users actually want",
+        "link": "https://the-decoder.com/openai-says-chatgpt-instant-now-better-understands-what-users-actually-want/",
+        "source": "The Decoder",
+        "category": "AI / ML (Spatial-relevant)",
+        "summary": "OpenAI is updating GPT-5.5 Instant, its most-used ChatGPT model. The update targets conversation quality, with better intent recognition, improved context across multiple turns, and more reliable handling of complex, multi-condition prompts.\nThe article OpenAI says ChatGPT Instant now better understands what users actually want appeared first on The Decoder."
+      },
+      {
+        "id": "3f71f5a85453990b",
+        "title": "Most major AI chatbots still lean left on political questions, even \"anti-woke\" models are no exception",
+        "link": "https://the-decoder.com/most-major-ai-chatbots-still-lean-left-on-political-questions-even-anti-woke-models-are-no-exception/",
+        "source": "The Decoder",
+        "category": "AI / ML (Spatial-relevant)",
+        "summary": "A Washington Post investigation shows that most major AI chatbots still skew left on political questions. OpenAI's GPT-5.5 gave exclusively left-leaning arguments 80 percent of the time, and even Musk's Grok, marketed as anti-\"woke,\" leaned left more often than not. The one outlier: Google's Gemini 3.1 Pro presented both sides 93 percent of the time.\nThe article Most major AI chatbots still lean left on political questions, even &quot;anti-woke&quot; models are no exception appeared first on ..."
+      }
+    ],
+    "CORE XR NEWS": [
+      {
+        "id": "a97054bb6e75cd59",
+        "title": "Unseen Reality Launches 93-Gram URXR One Mixed Reality Glasses",
+        "link": "https://www.auganix.org/xr-news-unseen-reality-urxr-one/",
+        "source": "Auganix",
+        "category": "Core XR News",
+        "summary": "What’s the story? Unseen Reality has unveiled URXR One, 93-gram spatial computing glasses with Micro-OLED displays, 6DoF tracking and hand-gesture recognition. Why it matters The 93-gram design gives users access ... continue reading\nSource"
+      },
+      {
+        "id": "1282bc900402f1f3",
+        "title": "Prehension Launches Gesture Recognition SDK for XR Developers",
+        "link": "https://www.auganix.org/xr-news-prehension-gesture-recognition-sdk/",
+        "source": "Auganix",
+        "category": "Core XR News",
+        "summary": "What’s the story? Prehension has released its gesture recognition SDK for XR developers, using temporal classification to identify hand movements such as swipes, waves and pushes. Why it matters The ... continue reading\nSource"
+      },
+      {
+        "id": "7f91937988289ef8",
+        "title": "The Future of Urban Sustainability: A Conversation with Bentley Systems",
+        "link": "https://arinsider.co/2026/06/24/the-future-of-urban-sustainability-a-conversation-with-bentley-systems/",
+        "source": "AR Insider",
+        "category": "Core XR News",
+        "summary": "When most people think of digital twins, they picture high-tech dashboards used by massive metropolitan governments. Rory Linehan thinks that assumption is exactly the problem. He discusses on the latest episode of 'The Future Of.'\nThis post appeared first on AR Insider."
+      },
+      {
+        "id": "63297451bc7f99ed",
+        "title": "The XR Week Peek (2026.06.22): Snap unveils Specs, Steam Frame is launching soon, and more!",
+        "link": "https://skarredghost.com/2026/06/22/snap-specs-steam-frame/",
+        "source": "Skarred Ghost",
+        "category": "Core XR News",
+        "summary": "I just went back from the United States, where I had a very hectic AWE. I will publish some interesting articles about it in the upcoming weeks, so stay tuned (Actually, I have already published some: check out my hands on with Lumus and bHaptics!). And you will recognize that most of the news in [&#8230;]\nThe post The XR Week Peek (2026.06.22): Snap unveils Specs, Steam Frame is launching soon, and more! appeared first on The Ghost Howls."
+      },
+      {
+        "id": "6d8b7e775d2c8016",
+        "title": "bHaptics TactGlove can provide great touch sensations in VR",
+        "link": "https://skarredghost.com/2026/06/19/bhaptics-tactglove-impressions/",
+        "source": "Skarred Ghost",
+        "category": "Core XR News",
+        "summary": "At AWE, I was able to go hands-on with the latest version of the bHaptics gloves. And I have to say that they have improved a lot compared to the last time&#8230; bHaptics I&#8217;m pretty sure that if you are a reader of this blog, you already know bHaptics very well. But just in case [&#8230;]\nThe post bHaptics TactGlove can provide great touch sensations in VR appeared first on The Ghost Howls."
+      },
+      {
+        "id": "f7d683190dfad7fb",
+        "title": "Lumus’s new waveguides enable 70° FOV thin glasses",
+        "link": "https://skarredghost.com/2026/06/18/lumus-70-degrees-fov/",
+        "source": "Skarred Ghost",
+        "category": "Core XR News",
+        "summary": "Yesterday, I had the opportunity to try a private demo by Lumus, the company producing waveguides for smartglasses and AR glasses. And they finally showed me the path to 70° FOV AR glasses. Lumus Lumus is a company focused on creating waveguides for glasses (AR glasses or smartglasses). They don&#8217;t produce the glasses themselves, but [&#8230;]\nThe post Lumus&#8217;s new waveguides enable 70° FOV thin glasses appeared first on The Ghost Howls."
+      }
+    ],
+    "NEW EXPERIENCES": [
+      {
+        "id": "75817865f603f135",
+        "title": "Show HN: Tracking a real golf ball in mixed reality at 90 FPS using Quest 3 GPU",
+        "link": "https://puttdojo.com/devlog/tracking-a-real-golf-ball.html",
+        "source": "Hacker News (Spatial/XR)",
+        "category": "NEW EXPERIENCES",
+        "summary": "In a Show HN devlog, the solo developer of Putt Dojo describes building a standalone Quest 3 and 3S mixed reality app that tracks a real physical golf ball at 90 FPS using a custom computer vision algorithm running on the headset's passthrough cameras, before handing off to a physics simulation once the ball is in motion."
+      }
+    ],
+    "GAMING MARKETPLACE WATCH": [
+      {
+        "id": "eefc39b3c7ebd1ab",
+        "title": "‘VR Games Showcase’ June 2026 Recap: Every Meta Quest VR Game Announcement",
+        "link": "https://www.meta.com/blog/vr-games-showcase-june-2026-recap-every-meta-quest-vr-game-announcement/",
+        "source": "Meta",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "Meta published a recap of its June 2026 VR Games Showcase, rounding up every Meta Quest game announcement from the event and offering a snapshot of the platform's near-term content pipeline for VR developers and players."
+      },
+      {
+        "id": "3a8fe7036f3931d4",
+        "title": "Layoffs At Ghosts Of Tabor Developer &amp; Shutdowns For 3 Other VR Games",
+        "link": "https://www.uploadvr.com/layoffs-at-ghosts-of-tabor-developer-shutdowns-for-3-other-vr-games/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "UploadVR reports that Combat Waffle Studios, developer of Ghosts of Tabor, has cut staff, while multiplayer titles Quantaar and A Township Tale announced shutdowns and sci-fi FPS Memoreum exited full-time development following weak sales. The cluster of contractions points to continued strain on standalone VR game economics despite a growing Quest installed base."
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "e583cd583601473d",
+      "title": "Amazon Prime Day Deal Reduces Quest 3S For First Time Since April Price Hike",
+      "link": "https://roadtovr.com/amazon-prime-day-deal-quest-3s-2026/",
+      "source": "Road to VR",
+      "category": "Spatial Computing (Hardware)",
+      "summary": "Amazon Prime Day is among us, which also means you can save a couple bucks on a brand new Meta Quest 3S. Its only been a few months since Meta raised the price of Quest 3 and Quest 3S, essentially bumping prices across the board by $50 &#8211; 100. Now, for Amazon&#8217;s June 23-26th Prime [&#8230;]\nThe post Amazon Prime Day Deal Reduces Quest 3S For First Time Since April Price Hike appeared first on Road to VR."
+    },
+    {
+      "id": "4dac573f85f9a4e3",
+      "title": "Everything Announced at the Summer 2026 VR Games Showcase",
+      "link": "https://roadtovr.com/everything-announced-at-the-summer-2026-vr-games-showcase/",
+      "source": "Road to VR",
+      "category": "Spatial Computing (Hardware)",
+      "summary": "The sixth iteration of the VR Games Showcase just wrapped up, delivering massive new game announcements including the reveal of Breachers: Outbreak and DRIFTERS: Blackout Crew as well as new looks at Payday: Aces High, Hot Dogs, Horseshoes and Hand Grenades 2, and Korea. IL-2 Series! Missed the show? Fear not &#8211; we’ve wrapped up [&#8230;]\nThe post Everything Announced at the Summer 2026 VR Games Showcase appeared first on Road to VR."
+    },
+    {
+      "id": "1f43076416181f57",
+      "title": "Meta Announces Cheaper Smart Glasses without Ray-Ban or Oakley Branding, Starting at $300",
+      "link": "https://roadtovr.com/meta-announces-cheaper-smart-glasses-without-ray-ban-or-oakley-branding-starting-at-300/",
+      "source": "Road to VR",
+      "category": "Spatial Computing (Hardware)",
+      "summary": "Meta today announced it&#8217;s releasing Meta Glasses, the company&#8217;s first slate of smart glasses that don&#8217;t feature any EssilorLuxottica styles or branding. The News While Meta is still working with long-time eyewear partner EssilorLuxottica, the company is releasing three new Meta Glasses styles that aren&#8217;t packing any Ray-Ban or Oakley branding: Meta Glasses appear to [&#8230;]\nThe post Meta Announces Cheaper Smart Glasses without Ray-Ban or Oakley Branding, Starting at ..."
+    },
+    {
+      "id": "95658bcb5fc81bbe",
+      "title": "Omni One is the First VR Treadmill with Official Support for Meta Quest",
+      "link": "https://roadtovr.com/omni-one-first-vr-treadmill-quest-support/",
+      "source": "Road to VR",
+      "category": "Spatial Computing (Hardware)",
+      "summary": "Virtuix has finally brought native Quest support to Omni One, making it Quest&#8217;s first officially supported VR treadmill. As Virtuix&#8217;s consumer-focused VR treadmill, Omni One launched in 2024 with support for Pico 4 Ultra Enterprise, as well as PC VR headsets, which notably included Quest if connected to a capable PC via Link. In February, [&#8230;]\nThe post Omni One is the First VR Treadmill with Official Support for Meta Quest appeared first on Road to VR."
+    },
+    {
+      "id": "689d013ceb7f7e01",
+      "title": "Steam Machine Launches Next Week Starting at $1,050, Hints at What to Expect from Steam Frame’s Launch",
+      "link": "https://roadtovr.com/steam-machine-launches-next-week-starting-at-1050-hints-at-what-to-expect-from-steam-frames-launch/",
+      "source": "Road to VR",
+      "category": "Spatial Computing (Hardware)",
+      "summary": "Valve today announced that Steam Machine is now available for pre-orders, starting at $1,050, and will officially launch on June 29th. While the announcement doesn&#8217;t include any direct details about Steam Frame availability, it offers clear hints about what to expect, including a randomized pre-order process. The News Valve today announced availability of Steam Machine; [&#8230;]\nThe post Steam Machine Launches Next Week Starting at $1,050, Hints at What to Expect from Steam Frame&#8217..."
+    },
+    {
+      "id": "66703ac845b0491e",
+      "title": "Meta Now Sells A Charging Stand For (Most Of) Its Smart Glasses",
+      "link": "https://www.uploadvr.com/meta-glasses-charging-stand/",
+      "source": "UploadVR",
+      "category": "Spatial Computing (Hardware)",
+      "summary": "Meta now sells a $60 stainless steel Charging Stand compatible with most of its smart glasses, providing 50% charge in 20 minutes or full charge in 1 hour."
+    },
+    {
+      "id": "7ea27caa9b2b7f8a",
+      "title": "Meta Preempts Google&#x27;s Gentle Monster Glasses With Kylie Jenner &#x27;Starfire&#x27; Design",
+      "link": "https://www.uploadvr.com/meta-starfire-smart-glasses-kylie-jenner-designed/",
+      "source": "UploadVR",
+      "category": "Spatial Computing (Hardware)",
+      "summary": "Meta teamed up with Kylie Jenner for new 'Starfire' smart glasses featuring her voice for Meta AI, a gemstone on the right lens, and a metal nose pad to prevent absorbing makeup."
+    },
+    {
+      "id": "2867e5023cd65d91",
+      "title": "Meta Launches Cheaper Smart Glasses Without Ray-Ban Branding",
+      "link": "https://www.uploadvr.com/meta-launches-cheaper-smart-glasses-without-ray-ban-branding/",
+      "source": "UploadVR",
+      "category": "Spatial Computing (Hardware)",
+      "summary": "Meta launched a range of cheaper smart glasses featuring the same technology as Ray-Ban Meta but without the branding, and with a compact folding case."
+    },
+    {
+      "id": "90417ec7ff887f8c",
+      "title": "VR Games Showcase Roundup: Everything Shown At Today&#x27;s Event",
+      "link": "https://www.uploadvr.com/vr-games-showcase-roundup-everything-shown-at-todays-event/",
+      "source": "UploadVR",
+      "category": "Spatial Computing (Hardware)",
+      "summary": "Here's everything shown at today's massive VR Games Showcase!"
+    },
+    {
+      "id": "2036c0c6e25a9487",
+      "title": "Virtuix Brings Native Omni Treadmill Support To Quest Games",
+      "link": "https://www.uploadvr.com/virtuix-brings-native-vr-treadmill-support-to-meta-quest-games-with-omni-one-for-quest/",
+      "source": "UploadVR",
+      "category": "Spatial Computing (Hardware)",
+      "summary": "Virtuix has launched a new VR treadmill with full integration for Meta Quest standalone VR games."
+    },
+    {
+      "id": "2f8c93f2fcb65486",
+      "title": "The Longest Day Explores New Paths for Immersive Sports Stories",
+      "link": "https://www.uploadvr.com/the-longest-day-explores-new-paths-for-immersive-sports-stories/",
+      "source": "UploadVR",
+      "category": "Spatial Computing (Hardware)",
+      "summary": "The Longest Day is now available free in the Amplium and Theater apps for Apple Vision Pro. The 7-minute documentary follows triathlete Jules Wagner as he trains for an Ironman."
+    },
+    {
+      "id": "068c74b680ba1f99",
+      "title": "Makoa Shelf, Subside&#x27;s New Expansion, Is A Must-Own Experience On PlayStation VR2 and PC VR",
+      "link": "https://www.uploadvr.com/makoa-shelf-subsides-new-expansion-is-a-must-own-experience-on-playstation-vr2-and-pc-vr/",
+      "source": "UploadVR",
+      "category": "Spatial Computing (Hardware)",
+      "summary": "Subside's Makoa Shelf expansion is out today, and it makes one of the most breathtaking VR experiences available today even better."
+    },
+    {
+      "id": "6dc77e8742470bef",
+      "title": "Grok AI is reportedly a porn platform now, with over half its traffic tied to adult content",
+      "link": "https://the-decoder.com/grok-ai-is-reportedly-a-porn-platform-now-with-over-half-its-traffic-tied-to-adult-content/",
+      "source": "The Decoder",
+      "category": "AI / ML (Spatial-relevant)",
+      "summary": "Two former xAI employees estimate that porn accounts for well over half of all Grok traffic. xAI is leaning into it, while OpenAI, Anthropic, and Google won't touch adult content.\nThe article Grok AI is reportedly a porn platform now, with over half its traffic tied to adult content appeared first on The Decoder."
+    },
+    {
+      "id": "52aae94f237bb535",
+      "title": "Authors Guild test finds some AI detectors perfectly identify human writing while others fail on every single text",
+      "link": "https://the-decoder.com/authors-guild-test-finds-some-ai-detectors-perfectly-identify-human-writing-while-others-fail-on-every-single-text/",
+      "source": "The Decoder",
+      "category": "AI / ML (Spatial-relevant)",
+      "summary": "The Authors Guild tested five AI detectors on human-written texts. Pangram and Grammarly correctly identified all of them, while Sidekicker and ZeroGPT flagged human-written articles as AI-generated. But the Guild also warns of a paradox: professionally written texts look statistically similar to AI output because language models were trained on exactly that kind of writing.\nThe article Authors Guild test finds some AI detectors perfectly identify human writing while others fail on every sing..."
+    },
+    {
+      "id": "baaac91b60829a68",
+      "title": "Meta employees warn AI moderation rollout is too fast",
+      "link": "https://the-decoder.com/meta-employees-warn-ai-moderation-rollout-is-too-fast/",
+      "source": "The Decoder",
+      "category": "AI / ML (Spatial-relevant)",
+      "summary": "By 2025, Meta will have already replaced about half of all human moderation requests with large language models and aims to increase that percentage to over 90 percent for certain types of content by the end of the year.\nThe article Meta employees warn AI moderation rollout is too fast appeared first on The Decoder."
+    },
+    {
+      "id": "4464f8463d484f38",
+      "title": "Qualcomm enters the data center market with its own processor",
+      "link": "https://the-decoder.com/qualcomm-enters-the-data-center-market-with-its-own-processor/",
+      "source": "The Decoder",
+      "category": "AI / ML (Spatial-relevant)",
+      "summary": "Qualcomm is pushing further into the data center market with a new processor called the Dragonfly C1000.\nThe article Qualcomm enters the data center market with its own processor appeared first on The Decoder."
+    },
+    {
+      "id": "1e85916676862251",
+      "title": "Google bakes computer control directly into Gemini 3.5 Flash, letting the model see and operate your screen",
+      "link": "https://the-decoder.com/google-bakes-computer-control-directly-into-gemini-3-5-flash-letting-the-model-see-and-operate-your-screen/",
+      "source": "The Decoder",
+      "category": "AI / ML (Spatial-relevant)",
+      "summary": "Google has integrated \"Computer Use\" directly into Gemini 3.5 Flash, letting the model operate computers, browsers, and mobile devices on its own. On the OSWorld benchmark, it scores 78.4, putting it on par with GPT-5.5. Developers can use the Gemini API to build agents for software testing or office automation.\nThe article Google bakes computer control directly into Gemini 3.5 Flash, letting the model see and operate your screen appeared first on The Decoder."
+    },
+    {
+      "id": "913889f1ec07b23b",
+      "title": "OpenAI says ChatGPT Instant now better understands what users actually want",
+      "link": "https://the-decoder.com/openai-says-chatgpt-instant-now-better-understands-what-users-actually-want/",
+      "source": "The Decoder",
+      "category": "AI / ML (Spatial-relevant)",
+      "summary": "OpenAI is updating GPT-5.5 Instant, its most-used ChatGPT model. The update targets conversation quality, with better intent recognition, improved context across multiple turns, and more reliable handling of complex, multi-condition prompts.\nThe article OpenAI says ChatGPT Instant now better understands what users actually want appeared first on The Decoder."
+    },
+    {
+      "id": "a97054bb6e75cd59",
+      "title": "Unseen Reality Launches 93-Gram URXR One Mixed Reality Glasses",
+      "link": "https://www.auganix.org/xr-news-unseen-reality-urxr-one/",
+      "source": "Auganix",
+      "category": "Core XR News",
+      "summary": "What’s the story? Unseen Reality has unveiled URXR One, 93-gram spatial computing glasses with Micro-OLED displays, 6DoF tracking and hand-gesture recognition. Why it matters The 93-gram design gives users access ... continue reading\nSource"
+    },
+    {
+      "id": "1282bc900402f1f3",
+      "title": "Prehension Launches Gesture Recognition SDK for XR Developers",
+      "link": "https://www.auganix.org/xr-news-prehension-gesture-recognition-sdk/",
+      "source": "Auganix",
+      "category": "Core XR News",
+      "summary": "What’s the story? Prehension has released its gesture recognition SDK for XR developers, using temporal classification to identify hand movements such as swipes, waves and pushes. Why it matters The ... continue reading\nSource"
+    },
+    {
+      "id": "7f91937988289ef8",
+      "title": "The Future of Urban Sustainability: A Conversation with Bentley Systems",
+      "link": "https://arinsider.co/2026/06/24/the-future-of-urban-sustainability-a-conversation-with-bentley-systems/",
+      "source": "AR Insider",
+      "category": "Core XR News",
+      "summary": "When most people think of digital twins, they picture high-tech dashboards used by massive metropolitan governments. Rory Linehan thinks that assumption is exactly the problem. He discusses on the latest episode of 'The Future Of.'\nThis post appeared first on AR Insider."
+    },
+    {
+      "id": "0199501a83270398",
+      "title": "Apple Vision Pro’s longest immersive concert was harder to film than you’d think",
+      "link": "https://9to5mac.com/2026/06/24/apple-vision-pros-longest-immersive-concert-was-harder-to-film-than-youd-think/",
+      "source": "9to5Mac Vision Pro",
+      "category": "App Store Highlights",
+      "summary": "CineD interviewed director Ian Russell about producing Debut at the BBC Proms for Apple Vision Pro, including the use of five Blackmagic URSA Cine Immersive cameras, new framing and camera-placement constraints, and the shift from conventional concert production to stereoscopic 180-degree filming."
+    },
+    {
+      "id": "63297451bc7f99ed",
+      "title": "The XR Week Peek (2026.06.22): Snap unveils Specs, Steam Frame is launching soon, and more!",
+      "link": "https://skarredghost.com/2026/06/22/snap-specs-steam-frame/",
+      "source": "Skarred Ghost",
+      "category": "Core XR News",
+      "summary": "I just went back from the United States, where I had a very hectic AWE. I will publish some interesting articles about it in the upcoming weeks, so stay tuned (Actually, I have already published some: check out my hands on with Lumus and bHaptics!). And you will recognize that most of the news in [&#8230;]\nThe post The XR Week Peek (2026.06.22): Snap unveils Specs, Steam Frame is launching soon, and more! appeared first on The Ghost Howls."
+    },
+    {
+      "id": "6d8b7e775d2c8016",
+      "title": "bHaptics TactGlove can provide great touch sensations in VR",
+      "link": "https://skarredghost.com/2026/06/19/bhaptics-tactglove-impressions/",
+      "source": "Skarred Ghost",
+      "category": "Core XR News",
+      "summary": "At AWE, I was able to go hands-on with the latest version of the bHaptics gloves. And I have to say that they have improved a lot compared to the last time&#8230; bHaptics I&#8217;m pretty sure that if you are a reader of this blog, you already know bHaptics very well. But just in case [&#8230;]\nThe post bHaptics TactGlove can provide great touch sensations in VR appeared first on The Ghost Howls."
+    },
+    {
+      "id": "f7d683190dfad7fb",
+      "title": "Lumus’s new waveguides enable 70° FOV thin glasses",
+      "link": "https://skarredghost.com/2026/06/18/lumus-70-degrees-fov/",
+      "source": "Skarred Ghost",
+      "category": "Core XR News",
+      "summary": "Yesterday, I had the opportunity to try a private demo by Lumus, the company producing waveguides for smartglasses and AR glasses. And they finally showed me the path to 70° FOV AR glasses. Lumus Lumus is a company focused on creating waveguides for glasses (AR glasses or smartglasses). They don&#8217;t produce the glasses themselves, but [&#8230;]\nThe post Lumus&#8217;s new waveguides enable 70° FOV thin glasses appeared first on The Ghost Howls."
+    },
+    {
+      "id": "1716bdf363d30746",
+      "title": "MicroLED & AR/VR Connect in Eindhoven, Sept. 2026, and Recap of AWE 2026",
+      "link": "https://kguttag.com/2026/06/23/microled-ar-vr-connect-in-eindhoven-sept-2026-and-recap-of-awe-2026/",
+      "source": "Karl Guttag",
+      "category": "Spatial Computing (Hardware)",
+      "summary": "In this short article, I will provide links to some videos I made at AWE 2026 and invite you to join me for my presentation and a panel at MicroLED and AR/VR Connect in Eindhoven in September."
+    },
+    {
+      "id": "3f71f5a85453990b",
+      "title": "Most major AI chatbots still lean left on political questions, even \"anti-woke\" models are no exception",
+      "link": "https://the-decoder.com/most-major-ai-chatbots-still-lean-left-on-political-questions-even-anti-woke-models-are-no-exception/",
+      "source": "The Decoder",
+      "category": "AI / ML (Spatial-relevant)",
+      "summary": "A Washington Post investigation shows that most major AI chatbots still skew left on political questions. OpenAI's GPT-5.5 gave exclusively left-leaning arguments 80 percent of the time, and even Musk's Grok, marketed as anti-\"woke,\" leaned left more often than not. The one outlier: Google's Gemini 3.1 Pro presented both sides 93 percent of the time.\nThe article Most major AI chatbots still lean left on political questions, even &quot;anti-woke&quot; models are no exception appeared first on ..."
+    },
+    {
+      "id": "7795f2ffb48364d5",
+      "title": "OpenAI's free GPT-5.5 model makes ChatGPT better at understanding context",
+      "link": "https://www.engadget.com/2201255/openai-gpt-5-5-instant-chatgpt-upgrade/",
+      "source": "Engadget",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Engadget reports that OpenAI has rolled out GPT-5.5, a free upgrade to the default ChatGPT model, with improvements aimed at better context understanding for the company's most widely used tier of users."
+    },
+    {
+      "id": "2152dd3b24d2474d",
+      "title": "I Met With China’s Top AI Experts. They’re Freaking Out, Too",
+      "link": "https://www.wired.com/story/ai-arms-race-china-us-cooperation/",
+      "source": "Wired",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Wired reports that researchers on both sides of the US–China AI race are increasingly worried about a potential 'Chernobyl moment,' with top Chinese AI experts the publication met expressing concern about the speed and competitive intensity of frontier model development."
+    },
+    {
+      "id": "6dc584c0ce9aace5",
+      "title": "OpenAI reveals its first AI processor: Jalapeño",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno",
+      "source": "The Verge",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Verge reports that OpenAI has unveiled its first in-house AI chip, called Jalapeño, an application-specific integrated circuit designed for AI inference and built in partnership with Broadcom, marking the company's move into custom silicon for current and future large language models."
+    },
+    {
+      "id": "75817865f603f135",
+      "title": "Show HN: Tracking a real golf ball in mixed reality at 90 FPS using Quest 3 GPU",
+      "link": "https://puttdojo.com/devlog/tracking-a-real-golf-ball.html",
+      "source": "Hacker News (Spatial/XR)",
+      "category": "NEW EXPERIENCES",
+      "summary": "In a Show HN devlog, the solo developer of Putt Dojo describes building a standalone Quest 3 and 3S mixed reality app that tracks a real physical golf ball at 90 FPS using a custom computer vision algorithm running on the headset's passthrough cameras, before handing off to a physics simulation once the ball is in motion."
+    },
+    {
+      "id": "2393d4ed8c0e4533",
+      "title": "ARTOO-DARTU: Studying AR-HRC With AR Obstruction Mitigation During a Warehouse Task",
+      "link": "https://arxiv.org/abs/2606.25202",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "An arXiv paper titled ARTOO-DARTU studies augmented reality human-robot collaboration during a warehouse task, examining how AR situated analytics can obstruct important real-world elements when content is dynamically positioned relative to mobile robots, and proposing obstruction mitigation techniques to improve safety and usability."
+    },
+    {
+      "id": "08222b31a4e3f26b",
+      "title": "Co-designing a Preliminary Repository of Augmented Reality Concepts for Real-Time Emotion Regulation",
+      "link": "https://arxiv.org/abs/2606.25271",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "Researchers on arXiv present a co-designed preliminary repository of augmented reality concepts for real-time emotion regulation, addressing the lack of user-centered, expert-informed design resources for AR-based mental health support that does not disengage users from their ongoing activities."
+    },
+    {
+      "id": "93aa234c2d3ce8e4",
+      "title": "Dissociable Spatial and Temporal Effects of Interaction Latency in Virtual Reality",
+      "link": "https://arxiv.org/abs/2606.25681",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "An arXiv study investigates dissociable spatial and temporal effects of interaction latency in virtual reality, examining how motion-to-photon latency from head movement and hand-to-virtual-effector loops impair VR performance and whether common spatial, temporal, and efficiency measures capture latency effects equivalently."
+    },
+    {
+      "id": "d715b6f9b6d42726",
+      "title": "Virtual Reality Alters Perceived Functional Body Size",
+      "link": "https://arxiv.org/abs/2510.00824",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "An arXiv study with 60 participants finds that immersive virtual reality presented through a head-mounted display alters perceived functional body size, using a passable aperture paradigm to compare action and perception tasks across physical and VR conditions."
+    },
+    {
+      "id": "39e0709b2d872725",
+      "title": "From Sparse and Imperfect 2D Anchors to Consistent 3D Gaussian Street Scenes: Support-Aware Appearance",
+      "link": "https://arxiv.org/abs/2606.26007",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "An arXiv paper introduces a support-aware appearance method for building consistent 3D Gaussian street scenes from sparse and imperfect 2D anchors, using teacher-relative appearance residual distillation to handle view-specific noise and enable standard-rasterizer deployment."
+    },
+    {
+      "id": "2c879fc8897df808",
+      "title": "SplatPainter: Interactive Authoring of 3D Gaussians from 2D Edits via Test-Time Training",
+      "link": "https://arxiv.org/abs/2512.05354",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "A paper posted to arXiv introduces SplatPainter, a method for interactively editing 3D Gaussian Splatting assets by propagating 2D edits into the underlying 3D representation via test-time training, addressing limitations of diffusion- and optimization-based approaches that the authors describe as slow, destructive to asset identity, or lacking fine-grained control."
+    },
+    {
+      "id": "eefc39b3c7ebd1ab",
+      "title": "‘VR Games Showcase’ June 2026 Recap: Every Meta Quest VR Game Announcement",
+      "link": "https://www.meta.com/blog/vr-games-showcase-june-2026-recap-every-meta-quest-vr-game-announcement/",
+      "source": "Meta",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "Meta published a recap of its June 2026 VR Games Showcase, rounding up every Meta Quest game announcement from the event and offering a snapshot of the platform's near-term content pipeline for VR developers and players."
+    },
+    {
+      "id": "3a8fe7036f3931d4",
+      "title": "Layoffs At Ghosts Of Tabor Developer &amp; Shutdowns For 3 Other VR Games",
+      "link": "https://www.uploadvr.com/layoffs-at-ghosts-of-tabor-developer-shutdowns-for-3-other-vr-games/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "UploadVR reports that Combat Waffle Studios, developer of Ghosts of Tabor, has cut staff, while multiplayer titles Quantaar and A Township Tale announced shutdowns and sci-fi FPS Memoreum exited full-time development following weak sales. The cluster of contractions points to continued strain on standalone VR game economics despite a growing Quest installed base."
+    },
+    {
+      "id": "cfac8b7094d39600",
+      "title": "OpenAI will delay GPT-5.6 after Trump administration request",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request",
+      "source": "The Verge",
+      "category": "HIGHLIGHTS",
+      "summary": "The Verge reports that OpenAI will delay the full release of GPT-5.6 after the Trump administration, citing potential security concerns, asked the company to stagger its rollout. The Information first reported that CEO Sam Altman told employees in a company Q&A that GPT-5.6 will initially launch in limited preview form to a small group, marking a notable instance of federal influence over a frontier model release schedule."
+    },
+    {
+      "id": "2fc3177742dc329d",
+      "title": "StayStill: a large-scale 3D idle animation dataset",
+      "link": "https://arxiv.org/abs/2605.13693",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "A new arXiv paper introduces StayStill, a large-scale 3D idle animation dataset comprising approximately six hours of motion data captured from 50 subjects, aimed at filling a gap in training data for automatic generation of realistic inactive-state behaviors in virtual characters. The authors argue that idle motion has received limited attention compared to other animation tasks despite its importance for believable avatars in XR and gaming contexts."
+    }
+  ],
+  "raw_content": "Spatial Report\nWeek of 2026-06-26\n\nHIGHLIGHTS\n\nThe Verge reports that OpenAI will delay the full release of GPT-5.6 after the Trump administration, citing potential security concerns, asked the company to stagger its rollout. The Information first reported that CEO Sam Altman told employees in a company Q&A that GPT-5.6 will initially launch in limited preview form to a small group, marking a notable instance of federal influence over a frontier model release schedule.\n\nhttps://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request\n\nAPP STORE HIGHLIGHTS\n\nCineD interviewed director Ian Russell about producing Debut at the BBC Proms for Apple Vision Pro, including the use of five Blackmagic URSA Cine Immersive cameras, new framing and camera-placement constraints, and the shift from conventional concert production to stereoscopic 180-degree filming.\n\nhttps://9to5mac.com/2026/06/24/apple-vision-pros-longest-immersive-concert-was-harder-to-film-than-youd-think/\n\nAI AND SIMULATED WORLDS\n\nEngadget reports that OpenAI has rolled out GPT-5.5, a free upgrade to the default ChatGPT model, with improvements aimed at better context understanding for the company's most widely used tier of users.\n\nhttps://www.engadget.com/2201255/openai-gpt-5-5-instant-chatgpt-upgrade/\n\nWired reports that researchers on both sides of the US–China AI race are increasingly worried about a potential 'Chernobyl moment,' with top Chinese AI experts the publication met expressing concern about the speed and competitive intensity of frontier model development.\n\nhttps://www.wired.com/story/ai-arms-race-china-us-cooperation/\n\nThe Verge reports that OpenAI has unveiled its first in-house AI chip, called Jalapeño, an application-specific integrated circuit designed for AI inference and built in partnership with Broadcom, marking the company's move into custom silicon for current and future large language models.\n\nhttps://www.theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno\n\nRESEARCH\n\nAn arXiv paper titled ARTOO-DARTU studies augmented reality human-robot collaboration during a warehouse task, examining how AR situated analytics can obstruct important real-world elements when content is dynamically positioned relative to mobile robots, and proposing obstruction mitigation techniques to improve safety and usability.\n\nhttps://arxiv.org/abs/2606.25202\n\nResearchers on arXiv present a co-designed preliminary repository of augmented reality concepts for real-time emotion regulation, addressing the lack of user-centered, expert-informed design resources for AR-based mental health support that does not disengage users from their ongoing activities.\n\nhttps://arxiv.org/abs/2606.25271\n\nAn arXiv study investigates dissociable spatial and temporal effects of interaction latency in virtual reality, examining how motion-to-photon latency from head movement and hand-to-virtual-effector loops impair VR performance and whether common spatial, temporal, and efficiency measures capture latency effects equivalently.\n\nhttps://arxiv.org/abs/2606.25681\n\nAn arXiv study with 60 participants finds that immersive virtual reality presented through a head-mounted display alters perceived functional body size, using a passable aperture paradigm to compare action and perception tasks across physical and VR conditions.\n\nhttps://arxiv.org/abs/2510.00824\n\nAn arXiv paper introduces a support-aware appearance method for building consistent 3D Gaussian street scenes from sparse and imperfect 2D anchors, using teacher-relative appearance residual distillation to handle view-specific noise and enable standard-rasterizer deployment.\n\nhttps://arxiv.org/abs/2606.26007\n\nA paper posted to arXiv introduces SplatPainter, a method for interactively editing 3D Gaussian Splatting assets by propagating 2D edits into the underlying 3D representation via test-time training, addressing limitations of diffusion- and optimization-based approaches that the authors describe as slow, destructive to asset identity, or lacking fine-grained control.\n\nhttps://arxiv.org/abs/2512.05354\n\nA new arXiv paper introduces StayStill, a large-scale 3D idle animation dataset comprising approximately six hours of motion data captured from 50 subjects, aimed at filling a gap in training data for automatic generation of realistic inactive-state behaviors in virtual characters. The authors argue that idle motion has received limited attention compared to other animation tasks despite its importance for believable avatars in XR and gaming contexts.\n\nhttps://arxiv.org/abs/2605.13693\n\nSPATIAL COMPUTING (HARDWARE)\n\nAmazon Prime Day is among us, which also means you can save a couple bucks on a brand new Meta Quest 3S. Its only been a few months since Meta raised the price of Quest 3 and Quest 3S, essentially bumping prices across the board by $50 &#8211; 100. Now, for Amazon&#8217;s June 23-26th Prime [&#8230;]\nThe post Amazon Prime Day Deal Reduces Quest 3S For First Time Since April Price Hike appeared first on Road to VR.\n\nhttps://roadtovr.com/amazon-prime-day-deal-quest-3s-2026/\n\nThe sixth iteration of the VR Games Showcase just wrapped up, delivering massive new game announcements including the reveal of Breachers: Outbreak and DRIFTERS: Blackout Crew as well as new looks at Payday: Aces High, Hot Dogs, Horseshoes and Hand Grenades 2, and Korea. IL-2 Series! Missed the show? Fear not &#8211; we’ve wrapped up [&#8230;]\nThe post Everything Announced at the Summer 2026 VR Games Showcase appeared first on Road to VR.\n\nhttps://roadtovr.com/everything-announced-at-the-summer-2026-vr-games-showcase/\n\nMeta today announced it&#8217;s releasing Meta Glasses, the company&#8217;s first slate of smart glasses that don&#8217;t feature any EssilorLuxottica styles or branding. The News While Meta is still working with long-time eyewear partner EssilorLuxottica, the company is releasing three new Meta Glasses styles that aren&#8217;t packing any Ray-Ban or Oakley branding: Meta Glasses appear to [&#8230;]\nThe post Meta Announces Cheaper Smart Glasses without Ray-Ban or Oakley Branding, Starting at ...\n\nhttps://roadtovr.com/meta-announces-cheaper-smart-glasses-without-ray-ban-or-oakley-branding-starting-at-300/\n\nVirtuix has finally brought native Quest support to Omni One, making it Quest&#8217;s first officially supported VR treadmill. As Virtuix&#8217;s consumer-focused VR treadmill, Omni One launched in 2024 with support for Pico 4 Ultra Enterprise, as well as PC VR headsets, which notably included Quest if connected to a capable PC via Link. In February, [&#8230;]\nThe post Omni One is the First VR Treadmill with Official Support for Meta Quest appeared first on Road to VR.\n\nhttps://roadtovr.com/omni-one-first-vr-treadmill-quest-support/\n\nValve today announced that Steam Machine is now available for pre-orders, starting at $1,050, and will officially launch on June 29th. While the announcement doesn&#8217;t include any direct details about Steam Frame availability, it offers clear hints about what to expect, including a randomized pre-order process. The News Valve today announced availability of Steam Machine; [&#8230;]\nThe post Steam Machine Launches Next Week Starting at $1,050, Hints at What to Expect from Steam Frame&#8217...\n\nhttps://roadtovr.com/steam-machine-launches-next-week-starting-at-1050-hints-at-what-to-expect-from-steam-frames-launch/\n\nMeta now sells a $60 stainless steel Charging Stand compatible with most of its smart glasses, providing 50% charge in 20 minutes or full charge in 1 hour.\n\nhttps://www.uploadvr.com/meta-glasses-charging-stand/\n\nMeta teamed up with Kylie Jenner for new 'Starfire' smart glasses featuring her voice for Meta AI, a gemstone on the right lens, and a metal nose pad to prevent absorbing makeup.\n\nhttps://www.uploadvr.com/meta-starfire-smart-glasses-kylie-jenner-designed/\n\nMeta launched a range of cheaper smart glasses featuring the same technology as Ray-Ban Meta but without the branding, and with a compact folding case.\n\nhttps://www.uploadvr.com/meta-launches-cheaper-smart-glasses-without-ray-ban-branding/\n\nHere's everything shown at today's massive VR Games Showcase!\n\nhttps://www.uploadvr.com/vr-games-showcase-roundup-everything-shown-at-todays-event/\n\nVirtuix has launched a new VR treadmill with full integration for Meta Quest standalone VR games.\n\nhttps://www.uploadvr.com/virtuix-brings-native-vr-treadmill-support-to-meta-quest-games-with-omni-one-for-quest/\n\nThe Longest Day is now available free in the Amplium and Theater apps for Apple Vision Pro. The 7-minute documentary follows triathlete Jules Wagner as he trains for an Ironman.\n\nhttps://www.uploadvr.com/the-longest-day-explores-new-paths-for-immersive-sports-stories/\n\nSubside's Makoa Shelf expansion is out today, and it makes one of the most breathtaking VR experiences available today even better.\n\nhttps://www.uploadvr.com/makoa-shelf-subsides-new-expansion-is-a-must-own-experience-on-playstation-vr2-and-pc-vr/\n\nIn this short article, I will provide links to some videos I made at AWE 2026 and invite you to join me for my presentation and a panel at MicroLED and AR/VR Connect in Eindhoven in September.\n\nhttps://kguttag.com/2026/06/23/microled-ar-vr-connect-in-eindhoven-sept-2026-and-recap-of-awe-2026/\n\nAI / ML (SPATIAL-RELEVANT)\n\nTwo former xAI employees estimate that porn accounts for well over half of all Grok traffic. xAI is leaning into it, while OpenAI, Anthropic, and Google won't touch adult content.\nThe article Grok AI is reportedly a porn platform now, with over half its traffic tied to adult content appeared first on The Decoder.\n\nhttps://the-decoder.com/grok-ai-is-reportedly-a-porn-platform-now-with-over-half-its-traffic-tied-to-adult-content/\n\nThe Authors Guild tested five AI detectors on human-written texts. Pangram and Grammarly correctly identified all of them, while Sidekicker and ZeroGPT flagged human-written articles as AI-generated. But the Guild also warns of a paradox: professionally written texts look statistically similar to AI output because language models were trained on exactly that kind of writing.\nThe article Authors Guild test finds some AI detectors perfectly identify human writing while others fail on every sing...\n\nhttps://the-decoder.com/authors-guild-test-finds-some-ai-detectors-perfectly-identify-human-writing-while-others-fail-on-every-single-text/\n\nBy 2025, Meta will have already replaced about half of all human moderation requests with large language models and aims to increase that percentage to over 90 percent for certain types of content by the end of the year.\nThe article Meta employees warn AI moderation rollout is too fast appeared first on The Decoder.\n\nhttps://the-decoder.com/meta-employees-warn-ai-moderation-rollout-is-too-fast/\n\nQualcomm is pushing further into the data center market with a new processor called the Dragonfly C1000.\nThe article Qualcomm enters the data center market with its own processor appeared first on The Decoder.\n\nhttps://the-decoder.com/qualcomm-enters-the-data-center-market-with-its-own-processor/\n\nGoogle has integrated \"Computer Use\" directly into Gemini 3.5 Flash, letting the model operate computers, browsers, and mobile devices on its own. On the OSWorld benchmark, it scores 78.4, putting it on par with GPT-5.5. Developers can use the Gemini API to build agents for software testing or office automation.\nThe article Google bakes computer control directly into Gemini 3.5 Flash, letting the model see and operate your screen appeared first on The Decoder.\n\nhttps://the-decoder.com/google-bakes-computer-control-directly-into-gemini-3-5-flash-letting-the-model-see-and-operate-your-screen/\n\nOpenAI is updating GPT-5.5 Instant, its most-used ChatGPT model. The update targets conversation quality, with better intent recognition, improved context across multiple turns, and more reliable handling of complex, multi-condition prompts.\nThe article OpenAI says ChatGPT Instant now better understands what users actually want appeared first on The Decoder.\n\nhttps://the-decoder.com/openai-says-chatgpt-instant-now-better-understands-what-users-actually-want/\n\nA Washington Post investigation shows that most major AI chatbots still skew left on political questions. OpenAI's GPT-5.5 gave exclusively left-leaning arguments 80 percent of the time, and even Musk's Grok, marketed as anti-\"woke,\" leaned left more often than not. The one outlier: Google's Gemini 3.1 Pro presented both sides 93 percent of the time.\nThe article Most major AI chatbots still lean left on political questions, even &quot;anti-woke&quot; models are no exception appeared first on ...\n\nhttps://the-decoder.com/most-major-ai-chatbots-still-lean-left-on-political-questions-even-anti-woke-models-are-no-exception/\n\nCORE XR NEWS\n\nWhat’s the story? Unseen Reality has unveiled URXR One, 93-gram spatial computing glasses with Micro-OLED displays, 6DoF tracking and hand-gesture recognition. Why it matters The 93-gram design gives users access ... continue reading\nSource\n\nhttps://www.auganix.org/xr-news-unseen-reality-urxr-one/\n\nWhat’s the story? Prehension has released its gesture recognition SDK for XR developers, using temporal classification to identify hand movements such as swipes, waves and pushes. Why it matters The ... continue reading\nSource\n\nhttps://www.auganix.org/xr-news-prehension-gesture-recognition-sdk/\n\nWhen most people think of digital twins, they picture high-tech dashboards used by massive metropolitan governments. Rory Linehan thinks that assumption is exactly the problem. He discusses on the latest episode of 'The Future Of.'\nThis post appeared first on AR Insider.\n\nhttps://arinsider.co/2026/06/24/the-future-of-urban-sustainability-a-conversation-with-bentley-systems/\n\nI just went back from the United States, where I had a very hectic AWE. I will publish some interesting articles about it in the upcoming weeks, so stay tuned (Actually, I have already published some: check out my hands on with Lumus and bHaptics!). And you will recognize that most of the news in [&#8230;]\nThe post The XR Week Peek (2026.06.22): Snap unveils Specs, Steam Frame is launching soon, and more! appeared first on The Ghost Howls.\n\nhttps://skarredghost.com/2026/06/22/snap-specs-steam-frame/\n\nAt AWE, I was able to go hands-on with the latest version of the bHaptics gloves. And I have to say that they have improved a lot compared to the last time&#8230; bHaptics I&#8217;m pretty sure that if you are a reader of this blog, you already know bHaptics very well. But just in case [&#8230;]\nThe post bHaptics TactGlove can provide great touch sensations in VR appeared first on The Ghost Howls.\n\nhttps://skarredghost.com/2026/06/19/bhaptics-tactglove-impressions/\n\nYesterday, I had the opportunity to try a private demo by Lumus, the company producing waveguides for smartglasses and AR glasses. And they finally showed me the path to 70° FOV AR glasses. Lumus Lumus is a company focused on creating waveguides for glasses (AR glasses or smartglasses). They don&#8217;t produce the glasses themselves, but [&#8230;]\nThe post Lumus&#8217;s new waveguides enable 70° FOV thin glasses appeared first on The Ghost Howls.\n\nhttps://skarredghost.com/2026/06/18/lumus-70-degrees-fov/\n\nNEW EXPERIENCES\n\nIn a Show HN devlog, the solo developer of Putt Dojo describes building a standalone Quest 3 and 3S mixed reality app that tracks a real physical golf ball at 90 FPS using a custom computer vision algorithm running on the headset's passthrough cameras, before handing off to a physics simulation once the ball is in motion.\n\nhttps://puttdojo.com/devlog/tracking-a-real-golf-ball.html\n\nGAMING MARKETPLACE WATCH\n\nMeta published a recap of its June 2026 VR Games Showcase, rounding up every Meta Quest game announcement from the event and offering a snapshot of the platform's near-term content pipeline for VR developers and players.\n\nhttps://www.meta.com/blog/vr-games-showcase-june-2026-recap-every-meta-quest-vr-game-announcement/\n\nUploadVR reports that Combat Waffle Studios, developer of Ghosts of Tabor, has cut staff, while multiplayer titles Quantaar and A Township Tale announced shutdowns and sci-fi FPS Memoreum exited full-time development following weak sales. The cluster of contractions points to continued strain on standalone VR game economics despite a growing Quest installed base.\n\nhttps://www.uploadvr.com/layoffs-at-ghosts-of-tabor-developer-shutdowns-for-3-other-vr-games/\n"
+}
