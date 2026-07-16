@@ -1336,6 +1336,27 @@ async def export_preview():
     return JSONResponse({"ok": True, "text": text, "item_count": len(included)})
 
 
+@app.get("/api/editions/{edition_id}/preview")
+async def edition_preview(edition_id: str):
+    """Return a published edition as paste-ready text.
+
+    Mirrors /api/export/preview but reads from the saved edition JSON so the
+    editor can copy hyperlink-preserving text out of an already-published
+    edition (e.g. to re-paste into a different composer).
+    """
+    filepath = EDITIONS_DIR / f"{edition_id}.json"
+    if not filepath.exists():
+        return JSONResponse({"error": "Edition not found."}, status_code=404)
+    with open(filepath, "r") as f:
+        edition = json.load(f)
+
+    items = edition.get("items") or []
+    spotlight = (edition.get("spotlight") or "").strip()
+    config = load_config()
+    text = _build_edition_text(items, spotlight, config, include_header=False)
+    return JSONResponse({"ok": True, "text": text, "item_count": len(items)})
+
+
 @app.post("/api/export")
 async def export_newsletter():
     """Publish the next edition.
@@ -1481,7 +1502,7 @@ async def edition_view(edition_id: str):
     with open(filepath, "r") as f:
         edition = json.load(f)
     editions = load_editions_list()
-    return HTMLResponse(content=render_page("edition_view", None, None, None, edition=edition, editions=editions))
+    return HTMLResponse(content=render_page("edition_view", None, None, None, edition=edition, edition_id=edition_id, editions=editions))
 
 
 @app.delete("/api/editions/{edition_id}")
@@ -1737,7 +1758,7 @@ def render_page(mode: str, draft: dict | None, items: list | None, status: dict 
     elif mode == "editions_new":
         content = render_editions_form(kwargs.get("error"))
     elif mode == "edition_view":
-        content = render_edition_view(kwargs.get("edition"), kwargs.get("editions", []))
+        content = render_edition_view(kwargs.get("edition"), kwargs.get("editions", []), kwargs.get("edition_id", ""))
     elif mode == "signals":
         content = render_signals(kwargs.get("groups") or OrderedDict())
     elif mode == "lineup":
@@ -2871,7 +2892,7 @@ The latest firmware update brings..."></textarea>
 </form>"""
 
 
-def render_edition_view(edition: dict, editions: list) -> str:
+def render_edition_view(edition: dict, editions: list, edition_id: str = "") -> str:
     if not edition:
         return "<p>Edition not found.</p>"
 
@@ -2929,6 +2950,12 @@ def render_edition_view(edition: dict, editions: list) -> str:
     <span class="stat"><span class="stat-num">{len(sections)}</span> sections</span>
 </div>"""
 
+    copy_btn_html = (
+        f'<button type="button" class="btn-secondary" id="copy-text-btn" '
+        f'onclick="openExportPreview(\'/api/editions/{edition_id}/preview\', this)" '
+        f'title="Preview this edition as plain text and copy to clipboard">Copy Text</button>'
+        if edition_id else ""
+    )
     return f"""
 <div class="page-header">
     <div class="header-top">
@@ -2940,6 +2967,7 @@ def render_edition_view(edition: dict, editions: list) -> str:
             <h1>{title}</h1>
         </div>
         <div class="header-actions">
+            {copy_btn_html}
             <a href="/archive" class="btn-secondary">All Editions</a>
         </div>
     </div>
@@ -5587,27 +5615,31 @@ function ensureExportModal() {
     return wrap;
 }
 
-async function openExportPreview() {
-    const btn = document.getElementById('copy-text-btn');
+async function openExportPreview(url, invokingBtn) {
+    // Default to the Lineup preview so the existing call sites keep working.
+    // Published-edition pages pass their own /api/editions/{id}/preview URL.
+    url = url || '/api/export/preview';
+    const btn = invokingBtn || document.getElementById('copy-text-btn');
     if (btn) { btn.disabled = true; btn.textContent = 'Loading…'; }
+    const showError = (msg) => {
+        const banner = document.getElementById('export-banner');
+        if (banner) {
+            banner.textContent = msg;
+            banner.classList.remove('hidden');
+        } else {
+            alert(msg);
+        }
+    };
     let data;
     try {
-        const res = await fetch('/api/export/preview');
+        const res = await fetch(url);
         data = await res.json();
         if (!res.ok || !data.ok) {
-            const banner = document.getElementById('export-banner');
-            if (banner) {
-                banner.textContent = data.error || 'Could not build edition text.';
-                banner.classList.remove('hidden');
-            }
+            showError(data.error || 'Could not build edition text.');
             return;
         }
     } catch (err) {
-        const banner = document.getElementById('export-banner');
-        if (banner) {
-            banner.textContent = 'Could not build edition text: ' + err.message;
-            banner.classList.remove('hidden');
-        }
+        showError('Could not build edition text: ' + err.message);
         return;
     } finally {
         if (btn) { btn.disabled = false; btn.textContent = 'Copy Text'; }
