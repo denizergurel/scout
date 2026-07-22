@@ -16,6 +16,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from collector import collect, deduplicate, load_config
+import discovery
 from editor import categorize_items, load_prompt as load_editor_prompt
 from llm import call_llm, current_provider
 from pipeline_log import log
@@ -77,6 +78,7 @@ def _write_status(**fields) -> None:
 _STAGE_LABELS = {
     "starting": "Getting ready",
     "collecting": "Reading your feeds",
+    "discovering": "Searching the web",
     "preflight": "Checking the LLM connection",
     "scouting": "Picking what's worth reading",
     "editing": "Writing summaries",
@@ -141,6 +143,15 @@ def run_daily():
         raw_items = deduplicate(raw_items)
         log(f"  Collected {len(raw_items)} unique articles from feeds")
 
+        if discovery.is_enabled(config):
+            _set_progress("discovering", "Searching the web for new stories…", started_at)
+            log("Stage 1b: Discovering via web search...")
+            discovered = discovery.discover(config)
+            if discovered:
+                raw_items.extend(discovered)
+                raw_items = deduplicate(raw_items)
+                log(f"  {len(raw_items)} unique articles after merging discovery")
+
         if not raw_items:
             log("  No items collected (feeds may be unreachable). Exiting.")
             finish_idle("No items collected.", added=0)
@@ -192,6 +203,14 @@ def run_daily():
         pending_total = sum(1 for it in store.get("items", []) if it.get("status") == "pending")
         log(f"  Added {added} new pending items (skipped {skipped} duplicates)")
         log(f"  Store totals — all: {store_total}, pending: {pending_total}")
+
+        # Source-promotion nudge: surface domains the editor keeps picking that
+        # aren't subscribed feeds yet — the 'grow your own source list' signal.
+        suggestions = discovery.suggest_new_sources(config)
+        if suggestions:
+            names = ", ".join(f"{s['domain']} ({s['picked_count']}×)" for s in suggestions)
+            log(f"  💡 You often pick from domains you don't subscribe to: {names}")
+            log("     Consider adding them under Settings → RSS Feeds.")
 
         today_file = OUTPUT_DIR / f"daily_{datetime.now().strftime('%Y-%m-%d')}.json"
         with open(today_file, "w") as f:

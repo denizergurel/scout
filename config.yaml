@@ -165,6 +165,20 @@ llm:
     provider: "claude"
     model: ""
 
+  scout:
+    provider: "openai"
+    model: "qwen2.5:7b-instruct"
+    api_base: "http://localhost:11434/v1"
+    api_key: "ollama"
+
+  editor:
+    provider: "claude"
+    model: ""
+
+  curator:
+    provider: "claude"
+    model: ""
+
 # --- Adaptive learning ---
 # When enabled, each pipeline run injects recent user decisions into the
 # agent prompts as few-shot examples — Scout sees recently rejected items
@@ -428,7 +442,27 @@ sources:
     source_type: "Platform Owners"
     category_hint: "AI / ML (Spatial-relevant)"
 
-# --- Search Queries (for future non-RSS sources) ---
+# --- Discovery (web search beyond your RSS feeds) ---
+# When enabled, each run also SEARCHES THE WEB for your topics — surfacing
+# articles from sites you don't subscribe to. Results flow through the same
+# dedup -> Scout -> Editor pipeline, so your relevance filter and voice apply.
+# Discovery only reads title + snippet + URL from the search provider; it never
+# fetches article bodies, so it adds no SSRF surface.
+#   provider: gdelt   — free, no API key (default). Broad news; Scout filters noise.
+#            tavily   — needs a key (free tier). Cleaner, LLM-oriented search.
+#            brave    — needs a key (free tier). General web search.
+# For tavily/brave, set the key via api_key_env (points at an env var).
+discovery:
+  enabled: true
+  provider: "gdelt"
+  timespan_days: 7            # only surface results from the last N days
+  max_results_per_query: 10   # cap per individual query
+  max_total_results: 60       # hard cap across all queries per run
+  adaptive_queries: true      # generate fresh queries from your recent picks
+  max_adaptive_queries: 6
+  # api_key_env: "TAVILY_API_KEY"   # required for tavily / brave
+
+# --- Search Queries (used by Discovery above, plus adaptive queries) ---
 search_queries:
   - "spatial computing news"
   - "augmented reality breakthrough"

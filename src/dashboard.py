@@ -9,11 +9,13 @@ approve/reject/edit, and exports final newsletter format.
 from __future__ import annotations
 
 import base64
+import ipaddress
 import json
 import os
 import re
 import secrets
 import shutil
+import socket
 import subprocess
 import sys
 from collections import OrderedDict
@@ -1058,21 +1060,76 @@ def _domain_label(url: str) -> str:
     return parts[0].capitalize()
 
 
+def _resolve_is_public(host: str) -> bool:
+    """True only if every IP `host` resolves to is a public address.
+
+    SSRF guard for the manual URL-ingest path: without it, a request for
+    http://169.254.169.254/… (cloud metadata) or an internal host would be
+    fetched by the server. Fails closed — an unresolvable host is treated as
+    not public."""
+    try:
+        infos = socket.getaddrinfo(host, None)
+    except (socket.gaierror, UnicodeError, OSError):
+        return False
+    if not infos:
+        return False
+    for info in infos:
+        try:
+            ip = ipaddress.ip_address(info[4][0])
+        except ValueError:
+            return False
+        if (
+            ip.is_private
+            or ip.is_loopback
+            or ip.is_link_local
+            or ip.is_reserved
+            or ip.is_multicast
+            or ip.is_unspecified
+        ):
+            return False
+    return True
+
+
+def _fetch_public_url(url: str, *, max_redirects: int = 4):
+    """Fetch `url`, following redirects manually and re-validating that every
+    hop targets a public host. Returns the final response, or None.
+
+    Auto-following redirects with httpx would let a public URL bounce into a
+    private one, so we drive the redirect loop ourselves and check each hop."""
+    import httpx
+    from urllib.parse import urljoin, urlparse
+
+    current = url
+    with httpx.Client(follow_redirects=False, timeout=10) as client:
+        for _ in range(max_redirects + 1):
+            parsed = urlparse(current)
+            if parsed.scheme not in ("http", "https") or not parsed.hostname:
+                return None
+            if not _resolve_is_public(parsed.hostname):
+                return None
+            try:
+                resp = client.get(current, headers={"User-Agent": "Mozilla/5.0 Scout/1.0"})
+            except (httpx.HTTPError, OSError):
+                return None
+            if resp.is_redirect:
+                location = resp.headers.get("location")
+                if not location:
+                    return None
+                current = urljoin(current, location)
+                continue
+            return resp
+    return None
+
+
 def _extract_url(url: str) -> dict | None:
     """Fetch and extract article content. Returns None if extraction fails."""
     try:
-        import httpx
         import trafilatura
     except ImportError:
         return None
 
-    try:
-        with httpx.Client(follow_redirects=True, timeout=10) as client:
-            resp = client.get(url, headers={"User-Agent": "Mozilla/5.0 Scout/1.0"})
-    except (httpx.HTTPError, OSError):
-        return None
-
-    if resp.status_code != 200:
+    resp = _fetch_public_url(url)
+    if resp is None or resp.status_code != 200:
         return None
 
     extracted = trafilatura.extract(
@@ -2147,6 +2204,23 @@ def _html_text(s: str) -> str:
     return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
+def _safe_url(s: str) -> str:
+    """Return a URL safe to place in an href, or '#'.
+
+    Item links come from RSS feeds and manual ingest — untrusted. Only permit
+    http(s)/mailto schemes so a crafted `javascript:` (or `data:`) link can't
+    execute when the editor clicks a card title. Also attribute-escape it so
+    quotes/brackets can't break out of the href="" context.
+    """
+    raw = (s or "").strip()
+    if not raw:
+        return "#"
+    lowered = raw.lower()
+    if lowered.startswith(("http://", "https://", "mailto:")):
+        return _html_attr(raw)
+    return "#"
+
+
 def _render_sections_panel() -> str:
     """Render the Sections editor — the category buckets the Editor assigns
     items to. Seeded from `editorial.sections` in config.yaml; defaults
@@ -2606,7 +2680,9 @@ def render_card(item: dict, view: str = "signals") -> str:
     item_id = item.get("id", "")
     status = item.get("status", "pending")
     included = item.get("included_in_next", True)
-    sig = item.get("significance", "medium")
+    sig = (item.get("significance") or "medium").lower()
+    if sig not in ("high", "medium", "low"):
+        sig = "medium"
     date_str = item.get("published", "")[:10] if item.get("published") else ""
     category = (item.get("category") or "").upper()
     is_highlight = category == "HIGHLIGHTS"
@@ -2668,15 +2744,15 @@ def render_card(item: dict, view: str = "signals") -> str:
 <article class="card {' '.join(state_classes)}" id="item-{item_id}" data-status="{status}" data-included="{str(bool(included)).lower()}">
     <div class="card-content">
         <div class="card-meta">
-            <span class="card-source">{item.get('source', '')}</span>
-            <span class="card-date">{date_str}</span>
+            <span class="card-source">{_html_text(item.get('source', ''))}</span>
+            <span class="card-date">{_html_text(date_str)}</span>
         </div>
         <h3 class="card-title">
-            <a href="{item.get('link', '#')}" target="_blank" rel="noopener">{item.get('title', 'Untitled')}</a>
+            <a href="{_safe_url(item.get('link', ''))}" target="_blank" rel="noopener">{_html_text(item.get('title', 'Untitled'))}</a>
         </h3>
-        <p class="card-summary" id="summary-{item_id}">{item.get('summary', '')}</p>
+        <p class="card-summary" id="summary-{item_id}">{_html_text(item.get('summary', ''))}</p>
         <div class="card-footer">
-            <span class="badge badge--category">{item.get('category', '')}</span>
+            <span class="badge badge--category">{_html_text(item.get('category', ''))}</span>
             <span class="badge badge--sig-{sig}">{sig}</span>
         </div>
     </div>
@@ -2692,7 +2768,7 @@ def render_sections(groups: "OrderedDict[str, list[dict]]", view: str) -> str:
         cards = "".join(render_card(it, view=view) for it in items)
         html += f"""
 <section class="section">
-    <h2 class="section-title">{category.title()} <span class="section-count">{len(items)}</span></h2>
+    <h2 class="section-title">{_html_text(category.title())} <span class="section-count">{len(items)}</span></h2>
     <div class="cards">{cards}</div>
 </section>"""
     return html
@@ -5329,7 +5405,7 @@ function showHideToast(id) {
     `;
     t.classList.add('visible');
     if (_toastTimer) clearTimeout(_toastTimer);
-    _toastTimer = setTimeout(dismissToast, 6000);
+    _toastTimer = setTimeout(dismissToast, 12000);
 }
 
 function dismissToast() {

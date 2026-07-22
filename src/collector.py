@@ -9,6 +9,7 @@ from __future__ import annotations
 import json
 import re
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -114,24 +115,45 @@ def fetch_feed(source: dict) -> list[dict]:
 
 
 def collect(config: dict) -> list[dict]:
-    """Collect articles from all RSS sources."""
+    """Collect articles from all RSS sources.
+
+    Feeds are fetched concurrently (thread pool) — each fetch is network-bound
+    and independent, so a few slow or dead hosts no longer serialize the whole
+    stage. Wall-clock drops from "sum of every feed's latency" to roughly the
+    single slowest feed (bounded by _FEED_TIMEOUT_SECONDS). Progress is emitted
+    from this thread as each fetch completes, so the dashboard pill stays live.
+    """
     all_items = []
     sources = config.get("sources", [])
     total = len(sources)
 
     print(f"Collecting from {total} sources...\n")
+    if not sources:
+        return all_items
 
-    for idx, source in enumerate(sources, start=1):
-        items = fetch_feed(source)
-        all_items.extend(items)
-        # Update the dashboard progress pill — per feed, since each feed is
-        # the natural unit of "something just happened."
-        progress_update(
-            stage="collecting",
-            current=idx,
-            total=total,
-            last_done=f"{source.get('name', '?')} ({len(items)} new)",
-        )
+    # Cap concurrency so we don't open dozens of sockets at once; 8 is plenty
+    # to hide the latency of the slow feeds behind the fast ones.
+    max_workers = min(8, total)
+    completed = 0
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_source = {executor.submit(fetch_feed, s): s for s in sources}
+        for future in as_completed(future_to_source):
+            source = future_to_source[future]
+            try:
+                items = future.result()
+            except Exception as e:  # noqa: BLE001 — one bad feed shouldn't sink the batch
+                items = []
+                print(f"  ✗ {source.get('name', '?')}: {e}")
+            all_items.extend(items)
+            completed += 1
+            # Update the dashboard progress pill — per feed, since each feed is
+            # the natural unit of "something just happened."
+            progress_update(
+                stage="collecting",
+                current=completed,
+                total=total,
+                last_done=f"{source.get('name', '?')} ({len(items)} new)",
+            )
 
     return all_items
 

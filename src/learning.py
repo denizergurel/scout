@@ -75,6 +75,18 @@ def _within_window(added_at: str, days: int) -> bool:
     return dt >= cutoff
 
 
+def _decision_time(it: dict) -> str:
+    """Timestamp of the editor's *decision*, used for the sliding window.
+
+    We model recent taste, so the window must key off when the user judged the
+    item (decided_at), not when it was collected (added_at). An item collected
+    40 days ago but hidden yesterday is a fresh decision and should count;
+    keying off added_at would wrongly drop it. Falls back to added_at for
+    legacy items written before decided_at was stamped.
+    """
+    return it.get("decided_at") or it.get("added_at") or ""
+
+
 def _reason_label(reason_id: str, reasons: list[dict]) -> str:
     for r in reasons:
         if isinstance(r, dict) and r.get("id") == reason_id:
@@ -109,11 +121,11 @@ def scout_hides_block(cfg: dict) -> str:
             continue
         if not it.get("hide_reason"):
             continue
-        if not _within_window(it.get("added_at") or "", window_days):
+        if not _within_window(_decision_time(it), window_days):
             continue
         candidates.append(it)
 
-    candidates.sort(key=lambda x: x.get("added_at") or "", reverse=True)
+    candidates.sort(key=lambda x: _decision_time(x), reverse=True)
     picks = candidates[:max_examples]
     if not picks:
         return ""
@@ -124,14 +136,38 @@ def scout_hides_block(cfg: dict) -> str:
         if not title:
             continue
         label = _reason_label(it.get("hide_reason") or "", reasons)
+        source = (it.get("source") or "").strip()
+        src = f" (from {source})" if source else ""
         if label:
-            bullets.append(f'- "{title}" — marked as {label}')
+            bullets.append(f'- "{title}"{src} — marked as {label}')
         else:
-            bullets.append(f'- "{title}"')
+            bullets.append(f'- "{title}"{src}')
     if not bullets:
         return ""
 
     _log("scout", len(bullets), window_days, "rejections")
+
+    # Aggregate rejection counts by source — a source you reject repeatedly is
+    # a stronger, noise-tolerant signal than any single title. Only surface a
+    # source once it's been rejected more than once, so a one-off doesn't read
+    # as a pattern.
+    source_counts: dict[str, int] = {}
+    for it in candidates:
+        source = (it.get("source") or "").strip()
+        if source:
+            source_counts[source] = source_counts.get(source, 0) + 1
+    frequent = sorted(
+        ((s, n) for s, n in source_counts.items() if n > 1),
+        key=lambda x: x[1],
+        reverse=True,
+    )[:5]
+    source_line = ""
+    if frequent:
+        parts = ", ".join(f"{s} ({n}×)" for s, n in frequent)
+        source_line = (
+            "\n\nSources you have rejected repeatedly in this window "
+            f"(scrutinize these harder): {parts}."
+        )
 
     return (
         "## Recent rejections (your past decisions)\n\n"
@@ -141,6 +177,7 @@ def scout_hides_block(cfg: dict) -> str:
         "going forward — but the universal and topic-specific rules above "
         "still take priority.\n\n"
         + "\n".join(bullets)
+        + source_line
     )
 
 
@@ -161,11 +198,11 @@ def editor_highlights_block(cfg: dict) -> str:
             continue
         if it.get("status") not in ("saved", "published"):
             continue
-        if not _within_window(it.get("added_at") or "", window_days):
+        if not _within_window(_decision_time(it), window_days):
             continue
         candidates.append(it)
 
-    candidates.sort(key=lambda x: x.get("added_at") or "", reverse=True)
+    candidates.sort(key=lambda x: _decision_time(x), reverse=True)
     picks = candidates[:max_examples]
     if not picks:
         return ""
