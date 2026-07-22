@@ -1,0 +1,520 @@
+{
+  "title": "Spatial Report — 2026-07-21",
+  "edition_number": "",
+  "date": "2026-07-21",
+  "spotlight": "",
+  "item_ids": [
+    "990075f39fcf765b",
+    "3c4de1f32ff280cd",
+    "70826d3b26229ee7",
+    "2d5466cfa033a491",
+    "f974d4c7f8b9f056",
+    "82e652d1a52fb45f",
+    "fe681405c7384e5c",
+    "a558db70dd50f5fd",
+    "f7f76d4e99fd760c",
+    "4c8ebb9185ff5e35",
+    "4825e3c5a1920e1e",
+    "79d8b4a4dd4a2ba2",
+    "9931a2462be55f86",
+    "efb6424dcecebdd9",
+    "6a30806a9874ffb3",
+    "f4006e54a3bc8a70",
+    "32465d2f5cd75647",
+    "b1da67ab5327273b",
+    "623878c1c2a93eba",
+    "81c6ecc07bb55f81",
+    "36b8813db81a971e",
+    "3c1cfd85409aab3f",
+    "2f85cd9ed47dd454",
+    "ca1ee055b716c6f3",
+    "fe265ef624f27271",
+    "5462dce82ab6e4b4",
+    "e9faa71a5160afbb",
+    "128f757a10821119",
+    "c76b3f431789d117"
+  ],
+  "sections": {
+    "HIGHLIGHTS": [
+      {
+        "id": "a558db70dd50f5fd",
+        "title": "Magic Leap Cuts Nearly 200 Jobs as AR Pioneer Pivots Into Waveguide Supplier",
+        "link": "https://roadtovr.com/magic-leap-lay-off-2026-waveguide-pivot/",
+        "source": "Road to VR",
+        "category": "HIGHLIGHTS",
+        "summary": "Road to VR reports that Magic Leap is again pivoting its core business, this time to serve as a waveguide supplier to other AR glasses makers, alongside a mass layoff of nearly 200 core engineering and product development staff disclosed in a formal WARN Act notification. The move marks another retreat from Magic Leap's ambitions as a consumer AR headset maker."
+      }
+    ],
+    "SOFTWARE": [
+      {
+        "id": "3c4de1f32ff280cd",
+        "title": "Siri AI Helped Me Avoid Eating Diarrhea Lettuce",
+        "link": "https://www.cnet.com/tech/services-and-software/siri-ai-ios-27-early-review/",
+        "source": "CNET",
+        "category": "SOFTWARE",
+        "summary": "CNET's early review of iOS 27 finds that Apple's overhauled Siri finally delivers on the assistant's original 2011 promise, with the reviewer citing more reliable task execution in day-to-day use, including flagging a recalled lettuce product before purchase."
+      },
+      {
+        "id": "f7f76d4e99fd760c",
+        "title": "Valve Drops Big SteamVR Update Ahead of Steam Frame Launch",
+        "link": "https://roadtovr.com/valve-big-steamvr-update-steam-frame-launch/",
+        "source": "Road to VR",
+        "category": "SOFTWARE",
+        "summary": "According to Road to VR, Valve has released a sizeable SteamVR update that brings standard Steam features to the VR runtime, paving the way for what appears to be the imminent launch of its long-awaited standalone headset, Steam Frame. The update reshapes SteamVR into a more VR-native user experience ahead of the hardware debut."
+      },
+      {
+        "id": "3c1cfd85409aab3f",
+        "title": "Hololight Updates Enterprise XR Tools for Streaming and Collaboration",
+        "link": "https://www.auganix.org/xr-news-hololight-update-enterprise-xr/",
+        "source": "Auganix",
+        "category": "SOFTWARE",
+        "summary": "Auganix reports that Hololight has updated its Stream, Hub, and Space enterprise XR tools with new capabilities for stable XR streaming, headset-free access, collaboration, and design review. The updates target enterprise customers using XR for engineering and design workflows."
+      }
+    ],
+    "HARDWARE": [
+      {
+        "id": "623878c1c2a93eba",
+        "title": "Gentle Monster Plans Massive North America & Europe Retail Expansion Amid Smart Glasses Rollout",
+        "link": "https://roadtovr.com/gentle-monster-north-america-eu-smart-glasses-expansion/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "Road to VR reports that South Korean eyewear brand Gentle Monster plans a major expansion of its physical retail footprint across North America and Europe, timed to the fall launch of its first smart glasses. Citing Maeil Business Newspaper, the report says the brand aims to significantly increase its overseas store count as it enters the AI-powered eyewear market alongside partners including Google."
+      },
+      {
+        "id": "fe265ef624f27271",
+        "title": "Halliday’s New Smart Glasses Skip the Camera",
+        "link": "https://www.wired.com/story/halliday-new-smart-glasses-skip-the-camera/",
+        "source": "Wired",
+        "category": "HARDWARE",
+        "summary": "Wired reports that Halliday's new G2 smart glasses omit a camera entirely, instead using microphones to listen to and summarize workplace meetings via an on-device AI assistant. The camera-free design positions the G2 as a privacy-forward alternative to Meta's Ray-Ban and Snap's Specs as enterprise smart-glasses adoption grows."
+      }
+    ],
+    "AI AND SIMULATED WORLDS": [
+      {
+        "id": "990075f39fcf765b",
+        "title": "You Can Now Star in Your Own AI Videos Using Google Vids",
+        "link": "https://www.cnet.com/tech/services-and-software/google-vids-gemini-omni-ai-video/",
+        "source": "CNET",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to CNET, Google Vids now lets users insert AI-generated personal avatars into videos through its Gemini-powered editing tool, allowing people to appear on camera without ever filming themselves."
+      },
+      {
+        "id": "70826d3b26229ee7",
+        "title": "Prompt Injection Attacks Are Thwarting AI Hacking Agents",
+        "link": "https://www.wired.com/story/prompt-injection-attacks-are-thwarting-ai-hacking-agents/",
+        "source": "Wired",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Wired reports that a defensive technique known as 'context bombing' is proving effective against malicious AI hacking agents by exploiting prompt injection to force the agents to shut down before they can carry out attacks."
+      },
+      {
+        "id": "4825e3c5a1920e1e",
+        "title": "Alibaba's Qwen takes on Kimi K3 with open-weight Qwen 3.8, says model is \"second only to Fable 5\"",
+        "link": "https://the-decoder.com/alibabas-qwen-takes-on-kimi-k3-with-open-weight-qwen-3-8-says-model-is-second-only-to-fable-5/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to The Decoder, Alibaba has unveiled Qwen 3.8, a multimodal AI model with 2.4 trillion parameters that the Qwen team claims rivals leading models and trails only Fable 5, with a preview available now."
+      },
+      {
+        "id": "79d8b4a4dd4a2ba2",
+        "title": "Google Deepmind argues video generators already contain the world models computer vision has been missing",
+        "link": "https://the-decoder.com/google-deepmind-argues-video-generators-already-contain-the-world-models-computer-vision-has-been-missing/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Decoder reports that Google DeepMind's GenCeption repurposes a video generator for classic computer vision tasks such as depth estimation and segmentation, matching state-of-the-art systems while training on far less data — almost entirely synthetic video. The results add to the debate over whether video generators already contain a kind of universal world model."
+      },
+      {
+        "id": "b1da67ab5327273b",
+        "title": "Create, edit and star in videos with two Google Vids updates",
+        "link": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
+        "source": "Google Blog",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Google announced two updates to Google Vids, adding Gemini Omni video generation and personal avatars that let users create, edit, and appear in AI-generated videos directly inside Workspace, according to a post on the Google Blog."
+      },
+      {
+        "id": "81c6ecc07bb55f81",
+        "title": "Alibaba's Qwen Audio 3.0 TTS Plus tops the competition in the text-to-speech rankings",
+        "link": "https://the-decoder.com/alibabas-qwen-audio-3-0-tts-plus-tops-the-competition-in-the-text-to-speech-rankings/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Decoder reports that Alibaba's Qwen Audio 3.0 TTS Plus has topped Artificial Analysis' Speech Arena leaderboard for text-to-speech models. The model supports 16 languages and allows users to control speaking style via natural language or tags such as [angry], though its 16-characters-per-second output is significantly slower than rivals Sonic 3.5 and Simba 3.2."
+      },
+      {
+        "id": "36b8813db81a971e",
+        "title": "District 9 director Neill Blomkamp releases first short film made entirely with AI video generation",
+        "link": "https://the-decoder.com/district-9-director-neill-blomkamp-releases-first-short-film-made-entirely-with-ai-video-generation/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Decoder reports that District 9 director Neill Blomkamp has released Nightborne, a 13-minute sci-fi horror short film generated entirely with the Seedance 2.0 video model. Blomkamp directed the film frame by frame through text prompts and has founded a new AI-focused studio, Barley Studios, to produce a full-length feature."
+      },
+      {
+        "id": "2f85cd9ed47dd454",
+        "title": "The Download: OpenAI unveils GPT-Red and heat pumps rise in the US",
+        "link": "https://www.technologyreview.com/2026/07/16/1140600/the-download-openai-unveils-gpt-red-heat-pumps-rise-us/",
+        "source": "MIT Tech Review - AI",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "MIT Technology Review reports that OpenAI has built an internal LLM red-teaming tool called GPT-Red, which it uses as a sparring partner to probe and harden its other models against attack. The Download briefing frames it as part of a broader push to industrialize AI safety testing at frontier labs."
+      },
+      {
+        "id": "ca1ee055b716c6f3",
+        "title": "You’ve Probably Watched One of the 300 Titles on Netflix Produced With AI",
+        "link": "https://www.cnet.com/tech/services-and-software/netflix-300-programs-this-year-ai-production-q2-earnings/",
+        "source": "CNET",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to CNET, Netflix disclosed on its Q2 earnings call that roughly 300 titles released this year have used AI in some part of their production pipeline, underscoring how quickly the streamer has embedded generative tools into content workflows. The figure signals mainstream studio adoption of AI-assisted production at scale."
+      },
+      {
+        "id": "5462dce82ab6e4b4",
+        "title": "Google launches a cheaper alternative to large AI security models like Mythos",
+        "link": "https://www.theverge.com/tech/968572/google-gemini-flash-cyber-ai-security-model",
+        "source": "The Verge",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Verge reports that Google has launched Gemini 3.6 Flash alongside Gemini 3.5 Flash Cyber, a dedicated security model aimed at quickly finding and patching vulnerabilities, which the company describes as a cost-efficient alternative to larger systems such as Anthropic's Mythos. The release marks Google's push into specialized cybersecurity AI as enterprises weigh the cost of frontier-scale models."
+      },
+      {
+        "id": "128f757a10821119",
+        "title": "Adobe’s ‘natural look’ camera app embraces generative AI",
+        "link": "https://www.theverge.com/tech/967791/adobe-indigo-camera-app-ai-playground-update",
+        "source": "The Verge",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Verge reports that Adobe's experimental Project Indigo camera app, originally launched to deliver a more natural SLR-like look on iPhone, is adding a suite of generative AI tools that notably do not rely on Adobe's own Firefly models. The pivot signals Adobe's willingness to route its consumer photography experiments through third-party generative models."
+      },
+      {
+        "id": "c76b3f431789d117",
+        "title": "China delivers a one-two punch to America’s AI dominance",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen",
+        "source": "The Verge",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to The Verge, Chinese AI companies Moonshot and Alibaba unveiled new open-source models — including Moonshot's Kimi K3 and Alibaba's Qwen — that they claim rival the best from OpenAI and Anthropic at a fraction of the cost. The rapid-fire releases suggest America's lead at the AI frontier is narrowing just as the technology becomes increasingly strategic."
+      }
+    ],
+    "RESEARCH": [
+      {
+        "id": "2d5466cfa033a491",
+        "title": "Rendering 3D Gaussians on a Graph Processor",
+        "link": "https://arxiv.org/abs/2607.15951",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "Researchers on arXiv present the first implementation of a 3D Gaussian splatting renderer on an Intelligence Processing Unit, using 1,472 independent tiles with only on-chip SRAM to render real-world Gaussian scenes — a step toward efficient sensor-processor architectures relevant to XR rendering."
+      },
+      {
+        "id": "f974d4c7f8b9f056",
+        "title": "Rethinking the Readout: Unlocking Video Backbones for AI-Generated Video Detection",
+        "link": "https://arxiv.org/abs/2607.15321",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "Researchers on arXiv propose a new readout method for video pretrained backbones that improves detection of AI-generated videos by better capturing the subtle inter-frame temporal artifacts that distinguish synthetic footage from real recordings."
+      },
+      {
+        "id": "82e652d1a52fb45f",
+        "title": "GS-RealBlur: A Flexible Data Acquisition Framework for Real-World Image Deblurring",
+        "link": "https://arxiv.org/abs/2607.15401",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "In a paper posted to arXiv, researchers introduce GS-RealBlur, a data acquisition framework for real-world image deblurring that uses a handheld camera to capture paired blurry and sharp images, addressing the trade-off between the unrealistic quality of synthetic blur and the inflexibility of complex multi-camera capture rigs."
+      },
+      {
+        "id": "fe681405c7384e5c",
+        "title": "Generation Models Know Space: Unleashing Implicit 3D Priors for Scene Understanding",
+        "link": "https://arxiv.org/abs/2603.19235",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "A revised arXiv paper argues that generative models contain implicit 3D spatial priors that can be unleashed to improve scene understanding in multimodal large language models, offering an alternative to explicit 3D modalities and geometric scaffolding that the authors say are limited by data scarcity and generalization challenges."
+      },
+      {
+        "id": "9931a2462be55f86",
+        "title": "MotionForesight: Re-purposing Video Models for Future 3D Scene-Flow Prediction",
+        "link": "https://arxiv.org/abs/2607.16192",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "Researchers publishing on arXiv describe MotionForesight, a system that repurposes video generation models to predict future 3D scene flow — the likely trajectories of points on manipulable objects — from short monocular video clips of human-object interaction. The work aims to give robots and embodied agents a way to anticipate physical consequences of interactions from ordinary video, rather than requiring depth sensors or explicit 3D supervision."
+      },
+      {
+        "id": "efb6424dcecebdd9",
+        "title": "Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously",
+        "link": "https://arxiv.org/abs/2603.12262",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "An arXiv paper proposes Video Streaming Thinking, a paradigm that lets online video language models perform synchronized logical reasoning while continuing to perceive incoming video frames, addressing the latency penalty that test-time scaling methods typically impose on real-time video understanding. The authors position the approach as a step toward responsive video assistants that can watch and think simultaneously rather than pausing to reason."
+      },
+      {
+        "id": "6a30806a9874ffb3",
+        "title": "Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories",
+        "link": "https://arxiv.org/abs/2607.15330",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "Xiaomi researchers published Xiaomi-Robotics-1, a foundational vision-language-action model trained on more than 100,000 hours of real-world trajectories, described in an arXiv paper as capable of following diverse language instructions for mobile manipulation in unseen environments and adapting to novel tasks with minimal fine-tuning."
+      },
+      {
+        "id": "f4006e54a3bc8a70",
+        "title": "A Standardized Benchmark for Skeleton-Based Rehabilitation Assessment Using Deep Learning",
+        "link": "https://arxiv.org/abs/2507.21018",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "An arXiv paper proposes a standardized benchmark for skeleton-based rehabilitation assessment using deep learning, applying video-based skeleton extraction to detect subtle deviations from ideal motion and enable objective evaluation of patient performance in clinical rehabilitation settings."
+      },
+      {
+        "id": "32465d2f5cd75647",
+        "title": "Instance-Enriched Semantic Maps for Visual Language Navigation",
+        "link": "https://arxiv.org/abs/2607.12630",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "An arXiv paper on Visual Language Navigation presents instance-enriched semantic maps that combine object-level detail with large language model reasoning, aiming to improve the robustness of embodied agents following natural language instructions in complex indoor environments."
+      }
+    ],
+    "OPINION": [
+      {
+        "id": "e9faa71a5160afbb",
+        "title": "America needs to stop getting shocked by Chinese AI",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/968136/chinese-ai-models-another-sputnik-moment",
+        "source": "The Verge",
+        "category": "OPINION",
+        "summary": "In an opinion piece for The Verge, the author argues that recurring U.S. surprise at competitive Chinese AI model releases — most recently two systems unveiled last week that rival OpenAI and Anthropic's best — reflects a strategic failure to internalize the pace of Chinese frontier development. The essay pushes back on the reflex to frame each release as a Sputnik moment rather than an expected data point."
+      }
+    ],
+    "GAMING MARKETPLACE WATCH": [
+      {
+        "id": "4c8ebb9185ff5e35",
+        "title": "Discovery: Rogue Planet Is A Story-Driven Sci-Fi Shooter Coming to PC VR &amp; Quest 3",
+        "link": "https://www.uploadvr.com/discovery-rogue-planet-sci-fi-shooter-coming-to-pc-vr-and-quest-3/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "UploadVR reports that Discovery: Rogue Planet, a new story-driven sci-fi first-person shooter, is coming to Quest 3 and PC VR in August."
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "990075f39fcf765b",
+      "title": "You Can Now Star in Your Own AI Videos Using Google Vids",
+      "link": "https://www.cnet.com/tech/services-and-software/google-vids-gemini-omni-ai-video/",
+      "source": "CNET",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to CNET, Google Vids now lets users insert AI-generated personal avatars into videos through its Gemini-powered editing tool, allowing people to appear on camera without ever filming themselves."
+    },
+    {
+      "id": "3c4de1f32ff280cd",
+      "title": "Siri AI Helped Me Avoid Eating Diarrhea Lettuce",
+      "link": "https://www.cnet.com/tech/services-and-software/siri-ai-ios-27-early-review/",
+      "source": "CNET",
+      "category": "SOFTWARE",
+      "summary": "CNET's early review of iOS 27 finds that Apple's overhauled Siri finally delivers on the assistant's original 2011 promise, with the reviewer citing more reliable task execution in day-to-day use, including flagging a recalled lettuce product before purchase."
+    },
+    {
+      "id": "70826d3b26229ee7",
+      "title": "Prompt Injection Attacks Are Thwarting AI Hacking Agents",
+      "link": "https://www.wired.com/story/prompt-injection-attacks-are-thwarting-ai-hacking-agents/",
+      "source": "Wired",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Wired reports that a defensive technique known as 'context bombing' is proving effective against malicious AI hacking agents by exploiting prompt injection to force the agents to shut down before they can carry out attacks."
+    },
+    {
+      "id": "2d5466cfa033a491",
+      "title": "Rendering 3D Gaussians on a Graph Processor",
+      "link": "https://arxiv.org/abs/2607.15951",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "Researchers on arXiv present the first implementation of a 3D Gaussian splatting renderer on an Intelligence Processing Unit, using 1,472 independent tiles with only on-chip SRAM to render real-world Gaussian scenes — a step toward efficient sensor-processor architectures relevant to XR rendering."
+    },
+    {
+      "id": "f974d4c7f8b9f056",
+      "title": "Rethinking the Readout: Unlocking Video Backbones for AI-Generated Video Detection",
+      "link": "https://arxiv.org/abs/2607.15321",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "Researchers on arXiv propose a new readout method for video pretrained backbones that improves detection of AI-generated videos by better capturing the subtle inter-frame temporal artifacts that distinguish synthetic footage from real recordings."
+    },
+    {
+      "id": "82e652d1a52fb45f",
+      "title": "GS-RealBlur: A Flexible Data Acquisition Framework for Real-World Image Deblurring",
+      "link": "https://arxiv.org/abs/2607.15401",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "In a paper posted to arXiv, researchers introduce GS-RealBlur, a data acquisition framework for real-world image deblurring that uses a handheld camera to capture paired blurry and sharp images, addressing the trade-off between the unrealistic quality of synthetic blur and the inflexibility of complex multi-camera capture rigs."
+    },
+    {
+      "id": "fe681405c7384e5c",
+      "title": "Generation Models Know Space: Unleashing Implicit 3D Priors for Scene Understanding",
+      "link": "https://arxiv.org/abs/2603.19235",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "A revised arXiv paper argues that generative models contain implicit 3D spatial priors that can be unleashed to improve scene understanding in multimodal large language models, offering an alternative to explicit 3D modalities and geometric scaffolding that the authors say are limited by data scarcity and generalization challenges."
+    },
+    {
+      "id": "a558db70dd50f5fd",
+      "title": "Magic Leap Cuts Nearly 200 Jobs as AR Pioneer Pivots Into Waveguide Supplier",
+      "link": "https://roadtovr.com/magic-leap-lay-off-2026-waveguide-pivot/",
+      "source": "Road to VR",
+      "category": "HIGHLIGHTS",
+      "summary": "Road to VR reports that Magic Leap is again pivoting its core business, this time to serve as a waveguide supplier to other AR glasses makers, alongside a mass layoff of nearly 200 core engineering and product development staff disclosed in a formal WARN Act notification. The move marks another retreat from Magic Leap's ambitions as a consumer AR headset maker."
+    },
+    {
+      "id": "f7f76d4e99fd760c",
+      "title": "Valve Drops Big SteamVR Update Ahead of Steam Frame Launch",
+      "link": "https://roadtovr.com/valve-big-steamvr-update-steam-frame-launch/",
+      "source": "Road to VR",
+      "category": "SOFTWARE",
+      "summary": "According to Road to VR, Valve has released a sizeable SteamVR update that brings standard Steam features to the VR runtime, paving the way for what appears to be the imminent launch of its long-awaited standalone headset, Steam Frame. The update reshapes SteamVR into a more VR-native user experience ahead of the hardware debut."
+    },
+    {
+      "id": "4c8ebb9185ff5e35",
+      "title": "Discovery: Rogue Planet Is A Story-Driven Sci-Fi Shooter Coming to PC VR &amp; Quest 3",
+      "link": "https://www.uploadvr.com/discovery-rogue-planet-sci-fi-shooter-coming-to-pc-vr-and-quest-3/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "UploadVR reports that Discovery: Rogue Planet, a new story-driven sci-fi first-person shooter, is coming to Quest 3 and PC VR in August."
+    },
+    {
+      "id": "4825e3c5a1920e1e",
+      "title": "Alibaba's Qwen takes on Kimi K3 with open-weight Qwen 3.8, says model is \"second only to Fable 5\"",
+      "link": "https://the-decoder.com/alibabas-qwen-takes-on-kimi-k3-with-open-weight-qwen-3-8-says-model-is-second-only-to-fable-5/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to The Decoder, Alibaba has unveiled Qwen 3.8, a multimodal AI model with 2.4 trillion parameters that the Qwen team claims rivals leading models and trails only Fable 5, with a preview available now."
+    },
+    {
+      "id": "79d8b4a4dd4a2ba2",
+      "title": "Google Deepmind argues video generators already contain the world models computer vision has been missing",
+      "link": "https://the-decoder.com/google-deepmind-argues-video-generators-already-contain-the-world-models-computer-vision-has-been-missing/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Decoder reports that Google DeepMind's GenCeption repurposes a video generator for classic computer vision tasks such as depth estimation and segmentation, matching state-of-the-art systems while training on far less data — almost entirely synthetic video. The results add to the debate over whether video generators already contain a kind of universal world model."
+    },
+    {
+      "id": "9931a2462be55f86",
+      "title": "MotionForesight: Re-purposing Video Models for Future 3D Scene-Flow Prediction",
+      "link": "https://arxiv.org/abs/2607.16192",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "Researchers publishing on arXiv describe MotionForesight, a system that repurposes video generation models to predict future 3D scene flow — the likely trajectories of points on manipulable objects — from short monocular video clips of human-object interaction. The work aims to give robots and embodied agents a way to anticipate physical consequences of interactions from ordinary video, rather than requiring depth sensors or explicit 3D supervision."
+    },
+    {
+      "id": "efb6424dcecebdd9",
+      "title": "Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously",
+      "link": "https://arxiv.org/abs/2603.12262",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "An arXiv paper proposes Video Streaming Thinking, a paradigm that lets online video language models perform synchronized logical reasoning while continuing to perceive incoming video frames, addressing the latency penalty that test-time scaling methods typically impose on real-time video understanding. The authors position the approach as a step toward responsive video assistants that can watch and think simultaneously rather than pausing to reason."
+    },
+    {
+      "id": "6a30806a9874ffb3",
+      "title": "Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories",
+      "link": "https://arxiv.org/abs/2607.15330",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "Xiaomi researchers published Xiaomi-Robotics-1, a foundational vision-language-action model trained on more than 100,000 hours of real-world trajectories, described in an arXiv paper as capable of following diverse language instructions for mobile manipulation in unseen environments and adapting to novel tasks with minimal fine-tuning."
+    },
+    {
+      "id": "f4006e54a3bc8a70",
+      "title": "A Standardized Benchmark for Skeleton-Based Rehabilitation Assessment Using Deep Learning",
+      "link": "https://arxiv.org/abs/2507.21018",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "An arXiv paper proposes a standardized benchmark for skeleton-based rehabilitation assessment using deep learning, applying video-based skeleton extraction to detect subtle deviations from ideal motion and enable objective evaluation of patient performance in clinical rehabilitation settings."
+    },
+    {
+      "id": "32465d2f5cd75647",
+      "title": "Instance-Enriched Semantic Maps for Visual Language Navigation",
+      "link": "https://arxiv.org/abs/2607.12630",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "An arXiv paper on Visual Language Navigation presents instance-enriched semantic maps that combine object-level detail with large language model reasoning, aiming to improve the robustness of embodied agents following natural language instructions in complex indoor environments."
+    },
+    {
+      "id": "b1da67ab5327273b",
+      "title": "Create, edit and star in videos with two Google Vids updates",
+      "link": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
+      "source": "Google Blog",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Google announced two updates to Google Vids, adding Gemini Omni video generation and personal avatars that let users create, edit, and appear in AI-generated videos directly inside Workspace, according to a post on the Google Blog."
+    },
+    {
+      "id": "623878c1c2a93eba",
+      "title": "Gentle Monster Plans Massive North America & Europe Retail Expansion Amid Smart Glasses Rollout",
+      "link": "https://roadtovr.com/gentle-monster-north-america-eu-smart-glasses-expansion/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "Road to VR reports that South Korean eyewear brand Gentle Monster plans a major expansion of its physical retail footprint across North America and Europe, timed to the fall launch of its first smart glasses. Citing Maeil Business Newspaper, the report says the brand aims to significantly increase its overseas store count as it enters the AI-powered eyewear market alongside partners including Google."
+    },
+    {
+      "id": "81c6ecc07bb55f81",
+      "title": "Alibaba's Qwen Audio 3.0 TTS Plus tops the competition in the text-to-speech rankings",
+      "link": "https://the-decoder.com/alibabas-qwen-audio-3-0-tts-plus-tops-the-competition-in-the-text-to-speech-rankings/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Decoder reports that Alibaba's Qwen Audio 3.0 TTS Plus has topped Artificial Analysis' Speech Arena leaderboard for text-to-speech models. The model supports 16 languages and allows users to control speaking style via natural language or tags such as [angry], though its 16-characters-per-second output is significantly slower than rivals Sonic 3.5 and Simba 3.2."
+    },
+    {
+      "id": "36b8813db81a971e",
+      "title": "District 9 director Neill Blomkamp releases first short film made entirely with AI video generation",
+      "link": "https://the-decoder.com/district-9-director-neill-blomkamp-releases-first-short-film-made-entirely-with-ai-video-generation/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Decoder reports that District 9 director Neill Blomkamp has released Nightborne, a 13-minute sci-fi horror short film generated entirely with the Seedance 2.0 video model. Blomkamp directed the film frame by frame through text prompts and has founded a new AI-focused studio, Barley Studios, to produce a full-length feature."
+    },
+    {
+      "id": "3c1cfd85409aab3f",
+      "title": "Hololight Updates Enterprise XR Tools for Streaming and Collaboration",
+      "link": "https://www.auganix.org/xr-news-hololight-update-enterprise-xr/",
+      "source": "Auganix",
+      "category": "SOFTWARE",
+      "summary": "Auganix reports that Hololight has updated its Stream, Hub, and Space enterprise XR tools with new capabilities for stable XR streaming, headset-free access, collaboration, and design review. The updates target enterprise customers using XR for engineering and design workflows."
+    },
+    {
+      "id": "2f85cd9ed47dd454",
+      "title": "The Download: OpenAI unveils GPT-Red and heat pumps rise in the US",
+      "link": "https://www.technologyreview.com/2026/07/16/1140600/the-download-openai-unveils-gpt-red-heat-pumps-rise-us/",
+      "source": "MIT Tech Review - AI",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "MIT Technology Review reports that OpenAI has built an internal LLM red-teaming tool called GPT-Red, which it uses as a sparring partner to probe and harden its other models against attack. The Download briefing frames it as part of a broader push to industrialize AI safety testing at frontier labs."
+    },
+    {
+      "id": "ca1ee055b716c6f3",
+      "title": "You’ve Probably Watched One of the 300 Titles on Netflix Produced With AI",
+      "link": "https://www.cnet.com/tech/services-and-software/netflix-300-programs-this-year-ai-production-q2-earnings/",
+      "source": "CNET",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to CNET, Netflix disclosed on its Q2 earnings call that roughly 300 titles released this year have used AI in some part of their production pipeline, underscoring how quickly the streamer has embedded generative tools into content workflows. The figure signals mainstream studio adoption of AI-assisted production at scale."
+    },
+    {
+      "id": "fe265ef624f27271",
+      "title": "Halliday’s New Smart Glasses Skip the Camera",
+      "link": "https://www.wired.com/story/halliday-new-smart-glasses-skip-the-camera/",
+      "source": "Wired",
+      "category": "HARDWARE",
+      "summary": "Wired reports that Halliday's new G2 smart glasses omit a camera entirely, instead using microphones to listen to and summarize workplace meetings via an on-device AI assistant. The camera-free design positions the G2 as a privacy-forward alternative to Meta's Ray-Ban and Snap's Specs as enterprise smart-glasses adoption grows."
+    },
+    {
+      "id": "5462dce82ab6e4b4",
+      "title": "Google launches a cheaper alternative to large AI security models like Mythos",
+      "link": "https://www.theverge.com/tech/968572/google-gemini-flash-cyber-ai-security-model",
+      "source": "The Verge",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Verge reports that Google has launched Gemini 3.6 Flash alongside Gemini 3.5 Flash Cyber, a dedicated security model aimed at quickly finding and patching vulnerabilities, which the company describes as a cost-efficient alternative to larger systems such as Anthropic's Mythos. The release marks Google's push into specialized cybersecurity AI as enterprises weigh the cost of frontier-scale models."
+    },
+    {
+      "id": "e9faa71a5160afbb",
+      "title": "America needs to stop getting shocked by Chinese AI",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/968136/chinese-ai-models-another-sputnik-moment",
+      "source": "The Verge",
+      "category": "OPINION",
+      "summary": "In an opinion piece for The Verge, the author argues that recurring U.S. surprise at competitive Chinese AI model releases — most recently two systems unveiled last week that rival OpenAI and Anthropic's best — reflects a strategic failure to internalize the pace of Chinese frontier development. The essay pushes back on the reflex to frame each release as a Sputnik moment rather than an expected data point."
+    },
+    {
+      "id": "128f757a10821119",
+      "title": "Adobe’s ‘natural look’ camera app embraces generative AI",
+      "link": "https://www.theverge.com/tech/967791/adobe-indigo-camera-app-ai-playground-update",
+      "source": "The Verge",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Verge reports that Adobe's experimental Project Indigo camera app, originally launched to deliver a more natural SLR-like look on iPhone, is adding a suite of generative AI tools that notably do not rely on Adobe's own Firefly models. The pivot signals Adobe's willingness to route its consumer photography experiments through third-party generative models."
+    },
+    {
+      "id": "c76b3f431789d117",
+      "title": "China delivers a one-two punch to America’s AI dominance",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen",
+      "source": "The Verge",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to The Verge, Chinese AI companies Moonshot and Alibaba unveiled new open-source models — including Moonshot's Kimi K3 and Alibaba's Qwen — that they claim rival the best from OpenAI and Anthropic at a fraction of the cost. The rapid-fire releases suggest America's lead at the AI frontier is narrowing just as the technology becomes increasingly strategic."
+    }
+  ],
+  "raw_content": "Spatial Report\nWeek of 2026-07-21\n\nHIGHLIGHTS\n\nRoad to VR reports that Magic Leap is again pivoting its core business, this time to serve as a waveguide supplier to other AR glasses makers, alongside a mass layoff of nearly 200 core engineering and product development staff disclosed in a formal WARN Act notification. The move marks another retreat from Magic Leap's ambitions as a consumer AR headset maker.\n\nhttps://roadtovr.com/magic-leap-lay-off-2026-waveguide-pivot/\n\nSOFTWARE\n\nCNET's early review of iOS 27 finds that Apple's overhauled Siri finally delivers on the assistant's original 2011 promise, with the reviewer citing more reliable task execution in day-to-day use, including flagging a recalled lettuce product before purchase.\n\nhttps://www.cnet.com/tech/services-and-software/siri-ai-ios-27-early-review/\n\nAccording to Road to VR, Valve has released a sizeable SteamVR update that brings standard Steam features to the VR runtime, paving the way for what appears to be the imminent launch of its long-awaited standalone headset, Steam Frame. The update reshapes SteamVR into a more VR-native user experience ahead of the hardware debut.\n\nhttps://roadtovr.com/valve-big-steamvr-update-steam-frame-launch/\n\nAuganix reports that Hololight has updated its Stream, Hub, and Space enterprise XR tools with new capabilities for stable XR streaming, headset-free access, collaboration, and design review. The updates target enterprise customers using XR for engineering and design workflows.\n\nhttps://www.auganix.org/xr-news-hololight-update-enterprise-xr/\n\nHARDWARE\n\nRoad to VR reports that South Korean eyewear brand Gentle Monster plans a major expansion of its physical retail footprint across North America and Europe, timed to the fall launch of its first smart glasses. Citing Maeil Business Newspaper, the report says the brand aims to significantly increase its overseas store count as it enters the AI-powered eyewear market alongside partners including Google.\n\nhttps://roadtovr.com/gentle-monster-north-america-eu-smart-glasses-expansion/\n\nWired reports that Halliday's new G2 smart glasses omit a camera entirely, instead using microphones to listen to and summarize workplace meetings via an on-device AI assistant. The camera-free design positions the G2 as a privacy-forward alternative to Meta's Ray-Ban and Snap's Specs as enterprise smart-glasses adoption grows.\n\nhttps://www.wired.com/story/halliday-new-smart-glasses-skip-the-camera/\n\nAI AND SIMULATED WORLDS\n\nAccording to CNET, Google Vids now lets users insert AI-generated personal avatars into videos through its Gemini-powered editing tool, allowing people to appear on camera without ever filming themselves.\n\nhttps://www.cnet.com/tech/services-and-software/google-vids-gemini-omni-ai-video/\n\nWired reports that a defensive technique known as 'context bombing' is proving effective against malicious AI hacking agents by exploiting prompt injection to force the agents to shut down before they can carry out attacks.\n\nhttps://www.wired.com/story/prompt-injection-attacks-are-thwarting-ai-hacking-agents/\n\nAccording to The Decoder, Alibaba has unveiled Qwen 3.8, a multimodal AI model with 2.4 trillion parameters that the Qwen team claims rivals leading models and trails only Fable 5, with a preview available now.\n\nhttps://the-decoder.com/alibabas-qwen-takes-on-kimi-k3-with-open-weight-qwen-3-8-says-model-is-second-only-to-fable-5/\n\nThe Decoder reports that Google DeepMind's GenCeption repurposes a video generator for classic computer vision tasks such as depth estimation and segmentation, matching state-of-the-art systems while training on far less data — almost entirely synthetic video. The results add to the debate over whether video generators already contain a kind of universal world model.\n\nhttps://the-decoder.com/google-deepmind-argues-video-generators-already-contain-the-world-models-computer-vision-has-been-missing/\n\nGoogle announced two updates to Google Vids, adding Gemini Omni video generation and personal avatars that let users create, edit, and appear in AI-generated videos directly inside Workspace, according to a post on the Google Blog.\n\nhttps://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/\n\nThe Decoder reports that Alibaba's Qwen Audio 3.0 TTS Plus has topped Artificial Analysis' Speech Arena leaderboard for text-to-speech models. The model supports 16 languages and allows users to control speaking style via natural language or tags such as [angry], though its 16-characters-per-second output is significantly slower than rivals Sonic 3.5 and Simba 3.2.\n\nhttps://the-decoder.com/alibabas-qwen-audio-3-0-tts-plus-tops-the-competition-in-the-text-to-speech-rankings/\n\nThe Decoder reports that District 9 director Neill Blomkamp has released Nightborne, a 13-minute sci-fi horror short film generated entirely with the Seedance 2.0 video model. Blomkamp directed the film frame by frame through text prompts and has founded a new AI-focused studio, Barley Studios, to produce a full-length feature.\n\nhttps://the-decoder.com/district-9-director-neill-blomkamp-releases-first-short-film-made-entirely-with-ai-video-generation/\n\nMIT Technology Review reports that OpenAI has built an internal LLM red-teaming tool called GPT-Red, which it uses as a sparring partner to probe and harden its other models against attack. The Download briefing frames it as part of a broader push to industrialize AI safety testing at frontier labs.\n\nhttps://www.technologyreview.com/2026/07/16/1140600/the-download-openai-unveils-gpt-red-heat-pumps-rise-us/\n\nAccording to CNET, Netflix disclosed on its Q2 earnings call that roughly 300 titles released this year have used AI in some part of their production pipeline, underscoring how quickly the streamer has embedded generative tools into content workflows. The figure signals mainstream studio adoption of AI-assisted production at scale.\n\nhttps://www.cnet.com/tech/services-and-software/netflix-300-programs-this-year-ai-production-q2-earnings/\n\nThe Verge reports that Google has launched Gemini 3.6 Flash alongside Gemini 3.5 Flash Cyber, a dedicated security model aimed at quickly finding and patching vulnerabilities, which the company describes as a cost-efficient alternative to larger systems such as Anthropic's Mythos. The release marks Google's push into specialized cybersecurity AI as enterprises weigh the cost of frontier-scale models.\n\nhttps://www.theverge.com/tech/968572/google-gemini-flash-cyber-ai-security-model\n\nThe Verge reports that Adobe's experimental Project Indigo camera app, originally launched to deliver a more natural SLR-like look on iPhone, is adding a suite of generative AI tools that notably do not rely on Adobe's own Firefly models. The pivot signals Adobe's willingness to route its consumer photography experiments through third-party generative models.\n\nhttps://www.theverge.com/tech/967791/adobe-indigo-camera-app-ai-playground-update\n\nAccording to The Verge, Chinese AI companies Moonshot and Alibaba unveiled new open-source models — including Moonshot's Kimi K3 and Alibaba's Qwen — that they claim rival the best from OpenAI and Anthropic at a fraction of the cost. The rapid-fire releases suggest America's lead at the AI frontier is narrowing just as the technology becomes increasingly strategic.\n\nhttps://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen\n\nRESEARCH\n\nResearchers on arXiv present the first implementation of a 3D Gaussian splatting renderer on an Intelligence Processing Unit, using 1,472 independent tiles with only on-chip SRAM to render real-world Gaussian scenes — a step toward efficient sensor-processor architectures relevant to XR rendering.\n\nhttps://arxiv.org/abs/2607.15951\n\nResearchers on arXiv propose a new readout method for video pretrained backbones that improves detection of AI-generated videos by better capturing the subtle inter-frame temporal artifacts that distinguish synthetic footage from real recordings.\n\nhttps://arxiv.org/abs/2607.15321\n\nIn a paper posted to arXiv, researchers introduce GS-RealBlur, a data acquisition framework for real-world image deblurring that uses a handheld camera to capture paired blurry and sharp images, addressing the trade-off between the unrealistic quality of synthetic blur and the inflexibility of complex multi-camera capture rigs.\n\nhttps://arxiv.org/abs/2607.15401\n\nA revised arXiv paper argues that generative models contain implicit 3D spatial priors that can be unleashed to improve scene understanding in multimodal large language models, offering an alternative to explicit 3D modalities and geometric scaffolding that the authors say are limited by data scarcity and generalization challenges.\n\nhttps://arxiv.org/abs/2603.19235\n\nResearchers publishing on arXiv describe MotionForesight, a system that repurposes video generation models to predict future 3D scene flow — the likely trajectories of points on manipulable objects — from short monocular video clips of human-object interaction. The work aims to give robots and embodied agents a way to anticipate physical consequences of interactions from ordinary video, rather than requiring depth sensors or explicit 3D supervision.\n\nhttps://arxiv.org/abs/2607.16192\n\nAn arXiv paper proposes Video Streaming Thinking, a paradigm that lets online video language models perform synchronized logical reasoning while continuing to perceive incoming video frames, addressing the latency penalty that test-time scaling methods typically impose on real-time video understanding. The authors position the approach as a step toward responsive video assistants that can watch and think simultaneously rather than pausing to reason.\n\nhttps://arxiv.org/abs/2603.12262\n\nXiaomi researchers published Xiaomi-Robotics-1, a foundational vision-language-action model trained on more than 100,000 hours of real-world trajectories, described in an arXiv paper as capable of following diverse language instructions for mobile manipulation in unseen environments and adapting to novel tasks with minimal fine-tuning.\n\nhttps://arxiv.org/abs/2607.15330\n\nAn arXiv paper proposes a standardized benchmark for skeleton-based rehabilitation assessment using deep learning, applying video-based skeleton extraction to detect subtle deviations from ideal motion and enable objective evaluation of patient performance in clinical rehabilitation settings.\n\nhttps://arxiv.org/abs/2507.21018\n\nAn arXiv paper on Visual Language Navigation presents instance-enriched semantic maps that combine object-level detail with large language model reasoning, aiming to improve the robustness of embodied agents following natural language instructions in complex indoor environments.\n\nhttps://arxiv.org/abs/2607.12630\n\nOPINION\n\nIn an opinion piece for The Verge, the author argues that recurring U.S. surprise at competitive Chinese AI model releases — most recently two systems unveiled last week that rival OpenAI and Anthropic's best — reflects a strategic failure to internalize the pace of Chinese frontier development. The essay pushes back on the reflex to frame each release as a Sputnik moment rather than an expected data point.\n\nhttps://www.theverge.com/ai-artificial-intelligence/968136/chinese-ai-models-another-sputnik-moment\n\nGAMING MARKETPLACE WATCH\n\nUploadVR reports that Discovery: Rogue Planet, a new story-driven sci-fi first-person shooter, is coming to Quest 3 and PC VR in August.\n\nhttps://www.uploadvr.com/discovery-rogue-planet-sci-fi-shooter-coming-to-pc-vr-and-quest-3/\n"
+}

@@ -1,0 +1,560 @@
+{
+  "title": "Spatial Report — 2026-07-09",
+  "edition_number": "",
+  "date": "2026-07-09",
+  "spotlight": "",
+  "item_ids": [
+    "d021acef5ab201ee",
+    "19d1bfd8b691b57f",
+    "ffb110b34293ec92",
+    "178a4d53e3925816",
+    "12663b1512d97e18",
+    "8f4b94247dfe429f",
+    "e5b0dc5943bb89b1",
+    "17e7cd208a278f85",
+    "c267966f97216b1f",
+    "da59cbe86e07cb63",
+    "9eb2bd088b87482f",
+    "0034c83b0d42a2e8",
+    "89ef7cbe23b6aabd",
+    "2f1f3b82a9d5a7ea",
+    "2918b09a4014f6fd",
+    "4bf4e56d4653712a",
+    "3da48a32821f6d23",
+    "5d799d17e7d574c1",
+    "3c49fcee35748626",
+    "041d3e03c54a3d86",
+    "c4d5624322a56b55",
+    "41e1cbe4477dd83a",
+    "a1f23133496773e8",
+    "4e28d0740350129c",
+    "bacf0e375cc721c7",
+    "d83831c559b7d120",
+    "23f543397099510f",
+    "c24b1671ed569791",
+    "1a85b46b2c4d5ccd",
+    "733b8abf917b4fdc",
+    "c754a9a1d07196b7"
+  ],
+  "sections": {
+    "HIGHLIGHTS": [
+      {
+        "id": "12663b1512d97e18",
+        "title": "Meta Closes Smart Glasses Privacy Loophole With New Camera-Killing Update",
+        "link": "https://roadtovr.com/meta-ray-ban-glasses-privacy-led-camera-update/",
+        "source": "Road to VR",
+        "category": "HIGHLIGHTS",
+        "summary": "Road to VR reports that Meta is rolling out an update to its smart glasses lineup that will disable the camera entirely if the device's white capture LED is tampered with or destroyed, closing a workaround that had allowed users to physically cover the privacy indicator and continue recording undetected since the second-generation Ray-Ban Meta glasses launched in 2024."
+      },
+      {
+        "id": "3da48a32821f6d23",
+        "title": "New York is the first US state to ban smart glasses in all its courthouses",
+        "link": "https://www.engadget.com/2211151/new-york-first-us-state-ban-smart-glasses-all-courthouses/",
+        "source": "Engadget",
+        "category": "HIGHLIGHTS",
+        "summary": "Engadget reports that New York has become the first U.S. state to ban smart glasses across all 1,240 of its state, county, city, town, and village courthouses. The blanket ban signals escalating institutional pushback against always-on wearable cameras in sensitive public settings."
+      }
+    ],
+    "APP STORE HIGHLIGHTS": [
+      {
+        "id": "4bf4e56d4653712a",
+        "title": "Lamborghini launches Apple Vision Pro app with interactive full-size cars",
+        "link": "https://9to5mac.com/2026/07/07/lamborghini-launches-apple-vision-pro-app-with-interactive-full-size-cars/",
+        "source": "9to5Mac Vision Pro",
+        "category": "APP STORE HIGHLIGHTS",
+        "summary": "9to5Mac reports that Lamborghini has released an Apple Vision Pro app offering an immersive look at its latest models inside and out, including interactive full-size car visualizations. The launch adds another luxury automotive brand to the visionOS app catalog."
+      }
+    ],
+    "INVESTMENT": [
+      {
+        "id": "2f1f3b82a9d5a7ea",
+        "title": "Even Realities Hits $1B Valuation Following Meituan and Tencent-Led Funding Round",
+        "link": "https://www.auganix.org/ar-news-even-realities-unicorn-status/",
+        "source": "Auganix",
+        "category": "INVESTMENT",
+        "summary": "Auganix reports that Even Realities has reached unicorn status after securing a $150 million pre-Series B round led by Meituan and Tencent, valuing the smart glasses maker at $1 billion. The round underscores growing Chinese strategic investor interest in the smart eyewear category."
+      }
+    ],
+    "SOFTWARE": [
+      {
+        "id": "c267966f97216b1f",
+        "title": "18Birdies &amp; Arccos Make Meta Glasses Act As Your AI Golf Caddy",
+        "link": "https://www.uploadvr.com/18birdies-arccos-meta-glasses-ai-golf-caddy/",
+        "source": "UploadVR",
+        "category": "SOFTWARE",
+        "summary": "UploadVR reports that golf apps 18Birdies and Arccos have integrated with Meta AI on the company's smart glasses in the US and Canada, allowing the wearables to act as a personal AI golf caddy for users on the course."
+      },
+      {
+        "id": "0034c83b0d42a2e8",
+        "title": "RP1 Launches Artemis Metaverse Browser for Spatial Experiences",
+        "link": "https://www.auganix.org/xr-news-rp1-artemis-metaverse-browser/",
+        "source": "Auganix",
+        "category": "SOFTWARE",
+        "summary": "According to Auganix, RP1 has launched Artemis, a native metaverse browser powered by the open-source Sneeze engine that lets users access spatial experiences without installing separate apps. The browser positions RP1 as an infrastructure layer for cross-platform metaverse access."
+      },
+      {
+        "id": "89ef7cbe23b6aabd",
+        "title": "Basemark Partners with Ignite to Expand Automotive AR Offering for OEMs",
+        "link": "https://www.auganix.org/ar-news-basemark-ignite-automotive-ar/",
+        "source": "Auganix",
+        "category": "SOFTWARE",
+        "summary": "Auganix reports that Basemark has signed a memorandum of understanding with Ignite by FORVIA HELLA to integrate its Rocksolid platform into Ignite's automotive AR offering for OEMs. The partnership expands Basemark's reach in the automotive AR software stack targeting car manufacturers."
+      },
+      {
+        "id": "c754a9a1d07196b7",
+        "title": "Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more",
+        "link": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
+        "source": "Google Blog",
+        "category": "SOFTWARE",
+        "summary": "Google announced an expansion of Managed Agents in the Gemini API, adding support for background tasks, remote MCP, and additional developer features, according to a post on the Google Blog. The update deepens Gemini's agentic tooling for developers building long-running, tool-using AI applications."
+      }
+    ],
+    "HARDWARE": [
+      {
+        "id": "8f4b94247dfe429f",
+        "title": "HTC’s Revenue Stabilizes as XR Pioneer Pins Hopes on AI, Smart Glasses and Enterprise",
+        "link": "https://roadtovr.com/htc-revenue-stabilizes-smart-glasses-xr-enterprise/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "According to Taiwan's Financial Express News, HTC told shareholders at its annual meeting that revenue has stabilized after a protracted decline, with the company pinning its second-act strategy on AI, smart glasses, and enterprise XR after years of mixed results in its pivot away from smartphones, as reported by Road to VR."
+      },
+      {
+        "id": "e5b0dc5943bb89b1",
+        "title": "Smart Contact Lenses Move Closer to Reality as XPANCEO Expands JBD Display Partnership",
+        "link": "https://roadtovr.com/smart-contact-lens-xpanceo-jbd-display-partnership/",
+        "source": "Road to VR",
+        "category": "HARDWARE",
+        "summary": "Road to VR reports that Dubai-based smart contact lens startup XPANCEO is expanding its partnership with China's JBD to co-develop a new micro-display designed specifically for smart contact lenses, building on prior joint work that produced a printed circuit board with integrated micro-display and a near-eye optical system."
+      },
+      {
+        "id": "2918b09a4014f6fd",
+        "title": "XPANCEO and JBD Co-Developing Custom Micro-Display for AR Contact Lenses",
+        "link": "https://www.auganix.org/ar-news-xpanceo-jbd-contact-lens-micro-display/",
+        "source": "Auganix",
+        "category": "HARDWARE",
+        "summary": "According to Auganix, XPANCEO and JBD have advanced to the next phase of their collaboration to co-develop a custom micro-display for future AR-enabled smart contact lenses. The partnership pairs XPANCEO's contact-lens platform with JBD's micro-LED display expertise."
+      },
+      {
+        "id": "c4d5624322a56b55",
+        "title": "Solos debuts an even lighter version of its camera-less smart glasses",
+        "link": "https://www.theverge.com/tech/961711/solos-airgo-a6-smart-glasses-ai-assistant-privacy",
+        "source": "The Verge",
+        "category": "HARDWARE",
+        "summary": "According to The Verge, Solos announced the AirGo A6, a camera-less smart glasses model that weighs around 19 grams — roughly half the 36 to 40 grams of last year's AirGo A5 — and relies on a voice-based AI assistant rather than onboard cameras. The company is pitching the lighter build and camera-free design as a privacy-forward alternative in the smart glasses market."
+      }
+    ],
+    "AI AND SIMULATED WORLDS": [
+      {
+        "id": "19d1bfd8b691b57f",
+        "title": "Google DeepMind and A24 announce first-of-its-kind research partnership",
+        "link": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
+        "source": "Google DeepMind",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Google DeepMind and film studio A24 announced a first-of-its-kind research partnership, according to a DeepMind blog post, pairing the AI lab with a major independent studio to explore applications of generative AI in filmmaking. The collaboration signals deeper entertainment-industry engagement with frontier AI models as studios weigh how generative tools fit into production pipelines."
+      },
+      {
+        "id": "da59cbe86e07cb63",
+        "title": "ChatGPT can now listen and talk at the same time, making AI conversations seem more human",
+        "link": "https://the-decoder.com/chatgpt-can-now-listen-and-talk-at-the-same-time-making-ai-conversations-seem-more-human/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "According to The Decoder, OpenAI has launched GPT-Live, a full-duplex conversational architecture that can listen and speak simultaneously and hand off complex queries to GPT-5.5 in the background for higher-quality responses; GPT-Live-1 is available now to paying ChatGPT users, with a mini version for free accounts and API access coming soon."
+      },
+      {
+        "id": "9eb2bd088b87482f",
+        "title": "Mistral enters robotics with Robostral Navigate, an 8B model that steers robots using just one camera",
+        "link": "https://the-decoder.com/mistral-enters-robotics-with-robostral-navigate-an-8b-model-that-steers-robots-using-just-one-camera/",
+        "source": "The Decoder",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Decoder reports that Mistral is entering robotics with Robostral Navigate, an 8-billion-parameter model that guides robots through unknown environments using only a single RGB camera. Trained in simulation and refined with reinforcement learning via CISPO, the model reaches 76.6 percent on the R2R-CE benchmark, though Mistral has not disclosed a release date."
+      },
+      {
+        "id": "5d799d17e7d574c1",
+        "title": "SpaceXAI launches Grok 4.5, its first built with Cursor's help",
+        "link": "https://www.engadget.com/2211260/spacex-ai-grok-4-5-cursor/",
+        "source": "Engadget",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Engadget reports that SpaceXAI has rolled out Grok 4.5, the first model the company trained with help from Cursor. The release marks a notable collaboration between a frontier model developer and an AI coding-tools company."
+      },
+      {
+        "id": "3c49fcee35748626",
+        "title": "Meta says its new AI model is ready to compete on coding",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/963193/meta-muse-spark-model-api",
+        "source": "The Verge",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Verge reports that Meta is opening its Muse Spark AI model to developers through a new Meta Model API, positioning the second-generation Muse Spark 1.1 as a coding-capable model that can plug into AI coding software. Meta describes the update as a step-change from the April debut of its first in-house model, marking its push to compete with rivals in the developer tooling market."
+      },
+      {
+        "id": "041d3e03c54a3d86",
+        "title": "Meta’s new Muse Image model can pull other Instagram users into AI photos",
+        "link": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
+        "source": "The Verge",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "The Verge reports that Meta's Superintelligence Labs has released Muse Image, its first in-house image generation model, which now powers image tools across the Meta AI app, Instagram, and WhatsApp, with rollouts to Facebook and Messenger to follow. The model can pull other Instagram users into AI-generated photos, extending Meta's Muse family into consumer social products."
+      },
+      {
+        "id": "bacf0e375cc721c7",
+        "title": "Infinite Worlds with Versatile Interactions",
+        "link": "https://arxiv.org/abs/2607.07534",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "An arXiv paper presents LingBot-World 2.0, also called LingBot-World-Infinity, an interactive world model that claims an unbounded interaction horizon with consistent output quality and a distilled real-time variant capable of driving 720p video streams, advancing the emerging class of generative interactive world simulators."
+      },
+      {
+        "id": "1a85b46b2c4d5ccd",
+        "title": "Introducing Muse Image: Image Generation Built for Your World",
+        "link": "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/",
+        "source": "Meta Newsroom",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Meta introduced Muse Image, the first image generation model from its Meta Superintelligence Labs group, and made it available inside Meta AI, according to a post on the Meta Newsroom. The launch signals Meta's push to bring in-house generative imaging into its consumer AI products alongside offerings from OpenAI and Google."
+      },
+      {
+        "id": "733b8abf917b4fdc",
+        "title": "Introducing GPT-Live",
+        "link": "https://openai.com/index/introducing-gpt-live",
+        "source": "OpenAI News",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "OpenAI announced GPT-Live, a new generation of voice models built for natural human-AI interaction that now powers ChatGPT Voice. The company positions the release as a step toward lower-latency, more conversational speech interfaces, a capability with direct implications for AI-driven glasses and headset assistants."
+      }
+    ],
+    "RESEARCH": [
+      {
+        "id": "41e1cbe4477dd83a",
+        "title": "Head, Gaze, or Finger? Comparing Object Selection Techniques in Augmented Reality for People with Low Vision",
+        "link": "https://arxiv.org/abs/2607.06778",
+        "source": "arXiv cs.HC (HCI)",
+        "category": "RESEARCH",
+        "summary": "An arXiv study compares head, gaze, and finger-based object selection techniques in augmented reality for people with low vision, evaluating their ability and preferences given potential visual and gaze control challenges. The work aims to inform accessible selection-based AR augmentation that reduces distraction and visual clutter."
+      },
+      {
+        "id": "a1f23133496773e8",
+        "title": "SPEAR: A Simulator for Photorealistic Embodied AI Research",
+        "link": "https://arxiv.org/abs/2607.06701",
+        "source": "arXiv cs.GR (Graphics)",
+        "category": "RESEARCH",
+        "summary": "Researchers introduce SPEAR, a Python-based simulator for photorealistic embodied AI research that can programmatically control any Unreal Engine application, according to an arXiv paper. The system targets limitations in generality, programmability, and rendering speed found in existing photorealistic simulators used to train embodied agents and generate synthetic visual data."
+      },
+      {
+        "id": "4e28d0740350129c",
+        "title": "WildCity: A Real-World City-Scale Testbed for Rendering, Simulation, and Spatial Intelligence",
+        "link": "https://arxiv.org/abs/2607.06838",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "Researchers on arXiv introduce WildCity, a real-world multimodal city-scale testbed spanning tens of square kilometers for rendering, simulation, and spatial intelligence benchmarks, aimed at pushing scene reconstruction and embodied AI foundation models beyond current single-scene limits."
+      },
+      {
+        "id": "d83831c559b7d120",
+        "title": "EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI",
+        "link": "https://arxiv.org/abs/2607.07459",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "A paper posted to arXiv introduces EmbodiedGen V2, a generative 3D world engine designed to build executable, simulation-ready environments for embodied AI. The authors argue that while sim-ready 3D asset generation has advanced quickly, assembling assets into policy-ready task environments remains largely manual, and they propose a unified representation that connects cross-simulator assets and interaction affordances to enable more scalable closed-loop learning."
+      }
+    ],
+    "OPINION": [
+      {
+        "id": "d021acef5ab201ee",
+        "title": "The pain of innovation for tech corporates",
+        "link": "https://skarredghost.com/2026/07/03/pain-innovation-tech/",
+        "source": "Skarred Ghost",
+        "category": "OPINION",
+        "summary": "Writing at Skarred Ghost, Antony Vitillo pushes back against the wave of criticism that followed Snap's Specs announcement at AWE, arguing that tech corporates face a structural bind when innovating: aggressive bets get panned as overreach, while cautious moves get dismissed as irrelevant. The piece frames the reaction to Snap's AR glasses as emblematic of how the press and online community penalize hardware makers attempting genuinely new form factors."
+      },
+      {
+        "id": "23f543397099510f",
+        "title": "Meta hints at VR announcements for Connect, but this won’t stop the Winter",
+        "link": "https://skarredghost.com/2026/07/08/meta-vr-phoenix-connect-winter/",
+        "source": "Skarred Ghost",
+        "category": "OPINION",
+        "summary": "Writing on Skarred Ghost, Antony Vitillo tempers expectations around Andrew Bosworth's teaser of VR announcements at Meta Connect, arguing that whatever Meta shows will not reverse what he characterizes as an ongoing VR winter. The post frames Meta's Connect messaging as incremental rather than a signal of renewed platform momentum."
+      }
+    ],
+    "GAMING MARKETPLACE WATCH": [
+      {
+        "id": "ffb110b34293ec92",
+        "title": "‘Tomb Raider’ VR Reportedly Cancelled According to Leaked Images & Video",
+        "link": "https://roadtovr.com/tomb-raider-vr-cancelled-leak-image-video/",
+        "source": "Road to VR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "Road to VR reports that Vertigo Games' now-defunct Amsterdam satellite studio was developing an official Tomb Raider VR title from at least November 2024 until the project's cancellation in January, citing leaked images and video first surfaced by MP1st."
+      },
+      {
+        "id": "178a4d53e3925816",
+        "title": "‘Pistol Whip’ Studio Reportedly Developing “impossible to ignore” Multiplayer VR Game",
+        "link": "https://roadtovr.com/cloud-head-next-vr-game-report/",
+        "source": "Road to VR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "According to Road to VR, Cloudhead Games, the studio behind rhythm shooter Pistol Whip, appears to be developing a multiplayer VR game that may also support a flatscreen mode, based on a recent job listing for a Social & Community Strategist describing the next title as \"impossible to ignore.\""
+      },
+      {
+        "id": "17e7cd208a278f85",
+        "title": "Veteran VR Shooter ‘Hot Dogs, Horseshoes & Hand Grenades’ Finally Leaves Early Access",
+        "link": "https://roadtovr.com/vr-shooter-hot-dogs-horseshoes-hand-grenades-1-0-release/",
+        "source": "Road to VR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "Road to VR reports that Rust Ltd's VR shooting simulator Hot Dogs, Horseshoes & Hand Grenades launched its 1.0 release on July 4th, exiting Steam early access after more than a decade in development."
+      }
+    ],
+    "APPLE VISION PRO IN THE NEWS": [
+      {
+        "id": "c24b1671ed569791",
+        "title": "Meta’s AI Glasses: Your Questions Answered",
+        "link": "https://about.fb.com/news/2026/07/metas-ai-glasses-your-questions-answered/",
+        "source": "Meta Newsroom",
+        "category": "APPLE VISION PRO IN THE NEWS",
+        "summary": "Meta published a FAQ on its Newsroom addressing common questions about its AI glasses, including privacy features designed to help both wearers and bystanders feel comfortable with the devices. The post consolidates Meta's public messaging on how recording indicators, data handling, and on-device AI are meant to work across its glasses lineup."
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "d021acef5ab201ee",
+      "title": "The pain of innovation for tech corporates",
+      "link": "https://skarredghost.com/2026/07/03/pain-innovation-tech/",
+      "source": "Skarred Ghost",
+      "category": "OPINION",
+      "summary": "Writing at Skarred Ghost, Antony Vitillo pushes back against the wave of criticism that followed Snap's Specs announcement at AWE, arguing that tech corporates face a structural bind when innovating: aggressive bets get panned as overreach, while cautious moves get dismissed as irrelevant. The piece frames the reaction to Snap's AR glasses as emblematic of how the press and online community penalize hardware makers attempting genuinely new form factors."
+    },
+    {
+      "id": "19d1bfd8b691b57f",
+      "title": "Google DeepMind and A24 announce first-of-its-kind research partnership",
+      "link": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
+      "source": "Google DeepMind",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Google DeepMind and film studio A24 announced a first-of-its-kind research partnership, according to a DeepMind blog post, pairing the AI lab with a major independent studio to explore applications of generative AI in filmmaking. The collaboration signals deeper entertainment-industry engagement with frontier AI models as studios weigh how generative tools fit into production pipelines."
+    },
+    {
+      "id": "ffb110b34293ec92",
+      "title": "‘Tomb Raider’ VR Reportedly Cancelled According to Leaked Images & Video",
+      "link": "https://roadtovr.com/tomb-raider-vr-cancelled-leak-image-video/",
+      "source": "Road to VR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "Road to VR reports that Vertigo Games' now-defunct Amsterdam satellite studio was developing an official Tomb Raider VR title from at least November 2024 until the project's cancellation in January, citing leaked images and video first surfaced by MP1st."
+    },
+    {
+      "id": "178a4d53e3925816",
+      "title": "‘Pistol Whip’ Studio Reportedly Developing “impossible to ignore” Multiplayer VR Game",
+      "link": "https://roadtovr.com/cloud-head-next-vr-game-report/",
+      "source": "Road to VR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "According to Road to VR, Cloudhead Games, the studio behind rhythm shooter Pistol Whip, appears to be developing a multiplayer VR game that may also support a flatscreen mode, based on a recent job listing for a Social & Community Strategist describing the next title as \"impossible to ignore.\""
+    },
+    {
+      "id": "12663b1512d97e18",
+      "title": "Meta Closes Smart Glasses Privacy Loophole With New Camera-Killing Update",
+      "link": "https://roadtovr.com/meta-ray-ban-glasses-privacy-led-camera-update/",
+      "source": "Road to VR",
+      "category": "HIGHLIGHTS",
+      "summary": "Road to VR reports that Meta is rolling out an update to its smart glasses lineup that will disable the camera entirely if the device's white capture LED is tampered with or destroyed, closing a workaround that had allowed users to physically cover the privacy indicator and continue recording undetected since the second-generation Ray-Ban Meta glasses launched in 2024."
+    },
+    {
+      "id": "8f4b94247dfe429f",
+      "title": "HTC’s Revenue Stabilizes as XR Pioneer Pins Hopes on AI, Smart Glasses and Enterprise",
+      "link": "https://roadtovr.com/htc-revenue-stabilizes-smart-glasses-xr-enterprise/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "According to Taiwan's Financial Express News, HTC told shareholders at its annual meeting that revenue has stabilized after a protracted decline, with the company pinning its second-act strategy on AI, smart glasses, and enterprise XR after years of mixed results in its pivot away from smartphones, as reported by Road to VR."
+    },
+    {
+      "id": "e5b0dc5943bb89b1",
+      "title": "Smart Contact Lenses Move Closer to Reality as XPANCEO Expands JBD Display Partnership",
+      "link": "https://roadtovr.com/smart-contact-lens-xpanceo-jbd-display-partnership/",
+      "source": "Road to VR",
+      "category": "HARDWARE",
+      "summary": "Road to VR reports that Dubai-based smart contact lens startup XPANCEO is expanding its partnership with China's JBD to co-develop a new micro-display designed specifically for smart contact lenses, building on prior joint work that produced a printed circuit board with integrated micro-display and a near-eye optical system."
+    },
+    {
+      "id": "17e7cd208a278f85",
+      "title": "Veteran VR Shooter ‘Hot Dogs, Horseshoes & Hand Grenades’ Finally Leaves Early Access",
+      "link": "https://roadtovr.com/vr-shooter-hot-dogs-horseshoes-hand-grenades-1-0-release/",
+      "source": "Road to VR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "Road to VR reports that Rust Ltd's VR shooting simulator Hot Dogs, Horseshoes & Hand Grenades launched its 1.0 release on July 4th, exiting Steam early access after more than a decade in development."
+    },
+    {
+      "id": "c267966f97216b1f",
+      "title": "18Birdies &amp; Arccos Make Meta Glasses Act As Your AI Golf Caddy",
+      "link": "https://www.uploadvr.com/18birdies-arccos-meta-glasses-ai-golf-caddy/",
+      "source": "UploadVR",
+      "category": "SOFTWARE",
+      "summary": "UploadVR reports that golf apps 18Birdies and Arccos have integrated with Meta AI on the company's smart glasses in the US and Canada, allowing the wearables to act as a personal AI golf caddy for users on the course."
+    },
+    {
+      "id": "da59cbe86e07cb63",
+      "title": "ChatGPT can now listen and talk at the same time, making AI conversations seem more human",
+      "link": "https://the-decoder.com/chatgpt-can-now-listen-and-talk-at-the-same-time-making-ai-conversations-seem-more-human/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "According to The Decoder, OpenAI has launched GPT-Live, a full-duplex conversational architecture that can listen and speak simultaneously and hand off complex queries to GPT-5.5 in the background for higher-quality responses; GPT-Live-1 is available now to paying ChatGPT users, with a mini version for free accounts and API access coming soon."
+    },
+    {
+      "id": "9eb2bd088b87482f",
+      "title": "Mistral enters robotics with Robostral Navigate, an 8B model that steers robots using just one camera",
+      "link": "https://the-decoder.com/mistral-enters-robotics-with-robostral-navigate-an-8b-model-that-steers-robots-using-just-one-camera/",
+      "source": "The Decoder",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Decoder reports that Mistral is entering robotics with Robostral Navigate, an 8-billion-parameter model that guides robots through unknown environments using only a single RGB camera. Trained in simulation and refined with reinforcement learning via CISPO, the model reaches 76.6 percent on the R2R-CE benchmark, though Mistral has not disclosed a release date."
+    },
+    {
+      "id": "0034c83b0d42a2e8",
+      "title": "RP1 Launches Artemis Metaverse Browser for Spatial Experiences",
+      "link": "https://www.auganix.org/xr-news-rp1-artemis-metaverse-browser/",
+      "source": "Auganix",
+      "category": "SOFTWARE",
+      "summary": "According to Auganix, RP1 has launched Artemis, a native metaverse browser powered by the open-source Sneeze engine that lets users access spatial experiences without installing separate apps. The browser positions RP1 as an infrastructure layer for cross-platform metaverse access."
+    },
+    {
+      "id": "89ef7cbe23b6aabd",
+      "title": "Basemark Partners with Ignite to Expand Automotive AR Offering for OEMs",
+      "link": "https://www.auganix.org/ar-news-basemark-ignite-automotive-ar/",
+      "source": "Auganix",
+      "category": "SOFTWARE",
+      "summary": "Auganix reports that Basemark has signed a memorandum of understanding with Ignite by FORVIA HELLA to integrate its Rocksolid platform into Ignite's automotive AR offering for OEMs. The partnership expands Basemark's reach in the automotive AR software stack targeting car manufacturers."
+    },
+    {
+      "id": "2f1f3b82a9d5a7ea",
+      "title": "Even Realities Hits $1B Valuation Following Meituan and Tencent-Led Funding Round",
+      "link": "https://www.auganix.org/ar-news-even-realities-unicorn-status/",
+      "source": "Auganix",
+      "category": "INVESTMENT",
+      "summary": "Auganix reports that Even Realities has reached unicorn status after securing a $150 million pre-Series B round led by Meituan and Tencent, valuing the smart glasses maker at $1 billion. The round underscores growing Chinese strategic investor interest in the smart eyewear category."
+    },
+    {
+      "id": "2918b09a4014f6fd",
+      "title": "XPANCEO and JBD Co-Developing Custom Micro-Display for AR Contact Lenses",
+      "link": "https://www.auganix.org/ar-news-xpanceo-jbd-contact-lens-micro-display/",
+      "source": "Auganix",
+      "category": "HARDWARE",
+      "summary": "According to Auganix, XPANCEO and JBD have advanced to the next phase of their collaboration to co-develop a custom micro-display for future AR-enabled smart contact lenses. The partnership pairs XPANCEO's contact-lens platform with JBD's micro-LED display expertise."
+    },
+    {
+      "id": "4bf4e56d4653712a",
+      "title": "Lamborghini launches Apple Vision Pro app with interactive full-size cars",
+      "link": "https://9to5mac.com/2026/07/07/lamborghini-launches-apple-vision-pro-app-with-interactive-full-size-cars/",
+      "source": "9to5Mac Vision Pro",
+      "category": "APP STORE HIGHLIGHTS",
+      "summary": "9to5Mac reports that Lamborghini has released an Apple Vision Pro app offering an immersive look at its latest models inside and out, including interactive full-size car visualizations. The launch adds another luxury automotive brand to the visionOS app catalog."
+    },
+    {
+      "id": "3da48a32821f6d23",
+      "title": "New York is the first US state to ban smart glasses in all its courthouses",
+      "link": "https://www.engadget.com/2211151/new-york-first-us-state-ban-smart-glasses-all-courthouses/",
+      "source": "Engadget",
+      "category": "HIGHLIGHTS",
+      "summary": "Engadget reports that New York has become the first U.S. state to ban smart glasses across all 1,240 of its state, county, city, town, and village courthouses. The blanket ban signals escalating institutional pushback against always-on wearable cameras in sensitive public settings."
+    },
+    {
+      "id": "5d799d17e7d574c1",
+      "title": "SpaceXAI launches Grok 4.5, its first built with Cursor's help",
+      "link": "https://www.engadget.com/2211260/spacex-ai-grok-4-5-cursor/",
+      "source": "Engadget",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Engadget reports that SpaceXAI has rolled out Grok 4.5, the first model the company trained with help from Cursor. The release marks a notable collaboration between a frontier model developer and an AI coding-tools company."
+    },
+    {
+      "id": "3c49fcee35748626",
+      "title": "Meta says its new AI model is ready to compete on coding",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/963193/meta-muse-spark-model-api",
+      "source": "The Verge",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Verge reports that Meta is opening its Muse Spark AI model to developers through a new Meta Model API, positioning the second-generation Muse Spark 1.1 as a coding-capable model that can plug into AI coding software. Meta describes the update as a step-change from the April debut of its first in-house model, marking its push to compete with rivals in the developer tooling market."
+    },
+    {
+      "id": "041d3e03c54a3d86",
+      "title": "Meta’s new Muse Image model can pull other Instagram users into AI photos",
+      "link": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
+      "source": "The Verge",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "The Verge reports that Meta's Superintelligence Labs has released Muse Image, its first in-house image generation model, which now powers image tools across the Meta AI app, Instagram, and WhatsApp, with rollouts to Facebook and Messenger to follow. The model can pull other Instagram users into AI-generated photos, extending Meta's Muse family into consumer social products."
+    },
+    {
+      "id": "c4d5624322a56b55",
+      "title": "Solos debuts an even lighter version of its camera-less smart glasses",
+      "link": "https://www.theverge.com/tech/961711/solos-airgo-a6-smart-glasses-ai-assistant-privacy",
+      "source": "The Verge",
+      "category": "HARDWARE",
+      "summary": "According to The Verge, Solos announced the AirGo A6, a camera-less smart glasses model that weighs around 19 grams — roughly half the 36 to 40 grams of last year's AirGo A5 — and relies on a voice-based AI assistant rather than onboard cameras. The company is pitching the lighter build and camera-free design as a privacy-forward alternative in the smart glasses market."
+    },
+    {
+      "id": "41e1cbe4477dd83a",
+      "title": "Head, Gaze, or Finger? Comparing Object Selection Techniques in Augmented Reality for People with Low Vision",
+      "link": "https://arxiv.org/abs/2607.06778",
+      "source": "arXiv cs.HC (HCI)",
+      "category": "RESEARCH",
+      "summary": "An arXiv study compares head, gaze, and finger-based object selection techniques in augmented reality for people with low vision, evaluating their ability and preferences given potential visual and gaze control challenges. The work aims to inform accessible selection-based AR augmentation that reduces distraction and visual clutter."
+    },
+    {
+      "id": "a1f23133496773e8",
+      "title": "SPEAR: A Simulator for Photorealistic Embodied AI Research",
+      "link": "https://arxiv.org/abs/2607.06701",
+      "source": "arXiv cs.GR (Graphics)",
+      "category": "RESEARCH",
+      "summary": "Researchers introduce SPEAR, a Python-based simulator for photorealistic embodied AI research that can programmatically control any Unreal Engine application, according to an arXiv paper. The system targets limitations in generality, programmability, and rendering speed found in existing photorealistic simulators used to train embodied agents and generate synthetic visual data."
+    },
+    {
+      "id": "4e28d0740350129c",
+      "title": "WildCity: A Real-World City-Scale Testbed for Rendering, Simulation, and Spatial Intelligence",
+      "link": "https://arxiv.org/abs/2607.06838",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "Researchers on arXiv introduce WildCity, a real-world multimodal city-scale testbed spanning tens of square kilometers for rendering, simulation, and spatial intelligence benchmarks, aimed at pushing scene reconstruction and embodied AI foundation models beyond current single-scene limits."
+    },
+    {
+      "id": "bacf0e375cc721c7",
+      "title": "Infinite Worlds with Versatile Interactions",
+      "link": "https://arxiv.org/abs/2607.07534",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "An arXiv paper presents LingBot-World 2.0, also called LingBot-World-Infinity, an interactive world model that claims an unbounded interaction horizon with consistent output quality and a distilled real-time variant capable of driving 720p video streams, advancing the emerging class of generative interactive world simulators."
+    },
+    {
+      "id": "d83831c559b7d120",
+      "title": "EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI",
+      "link": "https://arxiv.org/abs/2607.07459",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "A paper posted to arXiv introduces EmbodiedGen V2, a generative 3D world engine designed to build executable, simulation-ready environments for embodied AI. The authors argue that while sim-ready 3D asset generation has advanced quickly, assembling assets into policy-ready task environments remains largely manual, and they propose a unified representation that connects cross-simulator assets and interaction affordances to enable more scalable closed-loop learning."
+    },
+    {
+      "id": "23f543397099510f",
+      "title": "Meta hints at VR announcements for Connect, but this won’t stop the Winter",
+      "link": "https://skarredghost.com/2026/07/08/meta-vr-phoenix-connect-winter/",
+      "source": "Skarred Ghost",
+      "category": "OPINION",
+      "summary": "Writing on Skarred Ghost, Antony Vitillo tempers expectations around Andrew Bosworth's teaser of VR announcements at Meta Connect, arguing that whatever Meta shows will not reverse what he characterizes as an ongoing VR winter. The post frames Meta's Connect messaging as incremental rather than a signal of renewed platform momentum."
+    },
+    {
+      "id": "c24b1671ed569791",
+      "title": "Meta’s AI Glasses: Your Questions Answered",
+      "link": "https://about.fb.com/news/2026/07/metas-ai-glasses-your-questions-answered/",
+      "source": "Meta Newsroom",
+      "category": "APPLE VISION PRO IN THE NEWS",
+      "summary": "Meta published a FAQ on its Newsroom addressing common questions about its AI glasses, including privacy features designed to help both wearers and bystanders feel comfortable with the devices. The post consolidates Meta's public messaging on how recording indicators, data handling, and on-device AI are meant to work across its glasses lineup."
+    },
+    {
+      "id": "1a85b46b2c4d5ccd",
+      "title": "Introducing Muse Image: Image Generation Built for Your World",
+      "link": "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/",
+      "source": "Meta Newsroom",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Meta introduced Muse Image, the first image generation model from its Meta Superintelligence Labs group, and made it available inside Meta AI, according to a post on the Meta Newsroom. The launch signals Meta's push to bring in-house generative imaging into its consumer AI products alongside offerings from OpenAI and Google."
+    },
+    {
+      "id": "733b8abf917b4fdc",
+      "title": "Introducing GPT-Live",
+      "link": "https://openai.com/index/introducing-gpt-live",
+      "source": "OpenAI News",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "OpenAI announced GPT-Live, a new generation of voice models built for natural human-AI interaction that now powers ChatGPT Voice. The company positions the release as a step toward lower-latency, more conversational speech interfaces, a capability with direct implications for AI-driven glasses and headset assistants."
+    },
+    {
+      "id": "c754a9a1d07196b7",
+      "title": "Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
+      "source": "Google Blog",
+      "category": "SOFTWARE",
+      "summary": "Google announced an expansion of Managed Agents in the Gemini API, adding support for background tasks, remote MCP, and additional developer features, according to a post on the Google Blog. The update deepens Gemini's agentic tooling for developers building long-running, tool-using AI applications."
+    }
+  ],
+  "raw_content": "Spatial Report\nWeek of 2026-07-09\n\nHIGHLIGHTS\n\nRoad to VR reports that Meta is rolling out an update to its smart glasses lineup that will disable the camera entirely if the device's white capture LED is tampered with or destroyed, closing a workaround that had allowed users to physically cover the privacy indicator and continue recording undetected since the second-generation Ray-Ban Meta glasses launched in 2024.\n\nhttps://roadtovr.com/meta-ray-ban-glasses-privacy-led-camera-update/\n\nEngadget reports that New York has become the first U.S. state to ban smart glasses across all 1,240 of its state, county, city, town, and village courthouses. The blanket ban signals escalating institutional pushback against always-on wearable cameras in sensitive public settings.\n\nhttps://www.engadget.com/2211151/new-york-first-us-state-ban-smart-glasses-all-courthouses/\n\nAPP STORE HIGHLIGHTS\n\n9to5Mac reports that Lamborghini has released an Apple Vision Pro app offering an immersive look at its latest models inside and out, including interactive full-size car visualizations. The launch adds another luxury automotive brand to the visionOS app catalog.\n\nhttps://9to5mac.com/2026/07/07/lamborghini-launches-apple-vision-pro-app-with-interactive-full-size-cars/\n\nINVESTMENT\n\nAuganix reports that Even Realities has reached unicorn status after securing a $150 million pre-Series B round led by Meituan and Tencent, valuing the smart glasses maker at $1 billion. The round underscores growing Chinese strategic investor interest in the smart eyewear category.\n\nhttps://www.auganix.org/ar-news-even-realities-unicorn-status/\n\nSOFTWARE\n\nUploadVR reports that golf apps 18Birdies and Arccos have integrated with Meta AI on the company's smart glasses in the US and Canada, allowing the wearables to act as a personal AI golf caddy for users on the course.\n\nhttps://www.uploadvr.com/18birdies-arccos-meta-glasses-ai-golf-caddy/\n\nAccording to Auganix, RP1 has launched Artemis, a native metaverse browser powered by the open-source Sneeze engine that lets users access spatial experiences without installing separate apps. The browser positions RP1 as an infrastructure layer for cross-platform metaverse access.\n\nhttps://www.auganix.org/xr-news-rp1-artemis-metaverse-browser/\n\nAuganix reports that Basemark has signed a memorandum of understanding with Ignite by FORVIA HELLA to integrate its Rocksolid platform into Ignite's automotive AR offering for OEMs. The partnership expands Basemark's reach in the automotive AR software stack targeting car manufacturers.\n\nhttps://www.auganix.org/ar-news-basemark-ignite-automotive-ar/\n\nGoogle announced an expansion of Managed Agents in the Gemini API, adding support for background tasks, remote MCP, and additional developer features, according to a post on the Google Blog. The update deepens Gemini's agentic tooling for developers building long-running, tool-using AI applications.\n\nhttps://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/\n\nHARDWARE\n\nAccording to Taiwan's Financial Express News, HTC told shareholders at its annual meeting that revenue has stabilized after a protracted decline, with the company pinning its second-act strategy on AI, smart glasses, and enterprise XR after years of mixed results in its pivot away from smartphones, as reported by Road to VR.\n\nhttps://roadtovr.com/htc-revenue-stabilizes-smart-glasses-xr-enterprise/\n\nRoad to VR reports that Dubai-based smart contact lens startup XPANCEO is expanding its partnership with China's JBD to co-develop a new micro-display designed specifically for smart contact lenses, building on prior joint work that produced a printed circuit board with integrated micro-display and a near-eye optical system.\n\nhttps://roadtovr.com/smart-contact-lens-xpanceo-jbd-display-partnership/\n\nAccording to Auganix, XPANCEO and JBD have advanced to the next phase of their collaboration to co-develop a custom micro-display for future AR-enabled smart contact lenses. The partnership pairs XPANCEO's contact-lens platform with JBD's micro-LED display expertise.\n\nhttps://www.auganix.org/ar-news-xpanceo-jbd-contact-lens-micro-display/\n\nAccording to The Verge, Solos announced the AirGo A6, a camera-less smart glasses model that weighs around 19 grams — roughly half the 36 to 40 grams of last year's AirGo A5 — and relies on a voice-based AI assistant rather than onboard cameras. The company is pitching the lighter build and camera-free design as a privacy-forward alternative in the smart glasses market.\n\nhttps://www.theverge.com/tech/961711/solos-airgo-a6-smart-glasses-ai-assistant-privacy\n\nAI AND SIMULATED WORLDS\n\nGoogle DeepMind and film studio A24 announced a first-of-its-kind research partnership, according to a DeepMind blog post, pairing the AI lab with a major independent studio to explore applications of generative AI in filmmaking. The collaboration signals deeper entertainment-industry engagement with frontier AI models as studios weigh how generative tools fit into production pipelines.\n\nhttps://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/\n\nAccording to The Decoder, OpenAI has launched GPT-Live, a full-duplex conversational architecture that can listen and speak simultaneously and hand off complex queries to GPT-5.5 in the background for higher-quality responses; GPT-Live-1 is available now to paying ChatGPT users, with a mini version for free accounts and API access coming soon.\n\nhttps://the-decoder.com/chatgpt-can-now-listen-and-talk-at-the-same-time-making-ai-conversations-seem-more-human/\n\nThe Decoder reports that Mistral is entering robotics with Robostral Navigate, an 8-billion-parameter model that guides robots through unknown environments using only a single RGB camera. Trained in simulation and refined with reinforcement learning via CISPO, the model reaches 76.6 percent on the R2R-CE benchmark, though Mistral has not disclosed a release date.\n\nhttps://the-decoder.com/mistral-enters-robotics-with-robostral-navigate-an-8b-model-that-steers-robots-using-just-one-camera/\n\nEngadget reports that SpaceXAI has rolled out Grok 4.5, the first model the company trained with help from Cursor. The release marks a notable collaboration between a frontier model developer and an AI coding-tools company.\n\nhttps://www.engadget.com/2211260/spacex-ai-grok-4-5-cursor/\n\nThe Verge reports that Meta is opening its Muse Spark AI model to developers through a new Meta Model API, positioning the second-generation Muse Spark 1.1 as a coding-capable model that can plug into AI coding software. Meta describes the update as a step-change from the April debut of its first in-house model, marking its push to compete with rivals in the developer tooling market.\n\nhttps://www.theverge.com/ai-artificial-intelligence/963193/meta-muse-spark-model-api\n\nThe Verge reports that Meta's Superintelligence Labs has released Muse Image, its first in-house image generation model, which now powers image tools across the Meta AI app, Instagram, and WhatsApp, with rollouts to Facebook and Messenger to follow. The model can pull other Instagram users into AI-generated photos, extending Meta's Muse family into consumer social products.\n\nhttps://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram\n\nAn arXiv paper presents LingBot-World 2.0, also called LingBot-World-Infinity, an interactive world model that claims an unbounded interaction horizon with consistent output quality and a distilled real-time variant capable of driving 720p video streams, advancing the emerging class of generative interactive world simulators.\n\nhttps://arxiv.org/abs/2607.07534\n\nMeta introduced Muse Image, the first image generation model from its Meta Superintelligence Labs group, and made it available inside Meta AI, according to a post on the Meta Newsroom. The launch signals Meta's push to bring in-house generative imaging into its consumer AI products alongside offerings from OpenAI and Google.\n\nhttps://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/\n\nOpenAI announced GPT-Live, a new generation of voice models built for natural human-AI interaction that now powers ChatGPT Voice. The company positions the release as a step toward lower-latency, more conversational speech interfaces, a capability with direct implications for AI-driven glasses and headset assistants.\n\nhttps://openai.com/index/introducing-gpt-live\n\nRESEARCH\n\nAn arXiv study compares head, gaze, and finger-based object selection techniques in augmented reality for people with low vision, evaluating their ability and preferences given potential visual and gaze control challenges. The work aims to inform accessible selection-based AR augmentation that reduces distraction and visual clutter.\n\nhttps://arxiv.org/abs/2607.06778\n\nResearchers introduce SPEAR, a Python-based simulator for photorealistic embodied AI research that can programmatically control any Unreal Engine application, according to an arXiv paper. The system targets limitations in generality, programmability, and rendering speed found in existing photorealistic simulators used to train embodied agents and generate synthetic visual data.\n\nhttps://arxiv.org/abs/2607.06701\n\nResearchers on arXiv introduce WildCity, a real-world multimodal city-scale testbed spanning tens of square kilometers for rendering, simulation, and spatial intelligence benchmarks, aimed at pushing scene reconstruction and embodied AI foundation models beyond current single-scene limits.\n\nhttps://arxiv.org/abs/2607.06838\n\nA paper posted to arXiv introduces EmbodiedGen V2, a generative 3D world engine designed to build executable, simulation-ready environments for embodied AI. The authors argue that while sim-ready 3D asset generation has advanced quickly, assembling assets into policy-ready task environments remains largely manual, and they propose a unified representation that connects cross-simulator assets and interaction affordances to enable more scalable closed-loop learning.\n\nhttps://arxiv.org/abs/2607.07459\n\nOPINION\n\nWriting at Skarred Ghost, Antony Vitillo pushes back against the wave of criticism that followed Snap's Specs announcement at AWE, arguing that tech corporates face a structural bind when innovating: aggressive bets get panned as overreach, while cautious moves get dismissed as irrelevant. The piece frames the reaction to Snap's AR glasses as emblematic of how the press and online community penalize hardware makers attempting genuinely new form factors.\n\nhttps://skarredghost.com/2026/07/03/pain-innovation-tech/\n\nWriting on Skarred Ghost, Antony Vitillo tempers expectations around Andrew Bosworth's teaser of VR announcements at Meta Connect, arguing that whatever Meta shows will not reverse what he characterizes as an ongoing VR winter. The post frames Meta's Connect messaging as incremental rather than a signal of renewed platform momentum.\n\nhttps://skarredghost.com/2026/07/08/meta-vr-phoenix-connect-winter/\n\nGAMING MARKETPLACE WATCH\n\nRoad to VR reports that Vertigo Games' now-defunct Amsterdam satellite studio was developing an official Tomb Raider VR title from at least November 2024 until the project's cancellation in January, citing leaked images and video first surfaced by MP1st.\n\nhttps://roadtovr.com/tomb-raider-vr-cancelled-leak-image-video/\n\nAccording to Road to VR, Cloudhead Games, the studio behind rhythm shooter Pistol Whip, appears to be developing a multiplayer VR game that may also support a flatscreen mode, based on a recent job listing for a Social & Community Strategist describing the next title as \"impossible to ignore.\"\n\nhttps://roadtovr.com/cloud-head-next-vr-game-report/\n\nRoad to VR reports that Rust Ltd's VR shooting simulator Hot Dogs, Horseshoes & Hand Grenades launched its 1.0 release on July 4th, exiting Steam early access after more than a decade in development.\n\nhttps://roadtovr.com/vr-shooter-hot-dogs-horseshoes-hand-grenades-1-0-release/\n\nAPPLE VISION PRO IN THE NEWS\n\nMeta published a FAQ on its Newsroom addressing common questions about its AI glasses, including privacy features designed to help both wearers and bystanders feel comfortable with the devices. The post consolidates Meta's public messaging on how recording indicators, data handling, and on-device AI are meant to work across its glasses lineup.\n\nhttps://about.fb.com/news/2026/07/metas-ai-glasses-your-questions-answered/\n"
+}

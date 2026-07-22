@@ -1,0 +1,108 @@
+{
+  "title": "Spatial Report — 2026-07-16",
+  "edition_number": "",
+  "date": "2026-07-16",
+  "spotlight": "",
+  "item_ids": [
+    "714f1e6099979696",
+    "72bd14f4411f2546",
+    "1366f584a0fde6e5",
+    "4952cb78b516a0d1",
+    "3137b9c5b80c637c"
+  ],
+  "sections": {
+    "APP STORE HIGHLIGHTS": [
+      {
+        "id": "4952cb78b516a0d1",
+        "title": "FitXR Adds &#x27;Journey&#x27; Workout Recommendations, Profile Levels &amp; More",
+        "link": "https://www.uploadvr.com/fitxr-journey-workout-recommendations-july-update/",
+        "source": "UploadVR",
+        "category": "APP STORE HIGHLIGHTS",
+        "summary": "According to UploadVR, FitXR on Meta Quest has rolled out Journey, a personalized workout recommendation system, alongside profile levels and other updates aimed at reducing time spent browsing and increasing time exercising."
+      }
+    ],
+    "AI AND SIMULATED WORLDS": [
+      {
+        "id": "3137b9c5b80c637c",
+        "title": "Here’s Why Anthropic Is Pushing States to Regulate AI Faster",
+        "link": "https://www.wired.com/story/why-anthropic-is-pushing-states-to-regulate-ai-faster/",
+        "source": "Wired",
+        "category": "AI AND SIMULATED WORLDS",
+        "summary": "Wired reports that Anthropic is urging U.S. states to move faster on AI regulation, with its head of state and local policy arguing that landmark transparency laws the company backed in California and New York last year may already be outdated given the pace of model development."
+      }
+    ],
+    "RESEARCH": [
+      {
+        "id": "72bd14f4411f2546",
+        "title": "OccTrack360: 4D Panoptic Occupancy Tracking from Surround-View Fisheye Cameras",
+        "link": "https://arxiv.org/abs/2603.08521",
+        "source": "arXiv cs.CV (Computer Vision)",
+        "category": "RESEARCH",
+        "summary": "Researchers on arXiv introduce OccTrack360, a benchmark for 4D panoptic occupancy tracking from surround-view fisheye cameras, addressing gaps in existing datasets for long temporal sequences and instance-level voxel tracking relevant to robotics and autonomous driving perception."
+      }
+    ],
+    "OPINION": [
+      {
+        "id": "714f1e6099979696",
+        "title": "Please Stop Making Me Opt Out of AI",
+        "link": "https://www.wired.com/story/please-stop-making-me-opt-out-of-ai/",
+        "source": "Wired",
+        "category": "OPINION",
+        "summary": "In Wired, a columnist argues that companies should stop enabling generative AI features by default and forcing users to opt out, calling for opt-in to become the standard for sensitive AI functionality."
+      }
+    ],
+    "GAMING MARKETPLACE WATCH": [
+      {
+        "id": "1366f584a0fde6e5",
+        "title": "Open-World Base-Building Action Game StarRupture Coming To Meta Quest 3",
+        "link": "https://www.uploadvr.com/open-world-base-building-action-game-starrupture-coming-to-meta-quest-3/",
+        "source": "UploadVR",
+        "category": "GAMING MARKETPLACE WATCH",
+        "summary": "UploadVR reports that developer Incuvo is bringing StarRupture, an open-world base-building action game, to Meta Quest 3, expanding the headset's roster of large-scale survival and combat titles."
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "714f1e6099979696",
+      "title": "Please Stop Making Me Opt Out of AI",
+      "link": "https://www.wired.com/story/please-stop-making-me-opt-out-of-ai/",
+      "source": "Wired",
+      "category": "OPINION",
+      "summary": "In Wired, a columnist argues that companies should stop enabling generative AI features by default and forcing users to opt out, calling for opt-in to become the standard for sensitive AI functionality."
+    },
+    {
+      "id": "72bd14f4411f2546",
+      "title": "OccTrack360: 4D Panoptic Occupancy Tracking from Surround-View Fisheye Cameras",
+      "link": "https://arxiv.org/abs/2603.08521",
+      "source": "arXiv cs.CV (Computer Vision)",
+      "category": "RESEARCH",
+      "summary": "Researchers on arXiv introduce OccTrack360, a benchmark for 4D panoptic occupancy tracking from surround-view fisheye cameras, addressing gaps in existing datasets for long temporal sequences and instance-level voxel tracking relevant to robotics and autonomous driving perception."
+    },
+    {
+      "id": "1366f584a0fde6e5",
+      "title": "Open-World Base-Building Action Game StarRupture Coming To Meta Quest 3",
+      "link": "https://www.uploadvr.com/open-world-base-building-action-game-starrupture-coming-to-meta-quest-3/",
+      "source": "UploadVR",
+      "category": "GAMING MARKETPLACE WATCH",
+      "summary": "UploadVR reports that developer Incuvo is bringing StarRupture, an open-world base-building action game, to Meta Quest 3, expanding the headset's roster of large-scale survival and combat titles."
+    },
+    {
+      "id": "4952cb78b516a0d1",
+      "title": "FitXR Adds &#x27;Journey&#x27; Workout Recommendations, Profile Levels &amp; More",
+      "link": "https://www.uploadvr.com/fitxr-journey-workout-recommendations-july-update/",
+      "source": "UploadVR",
+      "category": "APP STORE HIGHLIGHTS",
+      "summary": "According to UploadVR, FitXR on Meta Quest has rolled out Journey, a personalized workout recommendation system, alongside profile levels and other updates aimed at reducing time spent browsing and increasing time exercising."
+    },
+    {
+      "id": "3137b9c5b80c637c",
+      "title": "Here’s Why Anthropic Is Pushing States to Regulate AI Faster",
+      "link": "https://www.wired.com/story/why-anthropic-is-pushing-states-to-regulate-ai-faster/",
+      "source": "Wired",
+      "category": "AI AND SIMULATED WORLDS",
+      "summary": "Wired reports that Anthropic is urging U.S. states to move faster on AI regulation, with its head of state and local policy arguing that landmark transparency laws the company backed in California and New York last year may already be outdated given the pace of model development."
+    }
+  ],
+  "raw_content": "Spatial Report\nWeek of 2026-07-16\n\nAPP STORE HIGHLIGHTS\n\nAccording to UploadVR, FitXR on Meta Quest has rolled out Journey, a personalized workout recommendation system, alongside profile levels and other updates aimed at reducing time spent browsing and increasing time exercising.\n\nhttps://www.uploadvr.com/fitxr-journey-workout-recommendations-july-update/\n\nAI AND SIMULATED WORLDS\n\nWired reports that Anthropic is urging U.S. states to move faster on AI regulation, with its head of state and local policy arguing that landmark transparency laws the company backed in California and New York last year may already be outdated given the pace of model development.\n\nhttps://www.wired.com/story/why-anthropic-is-pushing-states-to-regulate-ai-faster/\n\nRESEARCH\n\nResearchers on arXiv introduce OccTrack360, a benchmark for 4D panoptic occupancy tracking from surround-view fisheye cameras, addressing gaps in existing datasets for long temporal sequences and instance-level voxel tracking relevant to robotics and autonomous driving perception.\n\nhttps://arxiv.org/abs/2603.08521\n\nOPINION\n\nIn Wired, a columnist argues that companies should stop enabling generative AI features by default and forcing users to opt out, calling for opt-in to become the standard for sensitive AI functionality.\n\nhttps://www.wired.com/story/please-stop-making-me-opt-out-of-ai/\n\nGAMING MARKETPLACE WATCH\n\nUploadVR reports that developer Incuvo is bringing StarRupture, an open-world base-building action game, to Meta Quest 3, expanding the headset's roster of large-scale survival and combat titles.\n\nhttps://www.uploadvr.com/open-world-base-building-action-game-starrupture-coming-to-meta-quest-3/\n"
+}
