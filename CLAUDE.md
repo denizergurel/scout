@@ -12,8 +12,9 @@ This repository is currently configured for **Spatial Report**, a weekly newslet
 Scout uses a **per-item lifecycle model** backed by a single persistent store. The daily cron grows a pool of `pending` items; the editor moves items through states via the dashboard.
 
 ```
-RSS feeds ─► Collector ─► Scout ─► Editor ─► store (status=pending)
-                                                │
+RSS feeds ──┐
+            ├─► Collector ─► Scout ─► Editor ─► store (status=pending)
+Web search ─┘  (Discovery)                       │
                                   Inbox view ◄──┤
                                        │
                                   Editor triages: approve / reject
@@ -47,11 +48,12 @@ Each Lineup item also has an `included_in_next: bool` flag (default `True` on Sa
 **Lineup persists across editions.** Publishing only ships Including items; Held items remain in Lineup for a future edition.
 
 ### Pipeline stages
-1. **Collector** (`src/collector.py`) — Pulls RSS feeds, extracts articles, dedups against existing store entries
-2. **Scout** (`src/scout.py`) — Relevance filter via the configured LLM
-3. **Editor** (`src/editor.py`) — Categorizes into newsletter sections, writes paragraph summaries
-4. **Store** (`output/daily/items.json`) — Single source of truth; cron writes `pending`, dashboard mutates status
-5. **Dashboard** (`src/dashboard.py`) — Four lifecycle views (plus Settings):
+1. **Collector** (`src/collector.py`) — Pulls RSS feeds (concurrently, via a thread pool), extracts articles, dedups against existing store entries
+2. **Discovery** (`src/discovery.py`) — *Optional* web-search stage (`discovery.enabled` in config). Searches the web for the newsletter's topics so Scout sees candidates from sites you don't subscribe to. Queries are static (`search_queries:`) plus adaptive ones the LLM generates from your recently saved/published titles. Pluggable provider: `gdelt` (free, no key — default), `tavily`, or `brave`. Reads title/snippet/URL only — never fetches article bodies, so no SSRF surface. Its results are merged into the collector batch and flow through the same dedup → Scout → Editor stages.
+3. **Scout** (`src/scout.py`) — Relevance filter via the configured LLM
+4. **Editor** (`src/editor.py`) — Categorizes into newsletter sections, writes paragraph summaries
+5. **Store** (`output/daily/items.json`) — Single source of truth; cron writes `pending`, dashboard mutates status
+6. **Dashboard** (`src/dashboard.py`) — Four lifecycle views (plus Settings):
    - **Signals** (`/`) — `pending` items awaiting triage; Save · Hide · Edit. Header has a ✦ Refresh button to run the pipeline on demand.
    - **Lineup** (`/lineup`) — `saved` items with the per-item Including ⇄ Held toggle; Publish Edition ships only Including items
    - **Editions** (`/editions`) — published editions; auto-populated on Publish, also accepts manually pasted past editions via `/editions/new`
@@ -59,9 +61,10 @@ Each Lineup item also has an `included_in_next: bool` flag (default `True` on Sa
    - **Settings** (`/setup`) — RSS Feeds editor (inline edit, add, remove — writes back to `config.yaml` while preserving comments), read-only Models panel showing the effective LLM per stage, an Editorial pipeline table, and first-time install instructions below.
 
 ### Daily Agent
-- `src/daily.py` — Runs collect → scout → editor on each cron firing
+- `src/daily.py` — Runs collect → (discovery) → scout → editor on each cron firing
 - Appends new items to the store as `pending`
-- Skips items already present in the store (dedup by link + title)
+- Skips items already present in the store (dedup by link + title) — dedup happens **before** the LLM stages, so a refresh never re-scans items already seen
+- Logs source-promotion suggestions: domains you repeatedly save/publish but don't subscribe to (candidates to add as feeds)
 - No weekly reset — the store grows monotonically; aging happens per item, not per calendar week
 
 ### Curator's role
@@ -82,6 +85,8 @@ When the editor clicks Publish Edition from the Lineup:
 - `src/llm.py` — LLM provider router (Claude / Gemini / OpenAI), selected via `LLM_PROVIDER` env var
 - `src/claude_cli.py`, `src/gemini_client.py`, `src/openai_client.py` — provider implementations
 - `src/store.py` — Persistent item store (read/write/status mutations)
+- `src/discovery.py` — Optional web-search discovery stage (see Pipeline stages). Configured via the `discovery:` block in `config.yaml`; off unless `enabled: true`.
+- `src/learning.py` — Adaptive learning: injects your recent decisions into the Scout/Editor prompts as few-shot examples. Read-only over the store; bounded by a sliding window (keyed on `decided_at`) + a hard example cap. Configured via the `learning:` block; off unless `enabled: true`.
 - `prompts/` — Agent system prompts (scout.md, editor.md, curator.md) — templated with `{{placeholders}}`
 - `output/daily/items.json` — The single store (gitignored)
 - `output/daily/` — Intermediate per-stage outputs for debugging (gitignored, regenerated)
