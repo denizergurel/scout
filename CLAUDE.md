@@ -15,14 +15,14 @@ Scout uses a **per-item lifecycle model** backed by a single persistent store. T
 RSS feeds ──┐
             ├─► Collector ─► Scout ─► Editor ─► store (status=pending)
 Web search ─┘  (Discovery)                       │
-                                  Inbox view ◄──┤
+                                  Signals view ◄─┤
                                        │
-                                  Editor triages: approve / reject
+                                  Editor triages: save / hide
                                        │
                                        ▼
-                                   approved (the Bucket — persists across editions)
+                                   saved (the Lineup — persists across editions)
                                        │
-                                  Bucket view: composition + export
+                                  Lineup view: composition + publish
                                        │
                                        ▼
                                    published (archived as an Edition)
@@ -68,7 +68,7 @@ Each Lineup item also has an `included_in_next: bool` flag (default `True` on Sa
 - No weekly reset — the store grows monotonically; aging happens per item, not per calendar week
 
 ### Curator's role
-The original `src/curator.py` (LLM-based weekly compiler) is **not part of the auto-pipeline** in the new model. Composition is the editor's job in the Saved view. The Curator agent is retained as an **on-demand assistant** invoked from Saved (✦ Draft with agent → drafts the SPOTLIGHT from the items currently Including; future: suggest ordering, flag near-duplicates) — never auto-run.
+The original `src/curator.py` (LLM-based weekly compiler) is **not part of the auto-pipeline** in the new model. Composition is the editor's job in the Lineup view. The Curator agent is retained as an **on-demand assistant** invoked from the Lineup (✦ Draft with agent → drafts the SPOTLIGHT from the items currently Including; future: suggest ordering, flag near-duplicates) — never auto-run.
 
 ### Editions on publish
 When the editor clicks Publish Edition from the Lineup:
@@ -205,18 +205,19 @@ python -m uvicorn src.dashboard:app --reload
 
 ## Editorial Workflow
 
-The daily agent runs automatically at 8am, growing the `pending` pool.
+The daily agent grows the `pending` pool on each firing. Automation is opt-in from **Settings → Automation** (see Setup); until enabled, run it manually or via the ✦ Refresh button in Signals.
 
 **Triage (whenever, ideally daily):**
-1. Open dashboard at http://localhost:8000 — the Inbox shows all `pending` items
-2. Approve newsletter-worthy items → they move to the Bucket
-3. Reject the rest
+1. Open the dashboard at http://localhost:8000 — **Signals** shows all `pending` items
+2. Save newsletter-worthy items → they move to the **Lineup** (`saved`)
+3. Hide the rest → they move to the **Archive** (`hidden`), restorable later
 
 **Newsletter production (your usual day):**
-1. Open `/bucket` — every `approved` item across all sections, all visible at once
-2. Final review: drop, reorder, edit summaries, write SPOTLIGHT
-3. Click "Export Newsletter" → exported items flip to `published` and land in `output/archive/` as an Edition record
-4. Unselected approved items stay in the Bucket for next time
+1. Open `/lineup` — every `saved` item across all sections, all visible at once
+2. Use the per-item Including ⇄ Held toggle to choose what ships this edition
+3. Final review: edit summaries, write the SPOTLIGHT (or ✦ Draft with agent)
+4. Click **Publish Edition** → Including items flip to `published` and land in `output/editions/` as an Edition record
+5. Held items stay in the Lineup for a future edition
 
 ## Dashboard Pages
 - **/** — Signals: triage `pending` items (Save / Hide / Edit), ✦ Refresh button
